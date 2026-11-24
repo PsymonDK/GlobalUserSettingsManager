@@ -1,0 +1,49 @@
+name: Build and test
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  build:
+    # The plugin and tests target .NET Framework 4.6.2, so tests need a Windows runner.
+    runs-on: windows-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-dotnet@v4
+        with:
+          dotnet-version: 9.0.x
+
+      - name: Check generated registry is up to date
+        # Windows PowerShell 5.1, as used locally: pwsh 7 formats ConvertTo-Json differently.
+        shell: powershell
+        run: |
+          ./scripts/Build-Schema.ps1
+          git diff --exit-code -- schema/settings.json src/DefaultUserSettings.Plugins/Registry/SettingsRegistry.g.cs
+          if ($LASTEXITCODE -ne 0) { throw "Generated files are stale. Run scripts/Build-Schema.ps1 and commit the result." }
+
+      - name: Build
+        run: dotnet build src/DefaultUserSettings.Plugins.Tests -c Release
+
+      - name: Test
+        run: dotnet test src/DefaultUserSettings.Plugins.Tests -c Release --no-build --logger trx --results-directory TestResults
+
+      - name: Upload test results
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: test-results
+          path: TestResults/*.trx
+          if-no-files-found: ignore
+
+      - name: Upload plugin assembly
+        uses: actions/upload-artifact@v4
+        with:
+          name: DefaultUserSettings.Plugins
+          path: src/DefaultUserSettings.Plugins/bin/Release/net462/DefaultUserSettings.Plugins.dll
