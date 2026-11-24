@@ -1,0 +1,9 @@
+# Every change needs a review from the maintainer.
+*                   @PsymonDK
+
+# Build, release and deployment code: listed explicitly so these stay owned
+# even if the catch-all above is narrowed later.
+/.github/           @PsymonDK
+/scripts/           @PsymonDK
+/solution/          @PsymonDK
+*.snk               @PsymonDK

@@ -139,6 +139,17 @@ The rollout APIs need `prvCreatejhrb_RolloutJob`, which comes with the Admin rol
 - **Block mode is not offered.** Personal Options shows no error and loses the whole save (SPIKE A2).
 - **Some UI-only settings may behave differently on the new settings experience.** The integration tests used `paginglimit` and `advancedfindstartupmode`.
 
+## Contributing
+
+- Open a pull request against `main`. CI ([build.yml](.github/workflows/build.yml)) checks that the generated registry matches `schema/managed-settings.csv`, builds the plugin and runs the unit tests.
+- Every pull request needs a review from a code owner ([CODEOWNERS](.github/CODEOWNERS)).
+- The strong-name key (`DefaultUserSettings.Plugins.snk`) is committed on purpose. Strong naming gives the plugin assembly a stable identity, which Dataverse needs to treat a new build as an update. It is not a security boundary. Do not replace it.
+- Branch protection for `main` is defined in [.github/rulesets/main.json](.github/rulesets/main.json): no force pushes or deletion, pull request with one code-owner approval, CI `build` must pass, and repository admins may merge their own pull requests. Apply it with:
+
+  ```powershell
+  gh api -X POST repos/{owner}/{repo}/rulesets --input .github/rulesets/main.json
+  ```
+
 ## Licence
 
 MIT. See [LICENSE](LICENSE).
