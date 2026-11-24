@@ -1,0 +1,11 @@
+<customapiresponseproperty uniquename="InScope">
+  <description default="User is in scope (active Global row and pilot team, if set).">
+    <label description="User is in scope (active Global row and pilot team, if set)." languagecode="1033" />
+  </description>
+  <displayname default="InScope">
+    <label description="InScope" languagecode="1033" />
+  </displayname>
+  <iscustomizable>1</iscustomizable>
+  <name>InScope</name>
+  <type>0</type>
+</customapiresponseproperty>

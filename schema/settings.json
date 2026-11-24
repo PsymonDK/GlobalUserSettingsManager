@@ -1,0 +1,676 @@
+﻿[
+    {
+        "attribute":  "timezonecode",
+        "label":  "Time Zone",
+        "group":  "Regional",
+        "valueColumn":  "jhrb_timezonecode",
+        "modeColumn":  "jhrb_timezonecode_mode",
+        "kind":  "Integer",
+        "min":  null,
+        "max":  null
+    },
+    {
+        "attribute":  "localeid",
+        "label":  "Locale (Format)",
+        "group":  "Regional",
+        "valueColumn":  "jhrb_localeid",
+        "modeColumn":  "jhrb_localeid_mode",
+        "kind":  "Integer",
+        "min":  0,
+        "max":  2147483647
+    },
+    {
+        "attribute":  "uilanguageid",
+        "label":  "User Interface Language",
+        "group":  "Regional",
+        "valueColumn":  "jhrb_uilanguageid",
+        "modeColumn":  "jhrb_uilanguageid_mode",
+        "kind":  "Integer",
+        "min":  0,
+        "max":  2147483647
+    },
+    {
+        "attribute":  "helplanguageid",
+        "label":  "Help Language",
+        "group":  "Regional",
+        "valueColumn":  "jhrb_helplanguageid",
+        "modeColumn":  "jhrb_helplanguageid_mode",
+        "kind":  "Integer",
+        "min":  0,
+        "max":  2147483647
+    },
+    {
+        "attribute":  "defaultcountrycode",
+        "label":  "Default Country Code",
+        "group":  "Regional",
+        "valueColumn":  "jhrb_defaultcountrycode",
+        "modeColumn":  "jhrb_defaultcountrycode_mode",
+        "kind":  "String",
+        "maxLength":  30
+    },
+    {
+        "attribute":  "isdefaultcountrycodecheckenabled",
+        "label":  "Enable Default Country Code",
+        "group":  "Regional",
+        "valueColumn":  "jhrb_isdefaultcountrycodecheckenabled",
+        "modeColumn":  "jhrb_isdefaultcountrycodecheckenabled_mode",
+        "kind":  "Boolean"
+    },
+    {
+        "attribute":  "calendartype",
+        "label":  "Calendar Type",
+        "group":  "Formats",
+        "valueColumn":  "jhrb_calendartype",
+        "modeColumn":  "jhrb_calendartype_mode",
+        "kind":  "Integer",
+        "min":  -2147483648,
+        "max":  2147483647
+    },
+    {
+        "attribute":  "dateformatcode",
+        "label":  "Date Format Code",
+        "group":  "Formats",
+        "valueColumn":  "jhrb_dateformatcode",
+        "modeColumn":  "jhrb_dateformatcode_mode",
+        "kind":  "Integer",
+        "min":  -2147483648,
+        "max":  2147483647
+    },
+    {
+        "attribute":  "dateformatstring",
+        "label":  "Date Format",
+        "group":  "Formats",
+        "valueColumn":  "jhrb_dateformatstring",
+        "modeColumn":  "jhrb_dateformatstring_mode",
+        "kind":  "String",
+        "maxLength":  255
+    },
+    {
+        "attribute":  "longdateformatcode",
+        "label":  "Long Date Format Code",
+        "group":  "Formats",
+        "valueColumn":  "jhrb_longdateformatcode",
+        "modeColumn":  "jhrb_longdateformatcode_mode",
+        "kind":  "Integer",
+        "min":  -2147483648,
+        "max":  2147483647
+    },
+    {
+        "attribute":  "dateseparator",
+        "label":  "Date Separator",
+        "group":  "Formats",
+        "valueColumn":  "jhrb_dateseparator",
+        "modeColumn":  "jhrb_dateseparator_mode",
+        "kind":  "String",
+        "maxLength":  5
+    },
+    {
+        "attribute":  "timeformatcode",
+        "label":  "Time Format Code",
+        "group":  "Formats",
+        "valueColumn":  "jhrb_timeformatcode",
+        "modeColumn":  "jhrb_timeformatcode_mode",
+        "kind":  "Integer",
+        "min":  -2147483648,
+        "max":  2147483647
+    },
+    {
+        "attribute":  "timeformatstring",
+        "label":  "Time Format",
+        "group":  "Formats",
+        "valueColumn":  "jhrb_timeformatstring",
+        "modeColumn":  "jhrb_timeformatstring_mode",
+        "kind":  "String",
+        "maxLength":  255
+    },
+    {
+        "attribute":  "timeseparator",
+        "label":  "Time Separator",
+        "group":  "Formats",
+        "valueColumn":  "jhrb_timeseparator",
+        "modeColumn":  "jhrb_timeseparator_mode",
+        "kind":  "String",
+        "maxLength":  5
+    },
+    {
+        "attribute":  "amdesignator",
+        "label":  "AM Designator",
+        "group":  "Formats",
+        "valueColumn":  "jhrb_amdesignator",
+        "modeColumn":  "jhrb_amdesignator_mode",
+        "kind":  "String",
+        "maxLength":  25
+    },
+    {
+        "attribute":  "pmdesignator",
+        "label":  "PM Designator",
+        "group":  "Formats",
+        "valueColumn":  "jhrb_pmdesignator",
+        "modeColumn":  "jhrb_pmdesignator_mode",
+        "kind":  "String",
+        "maxLength":  25
+    },
+    {
+        "attribute":  "showweeknumber",
+        "label":  "Show Week Numbers",
+        "group":  "Formats",
+        "valueColumn":  "jhrb_showweeknumber",
+        "modeColumn":  "jhrb_showweeknumber_mode",
+        "kind":  "Boolean"
+    },
+    {
+        "attribute":  "decimalsymbol",
+        "label":  "Decimal Symbol",
+        "group":  "Formats",
+        "valueColumn":  "jhrb_decimalsymbol",
+        "modeColumn":  "jhrb_decimalsymbol_mode",
+        "kind":  "String",
+        "maxLength":  5
+    },
+    {
+        "attribute":  "numberseparator",
+        "label":  "Digit Grouping Symbol",
+        "group":  "Formats",
+        "valueColumn":  "jhrb_numberseparator",
+        "modeColumn":  "jhrb_numberseparator_mode",
+        "kind":  "String",
+        "maxLength":  5
+    },
+    {
+        "attribute":  "numbergroupformat",
+        "label":  "Digit Grouping",
+        "group":  "Formats",
+        "valueColumn":  "jhrb_numbergroupformat",
+        "modeColumn":  "jhrb_numbergroupformat_mode",
+        "kind":  "String",
+        "maxLength":  25
+    },
+    {
+        "attribute":  "negativeformatcode",
+        "label":  "Negative Number Format",
+        "group":  "Formats",
+        "valueColumn":  "jhrb_negativeformatcode",
+        "modeColumn":  "jhrb_negativeformatcode_mode",
+        "kind":  "Integer",
+        "min":  -2147483648,
+        "max":  2147483647
+    },
+    {
+        "attribute":  "currencyformatcode",
+        "label":  "Currency Format",
+        "group":  "Formats",
+        "valueColumn":  "jhrb_currencyformatcode",
+        "modeColumn":  "jhrb_currencyformatcode_mode",
+        "kind":  "Integer",
+        "min":  -2147483648,
+        "max":  2147483647
+    },
+    {
+        "attribute":  "currencysymbol",
+        "label":  "Currency Symbol",
+        "group":  "Formats",
+        "valueColumn":  "jhrb_currencysymbol",
+        "modeColumn":  "jhrb_currencysymbol_mode",
+        "kind":  "String",
+        "maxLength":  13
+    },
+    {
+        "attribute":  "currencydecimalprecision",
+        "label":  "Currency Decimal Precision",
+        "group":  "Formats",
+        "valueColumn":  "jhrb_currencydecimalprecision",
+        "modeColumn":  "jhrb_currencydecimalprecision_mode",
+        "kind":  "Integer",
+        "min":  -2147483648,
+        "max":  2147483647
+    },
+    {
+        "attribute":  "negativecurrencyformatcode",
+        "label":  "Negative Currency Format",
+        "group":  "Formats",
+        "valueColumn":  "jhrb_negativecurrencyformatcode",
+        "modeColumn":  "jhrb_negativecurrencyformatcode_mode",
+        "kind":  "Integer",
+        "min":  0,
+        "max":  15
+    },
+    {
+        "attribute":  "pricingdecimalprecision",
+        "label":  "Pricing Decimal Precision",
+        "group":  "Formats",
+        "valueColumn":  "jhrb_pricingdecimalprecision",
+        "modeColumn":  "jhrb_pricingdecimalprecision_mode",
+        "kind":  "Integer",
+        "min":  -2147483648,
+        "max":  2147483647
+    },
+    {
+        "attribute":  "fullnameconventioncode",
+        "label":  "Full Name Format",
+        "group":  "Formats",
+        "valueColumn":  "jhrb_fullnameconventioncode",
+        "modeColumn":  "jhrb_fullnameconventioncode_mode",
+        "kind":  "Integer",
+        "min":  -2147483648,
+        "max":  2147483647
+    },
+    {
+        "attribute":  "transactioncurrencyid",
+        "label":  "Default Currency",
+        "group":  "Formats",
+        "valueColumn":  "jhrb_transactioncurrencyid",
+        "modeColumn":  "jhrb_transactioncurrencyid_mode",
+        "kind":  "Lookup",
+        "target":  "transactioncurrency"
+    },
+    {
+        "attribute":  "workdaystarttime",
+        "label":  "Work Day Start Time",
+        "group":  "Calendar",
+        "valueColumn":  "jhrb_workdaystarttime",
+        "modeColumn":  "jhrb_workdaystarttime_mode",
+        "kind":  "String",
+        "maxLength":  5
+    },
+    {
+        "attribute":  "workdaystoptime",
+        "label":  "Work Day End Time",
+        "group":  "Calendar",
+        "valueColumn":  "jhrb_workdaystoptime",
+        "modeColumn":  "jhrb_workdaystoptime_mode",
+        "kind":  "String",
+        "maxLength":  5
+    },
+    {
+        "attribute":  "defaultcalendarview",
+        "label":  "Default Calendar View",
+        "group":  "Calendar",
+        "valueColumn":  "jhrb_defaultcalendarview",
+        "modeColumn":  "jhrb_defaultcalendarview_mode",
+        "kind":  "Integer",
+        "min":  -2147483648,
+        "max":  2147483647
+    },
+    {
+        "attribute":  "paginglimit",
+        "label":  "Records Per Page",
+        "group":  "General",
+        "valueColumn":  "jhrb_paginglimit",
+        "modeColumn":  "jhrb_paginglimit_mode",
+        "kind":  "Integer",
+        "min":  0,
+        "max":  2147483647
+    },
+    {
+        "attribute":  "defaultdashboardid",
+        "label":  "Default Dashboard",
+        "group":  "General",
+        "valueColumn":  "jhrb_defaultdashboardid",
+        "modeColumn":  "jhrb_defaultdashboardid_mode",
+        "kind":  "GuidText",
+        "maxLength":  36
+    },
+    {
+        "attribute":  "defaultsearchexperience",
+        "label":  "Default Search Experience",
+        "group":  "General",
+        "valueColumn":  "jhrb_defaultsearchexperience",
+        "modeColumn":  "jhrb_defaultsearchexperience_mode",
+        "kind":  "Choice",
+        "options":  [
+                        {
+                            "value":  2,
+                            "label":  "Use last search"
+                        },
+                        {
+                            "value":  0,
+                            "label":  "Relevance search"
+                        },
+                        {
+                            "value":  1,
+                            "label":  "Categorized search"
+                        },
+                        {
+                            "value":  3,
+                            "label":  "Custom search"
+                        }
+                    ]
+    },
+    {
+        "attribute":  "entityformmode",
+        "label":  "Form Mode",
+        "group":  "General",
+        "valueColumn":  "jhrb_entityformmode",
+        "modeColumn":  "jhrb_entityformmode_mode",
+        "kind":  "Choice",
+        "options":  [
+                        {
+                            "value":  0,
+                            "label":  "Organization default"
+                        },
+                        {
+                            "value":  1,
+                            "label":  "Read-optimized"
+                        },
+                        {
+                            "value":  2,
+                            "label":  "Edit"
+                        }
+                    ]
+    },
+    {
+        "attribute":  "displaydensity",
+        "label":  "Display Density",
+        "group":  "General",
+        "valueColumn":  "jhrb_displaydensity",
+        "modeColumn":  "jhrb_displaydensity_mode",
+        "kind":  "Choice",
+        "options":  [
+                        {
+                            "value":  0,
+                            "label":  "Default"
+                        },
+                        {
+                            "value":  1,
+                            "label":  "Comfortable"
+                        },
+                        {
+                            "value":  2,
+                            "label":  "Cozy"
+                        },
+                        {
+                            "value":  3,
+                            "label":  "Compact"
+                        }
+                    ]
+    },
+    {
+        "attribute":  "homepagearea",
+        "label":  "Default Pane",
+        "group":  "General",
+        "valueColumn":  "jhrb_homepagearea",
+        "modeColumn":  "jhrb_homepagearea_mode",
+        "kind":  "String",
+        "maxLength":  200
+    },
+    {
+        "attribute":  "homepagesubarea",
+        "label":  "Default Tab",
+        "group":  "General",
+        "valueColumn":  "jhrb_homepagesubarea",
+        "modeColumn":  "jhrb_homepagesubarea_mode",
+        "kind":  "String",
+        "maxLength":  200
+    },
+    {
+        "attribute":  "homepagelayout",
+        "label":  "Home Page Layout",
+        "group":  "General",
+        "valueColumn":  "jhrb_homepagelayout",
+        "modeColumn":  "jhrb_homepagelayout_mode",
+        "kind":  "String",
+        "maxLength":  2000
+    },
+    {
+        "attribute":  "advancedfindstartupmode",
+        "label":  "Advanced Find Mode",
+        "group":  "General",
+        "valueColumn":  "jhrb_advancedfindstartupmode",
+        "modeColumn":  "jhrb_advancedfindstartupmode_mode",
+        "kind":  "Integer",
+        "min":  null,
+        "max":  null
+    },
+    {
+        "attribute":  "visualizationpanelayout",
+        "label":  "Visualization Pane Layout",
+        "group":  "General",
+        "valueColumn":  "jhrb_visualizationpanelayout",
+        "modeColumn":  "jhrb_visualizationpanelayout_mode",
+        "kind":  "Choice",
+        "options":  [
+                        {
+                            "value":  0,
+                            "label":  "Top-bottom"
+                        },
+                        {
+                            "value":  1,
+                            "label":  "Side-by-side"
+                        }
+                    ]
+    },
+    {
+        "attribute":  "isguidedhelpenabled",
+        "label":  "Guided Help",
+        "group":  "General",
+        "valueColumn":  "jhrb_isguidedhelpenabled",
+        "modeColumn":  "jhrb_isguidedhelpenabled_mode",
+        "kind":  "Boolean"
+    },
+    {
+        "attribute":  "reportscripterrors",
+        "label":  "Report Script Errors",
+        "group":  "General",
+        "valueColumn":  "jhrb_reportscripterrors",
+        "modeColumn":  "jhrb_reportscripterrors_mode",
+        "kind":  "Choice",
+        "options":  [
+                        {
+                            "value":  1,
+                            "label":  "Ask me for permission to send an error report to Microsoft"
+                        },
+                        {
+                            "value":  2,
+                            "label":  "Automatically send an error report to Microsoft without asking me for permission"
+                        },
+                        {
+                            "value":  3,
+                            "label":  "Never send an error report to Microsoft about Microsoft Dynamics 365"
+                        }
+                    ]
+    },
+    {
+        "attribute":  "datavalidationmodeforexporttoexcel",
+        "label":  "Excel Export Data Validation",
+        "group":  "General",
+        "valueColumn":  "jhrb_datavalidationmodeforexporttoexcel",
+        "modeColumn":  "jhrb_datavalidationmodeforexporttoexcel_mode",
+        "kind":  "Choice",
+        "options":  [
+                        {
+                            "value":  0,
+                            "label":  "Full"
+                        },
+                        {
+                            "value":  1,
+                            "label":  "None"
+                        }
+                    ]
+    },
+    {
+        "attribute":  "releasechannel",
+        "label":  "Model App Release Channel",
+        "group":  "General",
+        "valueColumn":  "jhrb_releasechannel",
+        "modeColumn":  "jhrb_releasechannel_mode",
+        "kind":  "Choice",
+        "options":  [
+                        {
+                            "value":  0,
+                            "label":  "None"
+                        },
+                        {
+                            "value":  1,
+                            "label":  "Semi-annual channel override"
+                        },
+                        {
+                            "value":  2,
+                            "label":  "Monthly channel override"
+                        },
+                        {
+                            "value":  3,
+                            "label":  "Inner channel override"
+                        }
+                    ]
+    },
+    {
+        "attribute":  "preferredsolution",
+        "label":  "Preferred Solution",
+        "group":  "General",
+        "valueColumn":  "jhrb_preferredsolution",
+        "modeColumn":  "jhrb_preferredsolution_mode",
+        "kind":  "LookupText",
+        "target":  "solution",
+        "maxLength":  36
+    },
+    {
+        "attribute":  "incomingemailfilteringmethod",
+        "label":  "Incoming Email Filtering",
+        "group":  "Email",
+        "valueColumn":  "jhrb_incomingemailfilteringmethod",
+        "modeColumn":  "jhrb_incomingemailfilteringmethod_mode",
+        "kind":  "Choice",
+        "options":  [
+                        {
+                            "value":  0,
+                            "label":  "All email messages"
+                        },
+                        {
+                            "value":  1,
+                            "label":  "Email messages in response to Dynamics 365 email"
+                        },
+                        {
+                            "value":  2,
+                            "label":  "Email messages from Dynamics 365 Leads, Contacts and Accounts"
+                        },
+                        {
+                            "value":  3,
+                            "label":  "Email messages from Dynamics 365 records that are email enabled"
+                        },
+                        {
+                            "value":  4,
+                            "label":  "No email messages"
+                        }
+                    ]
+    },
+    {
+        "attribute":  "ignoreunsolicitedemail",
+        "label":  "Ignore Unsolicited Email",
+        "group":  "Email",
+        "valueColumn":  "jhrb_ignoreunsolicitedemail",
+        "modeColumn":  "jhrb_ignoreunsolicitedemail_mode",
+        "kind":  "Boolean"
+    },
+    {
+        "attribute":  "isemailconversationviewenabled",
+        "label":  "Email Conversation View",
+        "group":  "Email",
+        "valueColumn":  "jhrb_isemailconversationviewenabled",
+        "modeColumn":  "jhrb_isemailconversationviewenabled_mode",
+        "kind":  "Boolean"
+    },
+    {
+        "attribute":  "issendasallowed",
+        "label":  "Allow Others to Send on My Behalf",
+        "group":  "Email",
+        "valueColumn":  "jhrb_issendasallowed",
+        "modeColumn":  "jhrb_issendasallowed_mode",
+        "kind":  "Boolean"
+    },
+    {
+        "attribute":  "autocreatecontactonpromote",
+        "label":  "Auto-create Contact on Promote",
+        "group":  "Email",
+        "valueColumn":  "jhrb_autocreatecontactonpromote",
+        "modeColumn":  "jhrb_autocreatecontactonpromote_mode",
+        "kind":  "Integer",
+        "min":  null,
+        "max":  null
+    },
+    {
+        "attribute":  "isautodatacaptureenabled",
+        "label":  "Auto Data Capture",
+        "group":  "Email",
+        "valueColumn":  "jhrb_isautodatacaptureenabled",
+        "modeColumn":  "jhrb_isautodatacaptureenabled_mode",
+        "kind":  "Boolean"
+    },
+    {
+        "attribute":  "usecrmformforappointment",
+        "label":  "Use Dynamics Form for Appointment",
+        "group":  "Sync",
+        "valueColumn":  "jhrb_usecrmformforappointment",
+        "modeColumn":  "jhrb_usecrmformforappointment_mode",
+        "kind":  "Boolean"
+    },
+    {
+        "attribute":  "usecrmformforcontact",
+        "label":  "Use Dynamics Form for Contact",
+        "group":  "Sync",
+        "valueColumn":  "jhrb_usecrmformforcontact",
+        "modeColumn":  "jhrb_usecrmformforcontact_mode",
+        "kind":  "Boolean"
+    },
+    {
+        "attribute":  "usecrmformforemail",
+        "label":  "Use Dynamics Form for Email",
+        "group":  "Sync",
+        "valueColumn":  "jhrb_usecrmformforemail",
+        "modeColumn":  "jhrb_usecrmformforemail_mode",
+        "kind":  "Boolean"
+    },
+    {
+        "attribute":  "usecrmformfortask",
+        "label":  "Use Dynamics Form for Task",
+        "group":  "Sync",
+        "valueColumn":  "jhrb_usecrmformfortask",
+        "modeColumn":  "jhrb_usecrmformfortask_mode",
+        "kind":  "Boolean"
+    },
+    {
+        "attribute":  "synccontactcompany",
+        "label":  "Sync Contact Company",
+        "group":  "Sync",
+        "valueColumn":  "jhrb_synccontactcompany",
+        "modeColumn":  "jhrb_synccontactcompany_mode",
+        "kind":  "Boolean"
+    },
+    {
+        "attribute":  "outlooksyncinterval",
+        "label":  "Outlook Sync Interval",
+        "group":  "Sync",
+        "valueColumn":  "jhrb_outlooksyncinterval",
+        "modeColumn":  "jhrb_outlooksyncinterval_mode",
+        "kind":  "Integer",
+        "min":  -2147483648,
+        "max":  2147483647
+    },
+    {
+        "attribute":  "offlinesyncinterval",
+        "label":  "Offline Sync Interval",
+        "group":  "Sync",
+        "valueColumn":  "jhrb_offlinesyncinterval",
+        "modeColumn":  "jhrb_offlinesyncinterval_mode",
+        "kind":  "Integer",
+        "min":  -2147483648,
+        "max":  2147483647
+    },
+    {
+        "attribute":  "addressbooksyncinterval",
+        "label":  "Address Book Sync Interval",
+        "group":  "Sync",
+        "valueColumn":  "jhrb_addressbooksyncinterval",
+        "modeColumn":  "jhrb_addressbooksyncinterval_mode",
+        "kind":  "Integer",
+        "min":  -2147483648,
+        "max":  2147483647
+    },
+    {
+        "attribute":  "isresourcebookingexchangesyncenabled",
+        "label":  "Resource Booking Exchange Sync",
+        "group":  "Sync",
+        "valueColumn":  "jhrb_isresourcebookingexchangesyncenabled",
+        "modeColumn":  "jhrb_isresourcebookingexchangesyncenabled_mode",
+        "kind":  "Boolean"
+    }
+]

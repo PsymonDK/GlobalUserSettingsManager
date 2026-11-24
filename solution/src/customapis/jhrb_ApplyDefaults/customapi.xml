@@ -1,0 +1,19 @@
+<customapi uniquename="jhrb_ApplyDefaults">
+  <allowedcustomprocessingsteptype>0</allowedcustomprocessingsteptype>
+  <bindingtype>0</bindingtype>
+  <description default="Apply effective settings to one user (inline) or all users (queues a rollout job).">
+    <label description="Apply effective settings to one user (inline) or all users (queues a rollout job)." languagecode="1033" />
+  </description>
+  <displayname default="Apply Default User Settings">
+    <label description="Apply Default User Settings" languagecode="1033" />
+  </displayname>
+  <executeprivilegename>prvCreatejhrb_RolloutJob</executeprivilegename>
+  <iscustomizable>1</iscustomizable>
+  <isfunction>0</isfunction>
+  <isprivate>0</isprivate>
+  <name>jhrb_ApplyDefaults</name>
+  <plugintypeid>
+    <plugintypeexportkey>f9c44a22-15e8-f111-84ea-000d3ab163fb</plugintypeexportkey>
+  </plugintypeid>
+  <workflowsdkstepenabled>0</workflowsdkstepenabled>
+</customapi>

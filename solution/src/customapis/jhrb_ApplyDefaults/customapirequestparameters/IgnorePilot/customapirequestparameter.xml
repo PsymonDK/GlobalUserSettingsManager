@@ -1,0 +1,12 @@
+<customapirequestparameter uniquename="IgnorePilot">
+  <description default="Dry runs only: ignore the pilot team.">
+    <label description="Dry runs only: ignore the pilot team." languagecode="1033" />
+  </description>
+  <displayname default="IgnorePilot">
+    <label description="IgnorePilot" languagecode="1033" />
+  </displayname>
+  <iscustomizable>1</iscustomizable>
+  <isoptional>1</isoptional>
+  <name>IgnorePilot</name>
+  <type>0</type>
+</customapirequestparameter>

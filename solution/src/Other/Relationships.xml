@@ -1,0 +1,35 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<EntityRelationships xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <EntityRelationship Name="business_unit_jhrb_settingslog" />
+  <EntityRelationship Name="jhrb_businessunit_jhrb_profilescope_BusinessUnit" />
+  <EntityRelationship Name="jhrb_settingsprofile_jhrb_profilescope_Profile" />
+  <EntityRelationship Name="jhrb_settingsprofile_jhrb_rolloutjob_Profile" />
+  <EntityRelationship Name="jhrb_settingsprofile_jhrb_settingslog_Profile" />
+  <EntityRelationship Name="jhrb_systemuser_jhrb_rolloutjob_User" />
+  <EntityRelationship Name="jhrb_systemuser_jhrb_settingslog_User" />
+  <EntityRelationship Name="jhrb_systemuser_jhrb_settingsprofile_User" />
+  <EntityRelationship Name="jhrb_systemuser_jhrb_userstate_User" />
+  <EntityRelationship Name="jhrb_team_jhrb_profilescope_Team" />
+  <EntityRelationship Name="jhrb_team_jhrb_settingsprofile_PilotTeam" />
+  <EntityRelationship Name="jhrb_transactioncurrency_jhrb_settingsprofile_transactioncurrencyid" />
+  <EntityRelationship Name="lk_jhrb_heartbeat_createdby" />
+  <EntityRelationship Name="lk_jhrb_heartbeat_modifiedby" />
+  <EntityRelationship Name="lk_jhrb_profilescope_createdby" />
+  <EntityRelationship Name="lk_jhrb_profilescope_modifiedby" />
+  <EntityRelationship Name="lk_jhrb_rolloutjob_createdby" />
+  <EntityRelationship Name="lk_jhrb_rolloutjob_modifiedby" />
+  <EntityRelationship Name="lk_jhrb_settingslog_createdby" />
+  <EntityRelationship Name="lk_jhrb_settingslog_modifiedby" />
+  <EntityRelationship Name="lk_jhrb_settingsprofile_createdby" />
+  <EntityRelationship Name="lk_jhrb_settingsprofile_modifiedby" />
+  <EntityRelationship Name="lk_jhrb_userstate_createdby" />
+  <EntityRelationship Name="lk_jhrb_userstate_modifiedby" />
+  <EntityRelationship Name="organization_jhrb_heartbeat" />
+  <EntityRelationship Name="organization_jhrb_profilescope" />
+  <EntityRelationship Name="organization_jhrb_rolloutjob" />
+  <EntityRelationship Name="organization_jhrb_settingsprofile" />
+  <EntityRelationship Name="organization_jhrb_userstate" />
+  <EntityRelationship Name="owner_jhrb_settingslog" />
+  <EntityRelationship Name="team_jhrb_settingslog" />
+  <EntityRelationship Name="user_jhrb_settingslog" />
+</EntityRelationships>

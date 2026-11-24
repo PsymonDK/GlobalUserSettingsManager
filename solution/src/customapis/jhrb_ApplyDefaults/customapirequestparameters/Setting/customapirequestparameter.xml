@@ -1,0 +1,12 @@
+<customapirequestparameter uniquename="Setting">
+  <description default="Comma-separated usersettings attributes; empty = all.">
+    <label description="Comma-separated usersettings attributes; empty = all." languagecode="1033" />
+  </description>
+  <displayname default="Setting">
+    <label description="Setting" languagecode="1033" />
+  </displayname>
+  <iscustomizable>1</iscustomizable>
+  <isoptional>1</isoptional>
+  <name>Setting</name>
+  <type>10</type>
+</customapirequestparameter>

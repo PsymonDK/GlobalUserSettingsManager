@@ -1,0 +1,20 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<SdkMessageProcessingStep Name="DUS: Heartbeat (Delete)" SdkMessageProcessingStepId="{98931a3d-15e8-f111-84ea-002248a422bc}" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <SdkMessageId>a1bdbb1b-ea3e-db11-86a7-000a3a5473e8</SdkMessageId>
+  <PluginTypeName>DefaultUserSettings.Plugins.Plugins.HeartbeatPlugin, DefaultUserSettings.Plugins, Version=1.0.0.0, Culture=neutral, PublicKeyToken=968e99a7a2fe1ed3</PluginTypeName>
+  <PluginTypeId>f8c44a22-15e8-f111-84ea-000d3ab163fb</PluginTypeId>
+  <PrimaryEntity>jhrb_heartbeat</PrimaryEntity>
+  <AsyncAutoDelete>1</AsyncAutoDelete>
+  <FilteringAttributes></FilteringAttributes>
+  <ImpersonatingUserIdName></ImpersonatingUserIdName>
+  <InvocationSource>1</InvocationSource>
+  <Mode>1</Mode>
+  <Rank>1</Rank>
+  <EventHandlerTypeCode>4602</EventHandlerTypeCode>
+  <Stage>40</Stage>
+  <IsCustomizable>1</IsCustomizable>
+  <IsHidden>0</IsHidden>
+  <SupportedDeployment>0</SupportedDeployment>
+  <IntroducedVersion>1.0.0.0</IntroducedVersion>
+  <SdkMessageProcessingStepImages />
+</SdkMessageProcessingStep>

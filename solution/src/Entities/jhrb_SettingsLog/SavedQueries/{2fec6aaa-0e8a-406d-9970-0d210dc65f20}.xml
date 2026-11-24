@@ -1,0 +1,46 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<savedqueries xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <savedquery>
+    <IsCustomizable>1</IsCustomizable>
+    <CanBeDeleted>0</CanBeDeleted>
+    <isquickfindquery>0</isquickfindquery>
+    <isprivate>0</isprivate>
+    <isdefault>1</isdefault>
+    <savedqueryid>{2fec6aaa-0e8a-406d-9970-0d210dc65f20}</savedqueryid>
+    <layoutxml>
+      <grid name="resultset" jump="jhrb_name" select="1" icon="1" preview="1">
+        <row name="result" id="jhrb_settingslogid">
+          <cell name="createdon" width="140" />
+          <cell name="jhrb_user" width="160" />
+          <cell name="jhrb_source" width="100" />
+          <cell name="jhrb_setting" width="160" />
+          <cell name="jhrb_oldvalue" width="120" />
+          <cell name="jhrb_attemptedvalue" width="120" />
+          <cell name="jhrb_appliedvalue" width="120" />
+          <cell name="jhrb_profile" width="160" />
+        </row>
+      </grid>
+    </layoutxml>
+    <querytype>0</querytype>
+    <fetchxml>
+      <fetch version="1.0" mapping="logical">
+        <entity name="jhrb_settingslog">
+          <attribute name="createdon" />
+          <attribute name="jhrb_user" />
+          <attribute name="jhrb_source" />
+          <attribute name="jhrb_setting" />
+          <attribute name="jhrb_oldvalue" />
+          <attribute name="jhrb_attemptedvalue" />
+          <attribute name="jhrb_appliedvalue" />
+          <attribute name="jhrb_profile" />
+          <attribute name="jhrb_settingslogid" />
+          <order attribute="createdon" descending="true" />
+        </entity>
+      </fetch>
+    </fetchxml>
+    <IntroducedVersion>1.0</IntroducedVersion>
+    <LocalizedNames>
+      <LocalizedName description="Active Settings Logs" languagecode="1033" />
+    </LocalizedNames>
+  </savedquery>
+</savedqueries>

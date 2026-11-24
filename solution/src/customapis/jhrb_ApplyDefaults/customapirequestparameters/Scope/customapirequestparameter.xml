@@ -1,0 +1,12 @@
+<customapirequestparameter uniquename="Scope">
+  <description default="All (default) or User.">
+    <label description="All (default) or User." languagecode="1033" />
+  </description>
+  <displayname default="Scope">
+    <label description="Scope" languagecode="1033" />
+  </displayname>
+  <iscustomizable>1</iscustomizable>
+  <isoptional>1</isoptional>
+  <name>Scope</name>
+  <type>10</type>
+</customapirequestparameter>

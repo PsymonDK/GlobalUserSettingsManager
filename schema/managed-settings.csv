@@ -1,0 +1,62 @@
+attribute,label,group
+timezonecode,Time Zone,Regional
+localeid,Locale (Format),Regional
+uilanguageid,User Interface Language,Regional
+helplanguageid,Help Language,Regional
+defaultcountrycode,Default Country Code,Regional
+isdefaultcountrycodecheckenabled,Enable Default Country Code,Regional
+calendartype,Calendar Type,Formats
+dateformatcode,Date Format Code,Formats
+dateformatstring,Date Format,Formats
+longdateformatcode,Long Date Format Code,Formats
+dateseparator,Date Separator,Formats
+timeformatcode,Time Format Code,Formats
+timeformatstring,Time Format,Formats
+timeseparator,Time Separator,Formats
+amdesignator,AM Designator,Formats
+pmdesignator,PM Designator,Formats
+showweeknumber,Show Week Numbers,Formats
+decimalsymbol,Decimal Symbol,Formats
+numberseparator,Digit Grouping Symbol,Formats
+numbergroupformat,Digit Grouping,Formats
+negativeformatcode,Negative Number Format,Formats
+currencyformatcode,Currency Format,Formats
+currencysymbol,Currency Symbol,Formats
+currencydecimalprecision,Currency Decimal Precision,Formats
+negativecurrencyformatcode,Negative Currency Format,Formats
+pricingdecimalprecision,Pricing Decimal Precision,Formats
+fullnameconventioncode,Full Name Format,Formats
+transactioncurrencyid,Default Currency,Formats
+workdaystarttime,Work Day Start Time,Calendar
+workdaystoptime,Work Day End Time,Calendar
+defaultcalendarview,Default Calendar View,Calendar
+paginglimit,Records Per Page,General
+defaultdashboardid,Default Dashboard,General
+defaultsearchexperience,Default Search Experience,General
+entityformmode,Form Mode,General
+displaydensity,Display Density,General
+homepagearea,Default Pane,General
+homepagesubarea,Default Tab,General
+homepagelayout,Home Page Layout,General
+advancedfindstartupmode,Advanced Find Mode,General
+visualizationpanelayout,Visualization Pane Layout,General
+isguidedhelpenabled,Guided Help,General
+reportscripterrors,Report Script Errors,General
+datavalidationmodeforexporttoexcel,Excel Export Data Validation,General
+releasechannel,Model App Release Channel,General
+preferredsolution,Preferred Solution,General
+incomingemailfilteringmethod,Incoming Email Filtering,Email
+ignoreunsolicitedemail,Ignore Unsolicited Email,Email
+isemailconversationviewenabled,Email Conversation View,Email
+issendasallowed,Allow Others to Send on My Behalf,Email
+autocreatecontactonpromote,Auto-create Contact on Promote,Email
+isautodatacaptureenabled,Auto Data Capture,Email
+usecrmformforappointment,Use Dynamics Form for Appointment,Sync
+usecrmformforcontact,Use Dynamics Form for Contact,Sync
+usecrmformforemail,Use Dynamics Form for Email,Sync
+usecrmformfortask,Use Dynamics Form for Task,Sync
+synccontactcompany,Sync Contact Company,Sync
+outlooksyncinterval,Outlook Sync Interval,Sync
+offlinesyncinterval,Offline Sync Interval,Sync
+addressbooksyncinterval,Address Book Sync Interval,Sync
+isresourcebookingexchangesyncenabled,Resource Booking Exchange Sync,Sync

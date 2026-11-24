@@ -1,0 +1,19 @@
+<customapi uniquename="jhrb_ResolveEffectiveSettings">
+  <allowedcustomprocessingsteptype>0</allowedcustomprocessingsteptype>
+  <bindingtype>0</bindingtype>
+  <description default="Effective value, mode and winning profile per managed setting for a user.">
+    <label description="Effective value, mode and winning profile per managed setting for a user." languagecode="1033" />
+  </description>
+  <displayname default="Resolve Effective User Settings">
+    <label description="Resolve Effective User Settings" languagecode="1033" />
+  </displayname>
+  <executeprivilegename>prvReadjhrb_SettingsProfile</executeprivilegename>
+  <iscustomizable>1</iscustomizable>
+  <isfunction>0</isfunction>
+  <isprivate>0</isprivate>
+  <name>jhrb_ResolveEffectiveSettings</name>
+  <plugintypeid>
+    <plugintypeexportkey>9f6dbd22-15e8-f111-84ea-0022489d55b0</plugintypeexportkey>
+  </plugintypeid>
+  <workflowsdkstepenabled>0</workflowsdkstepenabled>
+</customapi>

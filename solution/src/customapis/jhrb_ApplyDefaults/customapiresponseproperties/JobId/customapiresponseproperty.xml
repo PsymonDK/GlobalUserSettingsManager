@@ -1,0 +1,11 @@
+<customapiresponseproperty uniquename="JobId">
+  <description default="Rollout job (empty for Scope=User).">
+    <label description="Rollout job (empty for Scope=User)." languagecode="1033" />
+  </description>
+  <displayname default="JobId">
+    <label description="JobId" languagecode="1033" />
+  </displayname>
+  <iscustomizable>1</iscustomizable>
+  <name>JobId</name>
+  <type>12</type>
+</customapiresponseproperty>

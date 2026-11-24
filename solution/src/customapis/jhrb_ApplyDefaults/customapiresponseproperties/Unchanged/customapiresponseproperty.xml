@@ -1,0 +1,11 @@
+<customapiresponseproperty uniquename="Unchanged">
+  <description default="Users without changes (Scope=User).">
+    <label description="Users without changes (Scope=User)." languagecode="1033" />
+  </description>
+  <displayname default="Unchanged">
+    <label description="Unchanged" languagecode="1033" />
+  </displayname>
+  <iscustomizable>1</iscustomizable>
+  <name>Unchanged</name>
+  <type>7</type>
+</customapiresponseproperty>

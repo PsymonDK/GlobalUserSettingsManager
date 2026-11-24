@@ -1,0 +1,30 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<optionset Name="jhrb_settingmode" localizedName="Setting Mode" description="Inherit: not managed on this layer. Default: value applied, user may change. Locked: value enforced." xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <OptionSetType>picklist</OptionSetType>
+  <IsGlobal>1</IsGlobal>
+  <IntroducedVersion>1.0.0.0</IntroducedVersion>
+  <IsCustomizable>1</IsCustomizable>
+  <displaynames>
+    <displayname description="Setting Mode" languagecode="1033" />
+  </displaynames>
+  <Descriptions>
+    <Description description="Inherit: not managed on this layer. Default: value applied, user may change. Locked: value enforced." languagecode="1033" />
+  </Descriptions>
+  <options>
+    <option value="632490000" ExternalValue="" IsHidden="0">
+      <labels>
+        <label description="Inherit" languagecode="1033" />
+      </labels>
+    </option>
+    <option value="632490001" ExternalValue="" IsHidden="0">
+      <labels>
+        <label description="Default" languagecode="1033" />
+      </labels>
+    </option>
+    <option value="632490002" ExternalValue="" IsHidden="0">
+      <labels>
+        <label description="Locked" languagecode="1033" />
+      </labels>
+    </option>
+  </options>
+</optionset>

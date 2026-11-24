@@ -1,0 +1,19 @@
+<customapi uniquename="jhrb_ReconcileSettings">
+  <allowedcustomprocessingsteptype>0</allowedcustomprocessingsteptype>
+  <bindingtype>0</bindingtype>
+  <description default="Queue the reconcile (Auto apply for all users) and resume stalled jobs.">
+    <label description="Queue the reconcile (Auto apply for all users) and resume stalled jobs." languagecode="1033" />
+  </description>
+  <displayname default="Reconcile User Settings">
+    <label description="Reconcile User Settings" languagecode="1033" />
+  </displayname>
+  <executeprivilegename>prvCreatejhrb_RolloutJob</executeprivilegename>
+  <iscustomizable>1</iscustomizable>
+  <isfunction>0</isfunction>
+  <isprivate>0</isprivate>
+  <name>jhrb_ReconcileSettings</name>
+  <plugintypeid>
+    <plugintypeexportkey>9b63d122-15e8-f111-84ea-000d3ab16615</plugintypeexportkey>
+  </plugintypeid>
+  <workflowsdkstepenabled>0</workflowsdkstepenabled>
+</customapi>

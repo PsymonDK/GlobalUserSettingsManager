@@ -1,0 +1,48 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<savedqueries xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <savedquery>
+    <IsCustomizable>1</IsCustomizable>
+    <CanBeDeleted>0</CanBeDeleted>
+    <isquickfindquery>0</isquickfindquery>
+    <isprivate>0</isprivate>
+    <isdefault>1</isdefault>
+    <savedqueryid>{d01ea65b-4434-4423-855e-8a37c67f61a7}</savedqueryid>
+    <layoutxml>
+      <grid name="resultset" jump="jhrb_name" select="1" icon="1" preview="1">
+        <row name="result" id="jhrb_rolloutjobid">
+          <cell name="jhrb_name" width="250" />
+          <cell name="jhrb_status" width="100" />
+          <cell name="jhrb_reason" width="120" />
+          <cell name="jhrb_scope" width="80" />
+          <cell name="jhrb_applymode" width="100" />
+          <cell name="jhrb_processed" width="80" />
+          <cell name="jhrb_updated" width="80" />
+          <cell name="jhrb_failed" width="70" />
+          <cell name="createdon" width="140" />
+        </row>
+      </grid>
+    </layoutxml>
+    <querytype>0</querytype>
+    <fetchxml>
+      <fetch version="1.0" mapping="logical">
+        <entity name="jhrb_rolloutjob">
+          <attribute name="jhrb_name" />
+          <attribute name="jhrb_status" />
+          <attribute name="jhrb_reason" />
+          <attribute name="jhrb_scope" />
+          <attribute name="jhrb_applymode" />
+          <attribute name="jhrb_processed" />
+          <attribute name="jhrb_updated" />
+          <attribute name="jhrb_failed" />
+          <attribute name="createdon" />
+          <attribute name="jhrb_rolloutjobid" />
+          <order attribute="createdon" descending="true" />
+        </entity>
+      </fetch>
+    </fetchxml>
+    <IntroducedVersion>1.0</IntroducedVersion>
+    <LocalizedNames>
+      <LocalizedName description="Active Rollout Jobs" languagecode="1033" />
+    </LocalizedNames>
+  </savedquery>
+</savedqueries>

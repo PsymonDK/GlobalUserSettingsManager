@@ -1,0 +1,33 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<AppModuleSiteMap xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <SiteMapUniqueName>jhrb_DefaultUserSettings</SiteMapUniqueName>
+  <EnableCollapsibleGroups>False</EnableCollapsibleGroups>
+  <ShowHome>True</ShowHome>
+  <ShowPinned>True</ShowPinned>
+  <ShowRecents>True</ShowRecents>
+  <SiteMap IntroducedVersion="7.0.0.0">
+    <Area Id="area_dus" ShowGroups="true">
+      <Titles>
+        <Title LCID="1033" Title="Default User Settings" />
+      </Titles>
+      <Group Id="grp_config">
+        <Titles>
+          <Title LCID="1033" Title="Configuration" />
+        </Titles>
+        <SubArea Id="sub_profiles" Entity="jhrb_settingsprofile" />
+        <SubArea Id="sub_scopes" Entity="jhrb_profilescope" />
+      </Group>
+      <Group Id="grp_ops">
+        <Titles>
+          <Title LCID="1033" Title="Operations" />
+        </Titles>
+        <SubArea Id="sub_jobs" Entity="jhrb_rolloutjob" />
+        <SubArea Id="sub_log" Entity="jhrb_settingslog" />
+        <SubArea Id="sub_state" Entity="jhrb_userstate" />
+      </Group>
+    </Area>
+  </SiteMap>
+  <LocalizedNames>
+    <LocalizedName description="Default User Settings" languagecode="1033" />
+  </LocalizedNames>
+</AppModuleSiteMap>

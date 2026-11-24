@@ -1,0 +1,38 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<savedqueries xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <savedquery>
+    <IsCustomizable>1</IsCustomizable>
+    <CanBeDeleted>0</CanBeDeleted>
+    <isquickfindquery>0</isquickfindquery>
+    <isprivate>0</isprivate>
+    <isdefault>1</isdefault>
+    <savedqueryid>{03f59ec6-abb1-4d46-b0b4-87c377913e97}</savedqueryid>
+    <layoutxml>
+      <grid name="resultset" jump="jhrb_name" select="1" icon="1" preview="1">
+        <row name="result" id="jhrb_userstateid">
+          <cell name="jhrb_user" width="200" />
+          <cell name="jhrb_initializedon" width="140" />
+          <cell name="jhrb_lastfullapplyon" width="140" />
+          <cell name="jhrb_layerfingerprint" width="300" />
+        </row>
+      </grid>
+    </layoutxml>
+    <querytype>0</querytype>
+    <fetchxml>
+      <fetch version="1.0" mapping="logical">
+        <entity name="jhrb_userstate">
+          <attribute name="jhrb_user" />
+          <attribute name="jhrb_initializedon" />
+          <attribute name="jhrb_lastfullapplyon" />
+          <attribute name="jhrb_layerfingerprint" />
+          <attribute name="jhrb_userstateid" />
+          <order attribute="jhrb_name" descending="false" />
+        </entity>
+      </fetch>
+    </fetchxml>
+    <IntroducedVersion>1.0</IntroducedVersion>
+    <LocalizedNames>
+      <LocalizedName description="Active User Settings States" languagecode="1033" />
+    </LocalizedNames>
+  </savedquery>
+</savedqueries>

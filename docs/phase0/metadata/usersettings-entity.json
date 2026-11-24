@@ -1,0 +1,35 @@
+﻿{
+    "@odata.context":  "https://<org>.crm.dynamics.com/api/data/v9.2/$metadata#EntityDefinitions(LogicalName,EntitySetName,IsCustomizable,CanCreateForms,CanCreateViews,CanCreateAttributes,IsValidForAdvancedFind,IsAuditEnabled,OwnershipType,IsIntersect,ObjectTypeCode)/$entity",
+    "MetadataId":  "c08f6212-5638-4d84-903f-9643afdd8219",
+    "IsIntersect":  false,
+    "IsValidForAdvancedFind":  false,
+    "LogicalName":  "usersettings",
+    "ObjectTypeCode":  150,
+    "OwnershipType":  "UserOwned",
+    "EntitySetName":  "usersettingscollection",
+    "IsAuditEnabled":  {
+                           "Value":  false,
+                           "CanBeChanged":  false,
+                           "ManagedPropertyLogicalName":  "canmodifyauditsettings"
+                       },
+    "IsCustomizable":  {
+                           "Value":  false,
+                           "CanBeChanged":  false,
+                           "ManagedPropertyLogicalName":  "iscustomizable"
+                       },
+    "CanCreateAttributes":  {
+                                "Value":  false,
+                                "CanBeChanged":  false,
+                                "ManagedPropertyLogicalName":  "cancreateattributes"
+                            },
+    "CanCreateForms":  {
+                           "Value":  false,
+                           "CanBeChanged":  false,
+                           "ManagedPropertyLogicalName":  "cancreateforms"
+                       },
+    "CanCreateViews":  {
+                           "Value":  false,
+                           "CanBeChanged":  false,
+                           "ManagedPropertyLogicalName":  "cancreateviews"
+                       }
+}

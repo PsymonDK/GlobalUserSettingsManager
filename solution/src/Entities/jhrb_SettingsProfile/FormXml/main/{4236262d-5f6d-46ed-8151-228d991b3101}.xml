@@ -1,0 +1,1239 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<forms xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <systemform>
+    <formid>{4236262d-5f6d-46ed-8151-228d991b3101}</formid>
+    <IntroducedVersion>1.0</IntroducedVersion>
+    <FormPresentation>1</FormPresentation>
+    <FormActivationState>1</FormActivationState>
+    <form>
+      <tabs>
+        <tab name="tab_general" id="{8A00D71C-6910-4E97-942B-C3185BCC680E}" expanded="true" showlabel="true">
+          <labels>
+            <label description="General" languagecode="1033" />
+          </labels>
+          <columns>
+            <column width="100%">
+              <sections>
+                <section name="sec_profile" showlabel="true" showbar="false" id="{978C4B1D-4171-4171-A9F7-7A1EE3A78A90}" columns="1">
+                  <labels>
+                    <label description="Profile" languagecode="1033" />
+                  </labels>
+                  <rows>
+                    <row>
+                      <cell id="{3CE31E6A-608E-404F-9CC6-50558EE2722C}">
+                        <labels>
+                          <label description="Name" languagecode="1033" />
+                        </labels>
+                        <control id="jhrb_name" classid="{4273EDBD-AC1D-40d3-9FB2-095C621B552D}" datafieldname="jhrb_name" disabled="false" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{EF5B4277-ED66-4E8E-82A7-35A7B7720147}">
+                        <labels>
+                          <label description="Type" languagecode="1033" />
+                        </labels>
+                        <control id="jhrb_type" classid="{3EF39988-22BB-4f0b-BBBE-64B5A3748AEE}" datafieldname="jhrb_type" disabled="false" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{B3D10A1F-C13E-4B72-A343-61A911976077}">
+                        <labels>
+                          <label description="Active" languagecode="1033" />
+                        </labels>
+                        <control id="jhrb_isactive" classid="{67FAC785-CD58-4f9f-ABB3-4B7DDC6ED5ED}" datafieldname="jhrb_isactive" disabled="false" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{1A535ED7-6832-46F3-9FAA-06EDD2BFFF4E}">
+                        <labels>
+                          <label description="Priority (Group)" languagecode="1033" />
+                        </labels>
+                        <control id="jhrb_priority" classid="{C6D124CA-7EDA-4a60-AEA9-7FB8D318B68F}" datafieldname="jhrb_priority" disabled="false" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{3AFDD882-1B72-4127-9020-FBF1A3C42F2F}">
+                        <labels>
+                          <label description="User (User override)" languagecode="1033" />
+                        </labels>
+                        <control id="jhrb_user" classid="{270BD3DB-D9AF-4782-9025-509E298DEC0A}" datafieldname="jhrb_user" disabled="false" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{2E1189C2-220F-4CBF-8E3B-75B5EE794953}">
+                        <labels>
+                          <label description="Pilot Team (Global)" languagecode="1033" />
+                        </labels>
+                        <control id="jhrb_pilotteam" classid="{270BD3DB-D9AF-4782-9025-509E298DEC0A}" datafieldname="jhrb_pilotteam" disabled="false" />
+                      </cell>
+                    </row>
+                  </rows>
+                </section>
+                <section name="sec_scopes" showlabel="true" showbar="false" id="{08228D76-8C99-4C17-BCA8-D80DCC79E9D4}" columns="1">
+                  <labels>
+                    <label description="Scopes (Group profiles: applies to members of any of these teams / business units)" languagecode="1033" />
+                  </labels>
+                  <rows>
+                    <row>
+                      <cell id="{B5864B82-6333-4CF2-AC5D-920329B58535}" colspan="2" rowspan="8">
+                        <labels>
+                          <label description="Scopes" languagecode="1033" />
+                        </labels>
+                        <control id="Scopes" classid="{E7A81278-8635-4d9e-8D4D-59480B391C5B}" indicationOfSubgrid="true">
+                          <parameters>
+                            <RecordsPerPage>10</RecordsPerPage>
+                            <AutoExpand>Fixed</AutoExpand>
+                            <EnableQuickFind>false</EnableQuickFind>
+                            <EnableViewPicker>false</EnableViewPicker>
+                            <EnableJumpBar>false</EnableJumpBar>
+                            <RelationshipName>jhrb_settingsprofile_jhrb_profilescope_Profile</RelationshipName>
+                            <TargetEntityType>jhrb_profilescope</TargetEntityType>
+                            <ViewId>{81A52011-4969-4390-B3BE-84E7BC7EE12D}</ViewId>
+                            <IsUserView>false</IsUserView>
+                          </parameters>
+                        </control>
+                      </cell>
+                    </row>
+                    <row />
+                    <row />
+                    <row />
+                    <row />
+                    <row />
+                    <row />
+                    <row />
+                  </rows>
+                </section>
+                <section name="sec_log" showlabel="true" showbar="false" id="{FF411A26-2A51-4223-930D-AE8711B57EDA}" columns="1">
+                  <labels>
+                    <label description="Recent changes caused by this profile" languagecode="1033" />
+                  </labels>
+                  <rows>
+                    <row>
+                      <cell id="{174325F2-117A-4324-8D62-F3949BCBE44C}" colspan="2" rowspan="8">
+                        <labels>
+                          <label description="Log" languagecode="1033" />
+                        </labels>
+                        <control id="Log" classid="{E7A81278-8635-4d9e-8D4D-59480B391C5B}" indicationOfSubgrid="true">
+                          <parameters>
+                            <RecordsPerPage>10</RecordsPerPage>
+                            <AutoExpand>Fixed</AutoExpand>
+                            <EnableQuickFind>false</EnableQuickFind>
+                            <EnableViewPicker>false</EnableViewPicker>
+                            <EnableJumpBar>false</EnableJumpBar>
+                            <RelationshipName>jhrb_settingsprofile_jhrb_settingslog_Profile</RelationshipName>
+                            <TargetEntityType>jhrb_settingslog</TargetEntityType>
+                            <ViewId>{2FEC6AAA-0E8A-406D-9970-0D210DC65F20}</ViewId>
+                            <IsUserView>false</IsUserView>
+                          </parameters>
+                        </control>
+                      </cell>
+                    </row>
+                    <row />
+                    <row />
+                    <row />
+                    <row />
+                    <row />
+                    <row />
+                    <row />
+                  </rows>
+                </section>
+              </sections>
+            </column>
+          </columns>
+        </tab>
+        <tab name="tab_regional" id="{8E543D45-6E14-44EC-AA79-C54D3B760B52}" expanded="true" showlabel="true">
+          <labels>
+            <label description="Regional" languagecode="1033" />
+          </labels>
+          <columns>
+            <column width="100%">
+              <sections>
+                <section name="sec_regional" showlabel="true" showbar="false" id="{0E27C56E-D7C0-4FA6-9526-2CA2B0C2203B}" columns="1">
+                  <labels>
+                    <label description="Regional (value | Inherit / Default / Locked)" languagecode="1033" />
+                  </labels>
+                  <rows>
+                    <row>
+                      <cell id="{6D3E5DC3-CCA5-460A-8FE9-3C8F8BF4B92B}">
+                        <labels>
+                          <label description="Time Zone" languagecode="1033" />
+                        </labels>
+                        <control id="jhrb_timezonecode" classid="{C6D124CA-7EDA-4a60-AEA9-7FB8D318B68F}" datafieldname="jhrb_timezonecode" disabled="false" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{FA544499-428D-4BC6-9750-5D42E2C8C67C}">
+                        <labels>
+                          <label description="Time Zone: mode" languagecode="1033" />
+                        </labels>
+                        <control id="jhrb_timezonecode_mode" classid="{3EF39988-22BB-4f0b-BBBE-64B5A3748AEE}" datafieldname="jhrb_timezonecode_mode" disabled="false" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{478859F4-8370-454D-B016-94AE1DAF1380}">
+                        <labels>
+                          <label description="Locale (Format)" languagecode="1033" />
+                        </labels>
+                        <control id="jhrb_localeid" classid="{C6D124CA-7EDA-4a60-AEA9-7FB8D318B68F}" datafieldname="jhrb_localeid" disabled="false" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{16165491-DA11-4307-9279-2ACF1910B530}">
+                        <labels>
+                          <label description="Locale (Format): mode" languagecode="1033" />
+                        </labels>
+                        <control id="jhrb_localeid_mode" classid="{3EF39988-22BB-4f0b-BBBE-64B5A3748AEE}" datafieldname="jhrb_localeid_mode" disabled="false" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{AC5CB103-1C75-49DE-9E20-44D0024C9656}">
+                        <labels>
+                          <label description="User Interface Language" languagecode="1033" />
+                        </labels>
+                        <control id="jhrb_uilanguageid" classid="{C6D124CA-7EDA-4a60-AEA9-7FB8D318B68F}" datafieldname="jhrb_uilanguageid" disabled="false" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{4CF5D557-1BCC-464C-B951-3AC5BBE3DFB0}">
+                        <labels>
+                          <label description="User Interface Language: mode" languagecode="1033" />
+                        </labels>
+                        <control id="jhrb_uilanguageid_mode" classid="{3EF39988-22BB-4f0b-BBBE-64B5A3748AEE}" datafieldname="jhrb_uilanguageid_mode" disabled="false" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{9E32AF97-92E2-4830-9C6D-856EF2A58C80}">
+                        <labels>
+                          <label description="Help Language" languagecode="1033" />
+                        </labels>
+                        <control id="jhrb_helplanguageid" classid="{C6D124CA-7EDA-4a60-AEA9-7FB8D318B68F}" datafieldname="jhrb_helplanguageid" disabled="false" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{68D6D588-1729-4B04-AF96-52B19737A9D9}">
+                        <labels>
+                          <label description="Help Language: mode" languagecode="1033" />
+                        </labels>
+                        <control id="jhrb_helplanguageid_mode" classid="{3EF39988-22BB-4f0b-BBBE-64B5A3748AEE}" datafieldname="jhrb_helplanguageid_mode" disabled="false" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{CFC8496A-454F-4FC7-98AE-78FEC6DAFC35}">
+                        <labels>
+                          <label description="Default Country Code" languagecode="1033" />
+                        </labels>
+                        <control id="jhrb_defaultcountrycode" classid="{4273EDBD-AC1D-40d3-9FB2-095C621B552D}" datafieldname="jhrb_defaultcountrycode" disabled="false" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{868F2763-8CF7-4F9D-BDF6-24EC11902197}">
+                        <labels>
+                          <label description="Default Country Code: mode" languagecode="1033" />
+                        </labels>
+                        <control id="jhrb_defaultcountrycode_mode" classid="{3EF39988-22BB-4f0b-BBBE-64B5A3748AEE}" datafieldname="jhrb_defaultcountrycode_mode" disabled="false" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{7CB17E7E-A4C2-4354-9A54-04A60E6EAAA5}">
+                        <labels>
+                          <label description="Enable Default Country Code" languagecode="1033" />
+                        </labels>
+                        <control id="jhrb_isdefaultcountrycodecheckenabled" classid="{67FAC785-CD58-4f9f-ABB3-4B7DDC6ED5ED}" datafieldname="jhrb_isdefaultcountrycodecheckenabled" disabled="false" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{438EBF29-1A51-4C82-AF31-ED6AE4991C27}">
+                        <labels>
+                          <label description="Enable Default Country Code: mode" languagecode="1033" />
+                        </labels>
+                        <control id="jhrb_isdefaultcountrycodecheckenabled_mode" classid="{3EF39988-22BB-4f0b-BBBE-64B5A3748AEE}" datafieldname="jhrb_isdefaultcountrycodecheckenabled_mode" disabled="false" />
+                      </cell>
+                    </row>
+                  </rows>
+                </section>
+              </sections>
+            </column>
+          </columns>
+        </tab>
+        <tab name="tab_formats" id="{63AACC19-CEA6-4D4D-ACCE-BCA168C5B899}" expanded="true" showlabel="true">
+          <labels>
+            <label description="Formats" languagecode="1033" />
+          </labels>
+          <columns>
+            <column width="100%">
+              <sections>
+                <section name="sec_formats" showlabel="true" showbar="false" id="{A76A3690-F12D-4A2E-B990-C7AE99FB7911}" columns="1">
+                  <labels>
+                    <label description="Formats (value | Inherit / Default / Locked)" languagecode="1033" />
+                  </labels>
+                  <rows>
+                    <row>
+                      <cell id="{98AA34E1-B9BA-4A3A-B497-1EC75E152E95}">
+                        <labels>
+                          <label description="Calendar Type" languagecode="1033" />
+                        </labels>
+                        <control id="jhrb_calendartype" classid="{C6D124CA-7EDA-4a60-AEA9-7FB8D318B68F}" datafieldname="jhrb_calendartype" disabled="false" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{CCC00641-6143-46C0-9579-3214F2C52FCB}">
+                        <labels>
+                          <label description="Calendar Type: mode" languagecode="1033" />
+                        </labels>
+                        <control id="jhrb_calendartype_mode" classid="{3EF39988-22BB-4f0b-BBBE-64B5A3748AEE}" datafieldname="jhrb_calendartype_mode" disabled="false" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{4A6F98B1-EBEE-431D-8C02-6791E1B71092}">
+                        <labels>
+                          <label description="Date Format Code" languagecode="1033" />
+                        </labels>
+                        <control id="jhrb_dateformatcode" classid="{C6D124CA-7EDA-4a60-AEA9-7FB8D318B68F}" datafieldname="jhrb_dateformatcode" disabled="false" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{FBADA1A2-D3F4-4E7B-A879-09A6533F145C}">
+                        <labels>
+                          <label description="Date Format Code: mode" languagecode="1033" />
+                        </labels>
+                        <control id="jhrb_dateformatcode_mode" classid="{3EF39988-22BB-4f0b-BBBE-64B5A3748AEE}" datafieldname="jhrb_dateformatcode_mode" disabled="false" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{DBA15D90-68BA-4BD2-9CF8-24DF1022B9E9}">
+                        <labels>
+                          <label description="Date Format" languagecode="1033" />
+                        </labels>
+                        <control id="jhrb_dateformatstring" classid="{4273EDBD-AC1D-40d3-9FB2-095C621B552D}" datafieldname="jhrb_dateformatstring" disabled="false" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{B4FB44A7-BF0A-4054-836B-C8ECF03E2C22}">
+                        <labels>
+                          <label description="Date Format: mode" languagecode="1033" />
+                        </labels>
+                        <control id="jhrb_dateformatstring_mode" classid="{3EF39988-22BB-4f0b-BBBE-64B5A3748AEE}" datafieldname="jhrb_dateformatstring_mode" disabled="false" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{91AC1AAF-D690-4F76-811F-E52021F9A373}">
+                        <labels>
+                          <label description="Long Date Format Code" languagecode="1033" />
+                        </labels>
+                        <control id="jhrb_longdateformatcode" classid="{C6D124CA-7EDA-4a60-AEA9-7FB8D318B68F}" datafieldname="jhrb_longdateformatcode" disabled="false" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{32682FAB-6DF9-47C0-91D4-83856FE3F58F}">
+                        <labels>
+                          <label description="Long Date Format Code: mode" languagecode="1033" />
+                        </labels>
+                        <control id="jhrb_longdateformatcode_mode" classid="{3EF39988-22BB-4f0b-BBBE-64B5A3748AEE}" datafieldname="jhrb_longdateformatcode_mode" disabled="false" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{21271EF9-66BC-4C65-ABC1-EF9EFA9D6FF0}">
+                        <labels>
+                          <label description="Date Separator" languagecode="1033" />
+                        </labels>
+                        <control id="jhrb_dateseparator" classid="{4273EDBD-AC1D-40d3-9FB2-095C621B552D}" datafieldname="jhrb_dateseparator" disabled="false" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{149F5752-6938-4B27-BC47-458B1B6BDC91}">
+                        <labels>
+                          <label description="Date Separator: mode" languagecode="1033" />
+                        </labels>
+                        <control id="jhrb_dateseparator_mode" classid="{3EF39988-22BB-4f0b-BBBE-64B5A3748AEE}" datafieldname="jhrb_dateseparator_mode" disabled="false" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{E393A062-9A8D-47F1-9720-DC220AAB62B9}">
+                        <labels>
+                          <label description="Time Format Code" languagecode="1033" />
+                        </labels>
+                        <control id="jhrb_timeformatcode" classid="{C6D124CA-7EDA-4a60-AEA9-7FB8D318B68F}" datafieldname="jhrb_timeformatcode" disabled="false" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{290D0D59-3885-4076-AB9E-4C57707CA059}">
+                        <labels>
+                          <label description="Time Format Code: mode" languagecode="1033" />
+                        </labels>
+                        <control id="jhrb_timeformatcode_mode" classid="{3EF39988-22BB-4f0b-BBBE-64B5A3748AEE}" datafieldname="jhrb_timeformatcode_mode" disabled="false" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{D302EAEE-E285-498B-8B20-9FBBB8AC927C}">
+                        <labels>
+                          <label description="Time Format" languagecode="1033" />
+                        </labels>
+                        <control id="jhrb_timeformatstring" classid="{4273EDBD-AC1D-40d3-9FB2-095C621B552D}" datafieldname="jhrb_timeformatstring" disabled="false" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{F1BD8A67-98A3-45CB-878B-19ED9FB2B43C}">
+                        <labels>
+                          <label description="Time Format: mode" languagecode="1033" />
+                        </labels>
+                        <control id="jhrb_timeformatstring_mode" classid="{3EF39988-22BB-4f0b-BBBE-64B5A3748AEE}" datafieldname="jhrb_timeformatstring_mode" disabled="false" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{6366BA91-7AB7-4BB8-9281-F4604A790ED9}">
+                        <labels>
+                          <label description="Time Separator" languagecode="1033" />
+                        </labels>
+                        <control id="jhrb_timeseparator" classid="{4273EDBD-AC1D-40d3-9FB2-095C621B552D}" datafieldname="jhrb_timeseparator" disabled="false" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{6D788264-5511-4116-BC06-8B361E93C8BF}">
+                        <labels>
+                          <label description="Time Separator: mode" languagecode="1033" />
+                        </labels>
+                        <control id="jhrb_timeseparator_mode" classid="{3EF39988-22BB-4f0b-BBBE-64B5A3748AEE}" datafieldname="jhrb_timeseparator_mode" disabled="false" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{6E3A27B2-1667-4B35-916E-39249FEA2DF6}">
+                        <labels>
+                          <label description="AM Designator" languagecode="1033" />
+                        </labels>
+                        <control id="jhrb_amdesignator" classid="{4273EDBD-AC1D-40d3-9FB2-095C621B552D}" datafieldname="jhrb_amdesignator" disabled="false" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{112A045D-A761-46E6-A010-53A8960019E4}">
+                        <labels>
+                          <label description="AM Designator: mode" languagecode="1033" />
+                        </labels>
+                        <control id="jhrb_amdesignator_mode" classid="{3EF39988-22BB-4f0b-BBBE-64B5A3748AEE}" datafieldname="jhrb_amdesignator_mode" disabled="false" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{FD5388A2-436C-4AEF-B345-2B520221083A}">
+                        <labels>
+                          <label description="PM Designator" languagecode="1033" />
+                        </labels>
+                        <control id="jhrb_pmdesignator" classid="{4273EDBD-AC1D-40d3-9FB2-095C621B552D}" datafieldname="jhrb_pmdesignator" disabled="false" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{64879CD4-59FC-409E-85A1-2E450A0B1C5F}">
+                        <labels>
+                          <label description="PM Designator: mode" languagecode="1033" />
+                        </labels>
+                        <control id="jhrb_pmdesignator_mode" classid="{3EF39988-22BB-4f0b-BBBE-64B5A3748AEE}" datafieldname="jhrb_pmdesignator_mode" disabled="false" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{807A8A46-2FD5-4254-BF32-5D557212212A}">
+                        <labels>
+                          <label description="Show Week Numbers" languagecode="1033" />
+                        </labels>
+                        <control id="jhrb_showweeknumber" classid="{67FAC785-CD58-4f9f-ABB3-4B7DDC6ED5ED}" datafieldname="jhrb_showweeknumber" disabled="false" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{04E9741B-11EC-47B7-8FFC-80C4ADE07495}">
+                        <labels>
+                          <label description="Show Week Numbers: mode" languagecode="1033" />
+                        </labels>
+                        <control id="jhrb_showweeknumber_mode" classid="{3EF39988-22BB-4f0b-BBBE-64B5A3748AEE}" datafieldname="jhrb_showweeknumber_mode" disabled="false" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{6D0D919C-3E3B-4413-A087-3B52359BDD56}">
+                        <labels>
+                          <label description="Decimal Symbol" languagecode="1033" />
+                        </labels>
+                        <control id="jhrb_decimalsymbol" classid="{4273EDBD-AC1D-40d3-9FB2-095C621B552D}" datafieldname="jhrb_decimalsymbol" disabled="false" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{411DE258-7590-4B9A-8A57-8E9A64DFFA1F}">
+                        <labels>
+                          <label description="Decimal Symbol: mode" languagecode="1033" />
+                        </labels>
+                        <control id="jhrb_decimalsymbol_mode" classid="{3EF39988-22BB-4f0b-BBBE-64B5A3748AEE}" datafieldname="jhrb_decimalsymbol_mode" disabled="false" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{0AA409F8-7CFA-4D8A-B1D7-B462777B9B4A}">
+                        <labels>
+                          <label description="Digit Grouping Symbol" languagecode="1033" />
+                        </labels>
+                        <control id="jhrb_numberseparator" classid="{4273EDBD-AC1D-40d3-9FB2-095C621B552D}" datafieldname="jhrb_numberseparator" disabled="false" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{22C6598F-78D4-4A03-92B3-52F6561CB998}">
+                        <labels>
+                          <label description="Digit Grouping Symbol: mode" languagecode="1033" />
+                        </labels>
+                        <control id="jhrb_numberseparator_mode" classid="{3EF39988-22BB-4f0b-BBBE-64B5A3748AEE}" datafieldname="jhrb_numberseparator_mode" disabled="false" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{38F40948-C507-4683-8804-C9138B237585}">
+                        <labels>
+                          <label description="Digit Grouping" languagecode="1033" />
+                        </labels>
+                        <control id="jhrb_numbergroupformat" classid="{4273EDBD-AC1D-40d3-9FB2-095C621B552D}" datafieldname="jhrb_numbergroupformat" disabled="false" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{5A0A9C88-E1FB-482C-B651-AD8D9C6BD124}">
+                        <labels>
+                          <label description="Digit Grouping: mode" languagecode="1033" />
+                        </labels>
+                        <control id="jhrb_numbergroupformat_mode" classid="{3EF39988-22BB-4f0b-BBBE-64B5A3748AEE}" datafieldname="jhrb_numbergroupformat_mode" disabled="false" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{B75A4F15-761B-4443-A3C9-F275079F5732}">
+                        <labels>
+                          <label description="Negative Number Format" languagecode="1033" />
+                        </labels>
+                        <control id="jhrb_negativeformatcode" classid="{C6D124CA-7EDA-4a60-AEA9-7FB8D318B68F}" datafieldname="jhrb_negativeformatcode" disabled="false" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{B8335DEA-71BC-4F0E-BF91-70AF66AA1F8F}">
+                        <labels>
+                          <label description="Negative Number Format: mode" languagecode="1033" />
+                        </labels>
+                        <control id="jhrb_negativeformatcode_mode" classid="{3EF39988-22BB-4f0b-BBBE-64B5A3748AEE}" datafieldname="jhrb_negativeformatcode_mode" disabled="false" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{6BED34B6-E5A5-4687-ABD2-67C4986C3A78}">
+                        <labels>
+                          <label description="Currency Format" languagecode="1033" />
+                        </labels>
+                        <control id="jhrb_currencyformatcode" classid="{C6D124CA-7EDA-4a60-AEA9-7FB8D318B68F}" datafieldname="jhrb_currencyformatcode" disabled="false" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{10F1E579-3BFD-4D01-A7F8-13B96AEE0013}">
+                        <labels>
+                          <label description="Currency Format: mode" languagecode="1033" />
+                        </labels>
+                        <control id="jhrb_currencyformatcode_mode" classid="{3EF39988-22BB-4f0b-BBBE-64B5A3748AEE}" datafieldname="jhrb_currencyformatcode_mode" disabled="false" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{1FA160DC-4F04-43F4-82CC-82B7F560BA85}">
+                        <labels>
+                          <label description="Currency Symbol" languagecode="1033" />
+                        </labels>
+                        <control id="jhrb_currencysymbol" classid="{4273EDBD-AC1D-40d3-9FB2-095C621B552D}" datafieldname="jhrb_currencysymbol" disabled="false" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{970C54FE-E2D3-40A8-B8B4-8CA3ADEB6CDE}">
+                        <labels>
+                          <label description="Currency Symbol: mode" languagecode="1033" />
+                        </labels>
+                        <control id="jhrb_currencysymbol_mode" classid="{3EF39988-22BB-4f0b-BBBE-64B5A3748AEE}" datafieldname="jhrb_currencysymbol_mode" disabled="false" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{CE622FC4-5F52-4644-9961-A7D107A49D1E}">
+                        <labels>
+                          <label description="Currency Decimal Precision" languagecode="1033" />
+                        </labels>
+                        <control id="jhrb_currencydecimalprecision" classid="{C6D124CA-7EDA-4a60-AEA9-7FB8D318B68F}" datafieldname="jhrb_currencydecimalprecision" disabled="false" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{C2EBE879-2FCF-4E0F-98A8-35EA9D93FF19}">
+                        <labels>
+                          <label description="Currency Decimal Precision: mode" languagecode="1033" />
+                        </labels>
+                        <control id="jhrb_currencydecimalprecision_mode" classid="{3EF39988-22BB-4f0b-BBBE-64B5A3748AEE}" datafieldname="jhrb_currencydecimalprecision_mode" disabled="false" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{165A66D3-E207-4EC6-A90A-56A5365508FF}">
+                        <labels>
+                          <label description="Negative Currency Format" languagecode="1033" />
+                        </labels>
+                        <control id="jhrb_negativecurrencyformatcode" classid="{C6D124CA-7EDA-4a60-AEA9-7FB8D318B68F}" datafieldname="jhrb_negativecurrencyformatcode" disabled="false" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{D734B858-2727-4B6F-84B7-906D147B9B05}">
+                        <labels>
+                          <label description="Negative Currency Format: mode" languagecode="1033" />
+                        </labels>
+                        <control id="jhrb_negativecurrencyformatcode_mode" classid="{3EF39988-22BB-4f0b-BBBE-64B5A3748AEE}" datafieldname="jhrb_negativecurrencyformatcode_mode" disabled="false" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{EBDBE5C9-EE99-4F74-852A-541B7B90EF29}">
+                        <labels>
+                          <label description="Pricing Decimal Precision" languagecode="1033" />
+                        </labels>
+                        <control id="jhrb_pricingdecimalprecision" classid="{C6D124CA-7EDA-4a60-AEA9-7FB8D318B68F}" datafieldname="jhrb_pricingdecimalprecision" disabled="false" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{AF043266-264B-44D8-B2FC-84D1645C1F7B}">
+                        <labels>
+                          <label description="Pricing Decimal Precision: mode" languagecode="1033" />
+                        </labels>
+                        <control id="jhrb_pricingdecimalprecision_mode" classid="{3EF39988-22BB-4f0b-BBBE-64B5A3748AEE}" datafieldname="jhrb_pricingdecimalprecision_mode" disabled="false" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{A6A8AA96-9014-4176-8CC7-8BBBCB87DFC0}">
+                        <labels>
+                          <label description="Full Name Format" languagecode="1033" />
+                        </labels>
+                        <control id="jhrb_fullnameconventioncode" classid="{C6D124CA-7EDA-4a60-AEA9-7FB8D318B68F}" datafieldname="jhrb_fullnameconventioncode" disabled="false" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{2C9ADA97-2E4F-4F65-9B4E-4E575EF1402E}">
+                        <labels>
+                          <label description="Full Name Format: mode" languagecode="1033" />
+                        </labels>
+                        <control id="jhrb_fullnameconventioncode_mode" classid="{3EF39988-22BB-4f0b-BBBE-64B5A3748AEE}" datafieldname="jhrb_fullnameconventioncode_mode" disabled="false" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{A672FF0A-DF32-4476-8AC3-16E671FE9D03}">
+                        <labels>
+                          <label description="Default Currency" languagecode="1033" />
+                        </labels>
+                        <control id="jhrb_transactioncurrencyid" classid="{270BD3DB-D9AF-4782-9025-509E298DEC0A}" datafieldname="jhrb_transactioncurrencyid" disabled="false" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{CE24A209-966B-4F59-8348-415D3A5B93A7}">
+                        <labels>
+                          <label description="Default Currency: mode" languagecode="1033" />
+                        </labels>
+                        <control id="jhrb_transactioncurrencyid_mode" classid="{3EF39988-22BB-4f0b-BBBE-64B5A3748AEE}" datafieldname="jhrb_transactioncurrencyid_mode" disabled="false" />
+                      </cell>
+                    </row>
+                  </rows>
+                </section>
+              </sections>
+            </column>
+          </columns>
+        </tab>
+        <tab name="tab_calendar" id="{E1B543E2-EFA9-47E9-ADE5-F7B9B525F158}" expanded="true" showlabel="true">
+          <labels>
+            <label description="Calendar" languagecode="1033" />
+          </labels>
+          <columns>
+            <column width="100%">
+              <sections>
+                <section name="sec_calendar" showlabel="true" showbar="false" id="{AAFC7468-6D30-4758-96E1-C1F3378A5F59}" columns="1">
+                  <labels>
+                    <label description="Calendar (value | Inherit / Default / Locked)" languagecode="1033" />
+                  </labels>
+                  <rows>
+                    <row>
+                      <cell id="{1092ADF2-B141-40AE-AEB2-89A817367D06}">
+                        <labels>
+                          <label description="Work Day Start Time" languagecode="1033" />
+                        </labels>
+                        <control id="jhrb_workdaystarttime" classid="{4273EDBD-AC1D-40d3-9FB2-095C621B552D}" datafieldname="jhrb_workdaystarttime" disabled="false" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{FA61D008-6FDF-4294-AC7F-7F2709AFC67E}">
+                        <labels>
+                          <label description="Work Day Start Time: mode" languagecode="1033" />
+                        </labels>
+                        <control id="jhrb_workdaystarttime_mode" classid="{3EF39988-22BB-4f0b-BBBE-64B5A3748AEE}" datafieldname="jhrb_workdaystarttime_mode" disabled="false" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{4619587C-B2AB-4A9C-81A9-81A40D09C40E}">
+                        <labels>
+                          <label description="Work Day End Time" languagecode="1033" />
+                        </labels>
+                        <control id="jhrb_workdaystoptime" classid="{4273EDBD-AC1D-40d3-9FB2-095C621B552D}" datafieldname="jhrb_workdaystoptime" disabled="false" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{F1D1FC1E-A59A-4E9B-90D3-5E5C74B6ED97}">
+                        <labels>
+                          <label description="Work Day End Time: mode" languagecode="1033" />
+                        </labels>
+                        <control id="jhrb_workdaystoptime_mode" classid="{3EF39988-22BB-4f0b-BBBE-64B5A3748AEE}" datafieldname="jhrb_workdaystoptime_mode" disabled="false" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{881C2881-A8F3-4B15-B994-C6A3CF7015B2}">
+                        <labels>
+                          <label description="Default Calendar View" languagecode="1033" />
+                        </labels>
+                        <control id="jhrb_defaultcalendarview" classid="{C6D124CA-7EDA-4a60-AEA9-7FB8D318B68F}" datafieldname="jhrb_defaultcalendarview" disabled="false" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{D375BDF7-6AE3-4D2F-B29E-777B04728B6C}">
+                        <labels>
+                          <label description="Default Calendar View: mode" languagecode="1033" />
+                        </labels>
+                        <control id="jhrb_defaultcalendarview_mode" classid="{3EF39988-22BB-4f0b-BBBE-64B5A3748AEE}" datafieldname="jhrb_defaultcalendarview_mode" disabled="false" />
+                      </cell>
+                    </row>
+                  </rows>
+                </section>
+              </sections>
+            </column>
+          </columns>
+        </tab>
+        <tab name="tab_general" id="{235E1F60-1EB7-4790-9C28-A81D7300AA7C}" expanded="true" showlabel="true">
+          <labels>
+            <label description="General" languagecode="1033" />
+          </labels>
+          <columns>
+            <column width="100%">
+              <sections>
+                <section name="sec_general" showlabel="true" showbar="false" id="{A6A28BB6-5A93-48D8-81E0-5528880FE8BF}" columns="1">
+                  <labels>
+                    <label description="General (value | Inherit / Default / Locked)" languagecode="1033" />
+                  </labels>
+                  <rows>
+                    <row>
+                      <cell id="{AD5D6498-1D40-4DB9-B179-7B6D0422E4F5}">
+                        <labels>
+                          <label description="Records Per Page" languagecode="1033" />
+                        </labels>
+                        <control id="jhrb_paginglimit" classid="{C6D124CA-7EDA-4a60-AEA9-7FB8D318B68F}" datafieldname="jhrb_paginglimit" disabled="false" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{4BDADEC3-3445-4947-A0D5-8F24BAD23BC6}">
+                        <labels>
+                          <label description="Records Per Page: mode" languagecode="1033" />
+                        </labels>
+                        <control id="jhrb_paginglimit_mode" classid="{3EF39988-22BB-4f0b-BBBE-64B5A3748AEE}" datafieldname="jhrb_paginglimit_mode" disabled="false" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{1880BE1E-1A7E-4432-8A06-403E84309058}">
+                        <labels>
+                          <label description="Default Dashboard" languagecode="1033" />
+                        </labels>
+                        <control id="jhrb_defaultdashboardid" classid="{4273EDBD-AC1D-40d3-9FB2-095C621B552D}" datafieldname="jhrb_defaultdashboardid" disabled="false" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{150E0374-3D6D-485E-BF78-1780B9C5AA93}">
+                        <labels>
+                          <label description="Default Dashboard: mode" languagecode="1033" />
+                        </labels>
+                        <control id="jhrb_defaultdashboardid_mode" classid="{3EF39988-22BB-4f0b-BBBE-64B5A3748AEE}" datafieldname="jhrb_defaultdashboardid_mode" disabled="false" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{89A3F906-0FD2-4AC1-B563-471B19D738AF}">
+                        <labels>
+                          <label description="Default Search Experience" languagecode="1033" />
+                        </labels>
+                        <control id="jhrb_defaultsearchexperience" classid="{3EF39988-22BB-4f0b-BBBE-64B5A3748AEE}" datafieldname="jhrb_defaultsearchexperience" disabled="false" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{45A704DA-C5F7-49CB-9F5F-0759CEB0BBEB}">
+                        <labels>
+                          <label description="Default Search Experience: mode" languagecode="1033" />
+                        </labels>
+                        <control id="jhrb_defaultsearchexperience_mode" classid="{3EF39988-22BB-4f0b-BBBE-64B5A3748AEE}" datafieldname="jhrb_defaultsearchexperience_mode" disabled="false" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{E702B3F5-06E8-4D27-BA06-36363C995436}">
+                        <labels>
+                          <label description="Form Mode" languagecode="1033" />
+                        </labels>
+                        <control id="jhrb_entityformmode" classid="{3EF39988-22BB-4f0b-BBBE-64B5A3748AEE}" datafieldname="jhrb_entityformmode" disabled="false" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{AC25D2FA-00E1-43D7-9B44-42A553659C3F}">
+                        <labels>
+                          <label description="Form Mode: mode" languagecode="1033" />
+                        </labels>
+                        <control id="jhrb_entityformmode_mode" classid="{3EF39988-22BB-4f0b-BBBE-64B5A3748AEE}" datafieldname="jhrb_entityformmode_mode" disabled="false" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{2896A9CB-A176-4CBD-83C1-70A467E0EB89}">
+                        <labels>
+                          <label description="Display Density" languagecode="1033" />
+                        </labels>
+                        <control id="jhrb_displaydensity" classid="{3EF39988-22BB-4f0b-BBBE-64B5A3748AEE}" datafieldname="jhrb_displaydensity" disabled="false" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{482DF38C-1718-4837-BFB3-2FF65EDB85BA}">
+                        <labels>
+                          <label description="Display Density: mode" languagecode="1033" />
+                        </labels>
+                        <control id="jhrb_displaydensity_mode" classid="{3EF39988-22BB-4f0b-BBBE-64B5A3748AEE}" datafieldname="jhrb_displaydensity_mode" disabled="false" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{AEC0A578-1D10-4BF1-90BB-57433877B174}">
+                        <labels>
+                          <label description="Default Pane" languagecode="1033" />
+                        </labels>
+                        <control id="jhrb_homepagearea" classid="{4273EDBD-AC1D-40d3-9FB2-095C621B552D}" datafieldname="jhrb_homepagearea" disabled="false" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{071FDD96-AA47-4260-80D5-A45EF14BFEFD}">
+                        <labels>
+                          <label description="Default Pane: mode" languagecode="1033" />
+                        </labels>
+                        <control id="jhrb_homepagearea_mode" classid="{3EF39988-22BB-4f0b-BBBE-64B5A3748AEE}" datafieldname="jhrb_homepagearea_mode" disabled="false" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{92685179-59EA-44DB-B177-8066D64FBF10}">
+                        <labels>
+                          <label description="Default Tab" languagecode="1033" />
+                        </labels>
+                        <control id="jhrb_homepagesubarea" classid="{4273EDBD-AC1D-40d3-9FB2-095C621B552D}" datafieldname="jhrb_homepagesubarea" disabled="false" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{1D279513-0DA0-40EC-9E30-961BB6D1DAFF}">
+                        <labels>
+                          <label description="Default Tab: mode" languagecode="1033" />
+                        </labels>
+                        <control id="jhrb_homepagesubarea_mode" classid="{3EF39988-22BB-4f0b-BBBE-64B5A3748AEE}" datafieldname="jhrb_homepagesubarea_mode" disabled="false" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{3E6CD97A-55DB-472C-8377-D84A8483900B}">
+                        <labels>
+                          <label description="Home Page Layout" languagecode="1033" />
+                        </labels>
+                        <control id="jhrb_homepagelayout" classid="{4273EDBD-AC1D-40d3-9FB2-095C621B552D}" datafieldname="jhrb_homepagelayout" disabled="false" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{EC193E43-CB81-440B-B228-160F7BA54A27}">
+                        <labels>
+                          <label description="Home Page Layout: mode" languagecode="1033" />
+                        </labels>
+                        <control id="jhrb_homepagelayout_mode" classid="{3EF39988-22BB-4f0b-BBBE-64B5A3748AEE}" datafieldname="jhrb_homepagelayout_mode" disabled="false" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{90DDF882-8F45-46FB-A174-EFDE9D439B26}">
+                        <labels>
+                          <label description="Advanced Find Mode" languagecode="1033" />
+                        </labels>
+                        <control id="jhrb_advancedfindstartupmode" classid="{C6D124CA-7EDA-4a60-AEA9-7FB8D318B68F}" datafieldname="jhrb_advancedfindstartupmode" disabled="false" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{F41A82E5-7824-4AA6-AC1C-9F4231A506F3}">
+                        <labels>
+                          <label description="Advanced Find Mode: mode" languagecode="1033" />
+                        </labels>
+                        <control id="jhrb_advancedfindstartupmode_mode" classid="{3EF39988-22BB-4f0b-BBBE-64B5A3748AEE}" datafieldname="jhrb_advancedfindstartupmode_mode" disabled="false" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{02BF9BF2-7E90-4B73-85BD-AF9C723E3776}">
+                        <labels>
+                          <label description="Visualization Pane Layout" languagecode="1033" />
+                        </labels>
+                        <control id="jhrb_visualizationpanelayout" classid="{3EF39988-22BB-4f0b-BBBE-64B5A3748AEE}" datafieldname="jhrb_visualizationpanelayout" disabled="false" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{AADAA3B2-3EAD-4DED-80D3-4494BA228E79}">
+                        <labels>
+                          <label description="Visualization Pane Layout: mode" languagecode="1033" />
+                        </labels>
+                        <control id="jhrb_visualizationpanelayout_mode" classid="{3EF39988-22BB-4f0b-BBBE-64B5A3748AEE}" datafieldname="jhrb_visualizationpanelayout_mode" disabled="false" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{12958575-E316-4DFC-9B26-90577AC8A98F}">
+                        <labels>
+                          <label description="Guided Help" languagecode="1033" />
+                        </labels>
+                        <control id="jhrb_isguidedhelpenabled" classid="{67FAC785-CD58-4f9f-ABB3-4B7DDC6ED5ED}" datafieldname="jhrb_isguidedhelpenabled" disabled="false" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{28E877F6-F35F-477C-BFF7-4C2E1ECE3185}">
+                        <labels>
+                          <label description="Guided Help: mode" languagecode="1033" />
+                        </labels>
+                        <control id="jhrb_isguidedhelpenabled_mode" classid="{3EF39988-22BB-4f0b-BBBE-64B5A3748AEE}" datafieldname="jhrb_isguidedhelpenabled_mode" disabled="false" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{8A8741D3-892D-45E6-839E-690ED9455669}">
+                        <labels>
+                          <label description="Report Script Errors" languagecode="1033" />
+                        </labels>
+                        <control id="jhrb_reportscripterrors" classid="{3EF39988-22BB-4f0b-BBBE-64B5A3748AEE}" datafieldname="jhrb_reportscripterrors" disabled="false" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{EC6AD5AA-C6EF-493D-B07B-270F49E8A5C2}">
+                        <labels>
+                          <label description="Report Script Errors: mode" languagecode="1033" />
+                        </labels>
+                        <control id="jhrb_reportscripterrors_mode" classid="{3EF39988-22BB-4f0b-BBBE-64B5A3748AEE}" datafieldname="jhrb_reportscripterrors_mode" disabled="false" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{F2C46DD8-C42F-462A-A6CF-F58FAF5D97E0}">
+                        <labels>
+                          <label description="Excel Export Data Validation" languagecode="1033" />
+                        </labels>
+                        <control id="jhrb_datavalidationmodeforexporttoexcel" classid="{3EF39988-22BB-4f0b-BBBE-64B5A3748AEE}" datafieldname="jhrb_datavalidationmodeforexporttoexcel" disabled="false" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{98A9C0F9-722B-4C3B-9C3D-7B19D9D077FB}">
+                        <labels>
+                          <label description="Excel Export Data Validation: mode" languagecode="1033" />
+                        </labels>
+                        <control id="jhrb_datavalidationmodeforexporttoexcel_mode" classid="{3EF39988-22BB-4f0b-BBBE-64B5A3748AEE}" datafieldname="jhrb_datavalidationmodeforexporttoexcel_mode" disabled="false" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{13CF0998-3EF4-4813-B7A8-BCC1D64436E5}">
+                        <labels>
+                          <label description="Model App Release Channel" languagecode="1033" />
+                        </labels>
+                        <control id="jhrb_releasechannel" classid="{3EF39988-22BB-4f0b-BBBE-64B5A3748AEE}" datafieldname="jhrb_releasechannel" disabled="false" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{79878101-00D3-4DEF-B37B-BAB23E365E75}">
+                        <labels>
+                          <label description="Model App Release Channel: mode" languagecode="1033" />
+                        </labels>
+                        <control id="jhrb_releasechannel_mode" classid="{3EF39988-22BB-4f0b-BBBE-64B5A3748AEE}" datafieldname="jhrb_releasechannel_mode" disabled="false" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{E556C222-E3D7-4CB6-A58D-59E5F03D81C6}">
+                        <labels>
+                          <label description="Preferred Solution" languagecode="1033" />
+                        </labels>
+                        <control id="jhrb_preferredsolution" classid="{4273EDBD-AC1D-40d3-9FB2-095C621B552D}" datafieldname="jhrb_preferredsolution" disabled="false" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{04CF9B6E-2A38-4F28-ACE2-F2AB774FA45B}">
+                        <labels>
+                          <label description="Preferred Solution: mode" languagecode="1033" />
+                        </labels>
+                        <control id="jhrb_preferredsolution_mode" classid="{3EF39988-22BB-4f0b-BBBE-64B5A3748AEE}" datafieldname="jhrb_preferredsolution_mode" disabled="false" />
+                      </cell>
+                    </row>
+                  </rows>
+                </section>
+              </sections>
+            </column>
+          </columns>
+        </tab>
+        <tab name="tab_email" id="{B80FBDB8-3F6A-4AD1-A3D7-110DA245FCE3}" expanded="true" showlabel="true">
+          <labels>
+            <label description="Email" languagecode="1033" />
+          </labels>
+          <columns>
+            <column width="100%">
+              <sections>
+                <section name="sec_email" showlabel="true" showbar="false" id="{84C0C895-69FB-4A7B-ADD3-972C3FD3D3FC}" columns="1">
+                  <labels>
+                    <label description="Email (value | Inherit / Default / Locked)" languagecode="1033" />
+                  </labels>
+                  <rows>
+                    <row>
+                      <cell id="{17557DF3-2CF1-47D6-A2E0-658572515584}">
+                        <labels>
+                          <label description="Incoming Email Filtering" languagecode="1033" />
+                        </labels>
+                        <control id="jhrb_incomingemailfilteringmethod" classid="{3EF39988-22BB-4f0b-BBBE-64B5A3748AEE}" datafieldname="jhrb_incomingemailfilteringmethod" disabled="false" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{1F005CB3-3A97-408B-B0B6-1C6978CD1AB0}">
+                        <labels>
+                          <label description="Incoming Email Filtering: mode" languagecode="1033" />
+                        </labels>
+                        <control id="jhrb_incomingemailfilteringmethod_mode" classid="{3EF39988-22BB-4f0b-BBBE-64B5A3748AEE}" datafieldname="jhrb_incomingemailfilteringmethod_mode" disabled="false" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{915F40FF-DD83-4CBC-AC8D-892E974CBD4E}">
+                        <labels>
+                          <label description="Ignore Unsolicited Email" languagecode="1033" />
+                        </labels>
+                        <control id="jhrb_ignoreunsolicitedemail" classid="{67FAC785-CD58-4f9f-ABB3-4B7DDC6ED5ED}" datafieldname="jhrb_ignoreunsolicitedemail" disabled="false" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{C1D78FB2-09B9-49AF-AF2F-D574296F43B3}">
+                        <labels>
+                          <label description="Ignore Unsolicited Email: mode" languagecode="1033" />
+                        </labels>
+                        <control id="jhrb_ignoreunsolicitedemail_mode" classid="{3EF39988-22BB-4f0b-BBBE-64B5A3748AEE}" datafieldname="jhrb_ignoreunsolicitedemail_mode" disabled="false" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{B470331F-74E5-479D-AE0D-F8276D8E8DAD}">
+                        <labels>
+                          <label description="Email Conversation View" languagecode="1033" />
+                        </labels>
+                        <control id="jhrb_isemailconversationviewenabled" classid="{67FAC785-CD58-4f9f-ABB3-4B7DDC6ED5ED}" datafieldname="jhrb_isemailconversationviewenabled" disabled="false" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{9FE56239-530A-481F-BEC1-2C90F5C854A3}">
+                        <labels>
+                          <label description="Email Conversation View: mode" languagecode="1033" />
+                        </labels>
+                        <control id="jhrb_isemailconversationviewenabled_mode" classid="{3EF39988-22BB-4f0b-BBBE-64B5A3748AEE}" datafieldname="jhrb_isemailconversationviewenabled_mode" disabled="false" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{1614B38E-C2EF-43B4-A68B-EBD1B004D731}">
+                        <labels>
+                          <label description="Allow Others to Send on My Behalf" languagecode="1033" />
+                        </labels>
+                        <control id="jhrb_issendasallowed" classid="{67FAC785-CD58-4f9f-ABB3-4B7DDC6ED5ED}" datafieldname="jhrb_issendasallowed" disabled="false" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{4B4D5E8E-F6C1-431B-9F73-7C5BE07E8E7B}">
+                        <labels>
+                          <label description="Allow Others to Send on My Behalf: mode" languagecode="1033" />
+                        </labels>
+                        <control id="jhrb_issendasallowed_mode" classid="{3EF39988-22BB-4f0b-BBBE-64B5A3748AEE}" datafieldname="jhrb_issendasallowed_mode" disabled="false" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{79F4AF0F-4151-41A8-AB56-29ADAACDC806}">
+                        <labels>
+                          <label description="Auto-create Contact on Promote" languagecode="1033" />
+                        </labels>
+                        <control id="jhrb_autocreatecontactonpromote" classid="{C6D124CA-7EDA-4a60-AEA9-7FB8D318B68F}" datafieldname="jhrb_autocreatecontactonpromote" disabled="false" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{0CEC10F5-E9A8-49D3-B8C5-B1D4729153DC}">
+                        <labels>
+                          <label description="Auto-create Contact on Promote: mode" languagecode="1033" />
+                        </labels>
+                        <control id="jhrb_autocreatecontactonpromote_mode" classid="{3EF39988-22BB-4f0b-BBBE-64B5A3748AEE}" datafieldname="jhrb_autocreatecontactonpromote_mode" disabled="false" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{7FF75CA5-7638-47BE-A46A-DAC7DD037CD9}">
+                        <labels>
+                          <label description="Auto Data Capture" languagecode="1033" />
+                        </labels>
+                        <control id="jhrb_isautodatacaptureenabled" classid="{67FAC785-CD58-4f9f-ABB3-4B7DDC6ED5ED}" datafieldname="jhrb_isautodatacaptureenabled" disabled="false" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{EF5BB069-8440-4427-8B7A-202D4A0A8B16}">
+                        <labels>
+                          <label description="Auto Data Capture: mode" languagecode="1033" />
+                        </labels>
+                        <control id="jhrb_isautodatacaptureenabled_mode" classid="{3EF39988-22BB-4f0b-BBBE-64B5A3748AEE}" datafieldname="jhrb_isautodatacaptureenabled_mode" disabled="false" />
+                      </cell>
+                    </row>
+                  </rows>
+                </section>
+              </sections>
+            </column>
+          </columns>
+        </tab>
+        <tab name="tab_sync" id="{1E9EF3F5-44EF-4B81-B5D1-9A674AC8B08E}" expanded="true" showlabel="true">
+          <labels>
+            <label description="Sync" languagecode="1033" />
+          </labels>
+          <columns>
+            <column width="100%">
+              <sections>
+                <section name="sec_sync" showlabel="true" showbar="false" id="{714261D1-FE31-4ADA-9505-A13819CC5888}" columns="1">
+                  <labels>
+                    <label description="Sync (value | Inherit / Default / Locked)" languagecode="1033" />
+                  </labels>
+                  <rows>
+                    <row>
+                      <cell id="{542914A5-C717-4F54-9E49-219F59450D0E}">
+                        <labels>
+                          <label description="Use Dynamics Form for Appointment" languagecode="1033" />
+                        </labels>
+                        <control id="jhrb_usecrmformforappointment" classid="{67FAC785-CD58-4f9f-ABB3-4B7DDC6ED5ED}" datafieldname="jhrb_usecrmformforappointment" disabled="false" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{E5352CFE-B03F-4C42-9B76-F7E10FC493C2}">
+                        <labels>
+                          <label description="Use Dynamics Form for Appointment: mode" languagecode="1033" />
+                        </labels>
+                        <control id="jhrb_usecrmformforappointment_mode" classid="{3EF39988-22BB-4f0b-BBBE-64B5A3748AEE}" datafieldname="jhrb_usecrmformforappointment_mode" disabled="false" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{F9FC98C9-0E50-47F1-A40E-C02B8B27D611}">
+                        <labels>
+                          <label description="Use Dynamics Form for Contact" languagecode="1033" />
+                        </labels>
+                        <control id="jhrb_usecrmformforcontact" classid="{67FAC785-CD58-4f9f-ABB3-4B7DDC6ED5ED}" datafieldname="jhrb_usecrmformforcontact" disabled="false" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{8904B3AA-395C-4D11-AF71-099EE59E7D6B}">
+                        <labels>
+                          <label description="Use Dynamics Form for Contact: mode" languagecode="1033" />
+                        </labels>
+                        <control id="jhrb_usecrmformforcontact_mode" classid="{3EF39988-22BB-4f0b-BBBE-64B5A3748AEE}" datafieldname="jhrb_usecrmformforcontact_mode" disabled="false" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{5D6AD2F1-4B10-42BA-93EF-27C13B6D2EDB}">
+                        <labels>
+                          <label description="Use Dynamics Form for Email" languagecode="1033" />
+                        </labels>
+                        <control id="jhrb_usecrmformforemail" classid="{67FAC785-CD58-4f9f-ABB3-4B7DDC6ED5ED}" datafieldname="jhrb_usecrmformforemail" disabled="false" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{D134F0CA-59D1-44CC-A416-A85086C499AA}">
+                        <labels>
+                          <label description="Use Dynamics Form for Email: mode" languagecode="1033" />
+                        </labels>
+                        <control id="jhrb_usecrmformforemail_mode" classid="{3EF39988-22BB-4f0b-BBBE-64B5A3748AEE}" datafieldname="jhrb_usecrmformforemail_mode" disabled="false" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{4E8E4573-C04E-4C85-9EC3-0A31B23234F4}">
+                        <labels>
+                          <label description="Use Dynamics Form for Task" languagecode="1033" />
+                        </labels>
+                        <control id="jhrb_usecrmformfortask" classid="{67FAC785-CD58-4f9f-ABB3-4B7DDC6ED5ED}" datafieldname="jhrb_usecrmformfortask" disabled="false" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{D56E5AEF-D49C-468B-A612-C39984EAA904}">
+                        <labels>
+                          <label description="Use Dynamics Form for Task: mode" languagecode="1033" />
+                        </labels>
+                        <control id="jhrb_usecrmformfortask_mode" classid="{3EF39988-22BB-4f0b-BBBE-64B5A3748AEE}" datafieldname="jhrb_usecrmformfortask_mode" disabled="false" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{61573B42-BAEC-468A-B486-6347891139FF}">
+                        <labels>
+                          <label description="Sync Contact Company" languagecode="1033" />
+                        </labels>
+                        <control id="jhrb_synccontactcompany" classid="{67FAC785-CD58-4f9f-ABB3-4B7DDC6ED5ED}" datafieldname="jhrb_synccontactcompany" disabled="false" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{0B51CB57-D141-4215-A725-09F230DE9321}">
+                        <labels>
+                          <label description="Sync Contact Company: mode" languagecode="1033" />
+                        </labels>
+                        <control id="jhrb_synccontactcompany_mode" classid="{3EF39988-22BB-4f0b-BBBE-64B5A3748AEE}" datafieldname="jhrb_synccontactcompany_mode" disabled="false" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{0DC13CDE-935A-4379-B5D3-F49B1AD92701}">
+                        <labels>
+                          <label description="Outlook Sync Interval" languagecode="1033" />
+                        </labels>
+                        <control id="jhrb_outlooksyncinterval" classid="{C6D124CA-7EDA-4a60-AEA9-7FB8D318B68F}" datafieldname="jhrb_outlooksyncinterval" disabled="false" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{5F07FFA3-C59C-41D0-9F28-924D252A4D79}">
+                        <labels>
+                          <label description="Outlook Sync Interval: mode" languagecode="1033" />
+                        </labels>
+                        <control id="jhrb_outlooksyncinterval_mode" classid="{3EF39988-22BB-4f0b-BBBE-64B5A3748AEE}" datafieldname="jhrb_outlooksyncinterval_mode" disabled="false" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{B4960D8A-8DD5-45A9-8B0D-568796827C02}">
+                        <labels>
+                          <label description="Offline Sync Interval" languagecode="1033" />
+                        </labels>
+                        <control id="jhrb_offlinesyncinterval" classid="{C6D124CA-7EDA-4a60-AEA9-7FB8D318B68F}" datafieldname="jhrb_offlinesyncinterval" disabled="false" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{012B9904-C660-45E7-9765-CFC78EEE162B}">
+                        <labels>
+                          <label description="Offline Sync Interval: mode" languagecode="1033" />
+                        </labels>
+                        <control id="jhrb_offlinesyncinterval_mode" classid="{3EF39988-22BB-4f0b-BBBE-64B5A3748AEE}" datafieldname="jhrb_offlinesyncinterval_mode" disabled="false" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{CD9497A0-3DE8-45C2-A719-91C728F6E577}">
+                        <labels>
+                          <label description="Address Book Sync Interval" languagecode="1033" />
+                        </labels>
+                        <control id="jhrb_addressbooksyncinterval" classid="{C6D124CA-7EDA-4a60-AEA9-7FB8D318B68F}" datafieldname="jhrb_addressbooksyncinterval" disabled="false" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{D35B403C-6695-4D27-8F85-93E1417549D1}">
+                        <labels>
+                          <label description="Address Book Sync Interval: mode" languagecode="1033" />
+                        </labels>
+                        <control id="jhrb_addressbooksyncinterval_mode" classid="{3EF39988-22BB-4f0b-BBBE-64B5A3748AEE}" datafieldname="jhrb_addressbooksyncinterval_mode" disabled="false" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{6A2C2688-2587-4A9E-A316-C1D9C30B94D2}">
+                        <labels>
+                          <label description="Resource Booking Exchange Sync" languagecode="1033" />
+                        </labels>
+                        <control id="jhrb_isresourcebookingexchangesyncenabled" classid="{67FAC785-CD58-4f9f-ABB3-4B7DDC6ED5ED}" datafieldname="jhrb_isresourcebookingexchangesyncenabled" disabled="false" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{B65AA925-E05A-4F26-B5BF-E03661877229}">
+                        <labels>
+                          <label description="Resource Booking Exchange Sync: mode" languagecode="1033" />
+                        </labels>
+                        <control id="jhrb_isresourcebookingexchangesyncenabled_mode" classid="{3EF39988-22BB-4f0b-BBBE-64B5A3748AEE}" datafieldname="jhrb_isresourcebookingexchangesyncenabled_mode" disabled="false" />
+                      </cell>
+                    </row>
+                  </rows>
+                </section>
+              </sections>
+            </column>
+          </columns>
+        </tab>
+      </tabs>
+    </form>
+    <IsCustomizable>1</IsCustomizable>
+    <CanBeDeleted>1</CanBeDeleted>
+    <LocalizedNames>
+      <LocalizedName description="Settings Profile" languagecode="1033" />
+    </LocalizedNames>
+    <Descriptions>
+      <Description description="A form for this entity." languagecode="1033" />
+    </Descriptions>
+  </systemform>
+</forms>

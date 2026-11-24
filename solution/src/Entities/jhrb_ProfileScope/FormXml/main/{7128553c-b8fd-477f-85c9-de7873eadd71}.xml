@@ -1,0 +1,87 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<forms xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <systemform>
+    <formid>{7128553c-b8fd-477f-85c9-de7873eadd71}</formid>
+    <IntroducedVersion>1.0</IntroducedVersion>
+    <FormPresentation>1</FormPresentation>
+    <FormActivationState>1</FormActivationState>
+    <form>
+      <tabs>
+        <tab name="tab_general" id="{92C9A6F9-57D6-4592-B823-E5EF51CEF390}" expanded="true" showlabel="true">
+          <labels>
+            <label description="General" languagecode="1033" />
+          </labels>
+          <columns>
+            <column width="100%">
+              <sections>
+                <section name="sec_scope" showlabel="true" showbar="false" id="{EE5AB410-76C9-407B-8372-994BF5A1FCAF}" columns="1">
+                  <labels>
+                    <label description="Scope" languagecode="1033" />
+                  </labels>
+                  <rows>
+                    <row>
+                      <cell id="{D79EF645-EFB3-41B9-B0B4-7BFB8B680AE0}">
+                        <labels>
+                          <label description="Name" languagecode="1033" />
+                        </labels>
+                        <control id="jhrb_name" classid="{4273EDBD-AC1D-40d3-9FB2-095C621B552D}" datafieldname="jhrb_name" disabled="false" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{3E046250-151F-46F6-9149-138AFB811587}">
+                        <labels>
+                          <label description="Profile" languagecode="1033" />
+                        </labels>
+                        <control id="jhrb_profile" classid="{270BD3DB-D9AF-4782-9025-509E298DEC0A}" datafieldname="jhrb_profile" disabled="false" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{7CCDA08D-238B-4E3E-AA1D-1999D2F0DB93}">
+                        <labels>
+                          <label description="Scope Type" languagecode="1033" />
+                        </labels>
+                        <control id="jhrb_scopetype" classid="{3EF39988-22BB-4f0b-BBBE-64B5A3748AEE}" datafieldname="jhrb_scopetype" disabled="false" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{6991899A-9781-487D-9C88-2ADD3A93AB38}">
+                        <labels>
+                          <label description="Include Child Business Units" languagecode="1033" />
+                        </labels>
+                        <control id="jhrb_includechildbu" classid="{67FAC785-CD58-4f9f-ABB3-4B7DDC6ED5ED}" datafieldname="jhrb_includechildbu" disabled="false" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{0246D5CB-CDB2-47AD-A646-2B4CD8B0C45B}">
+                        <labels>
+                          <label description="Team" languagecode="1033" />
+                        </labels>
+                        <control id="jhrb_team" classid="{270BD3DB-D9AF-4782-9025-509E298DEC0A}" datafieldname="jhrb_team" disabled="false" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{EFE00A6A-9F42-4E0D-8300-468E607D7101}">
+                        <labels>
+                          <label description="Business Unit" languagecode="1033" />
+                        </labels>
+                        <control id="jhrb_businessunit" classid="{270BD3DB-D9AF-4782-9025-509E298DEC0A}" datafieldname="jhrb_businessunit" disabled="false" />
+                      </cell>
+                    </row>
+                  </rows>
+                </section>
+              </sections>
+            </column>
+          </columns>
+        </tab>
+      </tabs>
+    </form>
+    <IsCustomizable>1</IsCustomizable>
+    <CanBeDeleted>1</CanBeDeleted>
+    <LocalizedNames>
+      <LocalizedName description="Information" languagecode="1033" />
+    </LocalizedNames>
+    <Descriptions>
+      <Description description="A form for this entity." languagecode="1033" />
+    </Descriptions>
+  </systemform>
+</forms>

@@ -1,0 +1,22 @@
+# build output
+bin/
+obj/
+*.user
+.vs/
+.vscode/
+TestResults/
+*.nupkg
+
+# local / environment-specific (IDs, URLs, credentials)
+*.local.json
+CLAUDE.local.md
+.claude/settings.local.json
+.env
+.env.*
+*.pfx
+*.publishsettings
+spikes/spike-steps.json
+docs/phase0/spike-log.json
+
+# exported solution zips (rebuild with scripts/Export-Solution.ps1; unpacked source in solution/src is tracked)
+solution/*.zip

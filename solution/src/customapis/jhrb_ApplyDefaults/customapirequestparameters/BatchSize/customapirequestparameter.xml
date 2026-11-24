@@ -1,0 +1,12 @@
+<customapirequestparameter uniquename="BatchSize">
+  <description default="Users per chunk (default 200).">
+    <label description="Users per chunk (default 200)." languagecode="1033" />
+  </description>
+  <displayname default="BatchSize">
+    <label description="BatchSize" languagecode="1033" />
+  </displayname>
+  <iscustomizable>1</iscustomizable>
+  <isoptional>1</isoptional>
+  <name>BatchSize</name>
+  <type>7</type>
+</customapirequestparameter>

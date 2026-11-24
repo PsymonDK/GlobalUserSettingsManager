@@ -1,0 +1,12 @@
+<customapirequestparameter uniquename="UserId">
+  <description default="User for Scope=User (default: caller).">
+    <label description="User for Scope=User (default: caller)." languagecode="1033" />
+  </description>
+  <displayname default="UserId">
+    <label description="UserId" languagecode="1033" />
+  </displayname>
+  <iscustomizable>1</iscustomizable>
+  <isoptional>1</isoptional>
+  <name>UserId</name>
+  <type>12</type>
+</customapirequestparameter>

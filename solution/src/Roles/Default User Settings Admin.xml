@@ -1,0 +1,60 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Role id="{e73d8e26-23e8-f111-84ea-000d3ab163fb}" name="Default User Settings Admin" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <IsCustomizable>1</IsCustomizable>
+  <IsAutoAssigned>0</IsAutoAssigned>
+  <Description>Manage default user settings: profiles, scopes, rollout jobs, logs. Additive to a base role.</Description>
+  <RolePrivileges>
+    <RolePrivilege name="prvAppendjhrb_Heartbeat" level="Global" />
+    <RolePrivilege name="prvAppendjhrb_ProfileScope" level="Global" />
+    <RolePrivilege name="prvAppendjhrb_RolloutJob" level="Global" />
+    <RolePrivilege name="prvAppendjhrb_SettingsLog" level="Global" />
+    <RolePrivilege name="prvAppendjhrb_SettingsProfile" level="Global" />
+    <RolePrivilege name="prvAppendjhrb_UserState" level="Global" />
+    <RolePrivilege name="prvAppendTojhrb_Heartbeat" level="Global" />
+    <RolePrivilege name="prvAppendTojhrb_ProfileScope" level="Global" />
+    <RolePrivilege name="prvAppendTojhrb_RolloutJob" level="Global" />
+    <RolePrivilege name="prvAppendTojhrb_SettingsLog" level="Global" />
+    <RolePrivilege name="prvAppendTojhrb_SettingsProfile" level="Global" />
+    <RolePrivilege name="prvAppendTojhrb_UserState" level="Global" />
+    <RolePrivilege name="prvAssignjhrb_SettingsLog" level="Global" />
+    <RolePrivilege name="prvCreatejhrb_Heartbeat" level="Global" />
+    <RolePrivilege name="prvCreatejhrb_ProfileScope" level="Global" />
+    <RolePrivilege name="prvCreatejhrb_RolloutJob" level="Global" />
+    <RolePrivilege name="prvCreatejhrb_SettingsLog" level="Global" />
+    <RolePrivilege name="prvCreatejhrb_SettingsProfile" level="Global" />
+    <RolePrivilege name="prvCreatejhrb_UserState" level="Global" />
+    <RolePrivilege name="prvCreateSharePointData" level="Global" />
+    <RolePrivilege name="prvDeletejhrb_Heartbeat" level="Global" />
+    <RolePrivilege name="prvDeletejhrb_ProfileScope" level="Global" />
+    <RolePrivilege name="prvDeletejhrb_RolloutJob" level="Global" />
+    <RolePrivilege name="prvDeletejhrb_SettingsLog" level="Global" />
+    <RolePrivilege name="prvDeletejhrb_SettingsProfile" level="Global" />
+    <RolePrivilege name="prvDeletejhrb_UserState" level="Global" />
+    <RolePrivilege name="prvReadBusinessUnit" level="Global" />
+    <RolePrivilege name="prvReadjhrb_Heartbeat" level="Global" />
+    <RolePrivilege name="prvReadjhrb_ProfileScope" level="Global" />
+    <RolePrivilege name="prvReadjhrb_RolloutJob" level="Global" />
+    <RolePrivilege name="prvReadjhrb_SettingsLog" level="Global" />
+    <RolePrivilege name="prvReadjhrb_SettingsProfile" level="Global" />
+    <RolePrivilege name="prvReadjhrb_UserState" level="Global" />
+    <RolePrivilege name="prvReadPluginAssembly" level="Global" />
+    <RolePrivilege name="prvReadPluginType" level="Global" />
+    <RolePrivilege name="prvReadSdkMessage" level="Global" />
+    <RolePrivilege name="prvReadSdkMessageProcessingStep" level="Global" />
+    <RolePrivilege name="prvReadSdkMessageProcessingStepImage" level="Global" />
+    <RolePrivilege name="prvReadSharePointData" level="Global" />
+    <RolePrivilege name="prvReadSharePointDocument" level="Global" />
+    <RolePrivilege name="prvReadSolution" level="Global" />
+    <RolePrivilege name="prvReadTeam" level="Global" />
+    <RolePrivilege name="prvReadTransactionCurrency" level="Global" />
+    <RolePrivilege name="prvReadUser" level="Global" />
+    <RolePrivilege name="prvSharejhrb_SettingsLog" level="Global" />
+    <RolePrivilege name="prvWritejhrb_Heartbeat" level="Global" />
+    <RolePrivilege name="prvWritejhrb_ProfileScope" level="Global" />
+    <RolePrivilege name="prvWritejhrb_RolloutJob" level="Global" />
+    <RolePrivilege name="prvWritejhrb_SettingsLog" level="Global" />
+    <RolePrivilege name="prvWritejhrb_SettingsProfile" level="Global" />
+    <RolePrivilege name="prvWritejhrb_UserState" level="Global" />
+    <RolePrivilege name="prvWriteSharePointData" level="Global" />
+  </RolePrivileges>
+</Role>

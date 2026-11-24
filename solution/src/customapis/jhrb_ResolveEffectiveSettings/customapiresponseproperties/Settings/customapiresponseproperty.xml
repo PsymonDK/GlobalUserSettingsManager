@@ -1,0 +1,11 @@
+<customapiresponseproperty uniquename="Settings">
+  <description default="JSON array.">
+    <label description="JSON array." languagecode="1033" />
+  </description>
+  <displayname default="Settings">
+    <label description="Settings" languagecode="1033" />
+  </displayname>
+  <iscustomizable>1</iscustomizable>
+  <name>Settings</name>
+  <type>10</type>
+</customapiresponseproperty>

@@ -1,0 +1,12 @@
+<customapirequestparameter uniquename="ApplyMode">
+  <description default="Full (default), LockedOnly or Auto.">
+    <label description="Full (default), LockedOnly or Auto." languagecode="1033" />
+  </description>
+  <displayname default="ApplyMode">
+    <label description="ApplyMode" languagecode="1033" />
+  </displayname>
+  <iscustomizable>1</iscustomizable>
+  <isoptional>1</isoptional>
+  <name>ApplyMode</name>
+  <type>10</type>
+</customapirequestparameter>

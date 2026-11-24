@@ -1,0 +1,11 @@
+<customapiresponseproperty uniquename="Updated">
+  <description default="Users with changes (Scope=User).">
+    <label description="Users with changes (Scope=User)." languagecode="1033" />
+  </description>
+  <displayname default="Updated">
+    <label description="Updated" languagecode="1033" />
+  </displayname>
+  <iscustomizable>1</iscustomizable>
+  <name>Updated</name>
+  <type>7</type>
+</customapiresponseproperty>

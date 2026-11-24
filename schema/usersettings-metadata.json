@@ -1,0 +1,667 @@
+﻿{
+    "amdesignator":  {
+                         "maxLength":  25,
+                         "type":  "String"
+                     },
+    "businessunitidname":  {
+                               "maxLength":  100,
+                               "type":  "String"
+                           },
+    "createdbyname":  {
+                          "maxLength":  100,
+                          "type":  "String"
+                      },
+    "createdbyyominame":  {
+                              "maxLength":  100,
+                              "type":  "String"
+                          },
+    "createdonbehalfbyname":  {
+                                  "maxLength":  100,
+                                  "type":  "String"
+                              },
+    "createdonbehalfbyyominame":  {
+                                      "maxLength":  100,
+                                      "type":  "String"
+                                  },
+    "currencysymbol":  {
+                           "maxLength":  13,
+                           "type":  "String"
+                       },
+    "dateformatstring":  {
+                             "maxLength":  255,
+                             "type":  "String"
+                         },
+    "dateseparator":  {
+                          "maxLength":  5,
+                          "type":  "String"
+                      },
+    "decimalsymbol":  {
+                          "maxLength":  5,
+                          "type":  "String"
+                      },
+    "defaultcountrycode":  {
+                               "maxLength":  30,
+                               "type":  "String"
+                           },
+    "emailpassword":  {
+                          "maxLength":  200,
+                          "type":  "String"
+                      },
+    "emailusername":  {
+                          "maxLength":  200,
+                          "type":  "String"
+                      },
+    "homepagearea":  {
+                         "maxLength":  200,
+                         "type":  "String"
+                     },
+    "homepagelayout":  {
+                           "maxLength":  2000,
+                           "type":  "String"
+                       },
+    "homepagesubarea":  {
+                            "maxLength":  200,
+                            "type":  "String"
+                        },
+    "modifiedbyname":  {
+                           "maxLength":  100,
+                           "type":  "String"
+                       },
+    "modifiedbyyominame":  {
+                               "maxLength":  100,
+                               "type":  "String"
+                           },
+    "modifiedonbehalfbyname":  {
+                                   "maxLength":  100,
+                                   "type":  "String"
+                               },
+    "modifiedonbehalfbyyominame":  {
+                                       "maxLength":  100,
+                                       "type":  "String"
+                                   },
+    "numbergroupformat":  {
+                              "maxLength":  25,
+                              "type":  "String"
+                          },
+    "numberseparator":  {
+                            "maxLength":  5,
+                            "type":  "String"
+                        },
+    "owneridname":  {
+                        "maxLength":  100,
+                        "type":  "String"
+                    },
+    "owneridyominame":  {
+                            "maxLength":  100,
+                            "type":  "String"
+                        },
+    "owningbusinessunitname":  {
+                                   "maxLength":  100,
+                                   "type":  "String"
+                               },
+    "pmdesignator":  {
+                         "maxLength":  25,
+                         "type":  "String"
+                     },
+    "preferredsolutionname":  {
+                                  "maxLength":  256,
+                                  "type":  "String"
+                              },
+    "timeformatstring":  {
+                             "maxLength":  255,
+                             "type":  "String"
+                         },
+    "timeseparator":  {
+                          "maxLength":  5,
+                          "type":  "String"
+                      },
+    "transactioncurrencyidname":  {
+                                      "maxLength":  100,
+                                      "type":  "String"
+                                  },
+    "userprofile":  {
+                        "maxLength":  1024,
+                        "type":  "String"
+                    },
+    "workdaystarttime":  {
+                             "maxLength":  5,
+                             "type":  "String"
+                         },
+    "workdaystoptime":  {
+                            "maxLength":  5,
+                            "type":  "String"
+                        },
+    "addressbooksyncinterval":  {
+                                    "min":  -2147483648,
+                                    "type":  "Integer",
+                                    "max":  2147483647
+                                },
+    "advancedfindstartupmode":  {
+                                    "min":  null,
+                                    "type":  "Integer",
+                                    "max":  null
+                                },
+    "autocaptureuserstatus":  {
+                                  "min":  -2147483648,
+                                  "type":  "Integer",
+                                  "max":  2147483647
+                              },
+    "autocreatecontactonpromote":  {
+                                       "min":  null,
+                                       "type":  "Integer",
+                                       "max":  null
+                                   },
+    "calendartype":  {
+                         "min":  -2147483648,
+                         "type":  "Integer",
+                         "max":  2147483647
+                     },
+    "currencydecimalprecision":  {
+                                     "min":  -2147483648,
+                                     "type":  "Integer",
+                                     "max":  2147483647
+                                 },
+    "currencyformatcode":  {
+                               "min":  -2147483648,
+                               "type":  "Integer",
+                               "max":  2147483647
+                           },
+    "dateformatcode":  {
+                           "min":  -2147483648,
+                           "type":  "Integer",
+                           "max":  2147483647
+                       },
+    "defaultcalendarview":  {
+                                "min":  -2147483648,
+                                "type":  "Integer",
+                                "max":  2147483647
+                            },
+    "fullnameconventioncode":  {
+                                   "min":  -2147483648,
+                                   "type":  "Integer",
+                                   "max":  2147483647
+                               },
+    "helplanguageid":  {
+                           "min":  0,
+                           "type":  "Integer",
+                           "max":  2147483647
+                       },
+    "localeid":  {
+                     "min":  0,
+                     "type":  "Integer",
+                     "max":  2147483647
+                 },
+    "longdateformatcode":  {
+                               "min":  -2147483648,
+                               "type":  "Integer",
+                               "max":  2147483647
+                           },
+    "negativecurrencyformatcode":  {
+                                       "min":  0,
+                                       "type":  "Integer",
+                                       "max":  15
+                                   },
+    "negativeformatcode":  {
+                               "min":  -2147483648,
+                               "type":  "Integer",
+                               "max":  2147483647
+                           },
+    "nexttrackingnumber":  {
+                               "min":  -2147483648,
+                               "type":  "Integer",
+                               "max":  2147483647
+                           },
+    "offlinesyncinterval":  {
+                                "min":  -2147483648,
+                                "type":  "Integer",
+                                "max":  2147483647
+                            },
+    "outlooksyncinterval":  {
+                                "min":  -2147483648,
+                                "type":  "Integer",
+                                "max":  2147483647
+                            },
+    "paginglimit":  {
+                        "min":  0,
+                        "type":  "Integer",
+                        "max":  2147483647
+                    },
+    "pricingdecimalprecision":  {
+                                    "min":  -2147483648,
+                                    "type":  "Integer",
+                                    "max":  2147483647
+                                },
+    "tablescopeddvsearchfeatureteachingbubbleviews":  {
+                                                          "min":  0,
+                                                          "type":  "Integer",
+                                                          "max":  100
+                                                      },
+    "tablescopeddvsearchquickfindteachingbubbleviews":  {
+                                                            "min":  0,
+                                                            "type":  "Integer",
+                                                            "max":  100
+                                                        },
+    "timeformatcode":  {
+                           "min":  -2147483648,
+                           "type":  "Integer",
+                           "max":  2147483647
+                       },
+    "timezonebias":  {
+                         "min":  -2147483648,
+                         "type":  "Integer",
+                         "max":  2147483647
+                     },
+    "timezonecode":  {
+                         "min":  null,
+                         "type":  "Integer",
+                         "max":  null
+                     },
+    "timezonedaylightbias":  {
+                                 "min":  -2147483648,
+                                 "type":  "Integer",
+                                 "max":  2147483647
+                             },
+    "timezonedaylightday":  {
+                                "min":  null,
+                                "type":  "Integer",
+                                "max":  null
+                            },
+    "timezonedaylightdayofweek":  {
+                                      "min":  null,
+                                      "type":  "Integer",
+                                      "max":  null
+                                  },
+    "timezonedaylighthour":  {
+                                 "min":  null,
+                                 "type":  "Integer",
+                                 "max":  null
+                             },
+    "timezonedaylightminute":  {
+                                   "min":  null,
+                                   "type":  "Integer",
+                                   "max":  null
+                               },
+    "timezonedaylightmonth":  {
+                                  "min":  null,
+                                  "type":  "Integer",
+                                  "max":  null
+                              },
+    "timezonedaylightsecond":  {
+                                   "min":  null,
+                                   "type":  "Integer",
+                                   "max":  null
+                               },
+    "timezonedaylightyear":  {
+                                 "min":  null,
+                                 "type":  "Integer",
+                                 "max":  null
+                             },
+    "timezonestandardbias":  {
+                                 "min":  -2147483648,
+                                 "type":  "Integer",
+                                 "max":  2147483647
+                             },
+    "timezonestandardday":  {
+                                "min":  null,
+                                "type":  "Integer",
+                                "max":  null
+                            },
+    "timezonestandarddayofweek":  {
+                                      "min":  null,
+                                      "type":  "Integer",
+                                      "max":  null
+                                  },
+    "timezonestandardhour":  {
+                                 "min":  null,
+                                 "type":  "Integer",
+                                 "max":  null
+                             },
+    "timezonestandardminute":  {
+                                   "min":  null,
+                                   "type":  "Integer",
+                                   "max":  null
+                               },
+    "timezonestandardmonth":  {
+                                  "min":  null,
+                                  "type":  "Integer",
+                                  "max":  null
+                              },
+    "timezonestandardsecond":  {
+                                   "min":  null,
+                                   "type":  "Integer",
+                                   "max":  null
+                               },
+    "timezonestandardyear":  {
+                                 "min":  null,
+                                 "type":  "Integer",
+                                 "max":  null
+                             },
+    "trackingtokenid":  {
+                            "min":  -2147483648,
+                            "type":  "Integer",
+                            "max":  2147483647
+                        },
+    "uilanguageid":  {
+                         "min":  0,
+                         "type":  "Integer",
+                         "max":  2147483647
+                     },
+    "allowemailcredentials":  {
+                                  "type":  "Boolean"
+                              },
+    "getstartedpanecontentenabled":  {
+                                         "type":  "Boolean"
+                                     },
+    "ignoreunsolicitedemail":  {
+                                   "type":  "Boolean"
+                               },
+    "isappsforcrmalertdismissed":  {
+                                       "type":  "Boolean"
+                                   },
+    "isautodatacaptureenabled":  {
+                                     "type":  "Boolean"
+                                 },
+    "isdefaultcountrycodecheckenabled":  {
+                                             "type":  "Boolean"
+                                         },
+    "isduplicatedetectionenabledwhengoingonline":  {
+                                                       "type":  "Boolean"
+                                                   },
+    "isemailconversationviewenabled":  {
+                                           "type":  "Boolean"
+                                       },
+    "isguidedhelpenabled":  {
+                                "type":  "Boolean"
+                            },
+    "isresourcebookingexchangesyncenabled":  {
+                                                 "type":  "Boolean"
+                                             },
+    "issendasallowed":  {
+                            "type":  "Boolean"
+                        },
+    "showweeknumber":  {
+                           "type":  "Boolean"
+                       },
+    "splitviewstate":  {
+                           "type":  "Boolean"
+                       },
+    "synccontactcompany":  {
+                               "type":  "Boolean"
+                           },
+    "trytogglestatus":  {
+                            "type":  "Boolean"
+                        },
+    "usecrmformforappointment":  {
+                                     "type":  "Boolean"
+                                 },
+    "usecrmformforcontact":  {
+                                 "type":  "Boolean"
+                             },
+    "usecrmformforemail":  {
+                               "type":  "Boolean"
+                           },
+    "usecrmformfortask":  {
+                              "type":  "Boolean"
+                          },
+    "useimagestrips":  {
+                           "type":  "Boolean"
+                       },
+    "createdby":  {
+                      "targets":  [
+                                      "systemuser"
+                                  ],
+                      "type":  "Lookup"
+                  },
+    "createdonbehalfby":  {
+                              "targets":  [
+                                              "systemuser"
+                                          ],
+                              "type":  "Lookup"
+                          },
+    "modifiedby":  {
+                       "targets":  [
+                                       "systemuser"
+                                   ],
+                       "type":  "Lookup"
+                   },
+    "modifiedonbehalfby":  {
+                               "targets":  [
+                                               "systemuser"
+                                           ],
+                               "type":  "Lookup"
+                           },
+    "ownerid":  {
+                    "targets":  [
+                                    "systemuser",
+                                    "team"
+                                ],
+                    "type":  "Lookup"
+                },
+    "owningbusinessunit":  {
+                               "targets":  [
+                                               "businessunit"
+                                           ],
+                               "type":  "Lookup"
+                           },
+    "owningteam":  {
+                       "targets":  [
+                                       "team"
+                                   ],
+                       "type":  "Lookup"
+                   },
+    "owninguser":  {
+                       "targets":  [
+                                       "systemuser"
+                                   ],
+                       "type":  "Lookup"
+                   },
+    "preferredsolution":  {
+                              "targets":  [
+                                              "solution"
+                                          ],
+                              "type":  "Lookup"
+                          },
+    "transactioncurrencyid":  {
+                                  "targets":  [
+                                                  "transactioncurrency"
+                                              ],
+                                  "type":  "Lookup"
+                              },
+    "d365autoinstallattemptstatus":  {
+                                         "options":  [
+                                                         {
+                                                             "value":  0,
+                                                             "label":  "Not attempted"
+                                                         },
+                                                         {
+                                                             "value":  1,
+                                                             "label":  "Auto installed"
+                                                         },
+                                                         {
+                                                             "value":  2,
+                                                             "label":  "Already installed"
+                                                         },
+                                                         {
+                                                             "value":  3,
+                                                             "label":  "Teams admin blocked"
+                                                         },
+                                                         {
+                                                             "value":  4,
+                                                             "label":  "Unauthorized"
+                                                         },
+                                                         {
+                                                             "value":  5,
+                                                             "label":  "No Solution"
+                                                         },
+                                                         {
+                                                             "value":  6,
+                                                             "label":  "No Graph API"
+                                                         },
+                                                         {
+                                                             "value":  7,
+                                                             "label":  "Resource Disabled"
+                                                         }
+                                                     ],
+                                         "type":  "Picklist"
+                                     },
+    "datavalidationmodeforexporttoexcel":  {
+                                               "options":  [
+                                                               {
+                                                                   "value":  0,
+                                                                   "label":  "Full"
+                                                               },
+                                                               {
+                                                                   "value":  1,
+                                                                   "label":  "None"
+                                                               }
+                                                           ],
+                                               "type":  "Picklist"
+                                           },
+    "defaultsearchexperience":  {
+                                    "options":  [
+                                                    {
+                                                        "value":  2,
+                                                        "label":  "Use last search"
+                                                    },
+                                                    {
+                                                        "value":  0,
+                                                        "label":  "Relevance search"
+                                                    },
+                                                    {
+                                                        "value":  1,
+                                                        "label":  "Categorized search"
+                                                    },
+                                                    {
+                                                        "value":  3,
+                                                        "label":  "Custom search"
+                                                    }
+                                                ],
+                                    "type":  "Picklist"
+                                },
+    "displaydensity":  {
+                           "options":  [
+                                           {
+                                               "value":  0,
+                                               "label":  "Default"
+                                           },
+                                           {
+                                               "value":  1,
+                                               "label":  "Comfortable"
+                                           },
+                                           {
+                                               "value":  2,
+                                               "label":  "Cozy"
+                                           },
+                                           {
+                                               "value":  3,
+                                               "label":  "Compact"
+                                           }
+                                       ],
+                           "type":  "Picklist"
+                       },
+    "entityformmode":  {
+                           "options":  [
+                                           {
+                                               "value":  0,
+                                               "label":  "Organization default"
+                                           },
+                                           {
+                                               "value":  1,
+                                               "label":  "Read-optimized"
+                                           },
+                                           {
+                                               "value":  2,
+                                               "label":  "Edit"
+                                           }
+                                       ],
+                           "type":  "Picklist"
+                       },
+    "incomingemailfilteringmethod":  {
+                                         "options":  [
+                                                         {
+                                                             "value":  0,
+                                                             "label":  "All email messages"
+                                                         },
+                                                         {
+                                                             "value":  1,
+                                                             "label":  "Email messages in response to Dynamics 365 email"
+                                                         },
+                                                         {
+                                                             "value":  2,
+                                                             "label":  "Email messages from Dynamics 365 Leads, Contacts and Accounts"
+                                                         },
+                                                         {
+                                                             "value":  3,
+                                                             "label":  "Email messages from Dynamics 365 records that are email enabled"
+                                                         },
+                                                         {
+                                                             "value":  4,
+                                                             "label":  "No email messages"
+                                                         }
+                                                     ],
+                                         "type":  "Picklist"
+                                     },
+    "releasechannel":  {
+                           "options":  [
+                                           {
+                                               "value":  0,
+                                               "label":  "None"
+                                           },
+                                           {
+                                               "value":  1,
+                                               "label":  "Semi-annual channel override"
+                                           },
+                                           {
+                                               "value":  2,
+                                               "label":  "Monthly channel override"
+                                           },
+                                           {
+                                               "value":  3,
+                                               "label":  "Inner channel override"
+                                           }
+                                       ],
+                           "type":  "Picklist"
+                       },
+    "reportscripterrors":  {
+                               "options":  [
+                                               {
+                                                   "value":  1,
+                                                   "label":  "Ask me for permission to send an error report to Microsoft"
+                                               },
+                                               {
+                                                   "value":  2,
+                                                   "label":  "Automatically send an error report to Microsoft without asking me for permission"
+                                               },
+                                               {
+                                                   "value":  3,
+                                                   "label":  "Never send an error report to Microsoft about Microsoft Dynamics 365"
+                                               }
+                                           ],
+                               "type":  "Picklist"
+                           },
+    "visualizationpanelayout":  {
+                                    "options":  [
+                                                    {
+                                                        "value":  0,
+                                                        "label":  "Top-bottom"
+                                                    },
+                                                    {
+                                                        "value":  1,
+                                                        "label":  "Side-by-side"
+                                                    }
+                                                ],
+                                    "type":  "Picklist"
+                                },
+    "businessunitid":  {
+                           "type":  "Uniqueidentifier"
+                       },
+    "defaultdashboardid":  {
+                               "type":  "Uniqueidentifier"
+                           },
+    "selectedglobalfilterid":  {
+                                   "type":  "Uniqueidentifier"
+                               },
+    "systemuserid":  {
+                         "type":  "Uniqueidentifier"
+                     }
+}

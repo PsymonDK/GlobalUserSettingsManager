@@ -1,0 +1,45 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<PluginAssembly FullName="DefaultUserSettings.Plugins, Version=1.0.0.0, Culture=neutral, PublicKeyToken=968e99a7a2fe1ed3" PluginAssemblyId="209d4d1c-15e8-f111-84ea-000d3ab163fb" CustomizationLevel="1" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <IsolationMode>2</IsolationMode>
+  <SourceType>0</SourceType>
+  <IntroducedVersion>1.0.0.0</IntroducedVersion>
+  <FileName>/PluginAssemblies/DefaultUserSettingsPlugins-209D4D1C-15E8-F111-84EA-000D3AB163FB/DefaultUserSettingsPlugins.dll</FileName>
+  <PluginTypes>
+    <PluginType AssemblyQualifiedName="DefaultUserSettings.Plugins.Plugins.ApplyDefaultsApi, DefaultUserSettings.Plugins, Version=1.0.0.0, Culture=neutral, PublicKeyToken=968e99a7a2fe1ed3" PluginTypeId="f9c44a22-15e8-f111-84ea-000d3ab163fb" Name="DefaultUserSettings.Plugins.Plugins.ApplyDefaultsApi">
+      <FriendlyName>ApplyDefaultsApi</FriendlyName>
+    </PluginType>
+    <PluginType AssemblyQualifiedName="DefaultUserSettings.Plugins.Plugins.HeartbeatPlugin, DefaultUserSettings.Plugins, Version=1.0.0.0, Culture=neutral, PublicKeyToken=968e99a7a2fe1ed3" PluginTypeId="f8c44a22-15e8-f111-84ea-000d3ab163fb" Name="DefaultUserSettings.Plugins.Plugins.HeartbeatPlugin">
+      <FriendlyName>HeartbeatPlugin</FriendlyName>
+    </PluginType>
+    <PluginType AssemblyQualifiedName="DefaultUserSettings.Plugins.Plugins.LockEnforcementPlugin, DefaultUserSettings.Plugins, Version=1.0.0.0, Culture=neutral, PublicKeyToken=968e99a7a2fe1ed3" PluginTypeId="e9e47a23-15e8-f111-84ea-002248a422bc" Name="DefaultUserSettings.Plugins.Plugins.LockEnforcementPlugin">
+      <FriendlyName>LockEnforcementPlugin</FriendlyName>
+    </PluginType>
+    <PluginType AssemblyQualifiedName="DefaultUserSettings.Plugins.Plugins.MembershipChangePlugin, DefaultUserSettings.Plugins, Version=1.0.0.0, Culture=neutral, PublicKeyToken=968e99a7a2fe1ed3" PluginTypeId="f0e47a23-15e8-f111-84ea-002248a422bc" Name="DefaultUserSettings.Plugins.Plugins.MembershipChangePlugin">
+      <FriendlyName>MembershipChangePlugin</FriendlyName>
+    </PluginType>
+    <PluginType AssemblyQualifiedName="DefaultUserSettings.Plugins.Plugins.NewUserPlugin, DefaultUserSettings.Plugins, Version=1.0.0.0, Culture=neutral, PublicKeyToken=968e99a7a2fe1ed3" PluginTypeId="f1e47a23-15e8-f111-84ea-002248a422bc" Name="DefaultUserSettings.Plugins.Plugins.NewUserPlugin">
+      <FriendlyName>NewUserPlugin</FriendlyName>
+    </PluginType>
+    <PluginType AssemblyQualifiedName="DefaultUserSettings.Plugins.Plugins.ProfileChangePlugin, DefaultUserSettings.Plugins, Version=1.0.0.0, Culture=neutral, PublicKeyToken=968e99a7a2fe1ed3" PluginTypeId="efe47a23-15e8-f111-84ea-002248a422bc" Name="DefaultUserSettings.Plugins.Plugins.ProfileChangePlugin">
+      <FriendlyName>ProfileChangePlugin</FriendlyName>
+    </PluginType>
+    <PluginType AssemblyQualifiedName="DefaultUserSettings.Plugins.Plugins.ProfileValidationPlugin, DefaultUserSettings.Plugins, Version=1.0.0.0, Culture=neutral, PublicKeyToken=968e99a7a2fe1ed3" PluginTypeId="f2c44a22-15e8-f111-84ea-000d3ab163fb" Name="DefaultUserSettings.Plugins.Plugins.ProfileValidationPlugin">
+      <FriendlyName>ProfileValidationPlugin</FriendlyName>
+    </PluginType>
+    <PluginType AssemblyQualifiedName="DefaultUserSettings.Plugins.Plugins.ReconcileSettingsApi, DefaultUserSettings.Plugins, Version=1.0.0.0, Culture=neutral, PublicKeyToken=968e99a7a2fe1ed3" PluginTypeId="9b63d122-15e8-f111-84ea-000d3ab16615" Name="DefaultUserSettings.Plugins.Plugins.ReconcileSettingsApi">
+      <FriendlyName>ReconcileSettingsApi</FriendlyName>
+    </PluginType>
+    <PluginType AssemblyQualifiedName="DefaultUserSettings.Plugins.Plugins.ResolveEffectiveSettingsApi, DefaultUserSettings.Plugins, Version=1.0.0.0, Culture=neutral, PublicKeyToken=968e99a7a2fe1ed3" PluginTypeId="9f6dbd22-15e8-f111-84ea-0022489d55b0" Name="DefaultUserSettings.Plugins.Plugins.ResolveEffectiveSettingsApi">
+      <FriendlyName>ResolveEffectiveSettingsApi</FriendlyName>
+    </PluginType>
+    <PluginType AssemblyQualifiedName="DefaultUserSettings.Plugins.Plugins.RolloutJobPlugin, DefaultUserSettings.Plugins, Version=1.0.0.0, Culture=neutral, PublicKeyToken=968e99a7a2fe1ed3" PluginTypeId="eee47a23-15e8-f111-84ea-002248a422bc" Name="DefaultUserSettings.Plugins.Plugins.RolloutJobPlugin">
+      <FriendlyName>RolloutJobPlugin</FriendlyName>
+    </PluginType>
+    <PluginType AssemblyQualifiedName="DefaultUserSettings.Plugins.Plugins.ScopeChangePlugin, DefaultUserSettings.Plugins, Version=1.0.0.0, Culture=neutral, PublicKeyToken=968e99a7a2fe1ed3" PluginTypeId="9963d122-15e8-f111-84ea-000d3ab16615" Name="DefaultUserSettings.Plugins.Plugins.ScopeChangePlugin">
+      <FriendlyName>ScopeChangePlugin</FriendlyName>
+    </PluginType>
+    <PluginType AssemblyQualifiedName="DefaultUserSettings.Plugins.Plugins.ScopeValidationPlugin, DefaultUserSettings.Plugins, Version=1.0.0.0, Culture=neutral, PublicKeyToken=968e99a7a2fe1ed3" PluginTypeId="ede47a23-15e8-f111-84ea-002248a422bc" Name="DefaultUserSettings.Plugins.Plugins.ScopeValidationPlugin">
+      <FriendlyName>ScopeValidationPlugin</FriendlyName>
+    </PluginType>
+  </PluginTypes>
+</PluginAssembly>

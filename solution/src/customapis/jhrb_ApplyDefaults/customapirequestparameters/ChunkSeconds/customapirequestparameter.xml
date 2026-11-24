@@ -1,0 +1,12 @@
+<customapirequestparameter uniquename="ChunkSeconds">
+  <description default="Time budget per execution (default 90).">
+    <label description="Time budget per execution (default 90)." languagecode="1033" />
+  </description>
+  <displayname default="ChunkSeconds">
+    <label description="ChunkSeconds" languagecode="1033" />
+  </displayname>
+  <iscustomizable>1</iscustomizable>
+  <isoptional>1</isoptional>
+  <name>ChunkSeconds</name>
+  <type>7</type>
+</customapirequestparameter>
