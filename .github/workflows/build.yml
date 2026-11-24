@@ -14,9 +14,9 @@ jobs:
     # The plugin and tests target .NET Framework 4.6.2, so tests need a Windows runner.
     runs-on: windows-latest
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v7
 
-      - uses: actions/setup-dotnet@v4
+      - uses: actions/setup-dotnet@v6
         with:
           dotnet-version: 9.0.x
 
@@ -36,14 +36,14 @@ jobs:
 
       - name: Upload test results
         if: always()
-        uses: actions/upload-artifact@v4
+        uses: actions/upload-artifact@v7
         with:
           name: test-results
           path: TestResults/*.trx
           if-no-files-found: ignore
 
       - name: Upload plugin assembly
-        uses: actions/upload-artifact@v4
+        uses: actions/upload-artifact@v7
         with:
           name: DefaultUserSettings.Plugins
           path: src/DefaultUserSettings.Plugins/bin/Release/net462/DefaultUserSettings.Plugins.dll
