@@ -266,4 +266,5 @@ The `mus_` prefix in this plan was a placeholder. The solution uses the owner's 
 - Admin edits of another user's settings are captured into that user's override row (decision 20).
 - Pilot team and kill switch on the Global row (decision 8).
 - UI: a generated model-driven app. PCF is still optional (plan section 7).
+- UI decision gate (section 7): a **code app** (`src/CodeApp`), standalone and embedded in the User form; the generated model-driven app remains (decision 33).
 - **Load current values** (section 12, per-user editing) = Custom API `jhrb_LoadCurrentSettings` plus a form command. It fills only Inherit settings and never changes modes (decision 32).

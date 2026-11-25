@@ -1,0 +1,100 @@
+{
+  "name": "jhrb_ApplyDefaults",
+  "title": "jhrb_ApplyDefaults",
+  "type": "Microsoft.PowerApps/dataverseOperation",
+  "properties": {
+    "displayName": "jhrb_ApplyDefaults",
+    "swagger": {
+      "swagger": "2.0",
+      "info": {
+        "title": "jhrb_ApplyDefaults",
+        "version": "1.0"
+      },
+      "basePath": "/api/data/v9.2",
+      "paths": {
+        "/jhrb_ApplyDefaults": {
+          "post": {
+            "operationId": "jhrb_ApplyDefaults",
+            "parameters": [
+              {
+                "name": "Scope",
+                "in": "body",
+                "required": false,
+                "type": "string",
+                "x-ms-dataverse-type": "StringType",
+                "x-ms-csdl-type": "Edm.String"
+              },
+              {
+                "name": "UserId",
+                "in": "body",
+                "required": false,
+                "type": "string",
+                "format": "guid",
+                "x-ms-dataverse-type": "UniqueidentifierType",
+                "x-ms-csdl-type": "Edm.Guid"
+              },
+              {
+                "name": "Setting",
+                "in": "body",
+                "required": false,
+                "type": "string",
+                "x-ms-dataverse-type": "StringType",
+                "x-ms-csdl-type": "Edm.String"
+              },
+              {
+                "name": "DryRun",
+                "in": "body",
+                "required": false,
+                "type": "boolean",
+                "x-ms-dataverse-type": "BooleanType",
+                "x-ms-csdl-type": "Edm.Boolean"
+              },
+              {
+                "name": "ApplyMode",
+                "in": "body",
+                "required": false,
+                "type": "string",
+                "x-ms-dataverse-type": "StringType",
+                "x-ms-csdl-type": "Edm.String"
+              },
+              {
+                "name": "IgnorePilot",
+                "in": "body",
+                "required": false,
+                "type": "boolean",
+                "x-ms-dataverse-type": "BooleanType",
+                "x-ms-csdl-type": "Edm.Boolean"
+              },
+              {
+                "name": "BatchSize",
+                "in": "body",
+                "required": false,
+                "type": "number",
+                "x-ms-dataverse-type": "IntegerType",
+                "x-ms-csdl-type": "Edm.Int32"
+              },
+              {
+                "name": "ChunkSeconds",
+                "in": "body",
+                "required": false,
+                "type": "number",
+                "x-ms-dataverse-type": "IntegerType",
+                "x-ms-csdl-type": "Edm.Int32"
+              }
+            ],
+            "responses": {
+              "200": {
+                "description": "Success",
+                "schema": {
+                  "type": "object",
+                  "x-ms-dataverse-type": "LookupType",
+                  "x-ms-csdl-type": "mscrm.jhrb_ApplyDefaultsResponse"
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

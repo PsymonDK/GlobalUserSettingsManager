@@ -47,3 +47,23 @@ jobs:
         with:
           name: DefaultUserSettings.Plugins
           path: src/DefaultUserSettings.Plugins/bin/Release/net462/DefaultUserSettings.Plugins.dll
+
+  code-app:
+    # The admin code app (React + Vite + Fluent UI). Builds against the generated Dataverse services in the repo;
+    # deploying needs `pa app init` against an environment, which CI does not do.
+    runs-on: ubuntu-latest
+    defaults:
+      run:
+        working-directory: src/CodeApp
+    steps:
+      - uses: actions/checkout@v7
+
+      - uses: actions/setup-node@v7
+        with:
+          node-version: 22
+          cache: npm
+          cache-dependency-path: src/CodeApp/package-lock.json
+
+      - run: npm ci
+      - run: npm run lint
+      - run: npm run build

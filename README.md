@@ -22,6 +22,7 @@ Everything runs as C# plugins and Custom APIs, with no Power Automate.
 | 3 | New users (async + wait for the `usersettings` row, reconcile fallback) | Built. Not tested on a real new user (shared dev environment) |
 | 4 | Team/BU membership triggers, per-user overrides, capture of admin edits | Built. Membership tested; the admin-edit capture needs a second user to test |
 | 5 | Model-driven app, security roles, managed solution export | Built (see [Install](#install)) |
+| 5b | Admin code app (React + Fluent UI), standalone and embedded in the User form | Built, tested in dev on the owner's own user (see [Admin app](#admin-app-code-app)) |
 
 ## How it works
 
@@ -119,6 +120,32 @@ To install into another environment, import the managed solution, then run `Seed
 | `jhrb_LoadCurrentSettings` | `ProfileId`, or `UserId` (that user's User profile, created if missing); `SourceUserId` (default: the profile's user, else the caller); `OverwriteManaged` (also replace values on Default / Locked) | `ProfileId`, `Loaded`, `KeptManaged` |
 
 The rollout APIs need `prvCreatejhrb_RolloutJob` and `jhrb_LoadCurrentSettings` needs `prvWritejhrb_SettingsProfile`; both come with the Admin role.
+
+## Admin app (code app)
+
+`src/CodeApp` is a Power Apps code app (React, Vite, Fluent UI v9) that looks like a model-driven app. It uses only the tables and Custom APIs above, through the generated Dataverse services, so it runs with the signed-in admin's own permissions.
+
+| Screen | What it does |
+|---|---|
+| Profiles | Layers in precedence order, pilot-mode banner with "Go live", headline numbers, recent rollouts, most reverted settings. New group profile, Roll out now (with dry run), Reconcile |
+| Profile editor | Settings by group with an Inherit / Default / Locked switch per setting and what users get without this profile. Applies to (teams, business units), Details (name, priority, active, pilot team), History. Save, Load current values, Preview rollout, Deactivate, Delete |
+| Users | Find a user: layers that apply, effective value, mode and source per setting, the user's current value and whether it differs. Edit override (created with the user's current values), Apply now |
+| Rollouts | Jobs with progress, polling every 10 s while one runs; job details; Cancel job |
+| Activity log | Rollout writes, reverts and captured admin edits, filtered by source |
+
+The managed settings list comes from `schema/settings.json`; the app never lists settings itself.
+
+Build and deploy (needs Node 22+):
+
+```powershell
+cd src/CodeApp
+npm ci
+npx --no-install pa app init -n 'Default User Settings' -e <environment id>   # once; writes power.config.json (git-ignored)
+npm run build
+npx --no-install pa app push -s <DefaultUserSettings solution id>
+```
+
+**Embed it in the User form:** add an IFRAME (or a web resource that hosts one) to a tab on the `systemuser` main form with the app's play URL plus `?embed=1`, and tick "Pass record object-type code and unique identifier as parameters". The form appends `id` and `typename=systemuser`, and the app then shows only that user's effective settings and recent changes, without its own top bar and navigation. `?embed=1&user=<systemuserid>` works too.
 
 ## Adding a setting
 
