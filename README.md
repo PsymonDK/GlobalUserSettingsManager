@@ -86,9 +86,9 @@ pwsh scripts/Build-Schema.ps1                    # settings.json + SettingsRegis
 dotnet build src/DefaultUserSettings.Plugins -c Release
 dotnet test  src/DefaultUserSettings.Plugins.Tests
 pwsh scripts/Deploy-Schema.ps1                   # solution DefaultUserSettings: tables, columns, choices
-pwsh scripts/Register-Plugins.ps1                # assembly, 18 steps, 3 Custom APIs
+pwsh scripts/Register-Plugins.ps1                # assembly, 18 steps, 4 Custom APIs
 pwsh scripts/Deploy-Security.ps1                 # roles: Default User Settings Admin / Reader
-pwsh scripts/Deploy-App.ps1                      # model-driven app "Default User Settings"
+pwsh scripts/Deploy-App.ps1                      # model-driven app "Default User Settings", form command web resource
 pwsh scripts/Seed-GlobalProfile.ps1 -PilotMembers <your systemuserid>   # Global row + pilot team
 pwsh scripts/Setup-Heartbeat.ps1                 # daily reconcile + 90-day log retention (bulk delete jobs)
 pwsh scripts/Export-Solution.ps1                 # unmanaged + managed zips, unpacked source in solution/src
@@ -103,7 +103,9 @@ To install into another environment, import the managed solution, then run `Seed
    - Create a **Group** profile with a unique priority.
    - Add scopes (teams, business units).
    - Set only the settings that should differ from Global.
-3. **Per-user exceptions:** create a **User** profile for that user. Alternatively, edit the user's settings directly (for example with XrmToolBox User Settings Utility), and the change is captured.
+3. **Per-user exceptions:** create a **User** profile for that user, then use **Load current values** (form command bar, under the overflow menu) to copy the user's current settings into the profile. Then set Default or Locked on the settings to keep. Alternatively, edit the user's settings directly (for example with XrmToolBox User Settings Utility), and the change is captured.
+   - **Load current values** only fills settings on Inherit and never changes a mode, so it rolls nothing out by itself.
+   - On a Global or Group profile it copies **your own** current settings, which is a quick way to start from a template user.
 4. Watch **Rollout Jobs** and **Settings Logs**.
 5. When ready, remove the pilot team from the Global row to go live for everyone.
 
@@ -114,8 +116,9 @@ To install into another environment, import the managed solution, then run `Seed
 | `jhrb_ApplyDefaults` | `Scope` (All / User), `UserId`, `Setting` (comma list), `ApplyMode` (Full / LockedOnly / Auto), `DryRun`, `IgnorePilot` (dry runs only), `BatchSize` | `JobId`, `Updated`, `Unchanged`, `Failed` |
 | `jhrb_ReconcileSettings` | none | `JobId` |
 | `jhrb_ResolveEffectiveSettings` | `UserId` (default: the caller) | `Settings` (JSON: value, mode, winning profile), `Layers`, `InScope` |
+| `jhrb_LoadCurrentSettings` | `ProfileId`, or `UserId` (that user's User profile, created if missing); `SourceUserId` (default: the profile's user, else the caller); `OverwriteManaged` (also replace values on Default / Locked) | `ProfileId`, `Loaded`, `KeptManaged` |
 
-The rollout APIs need `prvCreatejhrb_RolloutJob`, which comes with the Admin role.
+The rollout APIs need `prvCreatejhrb_RolloutJob` and `jhrb_LoadCurrentSettings` needs `prvWritejhrb_SettingsProfile`; both come with the Admin role.
 
 ## Adding a setting
 

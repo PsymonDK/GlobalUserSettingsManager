@@ -128,6 +128,30 @@ foreach ($e in $entities) { $components += @{ '@odata.type' = 'Microsoft.Dynamic
 Invoke-RestMethod -Method Post -Headers $H -Uri "$api/AddAppComponents" -ContentType 'application/json' -Body (@{ AppId = $appId; Components = $components } | ConvertTo-Json -Depth 5) | Out-Null
 "  components added"
 
+"commands"
+# Web resource with the form command scripts (upsert by name).
+$wrName = 'jhrb_/scripts/settingsprofile.js'
+$wrContent = [Convert]::ToBase64String([IO.File]::ReadAllBytes("$Root\src\WebResources\settingsprofile.js"))
+$wr = @(Get-Dv "webresourceset?`$select=webresourceid&`$filter=name eq '$wrName'")[0]
+if ($wr) { Send-Dv Patch "webresourceset($($wr.webresourceid))" @{ content = $wrContent } | Out-Null; $wrId = $wr.webresourceid; "  web resource updated" }
+else { $wrId = (Send-Dv Post 'webresourceset' @{ name = $wrName; displayname = 'Settings Profile form commands'; webresourcetype = 3; content = $wrContent }).webresourceid; "  web resource created" }
+
+# Modern command (appaction) on the Settings Profile form: "Load current values". Parameter type 5 = PrimaryControl.
+$profileMeta = (Get-Dv "EntityDefinitions(LogicalName='jhrb_settingsprofile')?`$select=MetadataId").MetadataId
+$cmdUnique = 'jhrb_LoadCurrentValues!jhrb_DefaultUserSettings!jhrb_settingsprofile!0'
+$cmd = @{
+  name = 'jhrb_LoadCurrentValues'; uniquename = $cmdUnique; buttonlabeltext = 'Load current values'
+  buttontooltiptitle = 'Load current values'; buttontooltipdescription = "Copy the user's current personal settings into this profile's values. Modes are not changed."
+  context = 1; contextvalue = 'jhrb_settingsprofile'; location = 0; type = 0; visibilitytype = 0; onclickeventtype = 2
+  onclickeventjavascriptfunctionname = 'jhrb.SettingsProfile.loadCurrentValues'; onclickeventjavascriptparameters = '[{"type":5}]'
+  fonticon = '$clientsvg:Download'; sequence = 100100100
+  'ContextEntity@odata.bind' = "/entities($profileMeta)"; 'AppModuleId@odata.bind' = "/appmodules($appId)"
+  'OnClickEventJavaScriptWebResourceId@odata.bind' = "/webresourceset($wrId)"
+}
+$existing = @(Get-Dv "appactions?`$select=appactionid&`$filter=uniquename eq '$cmdUnique'")[0]
+if ($existing) { $cmd.Remove('uniquename'); Send-Dv Patch "appactions($($existing.appactionid))" $cmd | Out-Null; "  command updated: Load current values" }
+else { Send-Dv Post 'appactions' $cmd | Out-Null; "  command created: Load current values" }
+
 $roles = if (Test-Path "$Root\schema\roles.local.json") { Get-Content "$Root\schema\roles.local.json" -Raw | ConvertFrom-Json } else { $null }
 if ($roles) {
   foreach ($r in $roles.admin, $roles.reader) {
@@ -140,6 +164,6 @@ $validation = Invoke-RestMethod -Headers $H -Uri "$api/ValidateApp(AppModuleId=$
 $issues = $validation.AppValidationResponse.ValidationIssueList | ? { $_.ErrorType -eq 'Error' }
 if ($issues) { "  validation errors:"; $issues | % { "    $($_.Message)" } } else { "  app validation ok" }
 
-$xml = "<importexportxml><entities>$(($entities + 'jhrb_heartbeat' | % { "<entity>$_</entity>" }) -join '')</entities><appmodules><appmodule>$appId</appmodule></appmodules><sitemaps><sitemap>$smId</sitemap></sitemaps></importexportxml>"
+$xml = "<importexportxml><entities>$(($entities + 'jhrb_heartbeat' | % { "<entity>$_</entity>" }) -join '')</entities><appmodules><appmodule>$appId</appmodule></appmodules><sitemaps><sitemap>$smId</sitemap></sitemaps><webresources><webresource>{$wrId}</webresource></webresources></importexportxml>"
 Invoke-RestMethod -Method Post -Headers $H -Uri "$api/PublishXml" -ContentType 'application/json' -Body (@{ ParameterXml = $xml } | ConvertTo-Json) | Out-Null
 "published. App: $Org/main.aspx?appid=$appId"

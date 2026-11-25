@@ -82,12 +82,7 @@ namespace DefaultUserSettings.Plugins.Plugins
             }
             else
             {
-                var user = local.SystemService.Retrieve("systemuser", userId, new Microsoft.Xrm.Sdk.Query.ColumnSet("fullname"));
-                row[Names.Profile.Name] = $"User: {user.GetAttributeValue<string>("fullname")}";
-                row[Names.Profile.Type] = new OptionSetValue((int)ProfileType.User);
-                row[Names.Profile.User] = new EntityReference("systemuser", userId);
-                row[Names.Profile.IsActive] = true;
-                local.SystemService.Create(row);
+                new SettingsRepository(local.SystemService).CreateUserProfile(userId, row);
             }
             local.Trace.Trace("Captured {0} admin-edited setting(s) into the user's override profile.", captured);
         }
