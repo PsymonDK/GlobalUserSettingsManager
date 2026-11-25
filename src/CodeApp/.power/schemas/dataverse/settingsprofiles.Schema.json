@@ -1,0 +1,3596 @@
+{
+  "name": "jhrb_settingsprofile",
+  "title": "Settings Profiles",
+  "schema": {
+    "type": "array",
+    "items": {
+      "type": "object",
+      "x-ms-dataverse-entity": true,
+      "x-ms-dataverse-entityset": "jhrb_settingsprofiles",
+      "x-ms-dataverse-primary-id": "jhrb_settingsprofileid",
+      "x-ms-dataverse-primary-name": "jhrb_name",
+      "properties": {
+        "createdby": {
+          "type": "string",
+          "title": "Created By",
+          "x-ms-dataverse-attribute": "createdby",
+          "x-ms-dataverse-type": "LookupType",
+          "x-ms-schema-name": "CreatedBy",
+          "x-ms-dataverse-navigation-properties": [
+            "createdby"
+          ],
+          "x-ms-read-only": true
+        },
+        "createdbyname": {
+          "type": "string",
+          "title": "createdbyname",
+          "x-ms-dataverse-attribute": "createdbyname",
+          "x-ms-dataverse-type": "StringType",
+          "x-ms-schema-name": "CreatedByName",
+          "x-ms-dataverse-attribute-of": "createdby",
+          "x-ms-read-only": true,
+          "maxLength": 100
+        },
+        "createdbyyominame": {
+          "type": "string",
+          "title": "createdbyyominame",
+          "x-ms-dataverse-attribute": "createdbyyominame",
+          "x-ms-dataverse-type": "StringType",
+          "x-ms-schema-name": "CreatedByYomiName",
+          "x-ms-dataverse-attribute-of": "createdby",
+          "x-ms-read-only": true,
+          "required": true,
+          "maxLength": 100
+        },
+        "createdon": {
+          "type": "string",
+          "title": "Created On",
+          "x-ms-dataverse-attribute": "createdon",
+          "x-ms-dataverse-type": "DateTimeType",
+          "x-ms-schema-name": "CreatedOn",
+          "x-ms-read-only": true
+        },
+        "createdonbehalfby": {
+          "type": "string",
+          "title": "Created By (Delegate)",
+          "x-ms-dataverse-attribute": "createdonbehalfby",
+          "x-ms-dataverse-type": "LookupType",
+          "x-ms-schema-name": "CreatedOnBehalfBy",
+          "x-ms-dataverse-navigation-properties": [
+            "createdonbehalfby"
+          ],
+          "x-ms-read-only": true
+        },
+        "createdonbehalfbyname": {
+          "type": "string",
+          "title": "createdonbehalfbyname",
+          "x-ms-dataverse-attribute": "createdonbehalfbyname",
+          "x-ms-dataverse-type": "StringType",
+          "x-ms-schema-name": "CreatedOnBehalfByName",
+          "x-ms-dataverse-attribute-of": "createdonbehalfby",
+          "x-ms-read-only": true,
+          "maxLength": 100
+        },
+        "createdonbehalfbyyominame": {
+          "type": "string",
+          "title": "createdonbehalfbyyominame",
+          "x-ms-dataverse-attribute": "createdonbehalfbyyominame",
+          "x-ms-dataverse-type": "StringType",
+          "x-ms-schema-name": "CreatedOnBehalfByYomiName",
+          "x-ms-dataverse-attribute-of": "createdonbehalfby",
+          "x-ms-read-only": true,
+          "required": true,
+          "maxLength": 100
+        },
+        "importsequencenumber": {
+          "type": "string",
+          "title": "Import Sequence Number",
+          "x-ms-dataverse-attribute": "importsequencenumber",
+          "x-ms-dataverse-type": "IntegerType",
+          "x-ms-schema-name": "ImportSequenceNumber"
+        },
+        "jhrb_addressbooksyncinterval": {
+          "type": "string",
+          "title": "Address Book Sync Interval",
+          "x-ms-dataverse-attribute": "jhrb_addressbooksyncinterval",
+          "x-ms-dataverse-type": "IntegerType",
+          "x-ms-schema-name": "jhrb_addressbooksyncinterval"
+        },
+        "jhrb_addressbooksyncinterval_mode": {
+          "type": "string",
+          "title": "Address Book Sync Interval Mode",
+          "x-ms-dataverse-attribute": "jhrb_addressbooksyncinterval_mode",
+          "x-ms-dataverse-type": "PicklistType",
+          "x-ms-schema-name": "jhrb_addressbooksyncinterval_mode",
+          "enum": [
+            "Inherit",
+            "Default",
+            "Locked"
+          ],
+          "x-ms-enum-values": [
+            632490000,
+            632490001,
+            632490002
+          ],
+          "Color": [
+            null,
+            null,
+            null
+          ],
+          "x-ms-optionsetmetadataid": "088e9f3f-11e8-f111-84ea-0022489d55b0",
+          "x-ms-isGlobal": true,
+          "x-ms-optionsetdisplayname": "Setting Mode",
+          "x-ms-optionSetType": "Picklist"
+        },
+        "jhrb_addressbooksyncinterval_modename": {
+          "type": "string",
+          "title": "jhrb_addressbooksyncinterval_modename",
+          "x-ms-dataverse-attribute": "jhrb_addressbooksyncinterval_modename",
+          "x-ms-dataverse-type": "VirtualType",
+          "x-ms-schema-name": "jhrb_addressbooksyncinterval_modeName",
+          "x-ms-dataverse-attribute-of": "jhrb_addressbooksyncinterval_mode",
+          "x-ms-read-only": true
+        },
+        "jhrb_advancedfindstartupmode": {
+          "type": "string",
+          "title": "Advanced Find Mode",
+          "x-ms-dataverse-attribute": "jhrb_advancedfindstartupmode",
+          "x-ms-dataverse-type": "IntegerType",
+          "x-ms-schema-name": "jhrb_advancedfindstartupmode"
+        },
+        "jhrb_advancedfindstartupmode_mode": {
+          "type": "string",
+          "title": "Advanced Find Mode Mode",
+          "x-ms-dataverse-attribute": "jhrb_advancedfindstartupmode_mode",
+          "x-ms-dataverse-type": "PicklistType",
+          "x-ms-schema-name": "jhrb_advancedfindstartupmode_mode",
+          "enum": [
+            "Inherit",
+            "Default",
+            "Locked"
+          ],
+          "x-ms-enum-values": [
+            632490000,
+            632490001,
+            632490002
+          ],
+          "Color": [
+            null,
+            null,
+            null
+          ],
+          "x-ms-optionsetmetadataid": "088e9f3f-11e8-f111-84ea-0022489d55b0",
+          "x-ms-isGlobal": true,
+          "x-ms-optionsetdisplayname": "Setting Mode",
+          "x-ms-optionSetType": "Picklist"
+        },
+        "jhrb_advancedfindstartupmode_modename": {
+          "type": "string",
+          "title": "jhrb_advancedfindstartupmode_modename",
+          "x-ms-dataverse-attribute": "jhrb_advancedfindstartupmode_modename",
+          "x-ms-dataverse-type": "VirtualType",
+          "x-ms-schema-name": "jhrb_advancedfindstartupmode_modeName",
+          "x-ms-dataverse-attribute-of": "jhrb_advancedfindstartupmode_mode",
+          "x-ms-read-only": true
+        },
+        "jhrb_amdesignator": {
+          "type": "string",
+          "title": "AM Designator",
+          "x-ms-dataverse-attribute": "jhrb_amdesignator",
+          "x-ms-dataverse-type": "StringType",
+          "x-ms-schema-name": "jhrb_amdesignator",
+          "maxLength": 25
+        },
+        "jhrb_amdesignator_mode": {
+          "type": "string",
+          "title": "AM Designator Mode",
+          "x-ms-dataverse-attribute": "jhrb_amdesignator_mode",
+          "x-ms-dataverse-type": "PicklistType",
+          "x-ms-schema-name": "jhrb_amdesignator_mode",
+          "enum": [
+            "Inherit",
+            "Default",
+            "Locked"
+          ],
+          "x-ms-enum-values": [
+            632490000,
+            632490001,
+            632490002
+          ],
+          "Color": [
+            null,
+            null,
+            null
+          ],
+          "x-ms-optionsetmetadataid": "088e9f3f-11e8-f111-84ea-0022489d55b0",
+          "x-ms-isGlobal": true,
+          "x-ms-optionsetdisplayname": "Setting Mode",
+          "x-ms-optionSetType": "Picklist"
+        },
+        "jhrb_amdesignator_modename": {
+          "type": "string",
+          "title": "jhrb_amdesignator_modename",
+          "x-ms-dataverse-attribute": "jhrb_amdesignator_modename",
+          "x-ms-dataverse-type": "VirtualType",
+          "x-ms-schema-name": "jhrb_amdesignator_modeName",
+          "x-ms-dataverse-attribute-of": "jhrb_amdesignator_mode",
+          "x-ms-read-only": true
+        },
+        "jhrb_autocreatecontactonpromote": {
+          "type": "string",
+          "title": "Auto-create Contact on Promote",
+          "x-ms-dataverse-attribute": "jhrb_autocreatecontactonpromote",
+          "x-ms-dataverse-type": "IntegerType",
+          "x-ms-schema-name": "jhrb_autocreatecontactonpromote"
+        },
+        "jhrb_autocreatecontactonpromote_mode": {
+          "type": "string",
+          "title": "Auto-create Contact on Promote Mode",
+          "x-ms-dataverse-attribute": "jhrb_autocreatecontactonpromote_mode",
+          "x-ms-dataverse-type": "PicklistType",
+          "x-ms-schema-name": "jhrb_autocreatecontactonpromote_mode",
+          "enum": [
+            "Inherit",
+            "Default",
+            "Locked"
+          ],
+          "x-ms-enum-values": [
+            632490000,
+            632490001,
+            632490002
+          ],
+          "Color": [
+            null,
+            null,
+            null
+          ],
+          "x-ms-optionsetmetadataid": "088e9f3f-11e8-f111-84ea-0022489d55b0",
+          "x-ms-isGlobal": true,
+          "x-ms-optionsetdisplayname": "Setting Mode",
+          "x-ms-optionSetType": "Picklist"
+        },
+        "jhrb_autocreatecontactonpromote_modename": {
+          "type": "string",
+          "title": "jhrb_autocreatecontactonpromote_modename",
+          "x-ms-dataverse-attribute": "jhrb_autocreatecontactonpromote_modename",
+          "x-ms-dataverse-type": "VirtualType",
+          "x-ms-schema-name": "jhrb_autocreatecontactonpromote_modeName",
+          "x-ms-dataverse-attribute-of": "jhrb_autocreatecontactonpromote_mode",
+          "x-ms-read-only": true
+        },
+        "jhrb_calendartype": {
+          "type": "string",
+          "title": "Calendar Type",
+          "x-ms-dataverse-attribute": "jhrb_calendartype",
+          "x-ms-dataverse-type": "IntegerType",
+          "x-ms-schema-name": "jhrb_calendartype"
+        },
+        "jhrb_calendartype_mode": {
+          "type": "string",
+          "title": "Calendar Type Mode",
+          "x-ms-dataverse-attribute": "jhrb_calendartype_mode",
+          "x-ms-dataverse-type": "PicklistType",
+          "x-ms-schema-name": "jhrb_calendartype_mode",
+          "enum": [
+            "Inherit",
+            "Default",
+            "Locked"
+          ],
+          "x-ms-enum-values": [
+            632490000,
+            632490001,
+            632490002
+          ],
+          "Color": [
+            null,
+            null,
+            null
+          ],
+          "x-ms-optionsetmetadataid": "088e9f3f-11e8-f111-84ea-0022489d55b0",
+          "x-ms-isGlobal": true,
+          "x-ms-optionsetdisplayname": "Setting Mode",
+          "x-ms-optionSetType": "Picklist"
+        },
+        "jhrb_calendartype_modename": {
+          "type": "string",
+          "title": "jhrb_calendartype_modename",
+          "x-ms-dataverse-attribute": "jhrb_calendartype_modename",
+          "x-ms-dataverse-type": "VirtualType",
+          "x-ms-schema-name": "jhrb_calendartype_modeName",
+          "x-ms-dataverse-attribute-of": "jhrb_calendartype_mode",
+          "x-ms-read-only": true
+        },
+        "jhrb_currencydecimalprecision": {
+          "type": "string",
+          "title": "Currency Decimal Precision",
+          "x-ms-dataverse-attribute": "jhrb_currencydecimalprecision",
+          "x-ms-dataverse-type": "IntegerType",
+          "x-ms-schema-name": "jhrb_currencydecimalprecision"
+        },
+        "jhrb_currencydecimalprecision_mode": {
+          "type": "string",
+          "title": "Currency Decimal Precision Mode",
+          "x-ms-dataverse-attribute": "jhrb_currencydecimalprecision_mode",
+          "x-ms-dataverse-type": "PicklistType",
+          "x-ms-schema-name": "jhrb_currencydecimalprecision_mode",
+          "enum": [
+            "Inherit",
+            "Default",
+            "Locked"
+          ],
+          "x-ms-enum-values": [
+            632490000,
+            632490001,
+            632490002
+          ],
+          "Color": [
+            null,
+            null,
+            null
+          ],
+          "x-ms-optionsetmetadataid": "088e9f3f-11e8-f111-84ea-0022489d55b0",
+          "x-ms-isGlobal": true,
+          "x-ms-optionsetdisplayname": "Setting Mode",
+          "x-ms-optionSetType": "Picklist"
+        },
+        "jhrb_currencydecimalprecision_modename": {
+          "type": "string",
+          "title": "jhrb_currencydecimalprecision_modename",
+          "x-ms-dataverse-attribute": "jhrb_currencydecimalprecision_modename",
+          "x-ms-dataverse-type": "VirtualType",
+          "x-ms-schema-name": "jhrb_currencydecimalprecision_modeName",
+          "x-ms-dataverse-attribute-of": "jhrb_currencydecimalprecision_mode",
+          "x-ms-read-only": true
+        },
+        "jhrb_currencyformatcode": {
+          "type": "string",
+          "title": "Currency Format",
+          "x-ms-dataverse-attribute": "jhrb_currencyformatcode",
+          "x-ms-dataverse-type": "IntegerType",
+          "x-ms-schema-name": "jhrb_currencyformatcode"
+        },
+        "jhrb_currencyformatcode_mode": {
+          "type": "string",
+          "title": "Currency Format Mode",
+          "x-ms-dataverse-attribute": "jhrb_currencyformatcode_mode",
+          "x-ms-dataverse-type": "PicklistType",
+          "x-ms-schema-name": "jhrb_currencyformatcode_mode",
+          "enum": [
+            "Inherit",
+            "Default",
+            "Locked"
+          ],
+          "x-ms-enum-values": [
+            632490000,
+            632490001,
+            632490002
+          ],
+          "Color": [
+            null,
+            null,
+            null
+          ],
+          "x-ms-optionsetmetadataid": "088e9f3f-11e8-f111-84ea-0022489d55b0",
+          "x-ms-isGlobal": true,
+          "x-ms-optionsetdisplayname": "Setting Mode",
+          "x-ms-optionSetType": "Picklist"
+        },
+        "jhrb_currencyformatcode_modename": {
+          "type": "string",
+          "title": "jhrb_currencyformatcode_modename",
+          "x-ms-dataverse-attribute": "jhrb_currencyformatcode_modename",
+          "x-ms-dataverse-type": "VirtualType",
+          "x-ms-schema-name": "jhrb_currencyformatcode_modeName",
+          "x-ms-dataverse-attribute-of": "jhrb_currencyformatcode_mode",
+          "x-ms-read-only": true
+        },
+        "jhrb_currencysymbol": {
+          "type": "string",
+          "title": "Currency Symbol",
+          "x-ms-dataverse-attribute": "jhrb_currencysymbol",
+          "x-ms-dataverse-type": "StringType",
+          "x-ms-schema-name": "jhrb_currencysymbol",
+          "maxLength": 13
+        },
+        "jhrb_currencysymbol_mode": {
+          "type": "string",
+          "title": "Currency Symbol Mode",
+          "x-ms-dataverse-attribute": "jhrb_currencysymbol_mode",
+          "x-ms-dataverse-type": "PicklistType",
+          "x-ms-schema-name": "jhrb_currencysymbol_mode",
+          "enum": [
+            "Inherit",
+            "Default",
+            "Locked"
+          ],
+          "x-ms-enum-values": [
+            632490000,
+            632490001,
+            632490002
+          ],
+          "Color": [
+            null,
+            null,
+            null
+          ],
+          "x-ms-optionsetmetadataid": "088e9f3f-11e8-f111-84ea-0022489d55b0",
+          "x-ms-isGlobal": true,
+          "x-ms-optionsetdisplayname": "Setting Mode",
+          "x-ms-optionSetType": "Picklist"
+        },
+        "jhrb_currencysymbol_modename": {
+          "type": "string",
+          "title": "jhrb_currencysymbol_modename",
+          "x-ms-dataverse-attribute": "jhrb_currencysymbol_modename",
+          "x-ms-dataverse-type": "VirtualType",
+          "x-ms-schema-name": "jhrb_currencysymbol_modeName",
+          "x-ms-dataverse-attribute-of": "jhrb_currencysymbol_mode",
+          "x-ms-read-only": true
+        },
+        "jhrb_datavalidationmodeforexporttoexcel": {
+          "type": "string",
+          "title": "Excel Export Data Validation",
+          "x-ms-dataverse-attribute": "jhrb_datavalidationmodeforexporttoexcel",
+          "x-ms-dataverse-type": "PicklistType",
+          "x-ms-schema-name": "jhrb_datavalidationmodeforexporttoexcel",
+          "enum": [
+            "Full",
+            "None"
+          ],
+          "x-ms-enum-values": [
+            0,
+            1
+          ],
+          "Color": [
+            null,
+            null
+          ],
+          "x-ms-optionsetmetadataid": "8a5233b8-12e8-f111-84ea-000d3ab163fb",
+          "x-ms-isGlobal": false,
+          "x-ms-optionsetdisplayname": "Excel Export Data Validation",
+          "x-ms-optionSetType": "Picklist"
+        },
+        "jhrb_datavalidationmodeforexporttoexcel_mode": {
+          "type": "string",
+          "title": "Excel Export Data Validation Mode",
+          "x-ms-dataverse-attribute": "jhrb_datavalidationmodeforexporttoexcel_mode",
+          "x-ms-dataverse-type": "PicklistType",
+          "x-ms-schema-name": "jhrb_datavalidationmodeforexporttoexcel_mode",
+          "enum": [
+            "Inherit",
+            "Default",
+            "Locked"
+          ],
+          "x-ms-enum-values": [
+            632490000,
+            632490001,
+            632490002
+          ],
+          "Color": [
+            null,
+            null,
+            null
+          ],
+          "x-ms-optionsetmetadataid": "088e9f3f-11e8-f111-84ea-0022489d55b0",
+          "x-ms-isGlobal": true,
+          "x-ms-optionsetdisplayname": "Setting Mode",
+          "x-ms-optionSetType": "Picklist"
+        },
+        "jhrb_datavalidationmodeforexporttoexcel_modename": {
+          "type": "string",
+          "title": "jhrb_datavalidationmodeforexporttoexcel_modename",
+          "x-ms-dataverse-attribute": "jhrb_datavalidationmodeforexporttoexcel_modename",
+          "x-ms-dataverse-type": "VirtualType",
+          "x-ms-schema-name": "jhrb_datavalidationmodeforexporttoexcel_modeName",
+          "x-ms-dataverse-attribute-of": "jhrb_datavalidationmodeforexporttoexcel_mode",
+          "x-ms-read-only": true
+        },
+        "jhrb_datavalidationmodeforexporttoexcelname": {
+          "type": "string",
+          "title": "jhrb_datavalidationmodeforexporttoexcelname",
+          "x-ms-dataverse-attribute": "jhrb_datavalidationmodeforexporttoexcelname",
+          "x-ms-dataverse-type": "VirtualType",
+          "x-ms-schema-name": "jhrb_datavalidationmodeforexporttoexcelName",
+          "x-ms-dataverse-attribute-of": "jhrb_datavalidationmodeforexporttoexcel",
+          "x-ms-read-only": true
+        },
+        "jhrb_dateformatcode": {
+          "type": "string",
+          "title": "Date Format Code",
+          "x-ms-dataverse-attribute": "jhrb_dateformatcode",
+          "x-ms-dataverse-type": "IntegerType",
+          "x-ms-schema-name": "jhrb_dateformatcode"
+        },
+        "jhrb_dateformatcode_mode": {
+          "type": "string",
+          "title": "Date Format Code Mode",
+          "x-ms-dataverse-attribute": "jhrb_dateformatcode_mode",
+          "x-ms-dataverse-type": "PicklistType",
+          "x-ms-schema-name": "jhrb_dateformatcode_mode",
+          "enum": [
+            "Inherit",
+            "Default",
+            "Locked"
+          ],
+          "x-ms-enum-values": [
+            632490000,
+            632490001,
+            632490002
+          ],
+          "Color": [
+            null,
+            null,
+            null
+          ],
+          "x-ms-optionsetmetadataid": "088e9f3f-11e8-f111-84ea-0022489d55b0",
+          "x-ms-isGlobal": true,
+          "x-ms-optionsetdisplayname": "Setting Mode",
+          "x-ms-optionSetType": "Picklist"
+        },
+        "jhrb_dateformatcode_modename": {
+          "type": "string",
+          "title": "jhrb_dateformatcode_modename",
+          "x-ms-dataverse-attribute": "jhrb_dateformatcode_modename",
+          "x-ms-dataverse-type": "VirtualType",
+          "x-ms-schema-name": "jhrb_dateformatcode_modeName",
+          "x-ms-dataverse-attribute-of": "jhrb_dateformatcode_mode",
+          "x-ms-read-only": true
+        },
+        "jhrb_dateformatstring": {
+          "type": "string",
+          "title": "Date Format",
+          "x-ms-dataverse-attribute": "jhrb_dateformatstring",
+          "x-ms-dataverse-type": "StringType",
+          "x-ms-schema-name": "jhrb_dateformatstring",
+          "maxLength": 255
+        },
+        "jhrb_dateformatstring_mode": {
+          "type": "string",
+          "title": "Date Format Mode",
+          "x-ms-dataverse-attribute": "jhrb_dateformatstring_mode",
+          "x-ms-dataverse-type": "PicklistType",
+          "x-ms-schema-name": "jhrb_dateformatstring_mode",
+          "enum": [
+            "Inherit",
+            "Default",
+            "Locked"
+          ],
+          "x-ms-enum-values": [
+            632490000,
+            632490001,
+            632490002
+          ],
+          "Color": [
+            null,
+            null,
+            null
+          ],
+          "x-ms-optionsetmetadataid": "088e9f3f-11e8-f111-84ea-0022489d55b0",
+          "x-ms-isGlobal": true,
+          "x-ms-optionsetdisplayname": "Setting Mode",
+          "x-ms-optionSetType": "Picklist"
+        },
+        "jhrb_dateformatstring_modename": {
+          "type": "string",
+          "title": "jhrb_dateformatstring_modename",
+          "x-ms-dataverse-attribute": "jhrb_dateformatstring_modename",
+          "x-ms-dataverse-type": "VirtualType",
+          "x-ms-schema-name": "jhrb_dateformatstring_modeName",
+          "x-ms-dataverse-attribute-of": "jhrb_dateformatstring_mode",
+          "x-ms-read-only": true
+        },
+        "jhrb_dateseparator": {
+          "type": "string",
+          "title": "Date Separator",
+          "x-ms-dataverse-attribute": "jhrb_dateseparator",
+          "x-ms-dataverse-type": "StringType",
+          "x-ms-schema-name": "jhrb_dateseparator",
+          "maxLength": 5
+        },
+        "jhrb_dateseparator_mode": {
+          "type": "string",
+          "title": "Date Separator Mode",
+          "x-ms-dataverse-attribute": "jhrb_dateseparator_mode",
+          "x-ms-dataverse-type": "PicklistType",
+          "x-ms-schema-name": "jhrb_dateseparator_mode",
+          "enum": [
+            "Inherit",
+            "Default",
+            "Locked"
+          ],
+          "x-ms-enum-values": [
+            632490000,
+            632490001,
+            632490002
+          ],
+          "Color": [
+            null,
+            null,
+            null
+          ],
+          "x-ms-optionsetmetadataid": "088e9f3f-11e8-f111-84ea-0022489d55b0",
+          "x-ms-isGlobal": true,
+          "x-ms-optionsetdisplayname": "Setting Mode",
+          "x-ms-optionSetType": "Picklist"
+        },
+        "jhrb_dateseparator_modename": {
+          "type": "string",
+          "title": "jhrb_dateseparator_modename",
+          "x-ms-dataverse-attribute": "jhrb_dateseparator_modename",
+          "x-ms-dataverse-type": "VirtualType",
+          "x-ms-schema-name": "jhrb_dateseparator_modeName",
+          "x-ms-dataverse-attribute-of": "jhrb_dateseparator_mode",
+          "x-ms-read-only": true
+        },
+        "jhrb_decimalsymbol": {
+          "type": "string",
+          "title": "Decimal Symbol",
+          "x-ms-dataverse-attribute": "jhrb_decimalsymbol",
+          "x-ms-dataverse-type": "StringType",
+          "x-ms-schema-name": "jhrb_decimalsymbol",
+          "maxLength": 5
+        },
+        "jhrb_decimalsymbol_mode": {
+          "type": "string",
+          "title": "Decimal Symbol Mode",
+          "x-ms-dataverse-attribute": "jhrb_decimalsymbol_mode",
+          "x-ms-dataverse-type": "PicklistType",
+          "x-ms-schema-name": "jhrb_decimalsymbol_mode",
+          "enum": [
+            "Inherit",
+            "Default",
+            "Locked"
+          ],
+          "x-ms-enum-values": [
+            632490000,
+            632490001,
+            632490002
+          ],
+          "Color": [
+            null,
+            null,
+            null
+          ],
+          "x-ms-optionsetmetadataid": "088e9f3f-11e8-f111-84ea-0022489d55b0",
+          "x-ms-isGlobal": true,
+          "x-ms-optionsetdisplayname": "Setting Mode",
+          "x-ms-optionSetType": "Picklist"
+        },
+        "jhrb_decimalsymbol_modename": {
+          "type": "string",
+          "title": "jhrb_decimalsymbol_modename",
+          "x-ms-dataverse-attribute": "jhrb_decimalsymbol_modename",
+          "x-ms-dataverse-type": "VirtualType",
+          "x-ms-schema-name": "jhrb_decimalsymbol_modeName",
+          "x-ms-dataverse-attribute-of": "jhrb_decimalsymbol_mode",
+          "x-ms-read-only": true
+        },
+        "jhrb_defaultcalendarview": {
+          "type": "string",
+          "title": "Default Calendar View",
+          "x-ms-dataverse-attribute": "jhrb_defaultcalendarview",
+          "x-ms-dataverse-type": "IntegerType",
+          "x-ms-schema-name": "jhrb_defaultcalendarview"
+        },
+        "jhrb_defaultcalendarview_mode": {
+          "type": "string",
+          "title": "Default Calendar View Mode",
+          "x-ms-dataverse-attribute": "jhrb_defaultcalendarview_mode",
+          "x-ms-dataverse-type": "PicklistType",
+          "x-ms-schema-name": "jhrb_defaultcalendarview_mode",
+          "enum": [
+            "Inherit",
+            "Default",
+            "Locked"
+          ],
+          "x-ms-enum-values": [
+            632490000,
+            632490001,
+            632490002
+          ],
+          "Color": [
+            null,
+            null,
+            null
+          ],
+          "x-ms-optionsetmetadataid": "088e9f3f-11e8-f111-84ea-0022489d55b0",
+          "x-ms-isGlobal": true,
+          "x-ms-optionsetdisplayname": "Setting Mode",
+          "x-ms-optionSetType": "Picklist"
+        },
+        "jhrb_defaultcalendarview_modename": {
+          "type": "string",
+          "title": "jhrb_defaultcalendarview_modename",
+          "x-ms-dataverse-attribute": "jhrb_defaultcalendarview_modename",
+          "x-ms-dataverse-type": "VirtualType",
+          "x-ms-schema-name": "jhrb_defaultcalendarview_modeName",
+          "x-ms-dataverse-attribute-of": "jhrb_defaultcalendarview_mode",
+          "x-ms-read-only": true
+        },
+        "jhrb_defaultcountrycode": {
+          "type": "string",
+          "title": "Default Country Code",
+          "x-ms-dataverse-attribute": "jhrb_defaultcountrycode",
+          "x-ms-dataverse-type": "StringType",
+          "x-ms-schema-name": "jhrb_defaultcountrycode",
+          "maxLength": 30
+        },
+        "jhrb_defaultcountrycode_mode": {
+          "type": "string",
+          "title": "Default Country Code Mode",
+          "x-ms-dataverse-attribute": "jhrb_defaultcountrycode_mode",
+          "x-ms-dataverse-type": "PicklistType",
+          "x-ms-schema-name": "jhrb_defaultcountrycode_mode",
+          "enum": [
+            "Inherit",
+            "Default",
+            "Locked"
+          ],
+          "x-ms-enum-values": [
+            632490000,
+            632490001,
+            632490002
+          ],
+          "Color": [
+            null,
+            null,
+            null
+          ],
+          "x-ms-optionsetmetadataid": "088e9f3f-11e8-f111-84ea-0022489d55b0",
+          "x-ms-isGlobal": true,
+          "x-ms-optionsetdisplayname": "Setting Mode",
+          "x-ms-optionSetType": "Picklist"
+        },
+        "jhrb_defaultcountrycode_modename": {
+          "type": "string",
+          "title": "jhrb_defaultcountrycode_modename",
+          "x-ms-dataverse-attribute": "jhrb_defaultcountrycode_modename",
+          "x-ms-dataverse-type": "VirtualType",
+          "x-ms-schema-name": "jhrb_defaultcountrycode_modeName",
+          "x-ms-dataverse-attribute-of": "jhrb_defaultcountrycode_mode",
+          "x-ms-read-only": true
+        },
+        "jhrb_defaultdashboardid": {
+          "type": "string",
+          "title": "Default Dashboard",
+          "x-ms-dataverse-attribute": "jhrb_defaultdashboardid",
+          "x-ms-dataverse-type": "StringType",
+          "x-ms-schema-name": "jhrb_defaultdashboardid",
+          "maxLength": 36
+        },
+        "jhrb_defaultdashboardid_mode": {
+          "type": "string",
+          "title": "Default Dashboard Mode",
+          "x-ms-dataverse-attribute": "jhrb_defaultdashboardid_mode",
+          "x-ms-dataverse-type": "PicklistType",
+          "x-ms-schema-name": "jhrb_defaultdashboardid_mode",
+          "enum": [
+            "Inherit",
+            "Default",
+            "Locked"
+          ],
+          "x-ms-enum-values": [
+            632490000,
+            632490001,
+            632490002
+          ],
+          "Color": [
+            null,
+            null,
+            null
+          ],
+          "x-ms-optionsetmetadataid": "088e9f3f-11e8-f111-84ea-0022489d55b0",
+          "x-ms-isGlobal": true,
+          "x-ms-optionsetdisplayname": "Setting Mode",
+          "x-ms-optionSetType": "Picklist"
+        },
+        "jhrb_defaultdashboardid_modename": {
+          "type": "string",
+          "title": "jhrb_defaultdashboardid_modename",
+          "x-ms-dataverse-attribute": "jhrb_defaultdashboardid_modename",
+          "x-ms-dataverse-type": "VirtualType",
+          "x-ms-schema-name": "jhrb_defaultdashboardid_modeName",
+          "x-ms-dataverse-attribute-of": "jhrb_defaultdashboardid_mode",
+          "x-ms-read-only": true
+        },
+        "jhrb_defaultsearchexperience": {
+          "type": "string",
+          "title": "Default Search Experience",
+          "x-ms-dataverse-attribute": "jhrb_defaultsearchexperience",
+          "x-ms-dataverse-type": "PicklistType",
+          "x-ms-schema-name": "jhrb_defaultsearchexperience",
+          "enum": [
+            "Use last search",
+            "Relevance search",
+            "Categorized search",
+            "Custom search"
+          ],
+          "x-ms-enum-values": [
+            2,
+            0,
+            1,
+            3
+          ],
+          "Color": [
+            null,
+            null,
+            null,
+            null
+          ],
+          "x-ms-optionsetmetadataid": "f8b0b674-12e8-f111-84e8-7ced8d775d2e",
+          "x-ms-isGlobal": false,
+          "x-ms-optionsetdisplayname": "Default Search Experience",
+          "x-ms-optionSetType": "Picklist"
+        },
+        "jhrb_defaultsearchexperience_mode": {
+          "type": "string",
+          "title": "Default Search Experience Mode",
+          "x-ms-dataverse-attribute": "jhrb_defaultsearchexperience_mode",
+          "x-ms-dataverse-type": "PicklistType",
+          "x-ms-schema-name": "jhrb_defaultsearchexperience_mode",
+          "enum": [
+            "Inherit",
+            "Default",
+            "Locked"
+          ],
+          "x-ms-enum-values": [
+            632490000,
+            632490001,
+            632490002
+          ],
+          "Color": [
+            null,
+            null,
+            null
+          ],
+          "x-ms-optionsetmetadataid": "088e9f3f-11e8-f111-84ea-0022489d55b0",
+          "x-ms-isGlobal": true,
+          "x-ms-optionsetdisplayname": "Setting Mode",
+          "x-ms-optionSetType": "Picklist"
+        },
+        "jhrb_defaultsearchexperience_modename": {
+          "type": "string",
+          "title": "jhrb_defaultsearchexperience_modename",
+          "x-ms-dataverse-attribute": "jhrb_defaultsearchexperience_modename",
+          "x-ms-dataverse-type": "VirtualType",
+          "x-ms-schema-name": "jhrb_defaultsearchexperience_modeName",
+          "x-ms-dataverse-attribute-of": "jhrb_defaultsearchexperience_mode",
+          "x-ms-read-only": true
+        },
+        "jhrb_defaultsearchexperiencename": {
+          "type": "string",
+          "title": "jhrb_defaultsearchexperiencename",
+          "x-ms-dataverse-attribute": "jhrb_defaultsearchexperiencename",
+          "x-ms-dataverse-type": "VirtualType",
+          "x-ms-schema-name": "jhrb_defaultsearchexperienceName",
+          "x-ms-dataverse-attribute-of": "jhrb_defaultsearchexperience",
+          "x-ms-read-only": true
+        },
+        "jhrb_displaydensity": {
+          "type": "string",
+          "title": "Display Density",
+          "x-ms-dataverse-attribute": "jhrb_displaydensity",
+          "x-ms-dataverse-type": "PicklistType",
+          "x-ms-schema-name": "jhrb_displaydensity",
+          "enum": [
+            "Default",
+            "Comfortable",
+            "Cozy",
+            "Compact"
+          ],
+          "x-ms-enum-values": [
+            0,
+            1,
+            2,
+            3
+          ],
+          "Color": [
+            null,
+            null,
+            null,
+            null
+          ],
+          "x-ms-optionsetmetadataid": "80a56187-12e8-f111-84ea-000d3ab163fb",
+          "x-ms-isGlobal": false,
+          "x-ms-optionsetdisplayname": "Display Density",
+          "x-ms-optionSetType": "Picklist"
+        },
+        "jhrb_displaydensity_mode": {
+          "type": "string",
+          "title": "Display Density Mode",
+          "x-ms-dataverse-attribute": "jhrb_displaydensity_mode",
+          "x-ms-dataverse-type": "PicklistType",
+          "x-ms-schema-name": "jhrb_displaydensity_mode",
+          "enum": [
+            "Inherit",
+            "Default",
+            "Locked"
+          ],
+          "x-ms-enum-values": [
+            632490000,
+            632490001,
+            632490002
+          ],
+          "Color": [
+            null,
+            null,
+            null
+          ],
+          "x-ms-optionsetmetadataid": "088e9f3f-11e8-f111-84ea-0022489d55b0",
+          "x-ms-isGlobal": true,
+          "x-ms-optionsetdisplayname": "Setting Mode",
+          "x-ms-optionSetType": "Picklist"
+        },
+        "jhrb_displaydensity_modename": {
+          "type": "string",
+          "title": "jhrb_displaydensity_modename",
+          "x-ms-dataverse-attribute": "jhrb_displaydensity_modename",
+          "x-ms-dataverse-type": "VirtualType",
+          "x-ms-schema-name": "jhrb_displaydensity_modeName",
+          "x-ms-dataverse-attribute-of": "jhrb_displaydensity_mode",
+          "x-ms-read-only": true
+        },
+        "jhrb_displaydensityname": {
+          "type": "string",
+          "title": "jhrb_displaydensityname",
+          "x-ms-dataverse-attribute": "jhrb_displaydensityname",
+          "x-ms-dataverse-type": "VirtualType",
+          "x-ms-schema-name": "jhrb_displaydensityName",
+          "x-ms-dataverse-attribute-of": "jhrb_displaydensity",
+          "x-ms-read-only": true
+        },
+        "jhrb_entityformmode": {
+          "type": "string",
+          "title": "Form Mode",
+          "x-ms-dataverse-attribute": "jhrb_entityformmode",
+          "x-ms-dataverse-type": "PicklistType",
+          "x-ms-schema-name": "jhrb_entityformmode",
+          "enum": [
+            "Organization default",
+            "Read-optimized",
+            "Edit"
+          ],
+          "x-ms-enum-values": [
+            0,
+            1,
+            2
+          ],
+          "Color": [
+            null,
+            null,
+            null
+          ],
+          "x-ms-optionsetmetadataid": "18f7707b-12e8-f111-84ea-000d3ab163fb",
+          "x-ms-isGlobal": false,
+          "x-ms-optionsetdisplayname": "Form Mode",
+          "x-ms-optionSetType": "Picklist"
+        },
+        "jhrb_entityformmode_mode": {
+          "type": "string",
+          "title": "Form Mode Mode",
+          "x-ms-dataverse-attribute": "jhrb_entityformmode_mode",
+          "x-ms-dataverse-type": "PicklistType",
+          "x-ms-schema-name": "jhrb_entityformmode_mode",
+          "enum": [
+            "Inherit",
+            "Default",
+            "Locked"
+          ],
+          "x-ms-enum-values": [
+            632490000,
+            632490001,
+            632490002
+          ],
+          "Color": [
+            null,
+            null,
+            null
+          ],
+          "x-ms-optionsetmetadataid": "088e9f3f-11e8-f111-84ea-0022489d55b0",
+          "x-ms-isGlobal": true,
+          "x-ms-optionsetdisplayname": "Setting Mode",
+          "x-ms-optionSetType": "Picklist"
+        },
+        "jhrb_entityformmode_modename": {
+          "type": "string",
+          "title": "jhrb_entityformmode_modename",
+          "x-ms-dataverse-attribute": "jhrb_entityformmode_modename",
+          "x-ms-dataverse-type": "VirtualType",
+          "x-ms-schema-name": "jhrb_entityformmode_modeName",
+          "x-ms-dataverse-attribute-of": "jhrb_entityformmode_mode",
+          "x-ms-read-only": true
+        },
+        "jhrb_entityformmodename": {
+          "type": "string",
+          "title": "jhrb_entityformmodename",
+          "x-ms-dataverse-attribute": "jhrb_entityformmodename",
+          "x-ms-dataverse-type": "VirtualType",
+          "x-ms-schema-name": "jhrb_entityformmodeName",
+          "x-ms-dataverse-attribute-of": "jhrb_entityformmode",
+          "x-ms-read-only": true
+        },
+        "jhrb_fullnameconventioncode": {
+          "type": "string",
+          "title": "Full Name Format",
+          "x-ms-dataverse-attribute": "jhrb_fullnameconventioncode",
+          "x-ms-dataverse-type": "IntegerType",
+          "x-ms-schema-name": "jhrb_fullnameconventioncode"
+        },
+        "jhrb_fullnameconventioncode_mode": {
+          "type": "string",
+          "title": "Full Name Format Mode",
+          "x-ms-dataverse-attribute": "jhrb_fullnameconventioncode_mode",
+          "x-ms-dataverse-type": "PicklistType",
+          "x-ms-schema-name": "jhrb_fullnameconventioncode_mode",
+          "enum": [
+            "Inherit",
+            "Default",
+            "Locked"
+          ],
+          "x-ms-enum-values": [
+            632490000,
+            632490001,
+            632490002
+          ],
+          "Color": [
+            null,
+            null,
+            null
+          ],
+          "x-ms-optionsetmetadataid": "088e9f3f-11e8-f111-84ea-0022489d55b0",
+          "x-ms-isGlobal": true,
+          "x-ms-optionsetdisplayname": "Setting Mode",
+          "x-ms-optionSetType": "Picklist"
+        },
+        "jhrb_fullnameconventioncode_modename": {
+          "type": "string",
+          "title": "jhrb_fullnameconventioncode_modename",
+          "x-ms-dataverse-attribute": "jhrb_fullnameconventioncode_modename",
+          "x-ms-dataverse-type": "VirtualType",
+          "x-ms-schema-name": "jhrb_fullnameconventioncode_modeName",
+          "x-ms-dataverse-attribute-of": "jhrb_fullnameconventioncode_mode",
+          "x-ms-read-only": true
+        },
+        "jhrb_helplanguageid": {
+          "type": "string",
+          "title": "Help Language",
+          "x-ms-dataverse-attribute": "jhrb_helplanguageid",
+          "x-ms-dataverse-type": "IntegerType",
+          "x-ms-schema-name": "jhrb_helplanguageid"
+        },
+        "jhrb_helplanguageid_mode": {
+          "type": "string",
+          "title": "Help Language Mode",
+          "x-ms-dataverse-attribute": "jhrb_helplanguageid_mode",
+          "x-ms-dataverse-type": "PicklistType",
+          "x-ms-schema-name": "jhrb_helplanguageid_mode",
+          "enum": [
+            "Inherit",
+            "Default",
+            "Locked"
+          ],
+          "x-ms-enum-values": [
+            632490000,
+            632490001,
+            632490002
+          ],
+          "Color": [
+            null,
+            null,
+            null
+          ],
+          "x-ms-optionsetmetadataid": "088e9f3f-11e8-f111-84ea-0022489d55b0",
+          "x-ms-isGlobal": true,
+          "x-ms-optionsetdisplayname": "Setting Mode",
+          "x-ms-optionSetType": "Picklist"
+        },
+        "jhrb_helplanguageid_modename": {
+          "type": "string",
+          "title": "jhrb_helplanguageid_modename",
+          "x-ms-dataverse-attribute": "jhrb_helplanguageid_modename",
+          "x-ms-dataverse-type": "VirtualType",
+          "x-ms-schema-name": "jhrb_helplanguageid_modeName",
+          "x-ms-dataverse-attribute-of": "jhrb_helplanguageid_mode",
+          "x-ms-read-only": true
+        },
+        "jhrb_homepagearea": {
+          "type": "string",
+          "title": "Default Pane",
+          "x-ms-dataverse-attribute": "jhrb_homepagearea",
+          "x-ms-dataverse-type": "StringType",
+          "x-ms-schema-name": "jhrb_homepagearea",
+          "maxLength": 200
+        },
+        "jhrb_homepagearea_mode": {
+          "type": "string",
+          "title": "Default Pane Mode",
+          "x-ms-dataverse-attribute": "jhrb_homepagearea_mode",
+          "x-ms-dataverse-type": "PicklistType",
+          "x-ms-schema-name": "jhrb_homepagearea_mode",
+          "enum": [
+            "Inherit",
+            "Default",
+            "Locked"
+          ],
+          "x-ms-enum-values": [
+            632490000,
+            632490001,
+            632490002
+          ],
+          "Color": [
+            null,
+            null,
+            null
+          ],
+          "x-ms-optionsetmetadataid": "088e9f3f-11e8-f111-84ea-0022489d55b0",
+          "x-ms-isGlobal": true,
+          "x-ms-optionsetdisplayname": "Setting Mode",
+          "x-ms-optionSetType": "Picklist"
+        },
+        "jhrb_homepagearea_modename": {
+          "type": "string",
+          "title": "jhrb_homepagearea_modename",
+          "x-ms-dataverse-attribute": "jhrb_homepagearea_modename",
+          "x-ms-dataverse-type": "VirtualType",
+          "x-ms-schema-name": "jhrb_homepagearea_modeName",
+          "x-ms-dataverse-attribute-of": "jhrb_homepagearea_mode",
+          "x-ms-read-only": true
+        },
+        "jhrb_homepagelayout": {
+          "type": "string",
+          "title": "Home Page Layout",
+          "x-ms-dataverse-attribute": "jhrb_homepagelayout",
+          "x-ms-dataverse-type": "StringType",
+          "x-ms-schema-name": "jhrb_homepagelayout",
+          "maxLength": 2000
+        },
+        "jhrb_homepagelayout_mode": {
+          "type": "string",
+          "title": "Home Page Layout Mode",
+          "x-ms-dataverse-attribute": "jhrb_homepagelayout_mode",
+          "x-ms-dataverse-type": "PicklistType",
+          "x-ms-schema-name": "jhrb_homepagelayout_mode",
+          "enum": [
+            "Inherit",
+            "Default",
+            "Locked"
+          ],
+          "x-ms-enum-values": [
+            632490000,
+            632490001,
+            632490002
+          ],
+          "Color": [
+            null,
+            null,
+            null
+          ],
+          "x-ms-optionsetmetadataid": "088e9f3f-11e8-f111-84ea-0022489d55b0",
+          "x-ms-isGlobal": true,
+          "x-ms-optionsetdisplayname": "Setting Mode",
+          "x-ms-optionSetType": "Picklist"
+        },
+        "jhrb_homepagelayout_modename": {
+          "type": "string",
+          "title": "jhrb_homepagelayout_modename",
+          "x-ms-dataverse-attribute": "jhrb_homepagelayout_modename",
+          "x-ms-dataverse-type": "VirtualType",
+          "x-ms-schema-name": "jhrb_homepagelayout_modeName",
+          "x-ms-dataverse-attribute-of": "jhrb_homepagelayout_mode",
+          "x-ms-read-only": true
+        },
+        "jhrb_homepagesubarea": {
+          "type": "string",
+          "title": "Default Tab",
+          "x-ms-dataverse-attribute": "jhrb_homepagesubarea",
+          "x-ms-dataverse-type": "StringType",
+          "x-ms-schema-name": "jhrb_homepagesubarea",
+          "maxLength": 200
+        },
+        "jhrb_homepagesubarea_mode": {
+          "type": "string",
+          "title": "Default Tab Mode",
+          "x-ms-dataverse-attribute": "jhrb_homepagesubarea_mode",
+          "x-ms-dataverse-type": "PicklistType",
+          "x-ms-schema-name": "jhrb_homepagesubarea_mode",
+          "enum": [
+            "Inherit",
+            "Default",
+            "Locked"
+          ],
+          "x-ms-enum-values": [
+            632490000,
+            632490001,
+            632490002
+          ],
+          "Color": [
+            null,
+            null,
+            null
+          ],
+          "x-ms-optionsetmetadataid": "088e9f3f-11e8-f111-84ea-0022489d55b0",
+          "x-ms-isGlobal": true,
+          "x-ms-optionsetdisplayname": "Setting Mode",
+          "x-ms-optionSetType": "Picklist"
+        },
+        "jhrb_homepagesubarea_modename": {
+          "type": "string",
+          "title": "jhrb_homepagesubarea_modename",
+          "x-ms-dataverse-attribute": "jhrb_homepagesubarea_modename",
+          "x-ms-dataverse-type": "VirtualType",
+          "x-ms-schema-name": "jhrb_homepagesubarea_modeName",
+          "x-ms-dataverse-attribute-of": "jhrb_homepagesubarea_mode",
+          "x-ms-read-only": true
+        },
+        "jhrb_ignoreunsolicitedemail": {
+          "type": "string",
+          "title": "Ignore Unsolicited Email",
+          "x-ms-dataverse-attribute": "jhrb_ignoreunsolicitedemail",
+          "x-ms-dataverse-type": "BooleanType",
+          "x-ms-schema-name": "jhrb_ignoreunsolicitedemail",
+          "enum": [
+            "No",
+            "Yes"
+          ],
+          "x-ms-enum-values": [
+            0,
+            1
+          ],
+          "Color": [
+            null,
+            null
+          ],
+          "x-ms-optionsetmetadataid": "8e723ed7-12e8-f111-84ea-002248a422bc",
+          "x-ms-isGlobal": false,
+          "x-ms-optionsetdisplayname": "Ignore Unsolicited Email",
+          "x-ms-optionSetType": "Boolean"
+        },
+        "jhrb_ignoreunsolicitedemail_mode": {
+          "type": "string",
+          "title": "Ignore Unsolicited Email Mode",
+          "x-ms-dataverse-attribute": "jhrb_ignoreunsolicitedemail_mode",
+          "x-ms-dataverse-type": "PicklistType",
+          "x-ms-schema-name": "jhrb_ignoreunsolicitedemail_mode",
+          "enum": [
+            "Inherit",
+            "Default",
+            "Locked"
+          ],
+          "x-ms-enum-values": [
+            632490000,
+            632490001,
+            632490002
+          ],
+          "Color": [
+            null,
+            null,
+            null
+          ],
+          "x-ms-optionsetmetadataid": "088e9f3f-11e8-f111-84ea-0022489d55b0",
+          "x-ms-isGlobal": true,
+          "x-ms-optionsetdisplayname": "Setting Mode",
+          "x-ms-optionSetType": "Picklist"
+        },
+        "jhrb_ignoreunsolicitedemail_modename": {
+          "type": "string",
+          "title": "jhrb_ignoreunsolicitedemail_modename",
+          "x-ms-dataverse-attribute": "jhrb_ignoreunsolicitedemail_modename",
+          "x-ms-dataverse-type": "VirtualType",
+          "x-ms-schema-name": "jhrb_ignoreunsolicitedemail_modeName",
+          "x-ms-dataverse-attribute-of": "jhrb_ignoreunsolicitedemail_mode",
+          "x-ms-read-only": true
+        },
+        "jhrb_ignoreunsolicitedemailname": {
+          "type": "string",
+          "title": "jhrb_ignoreunsolicitedemailname",
+          "x-ms-dataverse-attribute": "jhrb_ignoreunsolicitedemailname",
+          "x-ms-dataverse-type": "VirtualType",
+          "x-ms-schema-name": "jhrb_ignoreunsolicitedemailName",
+          "x-ms-dataverse-attribute-of": "jhrb_ignoreunsolicitedemail",
+          "x-ms-read-only": true
+        },
+        "jhrb_incomingemailfilteringmethod": {
+          "type": "string",
+          "title": "Incoming Email Filtering",
+          "x-ms-dataverse-attribute": "jhrb_incomingemailfilteringmethod",
+          "x-ms-dataverse-type": "PicklistType",
+          "x-ms-schema-name": "jhrb_incomingemailfilteringmethod",
+          "enum": [
+            "All email messages",
+            "Email messages in response to Dynamics 365 email",
+            "Email messages from Dynamics 365 Leads, Contacts and Accounts",
+            "Email messages from Dynamics 365 records that are email enabled",
+            "No email messages"
+          ],
+          "x-ms-enum-values": [
+            0,
+            1,
+            2,
+            3,
+            4
+          ],
+          "Color": [
+            null,
+            null,
+            null,
+            null,
+            null
+          ],
+          "x-ms-optionsetmetadataid": "083944cd-12e8-f111-84e8-7ced8d775d2e",
+          "x-ms-isGlobal": false,
+          "x-ms-optionsetdisplayname": "Incoming Email Filtering",
+          "x-ms-optionSetType": "Picklist"
+        },
+        "jhrb_incomingemailfilteringmethod_mode": {
+          "type": "string",
+          "title": "Incoming Email Filtering Mode",
+          "x-ms-dataverse-attribute": "jhrb_incomingemailfilteringmethod_mode",
+          "x-ms-dataverse-type": "PicklistType",
+          "x-ms-schema-name": "jhrb_incomingemailfilteringmethod_mode",
+          "enum": [
+            "Inherit",
+            "Default",
+            "Locked"
+          ],
+          "x-ms-enum-values": [
+            632490000,
+            632490001,
+            632490002
+          ],
+          "Color": [
+            null,
+            null,
+            null
+          ],
+          "x-ms-optionsetmetadataid": "088e9f3f-11e8-f111-84ea-0022489d55b0",
+          "x-ms-isGlobal": true,
+          "x-ms-optionsetdisplayname": "Setting Mode",
+          "x-ms-optionSetType": "Picklist"
+        },
+        "jhrb_incomingemailfilteringmethod_modename": {
+          "type": "string",
+          "title": "jhrb_incomingemailfilteringmethod_modename",
+          "x-ms-dataverse-attribute": "jhrb_incomingemailfilteringmethod_modename",
+          "x-ms-dataverse-type": "VirtualType",
+          "x-ms-schema-name": "jhrb_incomingemailfilteringmethod_modeName",
+          "x-ms-dataverse-attribute-of": "jhrb_incomingemailfilteringmethod_mode",
+          "x-ms-read-only": true
+        },
+        "jhrb_incomingemailfilteringmethodname": {
+          "type": "string",
+          "title": "jhrb_incomingemailfilteringmethodname",
+          "x-ms-dataverse-attribute": "jhrb_incomingemailfilteringmethodname",
+          "x-ms-dataverse-type": "VirtualType",
+          "x-ms-schema-name": "jhrb_incomingemailfilteringmethodName",
+          "x-ms-dataverse-attribute-of": "jhrb_incomingemailfilteringmethod",
+          "x-ms-read-only": true
+        },
+        "jhrb_isactive": {
+          "type": "string",
+          "title": "Active",
+          "x-ms-dataverse-attribute": "jhrb_isactive",
+          "x-ms-dataverse-type": "BooleanType",
+          "x-ms-schema-name": "jhrb_IsActive",
+          "enum": [
+            "No",
+            "Yes"
+          ],
+          "x-ms-enum-values": [
+            0,
+            1
+          ],
+          "Color": [
+            null,
+            null
+          ],
+          "x-ms-optionsetmetadataid": "11769882-11e8-f111-84ea-0022489d55b0",
+          "x-ms-isGlobal": false,
+          "x-ms-optionsetdisplayname": "Active",
+          "x-ms-optionSetType": "Boolean"
+        },
+        "jhrb_isactivename": {
+          "type": "string",
+          "title": "jhrb_isactivename",
+          "x-ms-dataverse-attribute": "jhrb_isactivename",
+          "x-ms-dataverse-type": "VirtualType",
+          "x-ms-schema-name": "jhrb_isactiveName",
+          "x-ms-dataverse-attribute-of": "jhrb_isactive",
+          "x-ms-read-only": true
+        },
+        "jhrb_isautodatacaptureenabled": {
+          "type": "string",
+          "title": "Auto Data Capture",
+          "x-ms-dataverse-attribute": "jhrb_isautodatacaptureenabled",
+          "x-ms-dataverse-type": "BooleanType",
+          "x-ms-schema-name": "jhrb_isautodatacaptureenabled",
+          "enum": [
+            "No",
+            "Yes"
+          ],
+          "x-ms-enum-values": [
+            0,
+            1
+          ],
+          "Color": [
+            null,
+            null
+          ],
+          "x-ms-optionsetmetadataid": "e05858f6-12e8-f111-84ea-002248a422bc",
+          "x-ms-isGlobal": false,
+          "x-ms-optionsetdisplayname": "Auto Data Capture",
+          "x-ms-optionSetType": "Boolean"
+        },
+        "jhrb_isautodatacaptureenabled_mode": {
+          "type": "string",
+          "title": "Auto Data Capture Mode",
+          "x-ms-dataverse-attribute": "jhrb_isautodatacaptureenabled_mode",
+          "x-ms-dataverse-type": "PicklistType",
+          "x-ms-schema-name": "jhrb_isautodatacaptureenabled_mode",
+          "enum": [
+            "Inherit",
+            "Default",
+            "Locked"
+          ],
+          "x-ms-enum-values": [
+            632490000,
+            632490001,
+            632490002
+          ],
+          "Color": [
+            null,
+            null,
+            null
+          ],
+          "x-ms-optionsetmetadataid": "088e9f3f-11e8-f111-84ea-0022489d55b0",
+          "x-ms-isGlobal": true,
+          "x-ms-optionsetdisplayname": "Setting Mode",
+          "x-ms-optionSetType": "Picklist"
+        },
+        "jhrb_isautodatacaptureenabled_modename": {
+          "type": "string",
+          "title": "jhrb_isautodatacaptureenabled_modename",
+          "x-ms-dataverse-attribute": "jhrb_isautodatacaptureenabled_modename",
+          "x-ms-dataverse-type": "VirtualType",
+          "x-ms-schema-name": "jhrb_isautodatacaptureenabled_modeName",
+          "x-ms-dataverse-attribute-of": "jhrb_isautodatacaptureenabled_mode",
+          "x-ms-read-only": true
+        },
+        "jhrb_isautodatacaptureenabledname": {
+          "type": "string",
+          "title": "jhrb_isautodatacaptureenabledname",
+          "x-ms-dataverse-attribute": "jhrb_isautodatacaptureenabledname",
+          "x-ms-dataverse-type": "VirtualType",
+          "x-ms-schema-name": "jhrb_isautodatacaptureenabledName",
+          "x-ms-dataverse-attribute-of": "jhrb_isautodatacaptureenabled",
+          "x-ms-read-only": true
+        },
+        "jhrb_isdefaultcountrycodecheckenabled": {
+          "type": "string",
+          "title": "Enable Default Country Code",
+          "x-ms-dataverse-attribute": "jhrb_isdefaultcountrycodecheckenabled",
+          "x-ms-dataverse-type": "BooleanType",
+          "x-ms-schema-name": "jhrb_isdefaultcountrycodecheckenabled",
+          "enum": [
+            "No",
+            "Yes"
+          ],
+          "x-ms-enum-values": [
+            0,
+            1
+          ],
+          "Color": [
+            null,
+            null
+          ],
+          "x-ms-optionsetmetadataid": "53767cbf-11e8-f111-84ea-000d3ab163fb",
+          "x-ms-isGlobal": false,
+          "x-ms-optionsetdisplayname": "Enable Default Country Code",
+          "x-ms-optionSetType": "Boolean"
+        },
+        "jhrb_isdefaultcountrycodecheckenabled_mode": {
+          "type": "string",
+          "title": "Enable Default Country Code Mode",
+          "x-ms-dataverse-attribute": "jhrb_isdefaultcountrycodecheckenabled_mode",
+          "x-ms-dataverse-type": "PicklistType",
+          "x-ms-schema-name": "jhrb_isdefaultcountrycodecheckenabled_mode",
+          "enum": [
+            "Inherit",
+            "Default",
+            "Locked"
+          ],
+          "x-ms-enum-values": [
+            632490000,
+            632490001,
+            632490002
+          ],
+          "Color": [
+            null,
+            null,
+            null
+          ],
+          "x-ms-optionsetmetadataid": "088e9f3f-11e8-f111-84ea-0022489d55b0",
+          "x-ms-isGlobal": true,
+          "x-ms-optionsetdisplayname": "Setting Mode",
+          "x-ms-optionSetType": "Picklist"
+        },
+        "jhrb_isdefaultcountrycodecheckenabled_modename": {
+          "type": "string",
+          "title": "jhrb_isdefaultcountrycodecheckenabled_modename",
+          "x-ms-dataverse-attribute": "jhrb_isdefaultcountrycodecheckenabled_modename",
+          "x-ms-dataverse-type": "VirtualType",
+          "x-ms-schema-name": "jhrb_isdefaultcountrycodecheckenabled_modeName",
+          "x-ms-dataverse-attribute-of": "jhrb_isdefaultcountrycodecheckenabled_mode",
+          "x-ms-read-only": true
+        },
+        "jhrb_isdefaultcountrycodecheckenabledname": {
+          "type": "string",
+          "title": "jhrb_isdefaultcountrycodecheckenabledname",
+          "x-ms-dataverse-attribute": "jhrb_isdefaultcountrycodecheckenabledname",
+          "x-ms-dataverse-type": "VirtualType",
+          "x-ms-schema-name": "jhrb_isdefaultcountrycodecheckenabledName",
+          "x-ms-dataverse-attribute-of": "jhrb_isdefaultcountrycodecheckenabled",
+          "x-ms-read-only": true
+        },
+        "jhrb_isemailconversationviewenabled": {
+          "type": "string",
+          "title": "Email Conversation View",
+          "x-ms-dataverse-attribute": "jhrb_isemailconversationviewenabled",
+          "x-ms-dataverse-type": "BooleanType",
+          "x-ms-schema-name": "jhrb_isemailconversationviewenabled",
+          "enum": [
+            "No",
+            "Yes"
+          ],
+          "x-ms-enum-values": [
+            0,
+            1
+          ],
+          "Color": [
+            null,
+            null
+          ],
+          "x-ms-optionsetmetadataid": "bcfc6ae0-12e8-f111-84ea-002248a422bc",
+          "x-ms-isGlobal": false,
+          "x-ms-optionsetdisplayname": "Email Conversation View",
+          "x-ms-optionSetType": "Boolean"
+        },
+        "jhrb_isemailconversationviewenabled_mode": {
+          "type": "string",
+          "title": "Email Conversation View Mode",
+          "x-ms-dataverse-attribute": "jhrb_isemailconversationviewenabled_mode",
+          "x-ms-dataverse-type": "PicklistType",
+          "x-ms-schema-name": "jhrb_isemailconversationviewenabled_mode",
+          "enum": [
+            "Inherit",
+            "Default",
+            "Locked"
+          ],
+          "x-ms-enum-values": [
+            632490000,
+            632490001,
+            632490002
+          ],
+          "Color": [
+            null,
+            null,
+            null
+          ],
+          "x-ms-optionsetmetadataid": "088e9f3f-11e8-f111-84ea-0022489d55b0",
+          "x-ms-isGlobal": true,
+          "x-ms-optionsetdisplayname": "Setting Mode",
+          "x-ms-optionSetType": "Picklist"
+        },
+        "jhrb_isemailconversationviewenabled_modename": {
+          "type": "string",
+          "title": "jhrb_isemailconversationviewenabled_modename",
+          "x-ms-dataverse-attribute": "jhrb_isemailconversationviewenabled_modename",
+          "x-ms-dataverse-type": "VirtualType",
+          "x-ms-schema-name": "jhrb_isemailconversationviewenabled_modeName",
+          "x-ms-dataverse-attribute-of": "jhrb_isemailconversationviewenabled_mode",
+          "x-ms-read-only": true
+        },
+        "jhrb_isemailconversationviewenabledname": {
+          "type": "string",
+          "title": "jhrb_isemailconversationviewenabledname",
+          "x-ms-dataverse-attribute": "jhrb_isemailconversationviewenabledname",
+          "x-ms-dataverse-type": "VirtualType",
+          "x-ms-schema-name": "jhrb_isemailconversationviewenabledName",
+          "x-ms-dataverse-attribute-of": "jhrb_isemailconversationviewenabled",
+          "x-ms-read-only": true
+        },
+        "jhrb_isguidedhelpenabled": {
+          "type": "string",
+          "title": "Guided Help",
+          "x-ms-dataverse-attribute": "jhrb_isguidedhelpenabled",
+          "x-ms-dataverse-type": "BooleanType",
+          "x-ms-schema-name": "jhrb_isguidedhelpenabled",
+          "enum": [
+            "No",
+            "Yes"
+          ],
+          "x-ms-enum-values": [
+            0,
+            1
+          ],
+          "Color": [
+            null,
+            null
+          ],
+          "x-ms-optionsetmetadataid": "ca2966ad-12e8-f111-84ea-0022489d55b0",
+          "x-ms-isGlobal": false,
+          "x-ms-optionsetdisplayname": "Guided Help",
+          "x-ms-optionSetType": "Boolean"
+        },
+        "jhrb_isguidedhelpenabled_mode": {
+          "type": "string",
+          "title": "Guided Help Mode",
+          "x-ms-dataverse-attribute": "jhrb_isguidedhelpenabled_mode",
+          "x-ms-dataverse-type": "PicklistType",
+          "x-ms-schema-name": "jhrb_isguidedhelpenabled_mode",
+          "enum": [
+            "Inherit",
+            "Default",
+            "Locked"
+          ],
+          "x-ms-enum-values": [
+            632490000,
+            632490001,
+            632490002
+          ],
+          "Color": [
+            null,
+            null,
+            null
+          ],
+          "x-ms-optionsetmetadataid": "088e9f3f-11e8-f111-84ea-0022489d55b0",
+          "x-ms-isGlobal": true,
+          "x-ms-optionsetdisplayname": "Setting Mode",
+          "x-ms-optionSetType": "Picklist"
+        },
+        "jhrb_isguidedhelpenabled_modename": {
+          "type": "string",
+          "title": "jhrb_isguidedhelpenabled_modename",
+          "x-ms-dataverse-attribute": "jhrb_isguidedhelpenabled_modename",
+          "x-ms-dataverse-type": "VirtualType",
+          "x-ms-schema-name": "jhrb_isguidedhelpenabled_modeName",
+          "x-ms-dataverse-attribute-of": "jhrb_isguidedhelpenabled_mode",
+          "x-ms-read-only": true
+        },
+        "jhrb_isguidedhelpenabledname": {
+          "type": "string",
+          "title": "jhrb_isguidedhelpenabledname",
+          "x-ms-dataverse-attribute": "jhrb_isguidedhelpenabledname",
+          "x-ms-dataverse-type": "VirtualType",
+          "x-ms-schema-name": "jhrb_isguidedhelpenabledName",
+          "x-ms-dataverse-attribute-of": "jhrb_isguidedhelpenabled",
+          "x-ms-read-only": true
+        },
+        "jhrb_isresourcebookingexchangesyncenabled": {
+          "type": "string",
+          "title": "Resource Booking Exchange Sync",
+          "x-ms-dataverse-attribute": "jhrb_isresourcebookingexchangesyncenabled",
+          "x-ms-dataverse-type": "BooleanType",
+          "x-ms-schema-name": "jhrb_isresourcebookingexchangesyncenabled",
+          "enum": [
+            "No",
+            "Yes"
+          ],
+          "x-ms-enum-values": [
+            0,
+            1
+          ],
+          "Color": [
+            null,
+            null
+          ],
+          "x-ms-optionsetmetadataid": "1312ef30-13e8-f111-84e8-7ced8d775d2e",
+          "x-ms-isGlobal": false,
+          "x-ms-optionsetdisplayname": "Resource Booking Exchange Sync",
+          "x-ms-optionSetType": "Boolean"
+        },
+        "jhrb_isresourcebookingexchangesyncenabled_mode": {
+          "type": "string",
+          "title": "Resource Booking Exchange Sync Mode",
+          "x-ms-dataverse-attribute": "jhrb_isresourcebookingexchangesyncenabled_mode",
+          "x-ms-dataverse-type": "PicklistType",
+          "x-ms-schema-name": "jhrb_isresourcebookingexchangesyncenabled_mode",
+          "enum": [
+            "Inherit",
+            "Default",
+            "Locked"
+          ],
+          "x-ms-enum-values": [
+            632490000,
+            632490001,
+            632490002
+          ],
+          "Color": [
+            null,
+            null,
+            null
+          ],
+          "x-ms-optionsetmetadataid": "088e9f3f-11e8-f111-84ea-0022489d55b0",
+          "x-ms-isGlobal": true,
+          "x-ms-optionsetdisplayname": "Setting Mode",
+          "x-ms-optionSetType": "Picklist"
+        },
+        "jhrb_isresourcebookingexchangesyncenabled_modename": {
+          "type": "string",
+          "title": "jhrb_isresourcebookingexchangesyncenabled_modename",
+          "x-ms-dataverse-attribute": "jhrb_isresourcebookingexchangesyncenabled_modename",
+          "x-ms-dataverse-type": "VirtualType",
+          "x-ms-schema-name": "jhrb_isresourcebookingexchangesyncenabled_modeName",
+          "x-ms-dataverse-attribute-of": "jhrb_isresourcebookingexchangesyncenabled_mode",
+          "x-ms-read-only": true
+        },
+        "jhrb_isresourcebookingexchangesyncenabledname": {
+          "type": "string",
+          "title": "jhrb_isresourcebookingexchangesyncenabledname",
+          "x-ms-dataverse-attribute": "jhrb_isresourcebookingexchangesyncenabledname",
+          "x-ms-dataverse-type": "VirtualType",
+          "x-ms-schema-name": "jhrb_isresourcebookingexchangesyncenabledName",
+          "x-ms-dataverse-attribute-of": "jhrb_isresourcebookingexchangesyncenabled",
+          "x-ms-read-only": true
+        },
+        "jhrb_issendasallowed": {
+          "type": "string",
+          "title": "Allow Others to Send on My Behalf",
+          "x-ms-dataverse-attribute": "jhrb_issendasallowed",
+          "x-ms-dataverse-type": "BooleanType",
+          "x-ms-schema-name": "jhrb_issendasallowed",
+          "enum": [
+            "No",
+            "Yes"
+          ],
+          "x-ms-enum-values": [
+            0,
+            1
+          ],
+          "Color": [
+            null,
+            null
+          ],
+          "x-ms-optionsetmetadataid": "e1f70fe3-12e8-f111-84ea-000d3ab163fb",
+          "x-ms-isGlobal": false,
+          "x-ms-optionsetdisplayname": "Allow Others to Send on My Behalf",
+          "x-ms-optionSetType": "Boolean"
+        },
+        "jhrb_issendasallowed_mode": {
+          "type": "string",
+          "title": "Allow Others to Send on My Behalf Mode",
+          "x-ms-dataverse-attribute": "jhrb_issendasallowed_mode",
+          "x-ms-dataverse-type": "PicklistType",
+          "x-ms-schema-name": "jhrb_issendasallowed_mode",
+          "enum": [
+            "Inherit",
+            "Default",
+            "Locked"
+          ],
+          "x-ms-enum-values": [
+            632490000,
+            632490001,
+            632490002
+          ],
+          "Color": [
+            null,
+            null,
+            null
+          ],
+          "x-ms-optionsetmetadataid": "088e9f3f-11e8-f111-84ea-0022489d55b0",
+          "x-ms-isGlobal": true,
+          "x-ms-optionsetdisplayname": "Setting Mode",
+          "x-ms-optionSetType": "Picklist"
+        },
+        "jhrb_issendasallowed_modename": {
+          "type": "string",
+          "title": "jhrb_issendasallowed_modename",
+          "x-ms-dataverse-attribute": "jhrb_issendasallowed_modename",
+          "x-ms-dataverse-type": "VirtualType",
+          "x-ms-schema-name": "jhrb_issendasallowed_modeName",
+          "x-ms-dataverse-attribute-of": "jhrb_issendasallowed_mode",
+          "x-ms-read-only": true
+        },
+        "jhrb_issendasallowedname": {
+          "type": "string",
+          "title": "jhrb_issendasallowedname",
+          "x-ms-dataverse-attribute": "jhrb_issendasallowedname",
+          "x-ms-dataverse-type": "VirtualType",
+          "x-ms-schema-name": "jhrb_issendasallowedName",
+          "x-ms-dataverse-attribute-of": "jhrb_issendasallowed",
+          "x-ms-read-only": true
+        },
+        "jhrb_localeid": {
+          "type": "string",
+          "title": "Locale (Format)",
+          "x-ms-dataverse-attribute": "jhrb_localeid",
+          "x-ms-dataverse-type": "IntegerType",
+          "x-ms-schema-name": "jhrb_localeid"
+        },
+        "jhrb_localeid_mode": {
+          "type": "string",
+          "title": "Locale (Format) Mode",
+          "x-ms-dataverse-attribute": "jhrb_localeid_mode",
+          "x-ms-dataverse-type": "PicklistType",
+          "x-ms-schema-name": "jhrb_localeid_mode",
+          "enum": [
+            "Inherit",
+            "Default",
+            "Locked"
+          ],
+          "x-ms-enum-values": [
+            632490000,
+            632490001,
+            632490002
+          ],
+          "Color": [
+            null,
+            null,
+            null
+          ],
+          "x-ms-optionsetmetadataid": "088e9f3f-11e8-f111-84ea-0022489d55b0",
+          "x-ms-isGlobal": true,
+          "x-ms-optionsetdisplayname": "Setting Mode",
+          "x-ms-optionSetType": "Picklist"
+        },
+        "jhrb_localeid_modename": {
+          "type": "string",
+          "title": "jhrb_localeid_modename",
+          "x-ms-dataverse-attribute": "jhrb_localeid_modename",
+          "x-ms-dataverse-type": "VirtualType",
+          "x-ms-schema-name": "jhrb_localeid_modeName",
+          "x-ms-dataverse-attribute-of": "jhrb_localeid_mode",
+          "x-ms-read-only": true
+        },
+        "jhrb_longdateformatcode": {
+          "type": "string",
+          "title": "Long Date Format Code",
+          "x-ms-dataverse-attribute": "jhrb_longdateformatcode",
+          "x-ms-dataverse-type": "IntegerType",
+          "x-ms-schema-name": "jhrb_longdateformatcode"
+        },
+        "jhrb_longdateformatcode_mode": {
+          "type": "string",
+          "title": "Long Date Format Code Mode",
+          "x-ms-dataverse-attribute": "jhrb_longdateformatcode_mode",
+          "x-ms-dataverse-type": "PicklistType",
+          "x-ms-schema-name": "jhrb_longdateformatcode_mode",
+          "enum": [
+            "Inherit",
+            "Default",
+            "Locked"
+          ],
+          "x-ms-enum-values": [
+            632490000,
+            632490001,
+            632490002
+          ],
+          "Color": [
+            null,
+            null,
+            null
+          ],
+          "x-ms-optionsetmetadataid": "088e9f3f-11e8-f111-84ea-0022489d55b0",
+          "x-ms-isGlobal": true,
+          "x-ms-optionsetdisplayname": "Setting Mode",
+          "x-ms-optionSetType": "Picklist"
+        },
+        "jhrb_longdateformatcode_modename": {
+          "type": "string",
+          "title": "jhrb_longdateformatcode_modename",
+          "x-ms-dataverse-attribute": "jhrb_longdateformatcode_modename",
+          "x-ms-dataverse-type": "VirtualType",
+          "x-ms-schema-name": "jhrb_longdateformatcode_modeName",
+          "x-ms-dataverse-attribute-of": "jhrb_longdateformatcode_mode",
+          "x-ms-read-only": true
+        },
+        "jhrb_name": {
+          "type": "string",
+          "title": "Name",
+          "x-ms-dataverse-attribute": "jhrb_name",
+          "x-ms-dataverse-type": "StringType",
+          "x-ms-schema-name": "jhrb_Name",
+          "x-ms-dataverse-primary-name": true,
+          "maxLength": 850
+        },
+        "jhrb_negativecurrencyformatcode": {
+          "type": "string",
+          "title": "Negative Currency Format",
+          "x-ms-dataverse-attribute": "jhrb_negativecurrencyformatcode",
+          "x-ms-dataverse-type": "IntegerType",
+          "x-ms-schema-name": "jhrb_negativecurrencyformatcode"
+        },
+        "jhrb_negativecurrencyformatcode_mode": {
+          "type": "string",
+          "title": "Negative Currency Format Mode",
+          "x-ms-dataverse-attribute": "jhrb_negativecurrencyformatcode_mode",
+          "x-ms-dataverse-type": "PicklistType",
+          "x-ms-schema-name": "jhrb_negativecurrencyformatcode_mode",
+          "enum": [
+            "Inherit",
+            "Default",
+            "Locked"
+          ],
+          "x-ms-enum-values": [
+            632490000,
+            632490001,
+            632490002
+          ],
+          "Color": [
+            null,
+            null,
+            null
+          ],
+          "x-ms-optionsetmetadataid": "088e9f3f-11e8-f111-84ea-0022489d55b0",
+          "x-ms-isGlobal": true,
+          "x-ms-optionsetdisplayname": "Setting Mode",
+          "x-ms-optionSetType": "Picklist"
+        },
+        "jhrb_negativecurrencyformatcode_modename": {
+          "type": "string",
+          "title": "jhrb_negativecurrencyformatcode_modename",
+          "x-ms-dataverse-attribute": "jhrb_negativecurrencyformatcode_modename",
+          "x-ms-dataverse-type": "VirtualType",
+          "x-ms-schema-name": "jhrb_negativecurrencyformatcode_modeName",
+          "x-ms-dataverse-attribute-of": "jhrb_negativecurrencyformatcode_mode",
+          "x-ms-read-only": true
+        },
+        "jhrb_negativeformatcode": {
+          "type": "string",
+          "title": "Negative Number Format",
+          "x-ms-dataverse-attribute": "jhrb_negativeformatcode",
+          "x-ms-dataverse-type": "IntegerType",
+          "x-ms-schema-name": "jhrb_negativeformatcode"
+        },
+        "jhrb_negativeformatcode_mode": {
+          "type": "string",
+          "title": "Negative Number Format Mode",
+          "x-ms-dataverse-attribute": "jhrb_negativeformatcode_mode",
+          "x-ms-dataverse-type": "PicklistType",
+          "x-ms-schema-name": "jhrb_negativeformatcode_mode",
+          "enum": [
+            "Inherit",
+            "Default",
+            "Locked"
+          ],
+          "x-ms-enum-values": [
+            632490000,
+            632490001,
+            632490002
+          ],
+          "Color": [
+            null,
+            null,
+            null
+          ],
+          "x-ms-optionsetmetadataid": "088e9f3f-11e8-f111-84ea-0022489d55b0",
+          "x-ms-isGlobal": true,
+          "x-ms-optionsetdisplayname": "Setting Mode",
+          "x-ms-optionSetType": "Picklist"
+        },
+        "jhrb_negativeformatcode_modename": {
+          "type": "string",
+          "title": "jhrb_negativeformatcode_modename",
+          "x-ms-dataverse-attribute": "jhrb_negativeformatcode_modename",
+          "x-ms-dataverse-type": "VirtualType",
+          "x-ms-schema-name": "jhrb_negativeformatcode_modeName",
+          "x-ms-dataverse-attribute-of": "jhrb_negativeformatcode_mode",
+          "x-ms-read-only": true
+        },
+        "jhrb_numbergroupformat": {
+          "type": "string",
+          "title": "Digit Grouping",
+          "x-ms-dataverse-attribute": "jhrb_numbergroupformat",
+          "x-ms-dataverse-type": "StringType",
+          "x-ms-schema-name": "jhrb_numbergroupformat",
+          "maxLength": 25
+        },
+        "jhrb_numbergroupformat_mode": {
+          "type": "string",
+          "title": "Digit Grouping Mode",
+          "x-ms-dataverse-attribute": "jhrb_numbergroupformat_mode",
+          "x-ms-dataverse-type": "PicklistType",
+          "x-ms-schema-name": "jhrb_numbergroupformat_mode",
+          "enum": [
+            "Inherit",
+            "Default",
+            "Locked"
+          ],
+          "x-ms-enum-values": [
+            632490000,
+            632490001,
+            632490002
+          ],
+          "Color": [
+            null,
+            null,
+            null
+          ],
+          "x-ms-optionsetmetadataid": "088e9f3f-11e8-f111-84ea-0022489d55b0",
+          "x-ms-isGlobal": true,
+          "x-ms-optionsetdisplayname": "Setting Mode",
+          "x-ms-optionSetType": "Picklist"
+        },
+        "jhrb_numbergroupformat_modename": {
+          "type": "string",
+          "title": "jhrb_numbergroupformat_modename",
+          "x-ms-dataverse-attribute": "jhrb_numbergroupformat_modename",
+          "x-ms-dataverse-type": "VirtualType",
+          "x-ms-schema-name": "jhrb_numbergroupformat_modeName",
+          "x-ms-dataverse-attribute-of": "jhrb_numbergroupformat_mode",
+          "x-ms-read-only": true
+        },
+        "jhrb_numberseparator": {
+          "type": "string",
+          "title": "Digit Grouping Symbol",
+          "x-ms-dataverse-attribute": "jhrb_numberseparator",
+          "x-ms-dataverse-type": "StringType",
+          "x-ms-schema-name": "jhrb_numberseparator",
+          "maxLength": 5
+        },
+        "jhrb_numberseparator_mode": {
+          "type": "string",
+          "title": "Digit Grouping Symbol Mode",
+          "x-ms-dataverse-attribute": "jhrb_numberseparator_mode",
+          "x-ms-dataverse-type": "PicklistType",
+          "x-ms-schema-name": "jhrb_numberseparator_mode",
+          "enum": [
+            "Inherit",
+            "Default",
+            "Locked"
+          ],
+          "x-ms-enum-values": [
+            632490000,
+            632490001,
+            632490002
+          ],
+          "Color": [
+            null,
+            null,
+            null
+          ],
+          "x-ms-optionsetmetadataid": "088e9f3f-11e8-f111-84ea-0022489d55b0",
+          "x-ms-isGlobal": true,
+          "x-ms-optionsetdisplayname": "Setting Mode",
+          "x-ms-optionSetType": "Picklist"
+        },
+        "jhrb_numberseparator_modename": {
+          "type": "string",
+          "title": "jhrb_numberseparator_modename",
+          "x-ms-dataverse-attribute": "jhrb_numberseparator_modename",
+          "x-ms-dataverse-type": "VirtualType",
+          "x-ms-schema-name": "jhrb_numberseparator_modeName",
+          "x-ms-dataverse-attribute-of": "jhrb_numberseparator_mode",
+          "x-ms-read-only": true
+        },
+        "jhrb_offlinesyncinterval": {
+          "type": "string",
+          "title": "Offline Sync Interval",
+          "x-ms-dataverse-attribute": "jhrb_offlinesyncinterval",
+          "x-ms-dataverse-type": "IntegerType",
+          "x-ms-schema-name": "jhrb_offlinesyncinterval"
+        },
+        "jhrb_offlinesyncinterval_mode": {
+          "type": "string",
+          "title": "Offline Sync Interval Mode",
+          "x-ms-dataverse-attribute": "jhrb_offlinesyncinterval_mode",
+          "x-ms-dataverse-type": "PicklistType",
+          "x-ms-schema-name": "jhrb_offlinesyncinterval_mode",
+          "enum": [
+            "Inherit",
+            "Default",
+            "Locked"
+          ],
+          "x-ms-enum-values": [
+            632490000,
+            632490001,
+            632490002
+          ],
+          "Color": [
+            null,
+            null,
+            null
+          ],
+          "x-ms-optionsetmetadataid": "088e9f3f-11e8-f111-84ea-0022489d55b0",
+          "x-ms-isGlobal": true,
+          "x-ms-optionsetdisplayname": "Setting Mode",
+          "x-ms-optionSetType": "Picklist"
+        },
+        "jhrb_offlinesyncinterval_modename": {
+          "type": "string",
+          "title": "jhrb_offlinesyncinterval_modename",
+          "x-ms-dataverse-attribute": "jhrb_offlinesyncinterval_modename",
+          "x-ms-dataverse-type": "VirtualType",
+          "x-ms-schema-name": "jhrb_offlinesyncinterval_modeName",
+          "x-ms-dataverse-attribute-of": "jhrb_offlinesyncinterval_mode",
+          "x-ms-read-only": true
+        },
+        "jhrb_outlooksyncinterval": {
+          "type": "string",
+          "title": "Outlook Sync Interval",
+          "x-ms-dataverse-attribute": "jhrb_outlooksyncinterval",
+          "x-ms-dataverse-type": "IntegerType",
+          "x-ms-schema-name": "jhrb_outlooksyncinterval"
+        },
+        "jhrb_outlooksyncinterval_mode": {
+          "type": "string",
+          "title": "Outlook Sync Interval Mode",
+          "x-ms-dataverse-attribute": "jhrb_outlooksyncinterval_mode",
+          "x-ms-dataverse-type": "PicklistType",
+          "x-ms-schema-name": "jhrb_outlooksyncinterval_mode",
+          "enum": [
+            "Inherit",
+            "Default",
+            "Locked"
+          ],
+          "x-ms-enum-values": [
+            632490000,
+            632490001,
+            632490002
+          ],
+          "Color": [
+            null,
+            null,
+            null
+          ],
+          "x-ms-optionsetmetadataid": "088e9f3f-11e8-f111-84ea-0022489d55b0",
+          "x-ms-isGlobal": true,
+          "x-ms-optionsetdisplayname": "Setting Mode",
+          "x-ms-optionSetType": "Picklist"
+        },
+        "jhrb_outlooksyncinterval_modename": {
+          "type": "string",
+          "title": "jhrb_outlooksyncinterval_modename",
+          "x-ms-dataverse-attribute": "jhrb_outlooksyncinterval_modename",
+          "x-ms-dataverse-type": "VirtualType",
+          "x-ms-schema-name": "jhrb_outlooksyncinterval_modeName",
+          "x-ms-dataverse-attribute-of": "jhrb_outlooksyncinterval_mode",
+          "x-ms-read-only": true
+        },
+        "jhrb_paginglimit": {
+          "type": "string",
+          "title": "Records Per Page",
+          "x-ms-dataverse-attribute": "jhrb_paginglimit",
+          "x-ms-dataverse-type": "IntegerType",
+          "x-ms-schema-name": "jhrb_paginglimit"
+        },
+        "jhrb_paginglimit_mode": {
+          "type": "string",
+          "title": "Records Per Page Mode",
+          "x-ms-dataverse-attribute": "jhrb_paginglimit_mode",
+          "x-ms-dataverse-type": "PicklistType",
+          "x-ms-schema-name": "jhrb_paginglimit_mode",
+          "enum": [
+            "Inherit",
+            "Default",
+            "Locked"
+          ],
+          "x-ms-enum-values": [
+            632490000,
+            632490001,
+            632490002
+          ],
+          "Color": [
+            null,
+            null,
+            null
+          ],
+          "x-ms-optionsetmetadataid": "088e9f3f-11e8-f111-84ea-0022489d55b0",
+          "x-ms-isGlobal": true,
+          "x-ms-optionsetdisplayname": "Setting Mode",
+          "x-ms-optionSetType": "Picklist"
+        },
+        "jhrb_paginglimit_modename": {
+          "type": "string",
+          "title": "jhrb_paginglimit_modename",
+          "x-ms-dataverse-attribute": "jhrb_paginglimit_modename",
+          "x-ms-dataverse-type": "VirtualType",
+          "x-ms-schema-name": "jhrb_paginglimit_modeName",
+          "x-ms-dataverse-attribute-of": "jhrb_paginglimit_mode",
+          "x-ms-read-only": true
+        },
+        "jhrb_pilotteam": {
+          "type": "string",
+          "title": "Pilot Team",
+          "x-ms-dataverse-attribute": "jhrb_pilotteam",
+          "x-ms-dataverse-type": "LookupType",
+          "x-ms-schema-name": "jhrb_PilotTeam",
+          "x-ms-dataverse-navigation-properties": [
+            "jhrb_PilotTeam"
+          ]
+        },
+        "jhrb_pilotteamname": {
+          "type": "string",
+          "title": "jhrb_pilotteamname",
+          "x-ms-dataverse-attribute": "jhrb_pilotteamname",
+          "x-ms-dataverse-type": "StringType",
+          "x-ms-schema-name": "jhrb_PilotTeamName",
+          "x-ms-dataverse-attribute-of": "jhrb_pilotteam",
+          "x-ms-read-only": true,
+          "maxLength": 160
+        },
+        "jhrb_pilotteamyominame": {
+          "type": "string",
+          "title": "jhrb_pilotteamyominame",
+          "x-ms-dataverse-attribute": "jhrb_pilotteamyominame",
+          "x-ms-dataverse-type": "StringType",
+          "x-ms-schema-name": "jhrb_PilotTeamYomiName",
+          "x-ms-dataverse-attribute-of": "jhrb_pilotteam",
+          "x-ms-read-only": true,
+          "maxLength": 160
+        },
+        "jhrb_pmdesignator": {
+          "type": "string",
+          "title": "PM Designator",
+          "x-ms-dataverse-attribute": "jhrb_pmdesignator",
+          "x-ms-dataverse-type": "StringType",
+          "x-ms-schema-name": "jhrb_pmdesignator",
+          "maxLength": 25
+        },
+        "jhrb_pmdesignator_mode": {
+          "type": "string",
+          "title": "PM Designator Mode",
+          "x-ms-dataverse-attribute": "jhrb_pmdesignator_mode",
+          "x-ms-dataverse-type": "PicklistType",
+          "x-ms-schema-name": "jhrb_pmdesignator_mode",
+          "enum": [
+            "Inherit",
+            "Default",
+            "Locked"
+          ],
+          "x-ms-enum-values": [
+            632490000,
+            632490001,
+            632490002
+          ],
+          "Color": [
+            null,
+            null,
+            null
+          ],
+          "x-ms-optionsetmetadataid": "088e9f3f-11e8-f111-84ea-0022489d55b0",
+          "x-ms-isGlobal": true,
+          "x-ms-optionsetdisplayname": "Setting Mode",
+          "x-ms-optionSetType": "Picklist"
+        },
+        "jhrb_pmdesignator_modename": {
+          "type": "string",
+          "title": "jhrb_pmdesignator_modename",
+          "x-ms-dataverse-attribute": "jhrb_pmdesignator_modename",
+          "x-ms-dataverse-type": "VirtualType",
+          "x-ms-schema-name": "jhrb_pmdesignator_modeName",
+          "x-ms-dataverse-attribute-of": "jhrb_pmdesignator_mode",
+          "x-ms-read-only": true
+        },
+        "jhrb_preferredsolution": {
+          "type": "string",
+          "title": "Preferred Solution",
+          "x-ms-dataverse-attribute": "jhrb_preferredsolution",
+          "x-ms-dataverse-type": "StringType",
+          "x-ms-schema-name": "jhrb_preferredsolution",
+          "maxLength": 36
+        },
+        "jhrb_preferredsolution_mode": {
+          "type": "string",
+          "title": "Preferred Solution Mode",
+          "x-ms-dataverse-attribute": "jhrb_preferredsolution_mode",
+          "x-ms-dataverse-type": "PicklistType",
+          "x-ms-schema-name": "jhrb_preferredsolution_mode",
+          "enum": [
+            "Inherit",
+            "Default",
+            "Locked"
+          ],
+          "x-ms-enum-values": [
+            632490000,
+            632490001,
+            632490002
+          ],
+          "Color": [
+            null,
+            null,
+            null
+          ],
+          "x-ms-optionsetmetadataid": "088e9f3f-11e8-f111-84ea-0022489d55b0",
+          "x-ms-isGlobal": true,
+          "x-ms-optionsetdisplayname": "Setting Mode",
+          "x-ms-optionSetType": "Picklist"
+        },
+        "jhrb_preferredsolution_modename": {
+          "type": "string",
+          "title": "jhrb_preferredsolution_modename",
+          "x-ms-dataverse-attribute": "jhrb_preferredsolution_modename",
+          "x-ms-dataverse-type": "VirtualType",
+          "x-ms-schema-name": "jhrb_preferredsolution_modeName",
+          "x-ms-dataverse-attribute-of": "jhrb_preferredsolution_mode",
+          "x-ms-read-only": true
+        },
+        "jhrb_pricingdecimalprecision": {
+          "type": "string",
+          "title": "Pricing Decimal Precision",
+          "x-ms-dataverse-attribute": "jhrb_pricingdecimalprecision",
+          "x-ms-dataverse-type": "IntegerType",
+          "x-ms-schema-name": "jhrb_pricingdecimalprecision"
+        },
+        "jhrb_pricingdecimalprecision_mode": {
+          "type": "string",
+          "title": "Pricing Decimal Precision Mode",
+          "x-ms-dataverse-attribute": "jhrb_pricingdecimalprecision_mode",
+          "x-ms-dataverse-type": "PicklistType",
+          "x-ms-schema-name": "jhrb_pricingdecimalprecision_mode",
+          "enum": [
+            "Inherit",
+            "Default",
+            "Locked"
+          ],
+          "x-ms-enum-values": [
+            632490000,
+            632490001,
+            632490002
+          ],
+          "Color": [
+            null,
+            null,
+            null
+          ],
+          "x-ms-optionsetmetadataid": "088e9f3f-11e8-f111-84ea-0022489d55b0",
+          "x-ms-isGlobal": true,
+          "x-ms-optionsetdisplayname": "Setting Mode",
+          "x-ms-optionSetType": "Picklist"
+        },
+        "jhrb_pricingdecimalprecision_modename": {
+          "type": "string",
+          "title": "jhrb_pricingdecimalprecision_modename",
+          "x-ms-dataverse-attribute": "jhrb_pricingdecimalprecision_modename",
+          "x-ms-dataverse-type": "VirtualType",
+          "x-ms-schema-name": "jhrb_pricingdecimalprecision_modeName",
+          "x-ms-dataverse-attribute-of": "jhrb_pricingdecimalprecision_mode",
+          "x-ms-read-only": true
+        },
+        "jhrb_priority": {
+          "type": "string",
+          "title": "Priority",
+          "x-ms-dataverse-attribute": "jhrb_priority",
+          "x-ms-dataverse-type": "IntegerType",
+          "x-ms-schema-name": "jhrb_Priority"
+        },
+        "jhrb_releasechannel": {
+          "type": "string",
+          "title": "Model App Release Channel",
+          "x-ms-dataverse-attribute": "jhrb_releasechannel",
+          "x-ms-dataverse-type": "PicklistType",
+          "x-ms-schema-name": "jhrb_releasechannel",
+          "enum": [
+            "None",
+            "Semi-annual channel override",
+            "Monthly channel override",
+            "Inner channel override"
+          ],
+          "x-ms-enum-values": [
+            0,
+            1,
+            2,
+            3
+          ],
+          "Color": [
+            null,
+            null,
+            null,
+            null
+          ],
+          "x-ms-optionsetmetadataid": "1ec231c0-12e8-f111-84ea-000d3ab16615",
+          "x-ms-isGlobal": false,
+          "x-ms-optionsetdisplayname": "Model App Release Channel",
+          "x-ms-optionSetType": "Picklist"
+        },
+        "jhrb_releasechannel_mode": {
+          "type": "string",
+          "title": "Model App Release Channel Mode",
+          "x-ms-dataverse-attribute": "jhrb_releasechannel_mode",
+          "x-ms-dataverse-type": "PicklistType",
+          "x-ms-schema-name": "jhrb_releasechannel_mode",
+          "enum": [
+            "Inherit",
+            "Default",
+            "Locked"
+          ],
+          "x-ms-enum-values": [
+            632490000,
+            632490001,
+            632490002
+          ],
+          "Color": [
+            null,
+            null,
+            null
+          ],
+          "x-ms-optionsetmetadataid": "088e9f3f-11e8-f111-84ea-0022489d55b0",
+          "x-ms-isGlobal": true,
+          "x-ms-optionsetdisplayname": "Setting Mode",
+          "x-ms-optionSetType": "Picklist"
+        },
+        "jhrb_releasechannel_modename": {
+          "type": "string",
+          "title": "jhrb_releasechannel_modename",
+          "x-ms-dataverse-attribute": "jhrb_releasechannel_modename",
+          "x-ms-dataverse-type": "VirtualType",
+          "x-ms-schema-name": "jhrb_releasechannel_modeName",
+          "x-ms-dataverse-attribute-of": "jhrb_releasechannel_mode",
+          "x-ms-read-only": true
+        },
+        "jhrb_releasechannelname": {
+          "type": "string",
+          "title": "jhrb_releasechannelname",
+          "x-ms-dataverse-attribute": "jhrb_releasechannelname",
+          "x-ms-dataverse-type": "VirtualType",
+          "x-ms-schema-name": "jhrb_releasechannelName",
+          "x-ms-dataverse-attribute-of": "jhrb_releasechannel",
+          "x-ms-read-only": true
+        },
+        "jhrb_reportscripterrors": {
+          "type": "string",
+          "title": "Report Script Errors",
+          "x-ms-dataverse-attribute": "jhrb_reportscripterrors",
+          "x-ms-dataverse-type": "PicklistType",
+          "x-ms-schema-name": "jhrb_reportscripterrors",
+          "enum": [
+            "Ask me for permission to send an error report to Microsoft",
+            "Automatically send an error report to Microsoft without asking me for permission",
+            "Never send an error report to Microsoft about Microsoft Dynamics 365"
+          ],
+          "x-ms-enum-values": [
+            1,
+            2,
+            3
+          ],
+          "Color": [
+            null,
+            null,
+            null
+          ],
+          "x-ms-optionsetmetadataid": "e62838b2-12e8-f111-84ea-000d3ab163fb",
+          "x-ms-isGlobal": false,
+          "x-ms-optionsetdisplayname": "Report Script Errors",
+          "x-ms-optionSetType": "Picklist"
+        },
+        "jhrb_reportscripterrors_mode": {
+          "type": "string",
+          "title": "Report Script Errors Mode",
+          "x-ms-dataverse-attribute": "jhrb_reportscripterrors_mode",
+          "x-ms-dataverse-type": "PicklistType",
+          "x-ms-schema-name": "jhrb_reportscripterrors_mode",
+          "enum": [
+            "Inherit",
+            "Default",
+            "Locked"
+          ],
+          "x-ms-enum-values": [
+            632490000,
+            632490001,
+            632490002
+          ],
+          "Color": [
+            null,
+            null,
+            null
+          ],
+          "x-ms-optionsetmetadataid": "088e9f3f-11e8-f111-84ea-0022489d55b0",
+          "x-ms-isGlobal": true,
+          "x-ms-optionsetdisplayname": "Setting Mode",
+          "x-ms-optionSetType": "Picklist"
+        },
+        "jhrb_reportscripterrors_modename": {
+          "type": "string",
+          "title": "jhrb_reportscripterrors_modename",
+          "x-ms-dataverse-attribute": "jhrb_reportscripterrors_modename",
+          "x-ms-dataverse-type": "VirtualType",
+          "x-ms-schema-name": "jhrb_reportscripterrors_modeName",
+          "x-ms-dataverse-attribute-of": "jhrb_reportscripterrors_mode",
+          "x-ms-read-only": true
+        },
+        "jhrb_reportscripterrorsname": {
+          "type": "string",
+          "title": "jhrb_reportscripterrorsname",
+          "x-ms-dataverse-attribute": "jhrb_reportscripterrorsname",
+          "x-ms-dataverse-type": "VirtualType",
+          "x-ms-schema-name": "jhrb_reportscripterrorsName",
+          "x-ms-dataverse-attribute-of": "jhrb_reportscripterrors",
+          "x-ms-read-only": true
+        },
+        "jhrb_settingsprofileid": {
+          "type": "string",
+          "title": "Settings Profile",
+          "x-ms-dataverse-attribute": "jhrb_settingsprofileid",
+          "x-ms-dataverse-type": "UniqueidentifierType",
+          "x-ms-schema-name": "jhrb_SettingsProfileId",
+          "x-ms-dataverse-primary-id": true,
+          "required": true,
+          "x-ms-keyType": "primary"
+        },
+        "jhrb_showweeknumber": {
+          "type": "string",
+          "title": "Show Week Numbers",
+          "x-ms-dataverse-attribute": "jhrb_showweeknumber",
+          "x-ms-dataverse-type": "BooleanType",
+          "x-ms-schema-name": "jhrb_showweeknumber",
+          "enum": [
+            "No",
+            "Yes"
+          ],
+          "x-ms-enum-values": [
+            0,
+            1
+          ],
+          "Color": [
+            null,
+            null
+          ],
+          "x-ms-optionsetmetadataid": "c894f6fd-11e8-f111-84ea-000d3ab16615",
+          "x-ms-isGlobal": false,
+          "x-ms-optionsetdisplayname": "Show Week Numbers",
+          "x-ms-optionSetType": "Boolean"
+        },
+        "jhrb_showweeknumber_mode": {
+          "type": "string",
+          "title": "Show Week Numbers Mode",
+          "x-ms-dataverse-attribute": "jhrb_showweeknumber_mode",
+          "x-ms-dataverse-type": "PicklistType",
+          "x-ms-schema-name": "jhrb_showweeknumber_mode",
+          "enum": [
+            "Inherit",
+            "Default",
+            "Locked"
+          ],
+          "x-ms-enum-values": [
+            632490000,
+            632490001,
+            632490002
+          ],
+          "Color": [
+            null,
+            null,
+            null
+          ],
+          "x-ms-optionsetmetadataid": "088e9f3f-11e8-f111-84ea-0022489d55b0",
+          "x-ms-isGlobal": true,
+          "x-ms-optionsetdisplayname": "Setting Mode",
+          "x-ms-optionSetType": "Picklist"
+        },
+        "jhrb_showweeknumber_modename": {
+          "type": "string",
+          "title": "jhrb_showweeknumber_modename",
+          "x-ms-dataverse-attribute": "jhrb_showweeknumber_modename",
+          "x-ms-dataverse-type": "VirtualType",
+          "x-ms-schema-name": "jhrb_showweeknumber_modeName",
+          "x-ms-dataverse-attribute-of": "jhrb_showweeknumber_mode",
+          "x-ms-read-only": true
+        },
+        "jhrb_showweeknumbername": {
+          "type": "string",
+          "title": "jhrb_showweeknumbername",
+          "x-ms-dataverse-attribute": "jhrb_showweeknumbername",
+          "x-ms-dataverse-type": "VirtualType",
+          "x-ms-schema-name": "jhrb_showweeknumberName",
+          "x-ms-dataverse-attribute-of": "jhrb_showweeknumber",
+          "x-ms-read-only": true
+        },
+        "jhrb_synccontactcompany": {
+          "type": "string",
+          "title": "Sync Contact Company",
+          "x-ms-dataverse-attribute": "jhrb_synccontactcompany",
+          "x-ms-dataverse-type": "BooleanType",
+          "x-ms-schema-name": "jhrb_synccontactcompany",
+          "enum": [
+            "No",
+            "Yes"
+          ],
+          "x-ms-enum-values": [
+            0,
+            1
+          ],
+          "Color": [
+            null,
+            null
+          ],
+          "x-ms-optionsetmetadataid": "bb66c015-13e8-f111-84ea-0022489d55b0",
+          "x-ms-isGlobal": false,
+          "x-ms-optionsetdisplayname": "Sync Contact Company",
+          "x-ms-optionSetType": "Boolean"
+        },
+        "jhrb_synccontactcompany_mode": {
+          "type": "string",
+          "title": "Sync Contact Company Mode",
+          "x-ms-dataverse-attribute": "jhrb_synccontactcompany_mode",
+          "x-ms-dataverse-type": "PicklistType",
+          "x-ms-schema-name": "jhrb_synccontactcompany_mode",
+          "enum": [
+            "Inherit",
+            "Default",
+            "Locked"
+          ],
+          "x-ms-enum-values": [
+            632490000,
+            632490001,
+            632490002
+          ],
+          "Color": [
+            null,
+            null,
+            null
+          ],
+          "x-ms-optionsetmetadataid": "088e9f3f-11e8-f111-84ea-0022489d55b0",
+          "x-ms-isGlobal": true,
+          "x-ms-optionsetdisplayname": "Setting Mode",
+          "x-ms-optionSetType": "Picklist"
+        },
+        "jhrb_synccontactcompany_modename": {
+          "type": "string",
+          "title": "jhrb_synccontactcompany_modename",
+          "x-ms-dataverse-attribute": "jhrb_synccontactcompany_modename",
+          "x-ms-dataverse-type": "VirtualType",
+          "x-ms-schema-name": "jhrb_synccontactcompany_modeName",
+          "x-ms-dataverse-attribute-of": "jhrb_synccontactcompany_mode",
+          "x-ms-read-only": true
+        },
+        "jhrb_synccontactcompanyname": {
+          "type": "string",
+          "title": "jhrb_synccontactcompanyname",
+          "x-ms-dataverse-attribute": "jhrb_synccontactcompanyname",
+          "x-ms-dataverse-type": "VirtualType",
+          "x-ms-schema-name": "jhrb_synccontactcompanyName",
+          "x-ms-dataverse-attribute-of": "jhrb_synccontactcompany",
+          "x-ms-read-only": true
+        },
+        "jhrb_timeformatcode": {
+          "type": "string",
+          "title": "Time Format Code",
+          "x-ms-dataverse-attribute": "jhrb_timeformatcode",
+          "x-ms-dataverse-type": "IntegerType",
+          "x-ms-schema-name": "jhrb_timeformatcode"
+        },
+        "jhrb_timeformatcode_mode": {
+          "type": "string",
+          "title": "Time Format Code Mode",
+          "x-ms-dataverse-attribute": "jhrb_timeformatcode_mode",
+          "x-ms-dataverse-type": "PicklistType",
+          "x-ms-schema-name": "jhrb_timeformatcode_mode",
+          "enum": [
+            "Inherit",
+            "Default",
+            "Locked"
+          ],
+          "x-ms-enum-values": [
+            632490000,
+            632490001,
+            632490002
+          ],
+          "Color": [
+            null,
+            null,
+            null
+          ],
+          "x-ms-optionsetmetadataid": "088e9f3f-11e8-f111-84ea-0022489d55b0",
+          "x-ms-isGlobal": true,
+          "x-ms-optionsetdisplayname": "Setting Mode",
+          "x-ms-optionSetType": "Picklist"
+        },
+        "jhrb_timeformatcode_modename": {
+          "type": "string",
+          "title": "jhrb_timeformatcode_modename",
+          "x-ms-dataverse-attribute": "jhrb_timeformatcode_modename",
+          "x-ms-dataverse-type": "VirtualType",
+          "x-ms-schema-name": "jhrb_timeformatcode_modeName",
+          "x-ms-dataverse-attribute-of": "jhrb_timeformatcode_mode",
+          "x-ms-read-only": true
+        },
+        "jhrb_timeformatstring": {
+          "type": "string",
+          "title": "Time Format",
+          "x-ms-dataverse-attribute": "jhrb_timeformatstring",
+          "x-ms-dataverse-type": "StringType",
+          "x-ms-schema-name": "jhrb_timeformatstring",
+          "maxLength": 255
+        },
+        "jhrb_timeformatstring_mode": {
+          "type": "string",
+          "title": "Time Format Mode",
+          "x-ms-dataverse-attribute": "jhrb_timeformatstring_mode",
+          "x-ms-dataverse-type": "PicklistType",
+          "x-ms-schema-name": "jhrb_timeformatstring_mode",
+          "enum": [
+            "Inherit",
+            "Default",
+            "Locked"
+          ],
+          "x-ms-enum-values": [
+            632490000,
+            632490001,
+            632490002
+          ],
+          "Color": [
+            null,
+            null,
+            null
+          ],
+          "x-ms-optionsetmetadataid": "088e9f3f-11e8-f111-84ea-0022489d55b0",
+          "x-ms-isGlobal": true,
+          "x-ms-optionsetdisplayname": "Setting Mode",
+          "x-ms-optionSetType": "Picklist"
+        },
+        "jhrb_timeformatstring_modename": {
+          "type": "string",
+          "title": "jhrb_timeformatstring_modename",
+          "x-ms-dataverse-attribute": "jhrb_timeformatstring_modename",
+          "x-ms-dataverse-type": "VirtualType",
+          "x-ms-schema-name": "jhrb_timeformatstring_modeName",
+          "x-ms-dataverse-attribute-of": "jhrb_timeformatstring_mode",
+          "x-ms-read-only": true
+        },
+        "jhrb_timeseparator": {
+          "type": "string",
+          "title": "Time Separator",
+          "x-ms-dataverse-attribute": "jhrb_timeseparator",
+          "x-ms-dataverse-type": "StringType",
+          "x-ms-schema-name": "jhrb_timeseparator",
+          "maxLength": 5
+        },
+        "jhrb_timeseparator_mode": {
+          "type": "string",
+          "title": "Time Separator Mode",
+          "x-ms-dataverse-attribute": "jhrb_timeseparator_mode",
+          "x-ms-dataverse-type": "PicklistType",
+          "x-ms-schema-name": "jhrb_timeseparator_mode",
+          "enum": [
+            "Inherit",
+            "Default",
+            "Locked"
+          ],
+          "x-ms-enum-values": [
+            632490000,
+            632490001,
+            632490002
+          ],
+          "Color": [
+            null,
+            null,
+            null
+          ],
+          "x-ms-optionsetmetadataid": "088e9f3f-11e8-f111-84ea-0022489d55b0",
+          "x-ms-isGlobal": true,
+          "x-ms-optionsetdisplayname": "Setting Mode",
+          "x-ms-optionSetType": "Picklist"
+        },
+        "jhrb_timeseparator_modename": {
+          "type": "string",
+          "title": "jhrb_timeseparator_modename",
+          "x-ms-dataverse-attribute": "jhrb_timeseparator_modename",
+          "x-ms-dataverse-type": "VirtualType",
+          "x-ms-schema-name": "jhrb_timeseparator_modeName",
+          "x-ms-dataverse-attribute-of": "jhrb_timeseparator_mode",
+          "x-ms-read-only": true
+        },
+        "jhrb_timezonecode": {
+          "type": "string",
+          "title": "Time Zone",
+          "x-ms-dataverse-attribute": "jhrb_timezonecode",
+          "x-ms-dataverse-type": "IntegerType",
+          "x-ms-schema-name": "jhrb_timezonecode"
+        },
+        "jhrb_timezonecode_mode": {
+          "type": "string",
+          "title": "Time Zone Mode",
+          "x-ms-dataverse-attribute": "jhrb_timezonecode_mode",
+          "x-ms-dataverse-type": "PicklistType",
+          "x-ms-schema-name": "jhrb_timezonecode_mode",
+          "enum": [
+            "Inherit",
+            "Default",
+            "Locked"
+          ],
+          "x-ms-enum-values": [
+            632490000,
+            632490001,
+            632490002
+          ],
+          "Color": [
+            null,
+            null,
+            null
+          ],
+          "x-ms-optionsetmetadataid": "088e9f3f-11e8-f111-84ea-0022489d55b0",
+          "x-ms-isGlobal": true,
+          "x-ms-optionsetdisplayname": "Setting Mode",
+          "x-ms-optionSetType": "Picklist"
+        },
+        "jhrb_timezonecode_modename": {
+          "type": "string",
+          "title": "jhrb_timezonecode_modename",
+          "x-ms-dataverse-attribute": "jhrb_timezonecode_modename",
+          "x-ms-dataverse-type": "VirtualType",
+          "x-ms-schema-name": "jhrb_timezonecode_modeName",
+          "x-ms-dataverse-attribute-of": "jhrb_timezonecode_mode",
+          "x-ms-read-only": true
+        },
+        "jhrb_transactioncurrencyid": {
+          "type": "string",
+          "title": "Default Currency",
+          "x-ms-dataverse-attribute": "jhrb_transactioncurrencyid",
+          "x-ms-dataverse-type": "LookupType",
+          "x-ms-schema-name": "jhrb_transactioncurrencyid",
+          "x-ms-dataverse-navigation-properties": [
+            "jhrb_transactioncurrencyid"
+          ]
+        },
+        "jhrb_transactioncurrencyid_mode": {
+          "type": "string",
+          "title": "Default Currency Mode",
+          "x-ms-dataverse-attribute": "jhrb_transactioncurrencyid_mode",
+          "x-ms-dataverse-type": "PicklistType",
+          "x-ms-schema-name": "jhrb_transactioncurrencyid_mode",
+          "enum": [
+            "Inherit",
+            "Default",
+            "Locked"
+          ],
+          "x-ms-enum-values": [
+            632490000,
+            632490001,
+            632490002
+          ],
+          "Color": [
+            null,
+            null,
+            null
+          ],
+          "x-ms-optionsetmetadataid": "088e9f3f-11e8-f111-84ea-0022489d55b0",
+          "x-ms-isGlobal": true,
+          "x-ms-optionsetdisplayname": "Setting Mode",
+          "x-ms-optionSetType": "Picklist"
+        },
+        "jhrb_transactioncurrencyid_modename": {
+          "type": "string",
+          "title": "jhrb_transactioncurrencyid_modename",
+          "x-ms-dataverse-attribute": "jhrb_transactioncurrencyid_modename",
+          "x-ms-dataverse-type": "VirtualType",
+          "x-ms-schema-name": "jhrb_transactioncurrencyid_modeName",
+          "x-ms-dataverse-attribute-of": "jhrb_transactioncurrencyid_mode",
+          "x-ms-read-only": true
+        },
+        "jhrb_transactioncurrencyidname": {
+          "type": "string",
+          "title": "jhrb_transactioncurrencyidname",
+          "x-ms-dataverse-attribute": "jhrb_transactioncurrencyidname",
+          "x-ms-dataverse-type": "StringType",
+          "x-ms-schema-name": "jhrb_transactioncurrencyidName",
+          "x-ms-dataverse-attribute-of": "jhrb_transactioncurrencyid",
+          "x-ms-read-only": true,
+          "maxLength": 100
+        },
+        "jhrb_type": {
+          "type": "string",
+          "title": "Type",
+          "x-ms-dataverse-attribute": "jhrb_type",
+          "x-ms-dataverse-type": "PicklistType",
+          "x-ms-schema-name": "jhrb_Type",
+          "enum": [
+            "Global",
+            "Group",
+            "User"
+          ],
+          "x-ms-enum-values": [
+            632490000,
+            632490001,
+            632490002
+          ],
+          "Color": [
+            null,
+            null,
+            null
+          ],
+          "x-ms-optionsetmetadataid": "f11d237b-11e8-f111-84e8-7ced8d775d2e",
+          "x-ms-isGlobal": false,
+          "x-ms-optionsetdisplayname": "Type",
+          "x-ms-optionSetType": "Picklist"
+        },
+        "jhrb_typename": {
+          "type": "string",
+          "title": "jhrb_typename",
+          "x-ms-dataverse-attribute": "jhrb_typename",
+          "x-ms-dataverse-type": "VirtualType",
+          "x-ms-schema-name": "jhrb_typeName",
+          "x-ms-dataverse-attribute-of": "jhrb_type",
+          "x-ms-read-only": true
+        },
+        "jhrb_uilanguageid": {
+          "type": "string",
+          "title": "User Interface Language",
+          "x-ms-dataverse-attribute": "jhrb_uilanguageid",
+          "x-ms-dataverse-type": "IntegerType",
+          "x-ms-schema-name": "jhrb_uilanguageid"
+        },
+        "jhrb_uilanguageid_mode": {
+          "type": "string",
+          "title": "User Interface Language Mode",
+          "x-ms-dataverse-attribute": "jhrb_uilanguageid_mode",
+          "x-ms-dataverse-type": "PicklistType",
+          "x-ms-schema-name": "jhrb_uilanguageid_mode",
+          "enum": [
+            "Inherit",
+            "Default",
+            "Locked"
+          ],
+          "x-ms-enum-values": [
+            632490000,
+            632490001,
+            632490002
+          ],
+          "Color": [
+            null,
+            null,
+            null
+          ],
+          "x-ms-optionsetmetadataid": "088e9f3f-11e8-f111-84ea-0022489d55b0",
+          "x-ms-isGlobal": true,
+          "x-ms-optionsetdisplayname": "Setting Mode",
+          "x-ms-optionSetType": "Picklist"
+        },
+        "jhrb_uilanguageid_modename": {
+          "type": "string",
+          "title": "jhrb_uilanguageid_modename",
+          "x-ms-dataverse-attribute": "jhrb_uilanguageid_modename",
+          "x-ms-dataverse-type": "VirtualType",
+          "x-ms-schema-name": "jhrb_uilanguageid_modeName",
+          "x-ms-dataverse-attribute-of": "jhrb_uilanguageid_mode",
+          "x-ms-read-only": true
+        },
+        "jhrb_usecrmformforappointment": {
+          "type": "string",
+          "title": "Use Dynamics Form for Appointment",
+          "x-ms-dataverse-attribute": "jhrb_usecrmformforappointment",
+          "x-ms-dataverse-type": "BooleanType",
+          "x-ms-schema-name": "jhrb_usecrmformforappointment",
+          "enum": [
+            "No",
+            "Yes"
+          ],
+          "x-ms-enum-values": [
+            0,
+            1
+          ],
+          "Color": [
+            null,
+            null
+          ],
+          "x-ms-optionsetmetadataid": "072991fc-12e8-f111-84e8-7ced8d775d2e",
+          "x-ms-isGlobal": false,
+          "x-ms-optionsetdisplayname": "Use Dynamics Form for Appointment",
+          "x-ms-optionSetType": "Boolean"
+        },
+        "jhrb_usecrmformforappointment_mode": {
+          "type": "string",
+          "title": "Use Dynamics Form for Appointment Mode",
+          "x-ms-dataverse-attribute": "jhrb_usecrmformforappointment_mode",
+          "x-ms-dataverse-type": "PicklistType",
+          "x-ms-schema-name": "jhrb_usecrmformforappointment_mode",
+          "enum": [
+            "Inherit",
+            "Default",
+            "Locked"
+          ],
+          "x-ms-enum-values": [
+            632490000,
+            632490001,
+            632490002
+          ],
+          "Color": [
+            null,
+            null,
+            null
+          ],
+          "x-ms-optionsetmetadataid": "088e9f3f-11e8-f111-84ea-0022489d55b0",
+          "x-ms-isGlobal": true,
+          "x-ms-optionsetdisplayname": "Setting Mode",
+          "x-ms-optionSetType": "Picklist"
+        },
+        "jhrb_usecrmformforappointment_modename": {
+          "type": "string",
+          "title": "jhrb_usecrmformforappointment_modename",
+          "x-ms-dataverse-attribute": "jhrb_usecrmformforappointment_modename",
+          "x-ms-dataverse-type": "VirtualType",
+          "x-ms-schema-name": "jhrb_usecrmformforappointment_modeName",
+          "x-ms-dataverse-attribute-of": "jhrb_usecrmformforappointment_mode",
+          "x-ms-read-only": true
+        },
+        "jhrb_usecrmformforappointmentname": {
+          "type": "string",
+          "title": "jhrb_usecrmformforappointmentname",
+          "x-ms-dataverse-attribute": "jhrb_usecrmformforappointmentname",
+          "x-ms-dataverse-type": "VirtualType",
+          "x-ms-schema-name": "jhrb_usecrmformforappointmentName",
+          "x-ms-dataverse-attribute-of": "jhrb_usecrmformforappointment",
+          "x-ms-read-only": true
+        },
+        "jhrb_usecrmformforcontact": {
+          "type": "string",
+          "title": "Use Dynamics Form for Contact",
+          "x-ms-dataverse-attribute": "jhrb_usecrmformforcontact",
+          "x-ms-dataverse-type": "BooleanType",
+          "x-ms-schema-name": "jhrb_usecrmformforcontact",
+          "enum": [
+            "No",
+            "Yes"
+          ],
+          "x-ms-enum-values": [
+            0,
+            1
+          ],
+          "Color": [
+            null,
+            null
+          ],
+          "x-ms-optionsetmetadataid": "b04b6efe-12e8-f111-84ea-002248a422bc",
+          "x-ms-isGlobal": false,
+          "x-ms-optionsetdisplayname": "Use Dynamics Form for Contact",
+          "x-ms-optionSetType": "Boolean"
+        },
+        "jhrb_usecrmformforcontact_mode": {
+          "type": "string",
+          "title": "Use Dynamics Form for Contact Mode",
+          "x-ms-dataverse-attribute": "jhrb_usecrmformforcontact_mode",
+          "x-ms-dataverse-type": "PicklistType",
+          "x-ms-schema-name": "jhrb_usecrmformforcontact_mode",
+          "enum": [
+            "Inherit",
+            "Default",
+            "Locked"
+          ],
+          "x-ms-enum-values": [
+            632490000,
+            632490001,
+            632490002
+          ],
+          "Color": [
+            null,
+            null,
+            null
+          ],
+          "x-ms-optionsetmetadataid": "088e9f3f-11e8-f111-84ea-0022489d55b0",
+          "x-ms-isGlobal": true,
+          "x-ms-optionsetdisplayname": "Setting Mode",
+          "x-ms-optionSetType": "Picklist"
+        },
+        "jhrb_usecrmformforcontact_modename": {
+          "type": "string",
+          "title": "jhrb_usecrmformforcontact_modename",
+          "x-ms-dataverse-attribute": "jhrb_usecrmformforcontact_modename",
+          "x-ms-dataverse-type": "VirtualType",
+          "x-ms-schema-name": "jhrb_usecrmformforcontact_modeName",
+          "x-ms-dataverse-attribute-of": "jhrb_usecrmformforcontact_mode",
+          "x-ms-read-only": true
+        },
+        "jhrb_usecrmformforcontactname": {
+          "type": "string",
+          "title": "jhrb_usecrmformforcontactname",
+          "x-ms-dataverse-attribute": "jhrb_usecrmformforcontactname",
+          "x-ms-dataverse-type": "VirtualType",
+          "x-ms-schema-name": "jhrb_usecrmformforcontactName",
+          "x-ms-dataverse-attribute-of": "jhrb_usecrmformforcontact",
+          "x-ms-read-only": true
+        },
+        "jhrb_usecrmformforemail": {
+          "type": "string",
+          "title": "Use Dynamics Form for Email",
+          "x-ms-dataverse-attribute": "jhrb_usecrmformforemail",
+          "x-ms-dataverse-type": "BooleanType",
+          "x-ms-schema-name": "jhrb_usecrmformforemail",
+          "enum": [
+            "No",
+            "Yes"
+          ],
+          "x-ms-enum-values": [
+            0,
+            1
+          ],
+          "Color": [
+            null,
+            null
+          ],
+          "x-ms-optionsetmetadataid": "9e06a709-13e8-f111-84ea-0022489d55b0",
+          "x-ms-isGlobal": false,
+          "x-ms-optionsetdisplayname": "Use Dynamics Form for Email",
+          "x-ms-optionSetType": "Boolean"
+        },
+        "jhrb_usecrmformforemail_mode": {
+          "type": "string",
+          "title": "Use Dynamics Form for Email Mode",
+          "x-ms-dataverse-attribute": "jhrb_usecrmformforemail_mode",
+          "x-ms-dataverse-type": "PicklistType",
+          "x-ms-schema-name": "jhrb_usecrmformforemail_mode",
+          "enum": [
+            "Inherit",
+            "Default",
+            "Locked"
+          ],
+          "x-ms-enum-values": [
+            632490000,
+            632490001,
+            632490002
+          ],
+          "Color": [
+            null,
+            null,
+            null
+          ],
+          "x-ms-optionsetmetadataid": "088e9f3f-11e8-f111-84ea-0022489d55b0",
+          "x-ms-isGlobal": true,
+          "x-ms-optionsetdisplayname": "Setting Mode",
+          "x-ms-optionSetType": "Picklist"
+        },
+        "jhrb_usecrmformforemail_modename": {
+          "type": "string",
+          "title": "jhrb_usecrmformforemail_modename",
+          "x-ms-dataverse-attribute": "jhrb_usecrmformforemail_modename",
+          "x-ms-dataverse-type": "VirtualType",
+          "x-ms-schema-name": "jhrb_usecrmformforemail_modeName",
+          "x-ms-dataverse-attribute-of": "jhrb_usecrmformforemail_mode",
+          "x-ms-read-only": true
+        },
+        "jhrb_usecrmformforemailname": {
+          "type": "string",
+          "title": "jhrb_usecrmformforemailname",
+          "x-ms-dataverse-attribute": "jhrb_usecrmformforemailname",
+          "x-ms-dataverse-type": "VirtualType",
+          "x-ms-schema-name": "jhrb_usecrmformforemailName",
+          "x-ms-dataverse-attribute-of": "jhrb_usecrmformforemail",
+          "x-ms-read-only": true
+        },
+        "jhrb_usecrmformfortask": {
+          "type": "string",
+          "title": "Use Dynamics Form for Task",
+          "x-ms-dataverse-attribute": "jhrb_usecrmformfortask",
+          "x-ms-dataverse-type": "BooleanType",
+          "x-ms-schema-name": "jhrb_usecrmformfortask",
+          "enum": [
+            "No",
+            "Yes"
+          ],
+          "x-ms-enum-values": [
+            0,
+            1
+          ],
+          "Color": [
+            null,
+            null
+          ],
+          "x-ms-optionsetmetadataid": "48da0b0f-13e8-f111-84ea-000d3ab163fb",
+          "x-ms-isGlobal": false,
+          "x-ms-optionsetdisplayname": "Use Dynamics Form for Task",
+          "x-ms-optionSetType": "Boolean"
+        },
+        "jhrb_usecrmformfortask_mode": {
+          "type": "string",
+          "title": "Use Dynamics Form for Task Mode",
+          "x-ms-dataverse-attribute": "jhrb_usecrmformfortask_mode",
+          "x-ms-dataverse-type": "PicklistType",
+          "x-ms-schema-name": "jhrb_usecrmformfortask_mode",
+          "enum": [
+            "Inherit",
+            "Default",
+            "Locked"
+          ],
+          "x-ms-enum-values": [
+            632490000,
+            632490001,
+            632490002
+          ],
+          "Color": [
+            null,
+            null,
+            null
+          ],
+          "x-ms-optionsetmetadataid": "088e9f3f-11e8-f111-84ea-0022489d55b0",
+          "x-ms-isGlobal": true,
+          "x-ms-optionsetdisplayname": "Setting Mode",
+          "x-ms-optionSetType": "Picklist"
+        },
+        "jhrb_usecrmformfortask_modename": {
+          "type": "string",
+          "title": "jhrb_usecrmformfortask_modename",
+          "x-ms-dataverse-attribute": "jhrb_usecrmformfortask_modename",
+          "x-ms-dataverse-type": "VirtualType",
+          "x-ms-schema-name": "jhrb_usecrmformfortask_modeName",
+          "x-ms-dataverse-attribute-of": "jhrb_usecrmformfortask_mode",
+          "x-ms-read-only": true
+        },
+        "jhrb_usecrmformfortaskname": {
+          "type": "string",
+          "title": "jhrb_usecrmformfortaskname",
+          "x-ms-dataverse-attribute": "jhrb_usecrmformfortaskname",
+          "x-ms-dataverse-type": "VirtualType",
+          "x-ms-schema-name": "jhrb_usecrmformfortaskName",
+          "x-ms-dataverse-attribute-of": "jhrb_usecrmformfortask",
+          "x-ms-read-only": true
+        },
+        "jhrb_user": {
+          "type": "string",
+          "title": "User",
+          "x-ms-dataverse-attribute": "jhrb_user",
+          "x-ms-dataverse-type": "LookupType",
+          "x-ms-schema-name": "jhrb_User",
+          "x-ms-dataverse-navigation-properties": [
+            "jhrb_User"
+          ]
+        },
+        "jhrb_username": {
+          "type": "string",
+          "title": "jhrb_username",
+          "x-ms-dataverse-attribute": "jhrb_username",
+          "x-ms-dataverse-type": "StringType",
+          "x-ms-schema-name": "jhrb_UserName",
+          "x-ms-dataverse-attribute-of": "jhrb_user",
+          "x-ms-read-only": true,
+          "maxLength": 200
+        },
+        "jhrb_useryominame": {
+          "type": "string",
+          "title": "jhrb_useryominame",
+          "x-ms-dataverse-attribute": "jhrb_useryominame",
+          "x-ms-dataverse-type": "StringType",
+          "x-ms-schema-name": "jhrb_UserYomiName",
+          "x-ms-dataverse-attribute-of": "jhrb_user",
+          "x-ms-read-only": true,
+          "maxLength": 200
+        },
+        "jhrb_visualizationpanelayout": {
+          "type": "string",
+          "title": "Visualization Pane Layout",
+          "x-ms-dataverse-attribute": "jhrb_visualizationpanelayout",
+          "x-ms-dataverse-type": "PicklistType",
+          "x-ms-schema-name": "jhrb_visualizationpanelayout",
+          "enum": [
+            "Top-bottom",
+            "Side-by-side"
+          ],
+          "x-ms-enum-values": [
+            0,
+            1
+          ],
+          "Color": [
+            null,
+            null
+          ],
+          "x-ms-optionsetmetadataid": "da6f25a7-12e8-f111-84ea-000d3ab16615",
+          "x-ms-isGlobal": false,
+          "x-ms-optionsetdisplayname": "Visualization Pane Layout",
+          "x-ms-optionSetType": "Picklist"
+        },
+        "jhrb_visualizationpanelayout_mode": {
+          "type": "string",
+          "title": "Visualization Pane Layout Mode",
+          "x-ms-dataverse-attribute": "jhrb_visualizationpanelayout_mode",
+          "x-ms-dataverse-type": "PicklistType",
+          "x-ms-schema-name": "jhrb_visualizationpanelayout_mode",
+          "enum": [
+            "Inherit",
+            "Default",
+            "Locked"
+          ],
+          "x-ms-enum-values": [
+            632490000,
+            632490001,
+            632490002
+          ],
+          "Color": [
+            null,
+            null,
+            null
+          ],
+          "x-ms-optionsetmetadataid": "088e9f3f-11e8-f111-84ea-0022489d55b0",
+          "x-ms-isGlobal": true,
+          "x-ms-optionsetdisplayname": "Setting Mode",
+          "x-ms-optionSetType": "Picklist"
+        },
+        "jhrb_visualizationpanelayout_modename": {
+          "type": "string",
+          "title": "jhrb_visualizationpanelayout_modename",
+          "x-ms-dataverse-attribute": "jhrb_visualizationpanelayout_modename",
+          "x-ms-dataverse-type": "VirtualType",
+          "x-ms-schema-name": "jhrb_visualizationpanelayout_modeName",
+          "x-ms-dataverse-attribute-of": "jhrb_visualizationpanelayout_mode",
+          "x-ms-read-only": true
+        },
+        "jhrb_visualizationpanelayoutname": {
+          "type": "string",
+          "title": "jhrb_visualizationpanelayoutname",
+          "x-ms-dataverse-attribute": "jhrb_visualizationpanelayoutname",
+          "x-ms-dataverse-type": "VirtualType",
+          "x-ms-schema-name": "jhrb_visualizationpanelayoutName",
+          "x-ms-dataverse-attribute-of": "jhrb_visualizationpanelayout",
+          "x-ms-read-only": true
+        },
+        "jhrb_workdaystarttime": {
+          "type": "string",
+          "title": "Work Day Start Time",
+          "x-ms-dataverse-attribute": "jhrb_workdaystarttime",
+          "x-ms-dataverse-type": "StringType",
+          "x-ms-schema-name": "jhrb_workdaystarttime",
+          "maxLength": 5
+        },
+        "jhrb_workdaystarttime_mode": {
+          "type": "string",
+          "title": "Work Day Start Time Mode",
+          "x-ms-dataverse-attribute": "jhrb_workdaystarttime_mode",
+          "x-ms-dataverse-type": "PicklistType",
+          "x-ms-schema-name": "jhrb_workdaystarttime_mode",
+          "enum": [
+            "Inherit",
+            "Default",
+            "Locked"
+          ],
+          "x-ms-enum-values": [
+            632490000,
+            632490001,
+            632490002
+          ],
+          "Color": [
+            null,
+            null,
+            null
+          ],
+          "x-ms-optionsetmetadataid": "088e9f3f-11e8-f111-84ea-0022489d55b0",
+          "x-ms-isGlobal": true,
+          "x-ms-optionsetdisplayname": "Setting Mode",
+          "x-ms-optionSetType": "Picklist"
+        },
+        "jhrb_workdaystarttime_modename": {
+          "type": "string",
+          "title": "jhrb_workdaystarttime_modename",
+          "x-ms-dataverse-attribute": "jhrb_workdaystarttime_modename",
+          "x-ms-dataverse-type": "VirtualType",
+          "x-ms-schema-name": "jhrb_workdaystarttime_modeName",
+          "x-ms-dataverse-attribute-of": "jhrb_workdaystarttime_mode",
+          "x-ms-read-only": true
+        },
+        "jhrb_workdaystoptime": {
+          "type": "string",
+          "title": "Work Day End Time",
+          "x-ms-dataverse-attribute": "jhrb_workdaystoptime",
+          "x-ms-dataverse-type": "StringType",
+          "x-ms-schema-name": "jhrb_workdaystoptime",
+          "maxLength": 5
+        },
+        "jhrb_workdaystoptime_mode": {
+          "type": "string",
+          "title": "Work Day End Time Mode",
+          "x-ms-dataverse-attribute": "jhrb_workdaystoptime_mode",
+          "x-ms-dataverse-type": "PicklistType",
+          "x-ms-schema-name": "jhrb_workdaystoptime_mode",
+          "enum": [
+            "Inherit",
+            "Default",
+            "Locked"
+          ],
+          "x-ms-enum-values": [
+            632490000,
+            632490001,
+            632490002
+          ],
+          "Color": [
+            null,
+            null,
+            null
+          ],
+          "x-ms-optionsetmetadataid": "088e9f3f-11e8-f111-84ea-0022489d55b0",
+          "x-ms-isGlobal": true,
+          "x-ms-optionsetdisplayname": "Setting Mode",
+          "x-ms-optionSetType": "Picklist"
+        },
+        "jhrb_workdaystoptime_modename": {
+          "type": "string",
+          "title": "jhrb_workdaystoptime_modename",
+          "x-ms-dataverse-attribute": "jhrb_workdaystoptime_modename",
+          "x-ms-dataverse-type": "VirtualType",
+          "x-ms-schema-name": "jhrb_workdaystoptime_modeName",
+          "x-ms-dataverse-attribute-of": "jhrb_workdaystoptime_mode",
+          "x-ms-read-only": true
+        },
+        "modifiedby": {
+          "type": "string",
+          "title": "Modified By",
+          "x-ms-dataverse-attribute": "modifiedby",
+          "x-ms-dataverse-type": "LookupType",
+          "x-ms-schema-name": "ModifiedBy",
+          "x-ms-dataverse-navigation-properties": [
+            "modifiedby"
+          ],
+          "x-ms-read-only": true
+        },
+        "modifiedbyname": {
+          "type": "string",
+          "title": "modifiedbyname",
+          "x-ms-dataverse-attribute": "modifiedbyname",
+          "x-ms-dataverse-type": "StringType",
+          "x-ms-schema-name": "ModifiedByName",
+          "x-ms-dataverse-attribute-of": "modifiedby",
+          "x-ms-read-only": true,
+          "maxLength": 100
+        },
+        "modifiedbyyominame": {
+          "type": "string",
+          "title": "modifiedbyyominame",
+          "x-ms-dataverse-attribute": "modifiedbyyominame",
+          "x-ms-dataverse-type": "StringType",
+          "x-ms-schema-name": "ModifiedByYomiName",
+          "x-ms-dataverse-attribute-of": "modifiedby",
+          "x-ms-read-only": true,
+          "required": true,
+          "maxLength": 100
+        },
+        "modifiedon": {
+          "type": "string",
+          "title": "Modified On",
+          "x-ms-dataverse-attribute": "modifiedon",
+          "x-ms-dataverse-type": "DateTimeType",
+          "x-ms-schema-name": "ModifiedOn",
+          "x-ms-read-only": true
+        },
+        "modifiedonbehalfby": {
+          "type": "string",
+          "title": "Modified By (Delegate)",
+          "x-ms-dataverse-attribute": "modifiedonbehalfby",
+          "x-ms-dataverse-type": "LookupType",
+          "x-ms-schema-name": "ModifiedOnBehalfBy",
+          "x-ms-dataverse-navigation-properties": [
+            "modifiedonbehalfby"
+          ],
+          "x-ms-read-only": true
+        },
+        "modifiedonbehalfbyname": {
+          "type": "string",
+          "title": "modifiedonbehalfbyname",
+          "x-ms-dataverse-attribute": "modifiedonbehalfbyname",
+          "x-ms-dataverse-type": "StringType",
+          "x-ms-schema-name": "ModifiedOnBehalfByName",
+          "x-ms-dataverse-attribute-of": "modifiedonbehalfby",
+          "x-ms-read-only": true,
+          "maxLength": 100
+        },
+        "modifiedonbehalfbyyominame": {
+          "type": "string",
+          "title": "modifiedonbehalfbyyominame",
+          "x-ms-dataverse-attribute": "modifiedonbehalfbyyominame",
+          "x-ms-dataverse-type": "StringType",
+          "x-ms-schema-name": "ModifiedOnBehalfByYomiName",
+          "x-ms-dataverse-attribute-of": "modifiedonbehalfby",
+          "x-ms-read-only": true,
+          "required": true,
+          "maxLength": 100
+        },
+        "organizationid": {
+          "type": "string",
+          "title": "Organization Id",
+          "x-ms-dataverse-attribute": "organizationid",
+          "x-ms-dataverse-type": "LookupType",
+          "x-ms-schema-name": "OrganizationId",
+          "x-ms-dataverse-navigation-properties": [
+            "organizationid"
+          ],
+          "x-ms-read-only": true
+        },
+        "organizationidname": {
+          "type": "string",
+          "title": "organizationidname",
+          "x-ms-dataverse-attribute": "organizationidname",
+          "x-ms-dataverse-type": "StringType",
+          "x-ms-schema-name": "OrganizationIdName",
+          "x-ms-dataverse-attribute-of": "organizationid",
+          "x-ms-read-only": true,
+          "required": true,
+          "maxLength": 160
+        },
+        "overriddencreatedon": {
+          "type": "string",
+          "title": "Record Created On",
+          "x-ms-dataverse-attribute": "overriddencreatedon",
+          "x-ms-dataverse-type": "DateTimeType",
+          "x-ms-schema-name": "OverriddenCreatedOn"
+        },
+        "statecode": {
+          "type": "string",
+          "title": "Status",
+          "x-ms-dataverse-attribute": "statecode",
+          "x-ms-dataverse-type": "StateType",
+          "x-ms-schema-name": "statecode",
+          "required": true,
+          "enum": [
+            "Active",
+            "Inactive"
+          ],
+          "x-ms-enum-values": [
+            0,
+            1
+          ],
+          "Color": [
+            null,
+            null
+          ],
+          "x-ms-optionsetmetadataid": "b654cbec-809c-483b-b712-cdbc78fb7e96",
+          "x-ms-isGlobal": false,
+          "x-ms-optionsetdisplayname": "Status",
+          "x-ms-optionSetType": "State"
+        },
+        "statecodename": {
+          "type": "string",
+          "title": "statecodename",
+          "x-ms-dataverse-attribute": "statecodename",
+          "x-ms-dataverse-type": "VirtualType",
+          "x-ms-schema-name": "statecodeName",
+          "x-ms-dataverse-attribute-of": "statecode",
+          "x-ms-read-only": true
+        },
+        "statuscode": {
+          "type": "string",
+          "title": "Status Reason",
+          "x-ms-dataverse-attribute": "statuscode",
+          "x-ms-dataverse-type": "StatusType",
+          "x-ms-schema-name": "statuscode",
+          "enum": [
+            "Active",
+            "Inactive"
+          ],
+          "x-ms-enum-values": [
+            1,
+            2
+          ],
+          "Color": [
+            null,
+            null
+          ],
+          "x-ms-optionsetmetadataid": "11bca674-c43c-42e1-8636-91ed90d68876",
+          "x-ms-isGlobal": false,
+          "x-ms-optionsetdisplayname": "Status Reason",
+          "x-ms-optionSetType": "Status"
+        },
+        "statuscodename": {
+          "type": "string",
+          "title": "statuscodename",
+          "x-ms-dataverse-attribute": "statuscodename",
+          "x-ms-dataverse-type": "VirtualType",
+          "x-ms-schema-name": "statuscodeName",
+          "x-ms-dataverse-attribute-of": "statuscode",
+          "x-ms-read-only": true
+        },
+        "timezoneruleversionnumber": {
+          "type": "string",
+          "title": "Time Zone Rule Version Number",
+          "x-ms-dataverse-attribute": "timezoneruleversionnumber",
+          "x-ms-dataverse-type": "IntegerType",
+          "x-ms-schema-name": "TimeZoneRuleVersionNumber"
+        },
+        "utcconversiontimezonecode": {
+          "type": "string",
+          "title": "UTC Conversion Time Zone Code",
+          "x-ms-dataverse-attribute": "utcconversiontimezonecode",
+          "x-ms-dataverse-type": "IntegerType",
+          "x-ms-schema-name": "UTCConversionTimeZoneCode"
+        },
+        "versionnumber": {
+          "type": "string",
+          "title": "Version Number",
+          "x-ms-dataverse-attribute": "versionnumber",
+          "x-ms-dataverse-type": "BigIntType",
+          "x-ms-schema-name": "VersionNumber",
+          "x-ms-read-only": true
+        }
+      },
+      "required": [
+        "createdbyyominame",
+        "createdonbehalfbyyominame",
+        "jhrb_settingsprofileid",
+        "modifiedbyyominame",
+        "modifiedonbehalfbyyominame",
+        "organizationidname",
+        "statecode"
+      ]
+    }
+  }
+}

@@ -1,0 +1,70 @@
+{
+  "name": "jhrb_LoadCurrentSettings",
+  "title": "jhrb_LoadCurrentSettings",
+  "type": "Microsoft.PowerApps/dataverseOperation",
+  "properties": {
+    "displayName": "jhrb_LoadCurrentSettings",
+    "swagger": {
+      "swagger": "2.0",
+      "info": {
+        "title": "jhrb_LoadCurrentSettings",
+        "version": "1.0"
+      },
+      "basePath": "/api/data/v9.2",
+      "paths": {
+        "/jhrb_LoadCurrentSettings": {
+          "post": {
+            "operationId": "jhrb_LoadCurrentSettings",
+            "parameters": [
+              {
+                "name": "ProfileId",
+                "in": "body",
+                "required": false,
+                "type": "string",
+                "format": "guid",
+                "x-ms-dataverse-type": "UniqueidentifierType",
+                "x-ms-csdl-type": "Edm.Guid"
+              },
+              {
+                "name": "UserId",
+                "in": "body",
+                "required": false,
+                "type": "string",
+                "format": "guid",
+                "x-ms-dataverse-type": "UniqueidentifierType",
+                "x-ms-csdl-type": "Edm.Guid"
+              },
+              {
+                "name": "SourceUserId",
+                "in": "body",
+                "required": false,
+                "type": "string",
+                "format": "guid",
+                "x-ms-dataverse-type": "UniqueidentifierType",
+                "x-ms-csdl-type": "Edm.Guid"
+              },
+              {
+                "name": "OverwriteManaged",
+                "in": "body",
+                "required": false,
+                "type": "boolean",
+                "x-ms-dataverse-type": "BooleanType",
+                "x-ms-csdl-type": "Edm.Boolean"
+              }
+            ],
+            "responses": {
+              "200": {
+                "description": "Success",
+                "schema": {
+                  "type": "object",
+                  "x-ms-dataverse-type": "LookupType",
+                  "x-ms-csdl-type": "mscrm.jhrb_LoadCurrentSettingsResponse"
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
