@@ -39,6 +39,7 @@ src/DefaultUserSettings.Plugins/       plugin assembly; Registry/SettingsRegistr
   Resolution/ Enforcement/ Validation/ pure logic (unit tested)
   Data/ Plugins/                       Dataverse access and thin IPlugin shells
 src/DefaultUserSettings.Plugins.Tests/ MSTest on the pure core (no FakeXrmEasy: v2+ needs a commercial licence)
+src/WebResources/                      form command scripts (deployed by Deploy-App.ps1)
 scripts/                               Deploy-Schema, Register-Plugins, Seed-GlobalProfile, Test-Integration
 solution/                              pac solution clone output (source controlled)
 docs/                                  plan, spike findings, test results

@@ -6,6 +6,7 @@ using DefaultUserSettings.Plugins.Model;
 using DefaultUserSettings.Plugins.Resolution;
 using DefaultUserSettings.Plugins.Rollout;
 using DefaultUserSettings.Plugins.Values;
+using Microsoft.Xrm.Sdk;
 
 namespace DefaultUserSettings.Plugins.Plugins
 {
@@ -59,6 +60,64 @@ namespace DefaultUserSettings.Plugins.Plugins
     {
         protected override void Execute(LocalContext local) =>
             local.Context.OutputParameters["JobId"] = Reconcile.Run(local.SystemService);
+    }
+
+    /// <summary>
+    /// Custom API jhrb_LoadCurrentSettings ("Load current values", SPIKE G option 1). Copies a user's current usersettings into a profile's
+    /// value columns. Modes are not changed, so loading alone rolls nothing out; the admin then sets Default or Locked where wanted.
+    /// In: ProfileId (Guid) or UserId (Guid: that user's User profile, created if missing), SourceUserId (Guid, default: the profile's
+    ///     user for User profiles, else the caller), OverwriteManaged (bool: also replace values of settings on Default/Locked).
+    /// Out: ProfileId (Guid), Loaded (int: value columns written), KeptManaged (int: managed settings left as they were).
+    /// </summary>
+    public sealed class LoadCurrentSettingsApi : PluginBase
+    {
+        protected override void Execute(LocalContext local)
+        {
+            var p = local.Context.InputParameters;
+            Guid? G(string k) => p.Contains(k) && p[k] is Guid g && g != Guid.Empty ? g : (Guid?)null;
+            var profileId = G("ProfileId");
+            var userId = G("UserId");
+            var overwrite = p.Contains("OverwriteManaged") && p["OverwriteManaged"] is bool b && b;
+            var repo = new SettingsRepository(local.SystemService);
+
+            SettingsProfile profile;
+            Guid sourceUserId;
+            if (profileId.HasValue)
+            {
+                profile = repo.LoadProfile(profileId.Value)
+                    ?? throw new InvalidPluginExecutionException("The settings profile does not exist.");
+                sourceUserId = G("SourceUserId") ?? (profile.Type == ProfileType.User && profile.UserId.HasValue ? profile.UserId.Value : local.Context.InitiatingUserId);
+            }
+            else if (userId.HasValue)
+            {
+                profile = repo.FindUserProfile(userId.Value);
+                sourceUserId = G("SourceUserId") ?? userId.Value;
+            }
+            else throw new InvalidPluginExecutionException("ProfileId or UserId is required.");
+
+            var userSettings = repo.LoadUserSettings(sourceUserId)
+                ?? throw new InvalidPluginExecutionException("The user has no personal settings yet. Try again in a minute.");
+            var r = CurrentValueLoader.Build(profile, userSettings, overwrite);
+
+            Guid id;
+            if (profile == null)
+            {
+                id = repo.CreateUserProfile(userId.Value, r.Update);
+            }
+            else
+            {
+                id = profile.Id;
+                if (r.Loaded.Count > 0)
+                {
+                    r.Update.Id = id;
+                    local.SystemService.Update(r.Update);
+                }
+            }
+            local.Trace.Trace("Loaded {0} value(s) from user {1} into profile {2}; kept {3} managed.", r.Loaded.Count, sourceUserId, id, r.KeptManaged.Count);
+            local.Context.OutputParameters["ProfileId"] = id;
+            local.Context.OutputParameters["Loaded"] = r.Loaded.Count;
+            local.Context.OutputParameters["KeptManaged"] = r.KeptManaged.Count;
+        }
     }
 
     /// <summary>

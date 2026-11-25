@@ -103,6 +103,7 @@ $hb   = Get-Type "$ns.HeartbeatPlugin"
 $apply = Get-Type "$ns.ApplyDefaultsApi"
 $rec   = Get-Type "$ns.ReconcileSettingsApi"
 $res   = Get-Type "$ns.ResolveEffectiveSettingsApi"
+$load  = Get-Type "$ns.LoadCurrentSettingsApi"
 
 # Stage 10 = PreValidation, 20 = PreOperation, 40 = PostOperation. Mode 0 = sync, 1 = async.
 Step 'DUS: Enforce locks (usersettings Update, Pre)' $lock 'Update' 'usersettings' 20 0 $filtering
@@ -138,4 +139,10 @@ Ensure-CustomApi 'jhrb_ResolveEffectiveSettings' 'Resolve Effective User Setting
   @{ name = 'UserId'; type = 12; desc = 'User (default: caller).' }) @(
   @{ name = 'Settings'; type = 10; desc = 'JSON array.' }, @{ name = 'Layers'; type = 10; desc = 'JSON array of profile names, highest precedence first.' },
   @{ name = 'InScope'; type = 0; desc = 'User is in scope (active Global row and pilot team, if set).' })
+Ensure-CustomApi 'jhrb_LoadCurrentSettings' 'Load Current User Settings' "Copy a user's current personal settings into a profile's values (modes unchanged)." $load 'prvWritejhrb_SettingsProfile' @(
+  @{ name = 'ProfileId'; type = 12; desc = 'Profile to fill.' }, @{ name = 'UserId'; type = 12; desc = "Instead of ProfileId: this user's User profile (created if missing)." },
+  @{ name = 'SourceUserId'; type = 12; desc = "User to copy from (default: the profile's user, else the caller)." },
+  @{ name = 'OverwriteManaged'; type = 0; desc = 'Also replace values of settings on Default or Locked.' }) @(
+  @{ name = 'ProfileId'; type = 12; desc = 'Profile that was filled.' }, @{ name = 'Loaded'; type = 7; desc = 'Value columns written.' },
+  @{ name = 'KeptManaged'; type = 7; desc = 'Managed settings left unchanged.' })
 "done"
