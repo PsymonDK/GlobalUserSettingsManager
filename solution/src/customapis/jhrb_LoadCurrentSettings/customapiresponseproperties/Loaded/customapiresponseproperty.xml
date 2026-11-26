@@ -1,0 +1,11 @@
+<customapiresponseproperty uniquename="Loaded">
+  <description default="Value columns written.">
+    <label description="Value columns written." languagecode="1033" />
+  </description>
+  <displayname default="Loaded">
+    <label description="Loaded" languagecode="1033" />
+  </displayname>
+  <iscustomizable>1</iscustomizable>
+  <name>Loaded</name>
+  <type>7</type>
+</customapiresponseproperty>

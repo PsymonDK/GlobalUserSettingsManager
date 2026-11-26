@@ -1,0 +1,11 @@
+<customapiresponseproperty uniquename="KeptManaged">
+  <description default="Managed settings left unchanged.">
+    <label description="Managed settings left unchanged." languagecode="1033" />
+  </description>
+  <displayname default="KeptManaged">
+    <label description="KeptManaged" languagecode="1033" />
+  </displayname>
+  <iscustomizable>1</iscustomizable>
+  <name>KeptManaged</name>
+  <type>7</type>
+</customapiresponseproperty>

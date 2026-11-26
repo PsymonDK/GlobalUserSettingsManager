@@ -94,6 +94,8 @@
       <RootComponent type="1" schemaName="transactioncurrency" behavior="1" />
       <RootComponent type="20" id="{023e8e26-23e8-f111-84ea-000d3ab163fb}" behavior="0" />
       <RootComponent type="20" id="{e73d8e26-23e8-f111-84ea-000d3ab163fb}" behavior="0" />
+      <RootComponent type="300" schemaName="jhrb_defaultusersettings_3f0b2" behavior="0" />
+      <RootComponent type="61" schemaName="jhrb_/scripts/settingsprofile.js" behavior="0" />
       <RootComponent type="62" schemaName="jhrb_DefaultUserSettings" behavior="0" />
       <RootComponent type="80" schemaName="jhrb_DefaultUserSettings" behavior="0" />
       <RootComponent type="9" schemaName="jhrb_settingmode" behavior="0" />

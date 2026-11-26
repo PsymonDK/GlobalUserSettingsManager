@@ -1,0 +1,67 @@
+{
+    "version":  "1.0",
+    "appDisplayName":  "Default User Settings",
+    "region":  "prod",
+    "appType":  "CodeApp",
+    "environmentId":  "00000000-0000-0000-0000-000000000000",
+    "description":  " ",
+    "buildPath":  "./dist",
+    "buildEntryPoint":  "index.html",
+    "localAppUrl":  "http://localhost:3000",
+    "logoPath":  "Default",
+    "connectionReferences":  {
+
+                             },
+    "databaseReferences":  {
+                               "default.cds":  {
+                                                   "dataSources":  {
+                                                                       "settingsprofiles":  {
+                                                                                                "entitySetName":  "jhrb_settingsprofiles",
+                                                                                                "logicalName":  "jhrb_settingsprofile",
+                                                                                                "isHidden":  false
+                                                                                            },
+                                                                       "profilescopes":  {
+                                                                                             "entitySetName":  "jhrb_profilescopes",
+                                                                                             "logicalName":  "jhrb_profilescope",
+                                                                                             "isHidden":  false
+                                                                                         },
+                                                                       "rolloutjobs":  {
+                                                                                           "entitySetName":  "jhrb_rolloutjobs",
+                                                                                           "logicalName":  "jhrb_rolloutjob",
+                                                                                           "isHidden":  false
+                                                                                       },
+                                                                       "settingslogs":  {
+                                                                                            "entitySetName":  "jhrb_settingslogs",
+                                                                                            "logicalName":  "jhrb_settingslog",
+                                                                                            "isHidden":  false
+                                                                                        },
+                                                                       "users":  {
+                                                                                     "entitySetName":  "systemusers",
+                                                                                     "logicalName":  "systemuser",
+                                                                                     "isHidden":  false
+                                                                                 },
+                                                                       "teams":  {
+                                                                                     "entitySetName":  "teams",
+                                                                                     "logicalName":  "team",
+                                                                                     "isHidden":  false
+                                                                                 },
+                                                                       "businessunits":  {
+                                                                                             "entitySetName":  "businessunits",
+                                                                                             "logicalName":  "businessunit",
+                                                                                             "isHidden":  false
+                                                                                         },
+                                                                       "usersettings":  {
+                                                                                            "entitySetName":  "usersettingscollection",
+                                                                                            "logicalName":  "usersettings",
+                                                                                            "isHidden":  false
+                                                                                        },
+                                                                       "environment_39a902ba":  {
+                                                                                                    "entitySetName":  "Environment",
+                                                                                                    "logicalName":  "environment_39a902ba",
+                                                                                                    "isHidden":  false
+                                                                                                }
+                                                                   },
+                                                   "environmentVariableName":  ""
+                                               }
+                           }
+}

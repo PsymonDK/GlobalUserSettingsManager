@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<WebResource xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <WebResourceId>{13c7e3be-a8e8-f111-84ea-0022489d55b0}</WebResourceId>
+  <Name>jhrb_/scripts/settingsprofile.js</Name>
+  <DisplayName>Settings Profile form commands</DisplayName>
+  <WebResourceType>3</WebResourceType>
+  <IntroducedVersion>1.0.0.0</IntroducedVersion>
+  <IsEnabledForMobileClient>0</IsEnabledForMobileClient>
+  <IsAvailableForMobileOffline>0</IsAvailableForMobileOffline>
+  <IsCustomizable>1</IsCustomizable>
+  <CanBeDeleted>1</CanBeDeleted>
+  <IsHidden>0</IsHidden>
+  <FileName>/WebResources/jhrb_scriptssettingsprofilejs13C7E3BE-A8E8-F111-84EA-0022489D55B0</FileName>
+</WebResource>

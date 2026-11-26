@@ -11,6 +11,9 @@
     <PluginType AssemblyQualifiedName="DefaultUserSettings.Plugins.Plugins.HeartbeatPlugin, DefaultUserSettings.Plugins, Version=1.0.0.0, Culture=neutral, PublicKeyToken=968e99a7a2fe1ed3" PluginTypeId="f8c44a22-15e8-f111-84ea-000d3ab163fb" Name="DefaultUserSettings.Plugins.Plugins.HeartbeatPlugin">
       <FriendlyName>HeartbeatPlugin</FriendlyName>
     </PluginType>
+    <PluginType AssemblyQualifiedName="DefaultUserSettings.Plugins.Plugins.LoadCurrentSettingsApi, DefaultUserSettings.Plugins, Version=1.0.0.0, Culture=neutral, PublicKeyToken=968e99a7a2fe1ed3" PluginTypeId="2457e76b-a8e8-f111-84ea-002248a422bc" Name="DefaultUserSettings.Plugins.Plugins.LoadCurrentSettingsApi">
+      <FriendlyName>LoadCurrentSettingsApi</FriendlyName>
+    </PluginType>
     <PluginType AssemblyQualifiedName="DefaultUserSettings.Plugins.Plugins.LockEnforcementPlugin, DefaultUserSettings.Plugins, Version=1.0.0.0, Culture=neutral, PublicKeyToken=968e99a7a2fe1ed3" PluginTypeId="e9e47a23-15e8-f111-84ea-002248a422bc" Name="DefaultUserSettings.Plugins.Plugins.LockEnforcementPlugin">
       <FriendlyName>LockEnforcementPlugin</FriendlyName>
     </PluginType>

@@ -1,0 +1,12 @@
+<customapirequestparameter uniquename="OverwriteManaged">
+  <description default="Also replace values of settings on Default or Locked.">
+    <label description="Also replace values of settings on Default or Locked." languagecode="1033" />
+  </description>
+  <displayname default="OverwriteManaged">
+    <label description="OverwriteManaged" languagecode="1033" />
+  </displayname>
+  <iscustomizable>1</iscustomizable>
+  <isoptional>1</isoptional>
+  <name>OverwriteManaged</name>
+  <type>0</type>
+</customapirequestparameter>
