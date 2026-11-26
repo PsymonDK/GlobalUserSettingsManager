@@ -1,0 +1,12 @@
+<customapirequestparameter uniquename="ProfileId">
+  <description default="Profile to fill.">
+    <label description="Profile to fill." languagecode="1033" />
+  </description>
+  <displayname default="ProfileId">
+    <label description="ProfileId" languagecode="1033" />
+  </displayname>
+  <iscustomizable>1</iscustomizable>
+  <isoptional>1</isoptional>
+  <name>ProfileId</name>
+  <type>12</type>
+</customapirequestparameter>

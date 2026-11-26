@@ -1,0 +1,11 @@
+<customapiresponseproperty uniquename="ProfileId">
+  <description default="Profile that was filled.">
+    <label description="Profile that was filled." languagecode="1033" />
+  </description>
+  <displayname default="ProfileId">
+    <label description="ProfileId" languagecode="1033" />
+  </displayname>
+  <iscustomizable>1</iscustomizable>
+  <name>ProfileId</name>
+  <type>12</type>
+</customapiresponseproperty>

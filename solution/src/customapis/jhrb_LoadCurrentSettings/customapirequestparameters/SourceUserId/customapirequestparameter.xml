@@ -1,0 +1,12 @@
+<customapirequestparameter uniquename="SourceUserId">
+  <description default="User to copy from (default: the profile's user, else the caller).">
+    <label description="User to copy from (default: the profile's user, else the caller)." languagecode="1033" />
+  </description>
+  <displayname default="SourceUserId">
+    <label description="SourceUserId" languagecode="1033" />
+  </displayname>
+  <iscustomizable>1</iscustomizable>
+  <isoptional>1</isoptional>
+  <name>SourceUserId</name>
+  <type>12</type>
+</customapirequestparameter>

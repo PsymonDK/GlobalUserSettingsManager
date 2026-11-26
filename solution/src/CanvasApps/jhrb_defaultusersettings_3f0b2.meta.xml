@@ -1,0 +1,35 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<CanvasApp xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <Name>jhrb_defaultusersettings_3f0b2</Name>
+  <AppVersion>2026-11-26T08:45:59Z</AppVersion>
+  <Status>Ready</Status>
+  <CreatedByClientVersion>0.0.0.0</CreatedByClientVersion>
+  <MinClientVersion>0.0.0.0</MinClientVersion>
+  <Tags>{}</Tags>
+  <IsCdsUpgraded>0</IsCdsUpgraded>
+  <GalleryItemId xsi:nil="true"></GalleryItemId>
+  <BackgroundColor>RGBA(255,255,255,1)</BackgroundColor>
+  <DisplayName>Default User Settings</DisplayName>
+  <Description></Description>
+  <CommitMessage xsi:nil="true"></CommitMessage>
+  <Publisher xsi:nil="true"></Publisher>
+  <AuthorizationReferences>[]</AuthorizationReferences>
+  <ConnectionReferences>{}</ConnectionReferences>
+  <DatabaseReferences>{"default.cds":{"databaseDetails":{"referenceType":"NotSpecified","environmentName":"default.cds","overrideValues":{"status":"NotSpecified","environmentVariableName":""}},"dataSources":{"settingsprofiles":{"entitySetName":"jhrb_settingsprofiles","logicalName":"jhrb_settingsprofile"},"profilescopes":{"entitySetName":"jhrb_profilescopes","logicalName":"jhrb_profilescope"},"rolloutjobs":{"entitySetName":"jhrb_rolloutjobs","logicalName":"jhrb_rolloutjob"},"settingslogs":{"entitySetName":"jhrb_settingslogs","logicalName":"jhrb_settingslog"},"users":{"entitySetName":"systemusers","logicalName":"systemuser"},"teams":{"entitySetName":"teams","logicalName":"team"},"businessunits":{"entitySetName":"businessunits","logicalName":"businessunit"},"usersettings":{"entitySetName":"usersettingscollection","logicalName":"usersettings"},"environment_39a902ba":{"entitySetName":"Environment","logicalName":"environment_39a902ba"}}}}</DatabaseReferences>
+  <AppComponents>[]</AppComponents>
+  <AppComponentDependencies>[]</AppComponentDependencies>
+  <CanConsumeAppPass>1</CanConsumeAppPass>
+  <CanvasAppType>4</CanvasAppType>
+  <BypassConsent>0</BypassConsent>
+  <AdminControlBypassConsent>0</AdminControlBypassConsent>
+  <EmbeddedApp xsi:nil="true"></EmbeddedApp>
+  <IntroducedVersion>1.0</IntroducedVersion>
+  <CdsDependencies>{"cdsdependencies":[{"logicalname":"jhrb_settingsprofile","componenttype":1},{"logicalname":"jhrb_profilescope","componenttype":1},{"logicalname":"jhrb_rolloutjob","componenttype":1},{"logicalname":"jhrb_settingslog","componenttype":1},{"logicalname":"systemuser","componenttype":1},{"logicalname":"team","componenttype":1},{"logicalname":"businessunit","componenttype":1},{"logicalname":"usersettings","componenttype":1}]}</CdsDependencies>
+  <IsCustomizable>1</IsCustomizable>
+  <CodeAppPackageUris>
+    <CodeAppPackageUri>/CanvasApps/jhrb_defaultusersettings_3f0b2_CodeAppPackages/index.html_ContentType_text/html</CodeAppPackageUri>
+    <CodeAppPackageUri>/CanvasApps/jhrb_defaultusersettings_3f0b2_CodeAppPackages/.pa/power.config.json_ContentType_application/json</CodeAppPackageUri>
+    <CodeAppPackageUri>/CanvasApps/jhrb_defaultusersettings_3f0b2_CodeAppPackages/assets/index-BhdjJQWt.css_ContentType_text/css</CodeAppPackageUri>
+    <CodeAppPackageUri>/CanvasApps/jhrb_defaultusersettings_3f0b2_CodeAppPackages/assets/index-CIL35FW-.js_ContentType_application/javascript</CodeAppPackageUri>
+  </CodeAppPackageUris>
+</CanvasApp>

@@ -142,8 +142,10 @@ cd src/CodeApp
 npm ci
 npx --no-install pa app init -n 'Default User Settings' -e <environment id>   # once; writes power.config.json (git-ignored)
 npm run build
-npx --no-install pa app push -s <DefaultUserSettings solution id>
+npx --no-install pa app push -s <DefaultUserSettings solution id>   # always pass -s, also on the first push
 ```
+
+The first push creates the app, and its schema name takes the prefix of the solution it lands in. Without `-s` it lands in the default solution with the wrong prefix, and the name cannot be changed afterwards.
 
 **Embed it in the User form:** add an IFRAME (or a web resource that hosts one) to a tab on the `systemuser` main form with the app's play URL plus `?embed=1`, and tick "Pass record object-type code and unique identifier as parameters". The form appends `id` and `typename=systemuser`, and the app then shows only that user's effective settings and recent changes, without its own top bar and navigation. `?embed=1&user=<systemuserid>` works too.
 

@@ -16,4 +16,11 @@ if ($LASTEXITCODE) { throw 'managed export failed' }
 if (Test-Path "$Out\src") { Remove-Item -Recurse -Force "$Out\src" }
 pac solution unpack --zipfile "$Out\$Solution.zip" --folder "$Out\src" --packagetype Both --allowDelete --allowWrite
 if ($LASTEXITCODE) { throw 'unpack failed' }
+# The code app package carries the source environment's id; keep it out of source control (open source).
+$utf8 = New-Object System.Text.UTF8Encoding($false)
+Get-ChildItem "$Out\src\CanvasApps" -Recurse -Force -Filter power.config.json -ErrorAction SilentlyContinue | ForEach-Object {
+  $json = [IO.File]::ReadAllText($_.FullName)
+  $json = $json -replace '("environmentId"\s*:\s*)"[^"]*"', '$1"00000000-0000-0000-0000-000000000000"'
+  [IO.File]::WriteAllText($_.FullName, $json, $utf8)
+}
 "exported to $Out"

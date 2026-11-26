@@ -1,0 +1,38 @@
+<appaction uniquename="jhrb_LoadCurrentValues!jhrb_DefaultUserSettings!jhrb_settingsprofile!0">
+  <appmoduleid>
+    <uniquename>jhrb_DefaultUserSettings</uniquename>
+  </appmoduleid>
+  <buttonlabeltext default="Load current values">
+    <label description="Load current values" languagecode="1033" />
+  </buttonlabeltext>
+  <buttontooltipdescription default="Copy the user's current personal settings into this profile's values. Modes are not changed.">
+    <label description="Copy the user's current personal settings into this profile's values. Modes are not changed." languagecode="1033" />
+  </buttontooltipdescription>
+  <buttontooltiptitle default="Load current values">
+    <label description="Load current values" languagecode="1033" />
+  </buttontooltiptitle>
+  <context>1</context>
+  <contextentity>
+    <logicalname>jhrb_settingsprofile</logicalname>
+  </contextentity>
+  <contextvalue>jhrb_settingsprofile</contextvalue>
+  <fonticon>$clientsvg:Download</fonticon>
+  <hidden>0</hidden>
+  <iscustomizable>1</iscustomizable>
+  <isdisabled>0</isdisabled>
+  <isgrouptitlehidden>0</isgrouptitlehidden>
+  <location>0</location>
+  <name>jhrb_LoadCurrentValues</name>
+  <onclickeventjavascriptfunctionname>jhrb.SettingsProfile.loadCurrentValues</onclickeventjavascriptfunctionname>
+  <onclickeventjavascriptparameters>[{"type":5}]</onclickeventjavascriptparameters>
+  <onclickeventjavascriptwebresourceid>
+    <webresourceid>13c7e3be-a8e8-f111-84ea-0022489d55b0</webresourceid>
+  </onclickeventjavascriptwebresourceid>
+  <onclickeventtype>2</onclickeventtype>
+  <origin>0</origin>
+  <sequence>100100100.0000000000</sequence>
+  <statecode>0</statecode>
+  <statuscode>1</statuscode>
+  <type>0</type>
+  <visibilitytype>0</visibilitytype>
+</appaction>

@@ -1,0 +1,19 @@
+<customapi uniquename="jhrb_LoadCurrentSettings">
+  <allowedcustomprocessingsteptype>0</allowedcustomprocessingsteptype>
+  <bindingtype>0</bindingtype>
+  <description default="Copy a user's current personal settings into a profile's values (modes unchanged).">
+    <label description="Copy a user's current personal settings into a profile's values (modes unchanged)." languagecode="1033" />
+  </description>
+  <displayname default="Load Current User Settings">
+    <label description="Load Current User Settings" languagecode="1033" />
+  </displayname>
+  <executeprivilegename>prvWritejhrb_SettingsProfile</executeprivilegename>
+  <iscustomizable>1</iscustomizable>
+  <isfunction>0</isfunction>
+  <isprivate>0</isprivate>
+  <name>jhrb_LoadCurrentSettings</name>
+  <plugintypeid>
+    <plugintypeexportkey>2457e76b-a8e8-f111-84ea-002248a422bc</plugintypeexportkey>
+  </plugintypeid>
+  <workflowsdkstepenabled>0</workflowsdkstepenabled>
+</customapi>
