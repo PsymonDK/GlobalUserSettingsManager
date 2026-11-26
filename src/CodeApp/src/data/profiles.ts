@@ -110,8 +110,23 @@ export async function createGroupProfile(name: string, priority: number): Promis
   return (created as unknown as Row).jhrb_settingsprofileid as string;
 }
 
+/**
+ * The profile change plugin runs asynchronously and queues a rollout job that references the profile. A delete that
+ * overlaps that insert fails with a SQL REFERENCE constraint on jhrb_rolloutjob, so wait and retry a few times.
+ */
+const JOB_REFERENCE_CONFLICT = /REFERENCE constraint[\s\S]*jhrb_rolloutjob/i;
+
 export async function deleteProfile(id: string): Promise<void> {
-  await unwrap(Jhrb_settingsprofilesService.delete(id));
+  for (let attempt = 1; ; attempt++) {
+    try {
+      await unwrap(Jhrb_settingsprofilesService.delete(id));
+      return;
+    } catch (e) {
+      if (!JOB_REFERENCE_CONFLICT.test(e instanceof Error ? e.message : String(e))) throw e;
+      if (attempt >= 5) throw new Error('Rollout jobs for this profile are still being queued. Wait a few seconds and delete it again.');
+      await new Promise((resolve) => setTimeout(resolve, 3000));
+    }
+  }
 }
 
 export interface Scope {
