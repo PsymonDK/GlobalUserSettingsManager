@@ -28,4 +28,19 @@ Date: 2026-11-26. Dev environment, own user only (the pilot team contains only t
 | G9 | Rollouts: job list and details; Roll out now as a dry run (`jhrb_ApplyDefaults`); polling starts while the job is pending | Pass |
 | G10 | Activity log from the sitemap; source filter dropdown renders inside the page and filters to 4 reverts | Pass |
 
-Not tested: new group profile, scopes, delete, Go live (would affect all users), Apply now, Cancel job, Reconcile from the pages, dark theme (the app theme is light), narrow widths, and users without System Administrator (the Admin role may need read access to `uxagentproject` for page-to-page navigation).
+## Group, scope and delete flows (2026-11-26)
+
+| # | Check | Result |
+|---|---|---|
+| G11 | New group profile "DUS Test group": priority suggested (10), created, editor opens on it; job "Create of profile" processed 1, updated 0 | Pass |
+| G12 | Applies to: add team DUS Pilot (team search, pick, Add); "Applies to (1)"; job processed 1, updated 0 | Pass |
+| G13 | Applies to: switch type to Business unit, search, pick the root BU, Include child business units, Add; row shows "Included"; job processed 1 (pilot), updated 0 | Pass |
+| G14 | Remove both scopes; "No scopes yet"; two "Delete of scope" jobs processed 1, updated 0 | Pass |
+| G15 | Deep link `pagetype=genux&...&data={"data":{"profileId":...}}` opens the editor | Pass |
+| G16 | Delete the group: confirm, back to the overview without the group; job "Delete of profile" processed 1, updated 0; no profile, scope or log row left behind | **Failed first**, then pass after the fix |
+
+G16 failed at first: clicking Delete in the confirm dialog did nothing. The sticky footer bar ("All changes saved") had `z-index: 1` and covered the dialog's buttons where they overlapped (seen with `document.elementFromPoint`). Fixed by removing the footer's z-index, so dialogs, which portal into the page root after it, paint on top. The Load current values dialog had worked only because its buttons sat higher on the page.
+
+Seen once, not reproduced: a mouse click on the "Business unit" option in the scope type dropdown did not select it; the keyboard (ArrowDown, Enter) did.
+
+Not tested: Go live (would affect all users), Apply now, Cancel job, Reconcile from the pages, dark theme (the app theme is light), narrow widths, and users without System Administrator (the Admin role may need read access to `uxagentproject` for page-to-page navigation).
