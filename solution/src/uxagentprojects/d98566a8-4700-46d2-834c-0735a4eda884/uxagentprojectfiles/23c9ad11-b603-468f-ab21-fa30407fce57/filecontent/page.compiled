@@ -1,0 +1,1014 @@
+// --- BEGIN GENERATED RUNTIME TYPES ---
+
+var jhrb_settingslog_statecode;
+(function (jhrb_settingslog_statecode) {
+    jhrb_settingslog_statecode[jhrb_settingslog_statecode["Active"] = 0] = "Active";
+    jhrb_settingslog_statecode[jhrb_settingslog_statecode["Inactive"] = 1] = "Inactive";
+})(jhrb_settingslog_statecode || (jhrb_settingslog_statecode = {}));
+var jhrb_settingslog_statuscode;
+(function (jhrb_settingslog_statuscode) {
+    jhrb_settingslog_statuscode[jhrb_settingslog_statuscode["Active"] = 1] = "Active";
+    jhrb_settingslog_statuscode[jhrb_settingslog_statuscode["Inactive"] = 2] = "Inactive";
+})(jhrb_settingslog_statuscode || (jhrb_settingslog_statuscode = {}));
+var jhrb_settingslog_jhrb_source;
+(function (jhrb_settingslog_jhrb_source) {
+    jhrb_settingslog_jhrb_source[jhrb_settingslog_jhrb_source["Rollout"] = 632490000] = "Rollout";
+    jhrb_settingslog_jhrb_source[jhrb_settingslog_jhrb_source["New User"] = 632490001] = "New User";
+    jhrb_settingslog_jhrb_source[jhrb_settingslog_jhrb_source["Revert"] = 632490002] = "Revert";
+    jhrb_settingslog_jhrb_source[jhrb_settingslog_jhrb_source["Manual"] = 632490003] = "Manual";
+    jhrb_settingslog_jhrb_source[jhrb_settingslog_jhrb_source["Group Change"] = 632490004] = "Group Change";
+})(jhrb_settingslog_jhrb_source || (jhrb_settingslog_jhrb_source = {}));
+
+// --- END GENERATED RUNTIME TYPES ---
+
+var __extends = (this && this.__extends) || (function () {
+    var extendStatics = function (d, b) {
+        extendStatics = Object.setPrototypeOf ||
+            ({ __proto__: [] } instanceof Array && function (d, b) { d.__proto__ = b; }) ||
+            function (d, b) { for (var p in b) if (Object.prototype.hasOwnProperty.call(b, p)) d[p] = b[p]; };
+        return extendStatics(d, b);
+    };
+    return function (d, b) {
+        if (typeof b !== "function" && b !== null)
+            throw new TypeError("Class extends value " + String(b) + " is not a constructor or null");
+        extendStatics(d, b);
+        function __() { this.constructor = d; }
+        d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());
+    };
+})();
+var __assign = (this && this.__assign) || function () {
+    __assign = Object.assign || function(t) {
+        for (var s, i = 1, n = arguments.length; i < n; i++) {
+            s = arguments[i];
+            for (var p in s) if (Object.prototype.hasOwnProperty.call(s, p))
+                t[p] = s[p];
+        }
+        return t;
+    };
+    return __assign.apply(this, arguments);
+};
+var __awaiter = (this && this.__awaiter) || function (thisArg, _arguments, P, generator) {
+    function adopt(value) { return value instanceof P ? value : new P(function (resolve) { resolve(value); }); }
+    return new (P || (P = Promise))(function (resolve, reject) {
+        function fulfilled(value) { try { step(generator.next(value)); } catch (e) { reject(e); } }
+        function rejected(value) { try { step(generator["throw"](value)); } catch (e) { reject(e); } }
+        function step(result) { result.done ? resolve(result.value) : adopt(result.value).then(fulfilled, rejected); }
+        step((generator = generator.apply(thisArg, _arguments || [])).next());
+    });
+};
+var __generator = (this && this.__generator) || function (thisArg, body) {
+    var _ = { label: 0, sent: function() { if (t[0] & 1) throw t[1]; return t[1]; }, trys: [], ops: [] }, f, y, t, g;
+    return g = { next: verb(0), "throw": verb(1), "return": verb(2) }, typeof Symbol === "function" && (g[Symbol.iterator] = function() { return this; }), g;
+    function verb(n) { return function (v) { return step([n, v]); }; }
+    function step(op) {
+        if (f) throw new TypeError("Generator is already executing.");
+        while (g && (g = 0, op[0] && (_ = 0)), _) try {
+            if (f = 1, y && (t = op[0] & 2 ? y["return"] : op[0] ? y["throw"] || ((t = y["return"]) && t.call(y), 0) : y.next) && !(t = t.call(y, op[1])).done) return t;
+            if (y = 0, t) op = [op[0] & 2, t.value];
+            switch (op[0]) {
+                case 0: case 1: t = op; break;
+                case 4: _.label++; return { value: op[1], done: false };
+                case 5: _.label++; y = op[1]; op = [0]; continue;
+                case 7: op = _.ops.pop(); _.trys.pop(); continue;
+                default:
+                    if (!(t = _.trys, t = t.length > 0 && t[t.length - 1]) && (op[0] === 6 || op[0] === 2)) { _ = 0; continue; }
+                    if (op[0] === 3 && (!t || (op[1] > t[0] && op[1] < t[3]))) { _.label = op[1]; break; }
+                    if (op[0] === 6 && _.label < t[1]) { _.label = t[1]; t = op; break; }
+                    if (t && _.label < t[2]) { _.label = t[2]; _.ops.push(op); break; }
+                    if (t[2]) _.ops.pop();
+                    _.trys.pop(); continue;
+            }
+            op = body.call(thisArg, _);
+        } catch (e) { op = [6, e]; y = 0; } finally { f = t = 0; }
+        if (op[0] & 5) throw op[1]; return { value: op[0] ? op[1] : void 0, done: true };
+    }
+};
+var __spreadArray = (this && this.__spreadArray) || function (to, from, pack) {
+    if (pack || arguments.length === 2) for (var i = 0, l = from.length, ar; i < l; i++) {
+        if (ar || !(i in from)) {
+            if (!ar) ar = Array.prototype.slice.call(from, 0, i);
+            ar[i] = from[i];
+        }
+    }
+    return to.concat(ar || Array.prototype.slice.call(from));
+};
+// GENERATED by src/GenPages/build.mjs from shared/env.ts, shared/settings.ts, shared/dv.ts, shared/operations.ts, shared/styles.ts, shared/directory.ts, shared/ui.tsx, pages/log.tsx.
+// Do not edit: change the sources in src/GenPages and run the build.
+import * as React from 'react';
+import { Button, Checkbox, Combobox, Dialog, DialogActions, DialogBody, DialogContent, DialogSurface, DialogTitle, Dropdown, Field, Input, Link, MessageBar, MessageBarActions, MessageBarBody, MessageBarTitle, Option, Radio, RadioGroup, Spinner, Switch, Toolbar, ToolbarButton } from '@fluentui/react-components';
+import { ArrowClockwiseRegular, ArrowSyncRegular, CheckmarkRegular, ClockRegular, DismissRegular, ErrorCircleRegular, LockClosedRegular, WarningRegular } from '@fluentui/react-icons';
+var customApis = { "jhrb_ApplyDefaults": { "displayName": "Apply default user settings", "parameterKinds": { "Scope": "String", "UserId": "Guid", "Setting": "String", "DryRun": "Boolean", "ApplyMode": "String", "IgnorePilot": "Boolean", "BatchSize": "Integer", "ChunkSeconds": "Integer" } }, "jhrb_ReconcileSettings": { "displayName": "Reconcile user settings", "parameterKinds": {} }, "jhrb_ResolveEffectiveSettings": { "displayName": "Resolve effective settings", "parameterKinds": { "UserId": "Guid" } }, "jhrb_LoadCurrentSettings": { "displayName": "Load current settings into a profile", "parameterKinds": { "ProfileId": "Guid", "UserId": "Guid", "SourceUserId": "Guid", "OverwriteManaged": "Boolean" } } };
+var settingsJson = [{ "attribute": "timezonecode", "label": "Time Zone", "group": "Regional", "valueColumn": "jhrb_timezonecode", "modeColumn": "jhrb_timezonecode_mode", "kind": "Integer", "min": null, "max": null }, { "attribute": "localeid", "label": "Locale (Format)", "group": "Regional", "valueColumn": "jhrb_localeid", "modeColumn": "jhrb_localeid_mode", "kind": "Integer", "min": 0, "max": 2147483647 }, { "attribute": "uilanguageid", "label": "User Interface Language", "group": "Regional", "valueColumn": "jhrb_uilanguageid", "modeColumn": "jhrb_uilanguageid_mode", "kind": "Integer", "min": 0, "max": 2147483647 }, { "attribute": "helplanguageid", "label": "Help Language", "group": "Regional", "valueColumn": "jhrb_helplanguageid", "modeColumn": "jhrb_helplanguageid_mode", "kind": "Integer", "min": 0, "max": 2147483647 }, { "attribute": "defaultcountrycode", "label": "Default Country Code", "group": "Regional", "valueColumn": "jhrb_defaultcountrycode", "modeColumn": "jhrb_defaultcountrycode_mode", "kind": "String", "maxLength": 30 }, { "attribute": "isdefaultcountrycodecheckenabled", "label": "Enable Default Country Code", "group": "Regional", "valueColumn": "jhrb_isdefaultcountrycodecheckenabled", "modeColumn": "jhrb_isdefaultcountrycodecheckenabled_mode", "kind": "Boolean" }, { "attribute": "calendartype", "label": "Calendar Type", "group": "Formats", "valueColumn": "jhrb_calendartype", "modeColumn": "jhrb_calendartype_mode", "kind": "Integer", "min": -2147483648, "max": 2147483647 }, { "attribute": "dateformatcode", "label": "Date Format Code", "group": "Formats", "valueColumn": "jhrb_dateformatcode", "modeColumn": "jhrb_dateformatcode_mode", "kind": "Integer", "min": -2147483648, "max": 2147483647 }, { "attribute": "dateformatstring", "label": "Date Format", "group": "Formats", "valueColumn": "jhrb_dateformatstring", "modeColumn": "jhrb_dateformatstring_mode", "kind": "String", "maxLength": 255 }, { "attribute": "longdateformatcode", "label": "Long Date Format Code", "group": "Formats", "valueColumn": "jhrb_longdateformatcode", "modeColumn": "jhrb_longdateformatcode_mode", "kind": "Integer", "min": -2147483648, "max": 2147483647 }, { "attribute": "dateseparator", "label": "Date Separator", "group": "Formats", "valueColumn": "jhrb_dateseparator", "modeColumn": "jhrb_dateseparator_mode", "kind": "String", "maxLength": 5 }, { "attribute": "timeformatcode", "label": "Time Format Code", "group": "Formats", "valueColumn": "jhrb_timeformatcode", "modeColumn": "jhrb_timeformatcode_mode", "kind": "Integer", "min": -2147483648, "max": 2147483647 }, { "attribute": "timeformatstring", "label": "Time Format", "group": "Formats", "valueColumn": "jhrb_timeformatstring", "modeColumn": "jhrb_timeformatstring_mode", "kind": "String", "maxLength": 255 }, { "attribute": "timeseparator", "label": "Time Separator", "group": "Formats", "valueColumn": "jhrb_timeseparator", "modeColumn": "jhrb_timeseparator_mode", "kind": "String", "maxLength": 5 }, { "attribute": "amdesignator", "label": "AM Designator", "group": "Formats", "valueColumn": "jhrb_amdesignator", "modeColumn": "jhrb_amdesignator_mode", "kind": "String", "maxLength": 25 }, { "attribute": "pmdesignator", "label": "PM Designator", "group": "Formats", "valueColumn": "jhrb_pmdesignator", "modeColumn": "jhrb_pmdesignator_mode", "kind": "String", "maxLength": 25 }, { "attribute": "showweeknumber", "label": "Show Week Numbers", "group": "Formats", "valueColumn": "jhrb_showweeknumber", "modeColumn": "jhrb_showweeknumber_mode", "kind": "Boolean" }, { "attribute": "decimalsymbol", "label": "Decimal Symbol", "group": "Formats", "valueColumn": "jhrb_decimalsymbol", "modeColumn": "jhrb_decimalsymbol_mode", "kind": "String", "maxLength": 5 }, { "attribute": "numberseparator", "label": "Digit Grouping Symbol", "group": "Formats", "valueColumn": "jhrb_numberseparator", "modeColumn": "jhrb_numberseparator_mode", "kind": "String", "maxLength": 5 }, { "attribute": "numbergroupformat", "label": "Digit Grouping", "group": "Formats", "valueColumn": "jhrb_numbergroupformat", "modeColumn": "jhrb_numbergroupformat_mode", "kind": "String", "maxLength": 25 }, { "attribute": "negativeformatcode", "label": "Negative Number Format", "group": "Formats", "valueColumn": "jhrb_negativeformatcode", "modeColumn": "jhrb_negativeformatcode_mode", "kind": "Integer", "min": -2147483648, "max": 2147483647 }, { "attribute": "currencyformatcode", "label": "Currency Format", "group": "Formats", "valueColumn": "jhrb_currencyformatcode", "modeColumn": "jhrb_currencyformatcode_mode", "kind": "Integer", "min": -2147483648, "max": 2147483647 }, { "attribute": "currencysymbol", "label": "Currency Symbol", "group": "Formats", "valueColumn": "jhrb_currencysymbol", "modeColumn": "jhrb_currencysymbol_mode", "kind": "String", "maxLength": 13 }, { "attribute": "currencydecimalprecision", "label": "Currency Decimal Precision", "group": "Formats", "valueColumn": "jhrb_currencydecimalprecision", "modeColumn": "jhrb_currencydecimalprecision_mode", "kind": "Integer", "min": -2147483648, "max": 2147483647 }, { "attribute": "negativecurrencyformatcode", "label": "Negative Currency Format", "group": "Formats", "valueColumn": "jhrb_negativecurrencyformatcode", "modeColumn": "jhrb_negativecurrencyformatcode_mode", "kind": "Integer", "min": 0, "max": 15 }, { "attribute": "pricingdecimalprecision", "label": "Pricing Decimal Precision", "group": "Formats", "valueColumn": "jhrb_pricingdecimalprecision", "modeColumn": "jhrb_pricingdecimalprecision_mode", "kind": "Integer", "min": -2147483648, "max": 2147483647 }, { "attribute": "fullnameconventioncode", "label": "Full Name Format", "group": "Formats", "valueColumn": "jhrb_fullnameconventioncode", "modeColumn": "jhrb_fullnameconventioncode_mode", "kind": "Integer", "min": -2147483648, "max": 2147483647 }, { "attribute": "transactioncurrencyid", "label": "Default Currency", "group": "Formats", "valueColumn": "jhrb_transactioncurrencyid", "modeColumn": "jhrb_transactioncurrencyid_mode", "kind": "Lookup", "target": "transactioncurrency" }, { "attribute": "workdaystarttime", "label": "Work Day Start Time", "group": "Calendar", "valueColumn": "jhrb_workdaystarttime", "modeColumn": "jhrb_workdaystarttime_mode", "kind": "String", "maxLength": 5 }, { "attribute": "workdaystoptime", "label": "Work Day End Time", "group": "Calendar", "valueColumn": "jhrb_workdaystoptime", "modeColumn": "jhrb_workdaystoptime_mode", "kind": "String", "maxLength": 5 }, { "attribute": "defaultcalendarview", "label": "Default Calendar View", "group": "Calendar", "valueColumn": "jhrb_defaultcalendarview", "modeColumn": "jhrb_defaultcalendarview_mode", "kind": "Integer", "min": -2147483648, "max": 2147483647 }, { "attribute": "paginglimit", "label": "Records Per Page", "group": "General", "valueColumn": "jhrb_paginglimit", "modeColumn": "jhrb_paginglimit_mode", "kind": "Integer", "min": 0, "max": 2147483647 }, { "attribute": "defaultdashboardid", "label": "Default Dashboard", "group": "General", "valueColumn": "jhrb_defaultdashboardid", "modeColumn": "jhrb_defaultdashboardid_mode", "kind": "GuidText", "maxLength": 36 }, { "attribute": "defaultsearchexperience", "label": "Default Search Experience", "group": "General", "valueColumn": "jhrb_defaultsearchexperience", "modeColumn": "jhrb_defaultsearchexperience_mode", "kind": "Choice", "options": [{ "value": 2, "label": "Use last search" }, { "value": 0, "label": "Relevance search" }, { "value": 1, "label": "Categorized search" }, { "value": 3, "label": "Custom search" }] }, { "attribute": "entityformmode", "label": "Form Mode", "group": "General", "valueColumn": "jhrb_entityformmode", "modeColumn": "jhrb_entityformmode_mode", "kind": "Choice", "options": [{ "value": 0, "label": "Organization default" }, { "value": 1, "label": "Read-optimized" }, { "value": 2, "label": "Edit" }] }, { "attribute": "displaydensity", "label": "Display Density", "group": "General", "valueColumn": "jhrb_displaydensity", "modeColumn": "jhrb_displaydensity_mode", "kind": "Choice", "options": [{ "value": 0, "label": "Default" }, { "value": 1, "label": "Comfortable" }, { "value": 2, "label": "Cozy" }, { "value": 3, "label": "Compact" }] }, { "attribute": "homepagearea", "label": "Default Pane", "group": "General", "valueColumn": "jhrb_homepagearea", "modeColumn": "jhrb_homepagearea_mode", "kind": "String", "maxLength": 200 }, { "attribute": "homepagesubarea", "label": "Default Tab", "group": "General", "valueColumn": "jhrb_homepagesubarea", "modeColumn": "jhrb_homepagesubarea_mode", "kind": "String", "maxLength": 200 }, { "attribute": "homepagelayout", "label": "Home Page Layout", "group": "General", "valueColumn": "jhrb_homepagelayout", "modeColumn": "jhrb_homepagelayout_mode", "kind": "String", "maxLength": 2000 }, { "attribute": "advancedfindstartupmode", "label": "Advanced Find Mode", "group": "General", "valueColumn": "jhrb_advancedfindstartupmode", "modeColumn": "jhrb_advancedfindstartupmode_mode", "kind": "Integer", "min": null, "max": null }, { "attribute": "visualizationpanelayout", "label": "Visualization Pane Layout", "group": "General", "valueColumn": "jhrb_visualizationpanelayout", "modeColumn": "jhrb_visualizationpanelayout_mode", "kind": "Choice", "options": [{ "value": 0, "label": "Top-bottom" }, { "value": 1, "label": "Side-by-side" }] }, { "attribute": "isguidedhelpenabled", "label": "Guided Help", "group": "General", "valueColumn": "jhrb_isguidedhelpenabled", "modeColumn": "jhrb_isguidedhelpenabled_mode", "kind": "Boolean" }, { "attribute": "reportscripterrors", "label": "Report Script Errors", "group": "General", "valueColumn": "jhrb_reportscripterrors", "modeColumn": "jhrb_reportscripterrors_mode", "kind": "Choice", "options": [{ "value": 1, "label": "Ask me for permission to send an error report to Microsoft" }, { "value": 2, "label": "Automatically send an error report to Microsoft without asking me for permission" }, { "value": 3, "label": "Never send an error report to Microsoft about Microsoft Dynamics 365" }] }, { "attribute": "datavalidationmodeforexporttoexcel", "label": "Excel Export Data Validation", "group": "General", "valueColumn": "jhrb_datavalidationmodeforexporttoexcel", "modeColumn": "jhrb_datavalidationmodeforexporttoexcel_mode", "kind": "Choice", "options": [{ "value": 0, "label": "Full" }, { "value": 1, "label": "None" }] }, { "attribute": "releasechannel", "label": "Model App Release Channel", "group": "General", "valueColumn": "jhrb_releasechannel", "modeColumn": "jhrb_releasechannel_mode", "kind": "Choice", "options": [{ "value": 0, "label": "None" }, { "value": 1, "label": "Semi-annual channel override" }, { "value": 2, "label": "Monthly channel override" }, { "value": 3, "label": "Inner channel override" }] }, { "attribute": "preferredsolution", "label": "Preferred Solution", "group": "General", "valueColumn": "jhrb_preferredsolution", "modeColumn": "jhrb_preferredsolution_mode", "kind": "LookupText", "target": "solution", "maxLength": 36 }, { "attribute": "incomingemailfilteringmethod", "label": "Incoming Email Filtering", "group": "Email", "valueColumn": "jhrb_incomingemailfilteringmethod", "modeColumn": "jhrb_incomingemailfilteringmethod_mode", "kind": "Choice", "options": [{ "value": 0, "label": "All email messages" }, { "value": 1, "label": "Email messages in response to Dynamics 365 email" }, { "value": 2, "label": "Email messages from Dynamics 365 Leads, Contacts and Accounts" }, { "value": 3, "label": "Email messages from Dynamics 365 records that are email enabled" }, { "value": 4, "label": "No email messages" }] }, { "attribute": "ignoreunsolicitedemail", "label": "Ignore Unsolicited Email", "group": "Email", "valueColumn": "jhrb_ignoreunsolicitedemail", "modeColumn": "jhrb_ignoreunsolicitedemail_mode", "kind": "Boolean" }, { "attribute": "isemailconversationviewenabled", "label": "Email Conversation View", "group": "Email", "valueColumn": "jhrb_isemailconversationviewenabled", "modeColumn": "jhrb_isemailconversationviewenabled_mode", "kind": "Boolean" }, { "attribute": "issendasallowed", "label": "Allow Others to Send on My Behalf", "group": "Email", "valueColumn": "jhrb_issendasallowed", "modeColumn": "jhrb_issendasallowed_mode", "kind": "Boolean" }, { "attribute": "autocreatecontactonpromote", "label": "Auto-create Contact on Promote", "group": "Email", "valueColumn": "jhrb_autocreatecontactonpromote", "modeColumn": "jhrb_autocreatecontactonpromote_mode", "kind": "Integer", "min": null, "max": null }, { "attribute": "isautodatacaptureenabled", "label": "Auto Data Capture", "group": "Email", "valueColumn": "jhrb_isautodatacaptureenabled", "modeColumn": "jhrb_isautodatacaptureenabled_mode", "kind": "Boolean" }, { "attribute": "usecrmformforappointment", "label": "Use Dynamics Form for Appointment", "group": "Sync", "valueColumn": "jhrb_usecrmformforappointment", "modeColumn": "jhrb_usecrmformforappointment_mode", "kind": "Boolean" }, { "attribute": "usecrmformforcontact", "label": "Use Dynamics Form for Contact", "group": "Sync", "valueColumn": "jhrb_usecrmformforcontact", "modeColumn": "jhrb_usecrmformforcontact_mode", "kind": "Boolean" }, { "attribute": "usecrmformforemail", "label": "Use Dynamics Form for Email", "group": "Sync", "valueColumn": "jhrb_usecrmformforemail", "modeColumn": "jhrb_usecrmformforemail_mode", "kind": "Boolean" }, { "attribute": "usecrmformfortask", "label": "Use Dynamics Form for Task", "group": "Sync", "valueColumn": "jhrb_usecrmformfortask", "modeColumn": "jhrb_usecrmformfortask_mode", "kind": "Boolean" }, { "attribute": "synccontactcompany", "label": "Sync Contact Company", "group": "Sync", "valueColumn": "jhrb_synccontactcompany", "modeColumn": "jhrb_synccontactcompany_mode", "kind": "Boolean" }, { "attribute": "outlooksyncinterval", "label": "Outlook Sync Interval", "group": "Sync", "valueColumn": "jhrb_outlooksyncinterval", "modeColumn": "jhrb_outlooksyncinterval_mode", "kind": "Integer", "min": -2147483648, "max": 2147483647 }, { "attribute": "offlinesyncinterval", "label": "Offline Sync Interval", "group": "Sync", "valueColumn": "jhrb_offlinesyncinterval", "modeColumn": "jhrb_offlinesyncinterval_mode", "kind": "Integer", "min": -2147483648, "max": 2147483647 }, { "attribute": "addressbooksyncinterval", "label": "Address Book Sync Interval", "group": "Sync", "valueColumn": "jhrb_addressbooksyncinterval", "modeColumn": "jhrb_addressbooksyncinterval_mode", "kind": "Integer", "min": -2147483648, "max": 2147483647 }, { "attribute": "isresourcebookingexchangesyncenabled", "label": "Resource Booking Exchange Sync", "group": "Sync", "valueColumn": "jhrb_isresourcebookingexchangesyncenabled", "modeColumn": "jhrb_isresourcebookingexchangesyncenabled_mode", "kind": "Boolean" }];
+var boundApi;
+/** Called by each page on render: the host hands a new dataApi object every render. */
+function bindApi(dataApi) {
+    if (dataApi)
+        boundApi = dataApi;
+}
+function api() {
+    if (!boundApi)
+        throw new Error('The data API is not ready yet.');
+    return boundApi;
+}
+/** All rows of a query, following loadMoreRows up to `max`. */
+function queryAll(table, options, max) {
+    if (max === void 0) { max = 5000; }
+    return __awaiter(this, void 0, void 0, function () {
+        var page, rows;
+        return __generator(this, function (_a) {
+            switch (_a.label) {
+                case 0: return [4 /*yield*/, api().queryTable(table, __assign({ pageSize: Math.min(max, 5000) }, options))];
+                case 1:
+                    page = _a.sent();
+                    rows = __spreadArray([], page.rows, true);
+                    _a.label = 2;
+                case 2:
+                    if (!(page.hasMoreRows && page.loadMoreRows && rows.length < max)) return [3 /*break*/, 4];
+                    return [4 /*yield*/, page.loadMoreRows()];
+                case 3:
+                    page = _a.sent();
+                    rows.push.apply(rows, page.rows);
+                    return [3 /*break*/, 2];
+                case 4: return [2 /*return*/, rows.slice(0, max)];
+            }
+        });
+    });
+}
+/** The first `top` rows of a query. */
+function queryTop(table, options, top) {
+    return __awaiter(this, void 0, void 0, function () {
+        var page;
+        return __generator(this, function (_a) {
+            switch (_a.label) {
+                case 0: return [4 /*yield*/, api().queryTable(table, __assign(__assign({}, options), { pageSize: top }))];
+                case 1:
+                    page = _a.sent();
+                    return [2 /*return*/, page.rows.slice(0, top)];
+            }
+        });
+    });
+}
+// eslint-disable-next-line @typescript-eslint/no-explicit-any
+function xrm() {
+    // eslint-disable-next-line @typescript-eslint/no-explicit-any
+    return window.Xrm;
+}
+var EDM = { Guid: 'Edm.Guid', String: 'Edm.String', Boolean: 'Edm.Boolean', Integer: 'Edm.Int32' };
+var API_KINDS = customApis;
+/** Run a global Custom API (Action) and return its outputs. Throws with the server's message on failure. */
+function callApi(name, parameters) {
+    var _a, _b, _c, _d, _e, _f, _g, _h;
+    return __awaiter(this, void 0, void 0, function () {
+        var params, _i, _j, _k, k, v, runtime, r, kinds, parameterTypes, request, _l, _m, _o, k, v, kind, response, text;
+        return __generator(this, function (_p) {
+            switch (_p.label) {
+                case 0:
+                    params = {};
+                    for (_i = 0, _j = Object.entries(parameters); _i < _j.length; _i++) {
+                        _k = _j[_i], k = _k[0], v = _k[1];
+                        if (v !== undefined && v !== null && v !== '')
+                            params[k] = v;
+                    }
+                    runtime = api();
+                    if (!(typeof runtime.executeAction === 'function')) return [3 /*break*/, 2];
+                    return [4 /*yield*/, runtime.executeAction({ name: name, parameters: params })];
+                case 1:
+                    r = _p.sent();
+                    if (r.ok)
+                        return [2 /*return*/, (_a = r.outputs) !== null && _a !== void 0 ? _a : {}];
+                    if (r.indeterminate || ((_b = r.error) === null || _b === void 0 ? void 0 : _b.code) === 'indeterminate')
+                        throw new Error('No answer from the server. Refresh to see whether it ran.');
+                    if (((_c = r.error) === null || _c === void 0 ? void 0 : _c.code) !== 'not_bound' && ((_d = r.error) === null || _d === void 0 ? void 0 : _d.code) !== 'not_enabled')
+                        throw new Error((_f = (_e = r.error) === null || _e === void 0 ? void 0 : _e.message) !== null && _f !== void 0 ? _f : "".concat(name, " failed"));
+                    _p.label = 2;
+                case 2:
+                    kinds = (_h = (_g = API_KINDS[name]) === null || _g === void 0 ? void 0 : _g.parameterKinds) !== null && _h !== void 0 ? _h : {};
+                    parameterTypes = {};
+                    request = {};
+                    for (_l = 0, _m = Object.entries(params); _l < _m.length; _l++) {
+                        _o = _m[_l], k = _o[0], v = _o[1];
+                        kind = kinds[k];
+                        if (!kind)
+                            throw new Error("".concat(name, ": unknown parameter ").concat(k));
+                        parameterTypes[k] = { typeName: EDM[kind], structuralProperty: 1 };
+                        request[k] = kind === 'Guid' ? { guid: v } : v;
+                    }
+                    request.getMetadata = function () { return ({ boundParameter: null, operationType: 0, operationName: name, parameterTypes: parameterTypes }); };
+                    return [4 /*yield*/, xrm().WebApi.online.execute(request)];
+                case 3:
+                    response = _p.sent();
+                    return [4 /*yield*/, response.text()];
+                case 4:
+                    text = _p.sent();
+                    return [2 /*return*/, text ? JSON.parse(text) : {}];
+            }
+        });
+    });
+}
+var PAGE_NAMES = {
+    profiles: 'Default User Settings - Profiles',
+    users: 'Default User Settings - Users',
+    rollouts: 'Default User Settings - Rollouts',
+    log: 'Default User Settings - Activity log',
+};
+/** Page ids differ per environment, so pages find each other by name (cached for the session). */
+function pageId(key) {
+    var _a, _b;
+    return __awaiter(this, void 0, void 0, function () {
+        var w, name_1, r, id;
+        return __generator(this, function (_c) {
+            switch (_c.label) {
+                case 0:
+                    w = window;
+                    w.__dusPageIds = (_a = w.__dusPageIds) !== null && _a !== void 0 ? _a : {};
+                    if (!!w.__dusPageIds[key]) return [3 /*break*/, 2];
+                    name_1 = PAGE_NAMES[key].replace(/'/g, "''");
+                    return [4 /*yield*/, xrm().WebApi.retrieveMultipleRecords('uxagentproject', "?$select=uxagentprojectid&$filter=name eq '".concat(name_1, "'"))];
+                case 1:
+                    r = _c.sent();
+                    id = (_b = r.entities[0]) === null || _b === void 0 ? void 0 : _b.uxagentprojectid;
+                    if (!id)
+                        throw new Error("Page \"".concat(PAGE_NAMES[key], "\" is not installed."));
+                    w.__dusPageIds[key] = id;
+                    _c.label = 2;
+                case 2: return [2 /*return*/, w.__dusPageIds[key]];
+            }
+        });
+    });
+}
+/** Open another page of this app. `data` arrives as pageInput.data there. */
+function openPage(key, data) {
+    return __awaiter(this, void 0, void 0, function () {
+        var _a, _b;
+        var _c;
+        return __generator(this, function (_d) {
+            switch (_d.label) {
+                case 0:
+                    _b = (_a = xrm().Navigation).navigateTo;
+                    _c = { pageType: 'generative' };
+                    return [4 /*yield*/, pageId(key)];
+                case 1: return [4 /*yield*/, _b.apply(_a, [(_c.pageId = _d.sent(), _c.data = data !== null && data !== void 0 ? data : {}, _c)])];
+                case 2:
+                    _d.sent();
+                    return [2 /*return*/];
+            }
+        });
+    });
+}
+/** Open a record in its model-driven form. */
+function openRecord(entityName, id) {
+    return __awaiter(this, void 0, void 0, function () {
+        return __generator(this, function (_a) {
+            switch (_a.label) {
+                case 0: return [4 /*yield*/, xrm().Navigation.navigateTo({ pageType: 'entityrecord', entityName: entityName, entityId: id })];
+                case 1:
+                    _a.sent();
+                    return [2 /*return*/];
+            }
+        });
+    });
+}
+/** A string from pageInput.data, or undefined. */
+function inputText(input, key) {
+    var _a;
+    var v = (_a = input === null || input === void 0 ? void 0 : input.data) === null || _a === void 0 ? void 0 : _a[key];
+    return typeof v === 'string' && v ? v : undefined;
+}
+var SETTINGS = settingsJson;
+/** Setting groups in the order they first appear in the CSV. */
+var GROUPS = SETTINGS.reduce(function (acc, s) { return (acc.indexOf(s.group) >= 0 ? acc : acc.concat([s.group])); }, []);
+function settingByAttribute(attribute) {
+    return SETTINGS.find(function (s) { return s.attribute === attribute; });
+}
+function settingLabel(attribute) {
+    var _a, _b, _c;
+    return (_c = (_b = (_a = settingByAttribute(attribute)) === null || _a === void 0 ? void 0 : _a.label) !== null && _b !== void 0 ? _b : attribute) !== null && _c !== void 0 ? _c : '';
+}
+/** Global choice jhrb_settingmode. */
+var Mode = { Inherit: 632490000, Default: 632490001, Locked: 632490002 };
+var MODE_NAMES = {
+    632490000: 'Inherit',
+    632490001: 'Default',
+    632490002: 'Locked',
+};
+/** jhrb_type on jhrb_settingsprofile. */
+var ProfileType = { Global: 632490000, Group: 632490001, User: 632490002 };
+var PROFILE_TYPE_NAMES = { 632490000: 'Global', 632490001: 'Group', 632490002: 'User' };
+/** jhrb_scopetype on jhrb_profilescope. */
+var ScopeType = { Team: 632490000, BusinessUnit: 632490001 };
+var JobStatus = { Pending: 632490000, Running: 632490001, Completed: 632490002, Failed: 632490003, Cancelled: 632490004 };
+var APPLY_MODE_NAMES = { 632490000: 'Full', 632490001: 'Locked only', 632490002: 'Auto' };
+var JOB_REASON_NAMES = {
+    632490000: 'Manual', 632490001: 'Profile change', 632490002: 'New user', 632490003: 'Membership', 632490004: 'Reconcile', 632490005: 'User override',
+};
+var LogSource = { Rollout: 632490000, NewUser: 632490001, Reverted: 632490002, AdminEdit: 632490003, GroupChange: 632490004 };
+var LOG_SOURCE_NAMES = { 632490000: 'Rollout', 632490001: 'New user', 632490002: 'Reverted', 632490003: 'Admin edit', 632490004: 'Group change' };
+/** Display text for a profile column value. */
+function formatValue(def, value) {
+    var _a, _b, _c;
+    if (value === null || value === undefined || value === '')
+        return '';
+    switch (def.kind) {
+        case 'Boolean': return value ? 'Yes' : 'No';
+        case 'Choice': return (_c = (_b = (_a = def.options) === null || _a === void 0 ? void 0 : _a.find(function (o) { return o.value === Number(value); })) === null || _b === void 0 ? void 0 : _b.label) !== null && _c !== void 0 ? _c : String(value);
+        default: return String(value);
+    }
+}
+// ---- shared/dv.ts
+function errorText(e) {
+    var _a, _b, _c;
+    if (!e)
+        return 'Unknown error';
+    if (typeof e === 'string')
+        return e;
+    var err = e;
+    return (_c = (_a = err.message) !== null && _a !== void 0 ? _a : (_b = err.error) === null || _b === void 0 ? void 0 : _b.message) !== null && _c !== void 0 ? _c : JSON.stringify(e);
+}
+var GUID_RE = /^[0-9a-f]{8}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{12}$/i;
+var QUALIFIED_RE = /^\/[a-z_][a-z0-9_]*\(([0-9a-f-]{36})\)$/i;
+function isGuid(s) {
+    return !!s && GUID_RE.test(s);
+}
+/** Bare id of a lookup (`_<field>_value`). The page runtime returns either a bare GUID or `/<table>(<guid>)`. */
+function ref(row, field) {
+    var raw = row === null || row === void 0 ? void 0 : row["_".concat(field, "_value")];
+    if (typeof raw !== 'string' || !raw)
+        return undefined;
+    var m = QUALIFIED_RE.exec(raw.trim());
+    var id = (m ? m[1] : raw.trim()).toLowerCase();
+    return isGuid(id) ? id : undefined;
+}
+/** Display text of a lookup or choice column (its OData formatted value). */
+function display(row, field) {
+    var _a;
+    if (!row)
+        return undefined;
+    return (_a = row["_".concat(field, "_value@OData.Community.Display.V1.FormattedValue")]) !== null && _a !== void 0 ? _a : row["".concat(field, "@OData.Community.Display.V1.FormattedValue")];
+}
+/** Lookup write value for the page runtime: `/<table>(<id>)`, or null to clear. */
+function link(table, id) {
+    return id ? "/".concat(table, "(").concat(id, ")") : null;
+}
+/** Quote a string for an OData filter. */
+function q(s) {
+    return "'".concat(s.replace(/'/g, "''"), "'");
+}
+var dateFmt = new Intl.DateTimeFormat(undefined, { dateStyle: 'medium', timeStyle: 'short' });
+function formatDate(iso) {
+    if (!iso)
+        return '';
+    var d = new Date(iso);
+    return isNaN(d.getTime()) ? iso : dateFmt.format(d);
+}
+function plural(n, one, many) {
+    if (many === void 0) { many = "".concat(one, "s"); }
+    return "".concat(n, " ").concat(n === 1 ? one : many);
+}
+var JOB_COLUMNS = ['jhrb_rolloutjobid', 'jhrb_name', 'jhrb_status', 'jhrb_reason', 'jhrb_applymode', 'jhrb_scope', 'jhrb_dryrun', 'jhrb_processed', 'jhrb_updated',
+    'jhrb_unchanged', 'jhrb_failed', 'jhrb_chunks', 'jhrb_settingfilter', '_jhrb_user_value', '_jhrb_profile_value', 'jhrb_error', 'createdon', 'jhrb_startedon', 'jhrb_completedon'];
+function num(v) {
+    return typeof v === 'number' ? v : 0;
+}
+function toJob(r) {
+    var _a, _b, _c, _d, _e;
+    return {
+        id: String(r.jhrb_rolloutjobid),
+        name: (_a = r.jhrb_name) !== null && _a !== void 0 ? _a : '',
+        status: r.jhrb_status,
+        reason: r.jhrb_reason,
+        applyMode: r.jhrb_applymode,
+        scope: r.jhrb_scope,
+        dryRun: r.jhrb_dryrun === true,
+        processed: num(r.jhrb_processed),
+        updated: num(r.jhrb_updated),
+        unchanged: num(r.jhrb_unchanged),
+        failed: num(r.jhrb_failed),
+        chunks: num(r.jhrb_chunks),
+        settingFilter: (_b = r.jhrb_settingfilter) !== null && _b !== void 0 ? _b : undefined,
+        userName: display(r, 'jhrb_user'),
+        profileId: ref(r, 'jhrb_profile'),
+        profileName: display(r, 'jhrb_profile'),
+        error: (_c = r.jhrb_error) !== null && _c !== void 0 ? _c : undefined,
+        createdOn: r.createdon,
+        startedOn: (_d = r.jhrb_startedon) !== null && _d !== void 0 ? _d : undefined,
+        completedOn: (_e = r.jhrb_completedon) !== null && _e !== void 0 ? _e : undefined,
+    };
+}
+function loadJobs(top) {
+    if (top === void 0) { top = 50; }
+    return __awaiter(this, void 0, void 0, function () {
+        return __generator(this, function (_a) {
+            switch (_a.label) {
+                case 0: return [4 /*yield*/, queryTop('jhrb_rolloutjob', { select: JOB_COLUMNS, orderBy: 'createdon desc' }, top)];
+                case 1: return [2 /*return*/, (_a.sent()).map(toJob)];
+            }
+        });
+    });
+}
+function cancelJob(id) {
+    return __awaiter(this, void 0, void 0, function () {
+        return __generator(this, function (_a) {
+            switch (_a.label) {
+                case 0: return [4 /*yield*/, api().updateRow('jhrb_rolloutjob', id, { jhrb_status: JobStatus.Cancelled })];
+                case 1:
+                    _a.sent();
+                    return [2 /*return*/];
+            }
+        });
+    });
+}
+function isActive(j) {
+    return j.status === JobStatus.Pending || j.status === JobStatus.Running;
+}
+function loadLog(opts) {
+    var _a;
+    if (opts === void 0) { opts = {}; }
+    return __awaiter(this, void 0, void 0, function () {
+        var f, rows;
+        return __generator(this, function (_b) {
+            switch (_b.label) {
+                case 0:
+                    f = [];
+                    if (opts.userId)
+                        f.push("_jhrb_user_value eq ".concat(opts.userId));
+                    if (opts.profileId)
+                        f.push("_jhrb_profile_value eq ".concat(opts.profileId));
+                    if (opts.source)
+                        f.push("jhrb_source eq ".concat(opts.source));
+                    if (opts.since)
+                        f.push("createdon ge ".concat(opts.since.toISOString()));
+                    return [4 /*yield*/, queryTop('jhrb_settingslog', {
+                            select: ['jhrb_settingslogid', 'jhrb_setting', 'jhrb_source', 'jhrb_oldvalue', 'jhrb_attemptedvalue', 'jhrb_appliedvalue', '_jhrb_user_value', '_jhrb_profile_value', 'createdon'],
+                            filter: f.length ? f.join(' and ') : undefined,
+                            orderBy: 'createdon desc',
+                        }, (_a = opts.top) !== null && _a !== void 0 ? _a : 100)];
+                case 1:
+                    rows = _b.sent();
+                    return [2 /*return*/, rows.map(function (r) {
+                            var _a, _b, _c, _d;
+                            return ({
+                                id: String(r.jhrb_settingslogid),
+                                setting: (_a = r.jhrb_setting) !== null && _a !== void 0 ? _a : undefined,
+                                source: r.jhrb_source,
+                                oldValue: (_b = r.jhrb_oldvalue) !== null && _b !== void 0 ? _b : undefined,
+                                attempted: (_c = r.jhrb_attemptedvalue) !== null && _c !== void 0 ? _c : undefined,
+                                applied: (_d = r.jhrb_appliedvalue) !== null && _d !== void 0 ? _d : undefined,
+                                userId: ref(r, 'jhrb_user'),
+                                userName: display(r, 'jhrb_user'),
+                                profileId: ref(r, 'jhrb_profile'),
+                                profileName: display(r, 'jhrb_profile'),
+                                createdOn: r.createdon,
+                            });
+                        })];
+            }
+        });
+    });
+}
+function applyDefaults(args) {
+    var _a, _b;
+    return __awaiter(this, void 0, void 0, function () {
+        var r, jobId;
+        return __generator(this, function (_c) {
+            switch (_c.label) {
+                case 0: return [4 /*yield*/, callApi('jhrb_ApplyDefaults', {
+                        Scope: args.scope, UserId: args.userId, Setting: (_a = args.settings) === null || _a === void 0 ? void 0 : _a.join(','), DryRun: args.dryRun, ApplyMode: (_b = args.applyMode) !== null && _b !== void 0 ? _b : 'Full',
+                    })];
+                case 1:
+                    r = _c.sent();
+                    jobId = r.JobId;
+                    return [2 /*return*/, {
+                            jobId: jobId && jobId !== '00000000-0000-0000-0000-000000000000' ? jobId : undefined,
+                            updated: num(r.Updated),
+                            unchanged: num(r.Unchanged),
+                            failed: num(r.Failed),
+                        }];
+            }
+        });
+    });
+}
+function reconcile() {
+    return __awaiter(this, void 0, void 0, function () {
+        var r;
+        return __generator(this, function (_a) {
+            switch (_a.label) {
+                case 0: return [4 /*yield*/, callApi('jhrb_ReconcileSettings', {})];
+                case 1:
+                    r = _a.sent();
+                    return [2 /*return*/, r.JobId];
+            }
+        });
+    });
+}
+function loadCurrentValues(args) {
+    return __awaiter(this, void 0, void 0, function () {
+        var r;
+        return __generator(this, function (_a) {
+            switch (_a.label) {
+                case 0: return [4 /*yield*/, callApi('jhrb_LoadCurrentSettings', { ProfileId: args.profileId, UserId: args.userId, OverwriteManaged: args.overwriteManaged })];
+                case 1:
+                    r = _a.sent();
+                    return [2 /*return*/, { profileId: String(r.ProfileId), loaded: num(r.Loaded), keptManaged: num(r.KeptManaged) }];
+            }
+        });
+    });
+}
+function resolveEffective(userId) {
+    return __awaiter(this, void 0, void 0, function () {
+        var r;
+        return __generator(this, function (_a) {
+            switch (_a.label) {
+                case 0: return [4 /*yield*/, callApi('jhrb_ResolveEffectiveSettings', { UserId: userId })];
+                case 1:
+                    r = _a.sent();
+                    return [2 /*return*/, {
+                            settings: JSON.parse(r.Settings || '[]'),
+                            layers: JSON.parse(r.Layers || '[]'),
+                            inScope: r.InScope === true,
+                        }];
+            }
+        });
+    });
+}
+// ---- shared/styles.ts
+// Page CSS, scoped under .dus so nothing leaks into the host app. Colours are Fluent tokens (CSS variables set by
+// the host's FluentProvider), so the pages follow the app theme. Geometry follows the model-driven app (8px cards with
+// shadow4, 42px grid rows, 32px controls).
+var PAGE_CSS = "\n.dus { height: 100%; overflow-y: auto; box-sizing: border-box; position: relative; contain: layout; display: flex; flex-direction: column; gap: 16px;\n  padding: 16px 24px 32px; background: var(--colorNeutralBackground2); color: var(--colorNeutralForeground1);\n  font-family: var(--fontFamilyBase); font-size: 14px; line-height: 20px; }\n.dus > * { flex-shrink: 0; }\n.dus .grow { flex-grow: 1; }\n.dus .card { background: var(--colorNeutralBackground1); border-radius: 8px; box-shadow: var(--shadow4); }\n.dus .card-pad { padding: 12px 16px; }\n.dus .card-head { display: flex; flex-wrap: wrap; align-items: center; gap: 8px 16px; padding: 12px 16px; border-bottom: 1px solid var(--colorNeutralStroke3); }\n.dus .card-title { margin: 0; font-size: 16px; line-height: 24px; font-weight: 600; }\n.dus .commandbar { min-height: 44px; box-sizing: border-box; padding: 6px 8px; display: flex; flex-wrap: wrap; align-items: center; gap: 4px; }\n.dus .page-title { margin: 0; font-size: 28px; line-height: 36px; font-weight: 700; }\n.dus .muted { color: var(--colorNeutralForeground3); }\n.dus .small { font-size: 12px; line-height: 16px; }\n.dus .row-flex { display: flex; flex-wrap: wrap; align-items: center; gap: 8px 16px; }\n.dus .stack { display: flex; flex-direction: column; gap: 16px; }\n.dus .split { display: flex; flex-wrap: wrap; gap: 16px; align-items: flex-start; }\n.dus .split > .wide { flex: 999 1 640px; min-width: 0; }\n.dus .split > .side { flex: 1 1 260px; max-width: 360px; }\n.dus .split > .groups { flex: 1 1 180px; max-width: 220px; }\n.dus .kpis { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 16px; }\n.dus .kpi-value { font-size: 28px; line-height: 36px; font-weight: 600; }\n.dus .kpi-value small { font-size: 14px; font-weight: 400; color: var(--colorNeutralForeground3); }\n.dus .scroll-x { overflow-x: auto; }\n.dus .grid-table { width: 100%; border-collapse: collapse; font-size: 12px; }\n.dus .grid-table th { height: 42px; text-align: left; font-weight: 600; color: var(--colorNeutralForeground3); padding: 0 12px; border-bottom: 1px solid var(--colorNeutralStroke2); white-space: nowrap; }\n.dus .grid-table td { height: 42px; padding: 0 12px; border-bottom: 1px solid var(--colorNeutralStroke3); }\n.dus .grid-table tbody tr:hover { background: var(--colorNeutralBackground1Hover); }\n.dus .grid-table tbody tr.selected { background: var(--colorBrandBackground2); box-shadow: inset 3px 0 0 var(--colorBrandStroke1); }\n.dus .grid-table tbody tr.changed { background: var(--colorPaletteYellowBackground1); }\n.dus .grid-table tbody tr:last-child td { border-bottom: 0; }\n.dus .grid-table .num { text-align: right; }\n.dus .grid-table .primary { font-size: 14px; }\n.dus .grid-footer { height: 40px; display: flex; align-items: center; justify-content: space-between; padding: 0 16px; border-top: 1px solid var(--colorNeutralStroke2); font-size: 12px; color: var(--colorNeutralForeground3); }\n.dus .badge { display: inline-flex; align-items: center; gap: 4px; height: 20px; padding: 0 6px; border-radius: 4px; font-size: 12px; background: var(--colorNeutralBackground3); color: var(--colorNeutralForeground1); white-space: nowrap; }\n.dus .status { display: inline-flex; align-items: center; gap: 4px; white-space: nowrap; }\n.dus .status.success { color: var(--colorPaletteGreenForeground1); }\n.dus .status.warning { color: var(--colorPaletteDarkOrangeForeground1); }\n.dus .status.danger { color: var(--colorPaletteRedForeground1); }\n.dus .status.info { color: var(--colorBrandForeground1); }\n.dus .linkish { border: 0; padding: 0; background: none; font: inherit; color: var(--colorBrandForegroundLink); cursor: pointer; text-align: left; }\n.dus .linkish:hover { text-decoration: underline; color: var(--colorBrandForegroundLinkHover); }\n.dus .linkish:focus-visible { outline: none; box-shadow: 0 0 0 2px var(--colorStrokeFocus2); border-radius: 2px; }\n.dus .group-btn, .dus .list-btn { position: relative; display: flex; align-items: center; justify-content: space-between; gap: 12px; width: 100%; min-height: 36px; padding: 0 12px;\n  border: 0; border-radius: 4px; background: transparent; color: var(--colorNeutralForeground1); font: inherit; text-align: left; cursor: pointer; box-sizing: border-box; }\n.dus .list-btn { justify-content: flex-start; min-height: 48px; }\n.dus .group-btn:hover, .dus .list-btn:hover { background: var(--colorNeutralBackground1Hover); }\n.dus .group-btn:focus-visible, .dus .list-btn:focus-visible { outline: none; box-shadow: inset 0 0 0 2px var(--colorStrokeFocus2); }\n.dus .group-btn[aria-current=\"true\"], .dus .list-btn[aria-current=\"true\"] { background: var(--colorBrandBackground2); font-weight: 600; }\n.dus .group-btn[aria-current=\"true\"]::before, .dus .list-btn[aria-current=\"true\"]::before { content: \"\"; position: absolute; left: 0; top: 8px; bottom: 8px; width: 3px; border-radius: 2px; background: var(--colorBrandStroke1); }\n.dus .ellipsis { overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }\n.dus .setting-row { display: grid; grid-template-columns: minmax(180px, 1.1fr) minmax(220px, 1.3fr) 240px minmax(180px, 1fr); gap: 16px; align-items: center; min-height: 56px; padding: 8px 16px; box-sizing: border-box; border-bottom: 1px solid var(--colorNeutralStroke3); }\n.dus .setting-row.head { min-height: 36px; font-size: 12px; font-weight: 600; color: var(--colorNeutralForeground3); border-bottom-color: var(--colorNeutralStroke2); }\n.dus .setting-row.changed { background: var(--colorPaletteYellowBackground1); }\n.dus .setting-table { min-width: 880px; }\n.dus .not-managed { height: 32px; display: flex; align-items: center; padding: 0 12px; border-radius: 4px; background: var(--colorNeutralBackground2); color: var(--colorNeutralForeground3); }\n.dus .mode-switch { display: inline-flex; border: 1px solid var(--colorNeutralStroke1); border-radius: 4px; overflow: hidden; }\n.dus .mode-switch button { height: 28px; padding: 0 10px; border: 0; border-right: 1px solid var(--colorNeutralStroke1); background: var(--colorNeutralBackground1); color: var(--colorNeutralForeground1); font: inherit; font-size: 12px; cursor: pointer; display: inline-flex; align-items: center; gap: 4px; }\n.dus .mode-switch button:last-child { border-right: 0; }\n.dus .mode-switch button:hover { background: var(--colorNeutralBackground1Hover); }\n.dus .mode-switch button:focus-visible { outline: none; box-shadow: inset 0 0 0 2px var(--colorStrokeFocus2); }\n.dus .mode-switch button[aria-pressed=\"true\"] { background: var(--colorBrandBackground2); color: var(--colorBrandForeground2); font-weight: 600; }\n.dus .mode-switch button:disabled { color: var(--colorNeutralForegroundDisabled); cursor: default; }\n.dus .layers { list-style: none; margin: 0; padding: 0; display: flex; flex-wrap: wrap; align-items: center; gap: 8px; }\n.dus .layer { display: inline-flex; flex-direction: column; padding: 6px 12px; border-radius: 4px; border: 1px solid var(--colorNeutralStroke2); color: var(--colorNeutralForeground1); background: transparent; font: inherit; text-align: left; }\n.dus button.layer { cursor: pointer; }\n.dus button.layer:hover { background: var(--colorNeutralBackground1Hover); }\n.dus .footer-bar { position: sticky; bottom: 0; margin: 0 -24px -32px; padding: 10px 24px; display: flex; flex-wrap: wrap; align-items: center; gap: 8px; background: var(--colorNeutralBackground1); border-top: 1px solid var(--colorNeutralStroke2); z-index: 1; }\n.dus .empty { padding: 32px 16px; text-align: center; color: var(--colorNeutralForeground3); }\n.dus .dl { margin: 0; display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 8px 16px; font-size: 12px; }\n.dus .dl dt { color: var(--colorNeutralForeground3); }\n.dus .dl dd { margin: 0; font-size: 14px; font-weight: 600; }\n.dus .sr-only { position: absolute; width: 1px; height: 1px; overflow: hidden; clip: rect(0 0 0 0); white-space: nowrap; }\n.dus .icon16 { font-size: 16px; }\n.dus .icon12 { font-size: 12px; }\n@media (max-width: 640px) { .dus { padding: 12px 16px 24px; } .dus .footer-bar { margin: 0 -16px -24px; padding: 10px 16px; } }\n@media (prefers-reduced-motion: reduce) { .dus * { transition: none !important; animation: none !important; } }\n";
+var USER_COLUMNS = ['systemuserid', 'fullname', 'title', 'internalemailaddress', '_businessunitid_value', 'isdisabled', 'islicensed'];
+var INTERACTIVE = 'isdisabled eq false and accessmode eq 0 and applicationid eq null';
+function toUser(r) {
+    var _a, _b, _c;
+    return {
+        id: String(r.systemuserid),
+        fullName: (_a = r.fullname) !== null && _a !== void 0 ? _a : '',
+        title: (_b = r.title) !== null && _b !== void 0 ? _b : undefined,
+        email: (_c = r.internalemailaddress) !== null && _c !== void 0 ? _c : undefined,
+        businessUnitId: ref(r, 'businessunitid'),
+        businessUnitName: display(r, 'businessunitid'),
+        disabled: r.isdisabled === true,
+        licensed: r.islicensed === true,
+    };
+}
+/** Interactive, enabled users whose name or email matches the text. */
+function searchUsers(text, top) {
+    if (top === void 0) { top = 25; }
+    return __awaiter(this, void 0, void 0, function () {
+        var t, match;
+        return __generator(this, function (_a) {
+            switch (_a.label) {
+                case 0:
+                    t = text.trim();
+                    match = t ? " and (startswith(fullname,".concat(q(t), ") or startswith(internalemailaddress,").concat(q(t), ") or contains(fullname,").concat(q(t), "))") : '';
+                    return [4 /*yield*/, queryTop('systemuser', { select: USER_COLUMNS, filter: INTERACTIVE + match, orderBy: 'fullname asc' }, top)];
+                case 1: return [2 /*return*/, (_a.sent()).map(toUser)];
+            }
+        });
+    });
+}
+function getUser(id) {
+    return __awaiter(this, void 0, void 0, function () {
+        var _a;
+        return __generator(this, function (_b) {
+            switch (_b.label) {
+                case 0:
+                    _a = toUser;
+                    return [4 /*yield*/, api().retrieveRow('systemuser', { id: id, select: USER_COLUMNS })];
+                case 1: return [2 /*return*/, _a.apply(void 0, [_b.sent()])];
+            }
+        });
+    });
+}
+/** Licensed interactive users (the population a rollout can touch). The page runtime has no $count, so this pages through ids. */
+function countLicensedUsers() {
+    return __awaiter(this, void 0, void 0, function () {
+        return __generator(this, function (_a) {
+            switch (_a.label) {
+                case 0: return [4 /*yield*/, queryAll('systemuser', { select: ['systemuserid'], filter: "islicensed eq true and ".concat(INTERACTIVE) }, 50000)];
+                case 1: return [2 /*return*/, (_a.sent()).length];
+            }
+        });
+    });
+}
+function countTeamMembers(teamId) {
+    return __awaiter(this, void 0, void 0, function () {
+        return __generator(this, function (_a) {
+            switch (_a.label) {
+                case 0: return [4 /*yield*/, queryAll('systemuser', { select: ['systemuserid'], filter: "isdisabled eq false and teammembership_association/any(t:t/teamid eq ".concat(teamId, ")") }, 50000)];
+                case 1: return [2 /*return*/, (_a.sent()).length];
+            }
+        });
+    });
+}
+function searchTeams(text) {
+    return __awaiter(this, void 0, void 0, function () {
+        var rows;
+        return __generator(this, function (_a) {
+            switch (_a.label) {
+                case 0: return [4 /*yield*/, queryTop('team', { select: ['teamid', 'name'], filter: text ? "contains(name,".concat(q(text), ")") : undefined, orderBy: 'name asc' }, 25)];
+                case 1:
+                    rows = _a.sent();
+                    return [2 /*return*/, rows.map(function (r) { var _a; return ({ id: String(r.teamid), name: String((_a = r.name) !== null && _a !== void 0 ? _a : '') }); })];
+            }
+        });
+    });
+}
+function searchBusinessUnits(text) {
+    return __awaiter(this, void 0, void 0, function () {
+        var rows;
+        return __generator(this, function (_a) {
+            switch (_a.label) {
+                case 0: return [4 /*yield*/, queryTop('businessunit', { select: ['businessunitid', 'name'], filter: text ? "contains(name,".concat(q(text), ")") : undefined, orderBy: 'name asc' }, 25)];
+                case 1:
+                    rows = _a.sent();
+                    return [2 /*return*/, rows.map(function (r) { var _a; return ({ id: String(r.businessunitid), name: String((_a = r.name) !== null && _a !== void 0 ? _a : '') }); })];
+            }
+        });
+    });
+}
+/** The user's usersettings row (managed attributes only), or undefined if it does not exist yet. */
+function getUserSettings(userId) {
+    return __awaiter(this, void 0, void 0, function () {
+        var select, rows;
+        return __generator(this, function (_a) {
+            switch (_a.label) {
+                case 0:
+                    select = SETTINGS.map(function (s) { return (s.kind === 'Lookup' || s.kind === 'LookupText' ? "_".concat(s.attribute, "_value") : s.attribute); });
+                    return [4 /*yield*/, queryTop('usersettings', { select: select, filter: "systemuserid eq ".concat(userId) }, 1)];
+                case 1:
+                    rows = _a.sent();
+                    return [2 /*return*/, rows[0]];
+            }
+        });
+    });
+}
+// ---- shared/ui.tsx
+// ---- Page frame ------------------------------------------------------------------------------------------------
+/** Overlays (dialogs, dropdown lists) portal into the page container, never into the host's document.body. */
+var MountContext = React.createContext(undefined);
+function useMount() {
+    return React.useContext(MountContext);
+}
+var PageErrorBoundary = /** @class */ (function (_super) {
+    __extends(PageErrorBoundary, _super);
+    function PageErrorBoundary(props) {
+        var _this = _super.call(this, props) || this;
+        _this.state = {};
+        return _this;
+    }
+    PageErrorBoundary.getDerivedStateFromError = function (error) {
+        return { error: errorText(error) };
+    };
+    PageErrorBoundary.prototype.render = function () {
+        if (this.state.error) {
+            return (React.createElement(MessageBar, { intent: "error", layout: "multiline" },
+                React.createElement(MessageBarBody, null,
+                    React.createElement(MessageBarTitle, null, "This page failed."),
+                    this.state.error)));
+        }
+        return this.props.children;
+    };
+    return PageErrorBoundary;
+}(React.Component));
+/** Root of every page: binds the data API, scopes the CSS, gives overlays a mount node and catches render errors. */
+function PageRoot(_a) {
+    var dataApi = _a.dataApi, label = _a.label, children = _a.children;
+    bindApi(dataApi);
+    var _b = React.useState(undefined), mount = _b[0], setMount = _b[1];
+    var setRef = React.useCallback(function (node) { return setMount(node !== null && node !== void 0 ? node : undefined); }, []);
+    return (React.createElement("div", { ref: setRef, className: "dus", role: "main", "aria-label": label },
+        React.createElement("style", null, PAGE_CSS),
+        React.createElement(MountContext.Provider, { value: mount },
+            React.createElement(PageErrorBoundary, null, dataApi ? children : React.createElement(Loading, null)))));
+}
+/**
+ * The host mounts a page twice when it opens (a cached mount, then a fresh one ~300 ms later). Identical loads that
+ * start within that window share one request.
+ */
+function shared(key, load) {
+    var _a;
+    // eslint-disable-next-line @typescript-eslint/no-explicit-any
+    var w = window;
+    w.__dusInflight = (_a = w.__dusInflight) !== null && _a !== void 0 ? _a : {};
+    var hit = w.__dusInflight[key];
+    if (hit && Date.now() - hit.at < 2000)
+        return hit.promise;
+    var promise = load();
+    w.__dusInflight[key] = { at: Date.now(), promise: promise };
+    promise.catch(function () { delete w.__dusInflight[key]; });
+    return promise;
+}
+function forget(prefix) {
+    var _a;
+    // eslint-disable-next-line @typescript-eslint/no-explicit-any
+    var w = window;
+    for (var _i = 0, _b = Object.keys((_a = w.__dusInflight) !== null && _a !== void 0 ? _a : {}); _i < _b.length; _i++) {
+        var k = _b[_i];
+        if (k.indexOf(prefix) === 0)
+            delete w.__dusInflight[k];
+    }
+}
+// ---- Building blocks -------------------------------------------------------------------------------------------
+function Card(_a) {
+    var children = _a.children, className = _a.className, label = _a.label;
+    return React.createElement("section", { "aria-label": label, className: "card ".concat(className !== null && className !== void 0 ? className : '') }, children);
+}
+function NoticeBar(_a) {
+    var notice = _a.notice, onDismiss = _a.onDismiss;
+    if (!notice)
+        return null;
+    return (React.createElement(MessageBar, { intent: notice.intent, layout: "multiline" },
+        React.createElement(MessageBarBody, null,
+            notice.title && React.createElement(MessageBarTitle, null, notice.title),
+            notice.text),
+        React.createElement(MessageBarActions, { containerAction: onDismiss ? React.createElement(Button, { appearance: "transparent", "aria-label": "Dismiss", icon: React.createElement(DismissRegular, null), onClick: onDismiss }) : undefined }, notice.action && React.createElement(Button, { onClick: notice.action.onClick }, notice.action.label))));
+}
+function Loading(_a) {
+    var _b = _a.label, label = _b === void 0 ? 'Loading' : _b;
+    return React.createElement("div", { className: "empty" },
+        React.createElement(Spinner, { size: "small", label: label }));
+}
+function Empty(_a) {
+    var children = _a.children;
+    return React.createElement("div", { className: "empty" }, children);
+}
+function Status(_a) {
+    var tone = _a.tone, children = _a.children;
+    var icon = tone === 'success' ? React.createElement(CheckmarkRegular, { className: "icon16" }) : tone === 'warning' ? React.createElement(WarningRegular, { className: "icon16" }) : tone === 'danger' ? React.createElement(ErrorCircleRegular, { className: "icon16" }) : null;
+    return React.createElement("span", { className: "status ".concat(tone) },
+        icon,
+        children);
+}
+function ModeLabel(_a) {
+    var mode = _a.mode;
+    var name = typeof mode === 'number' ? MODE_NAMES[mode] : mode;
+    if (name === 'Locked')
+        return React.createElement("span", { className: "status", style: { fontWeight: 600 } },
+            React.createElement(LockClosedRegular, { className: "icon12" }),
+            "Locked");
+    if (name === 'Inherit')
+        return React.createElement("span", { className: "muted" }, "Inherit");
+    return React.createElement("span", null, name);
+}
+function JobStatusLabel(_a) {
+    var status = _a.status, failed = _a.failed;
+    switch (status) {
+        case JobStatus.Running: return React.createElement("span", { className: "status info" },
+            React.createElement(ArrowSyncRegular, { className: "icon16" }),
+            "Running");
+        case JobStatus.Pending: return React.createElement("span", { className: "status" },
+            React.createElement(ClockRegular, { className: "icon16" }),
+            "Pending");
+        case JobStatus.Completed: return failed ? React.createElement(Status, { tone: "danger" },
+            "Completed, ",
+            failed,
+            " failed") : React.createElement(Status, { tone: "success" }, "Completed");
+        case JobStatus.Failed: return React.createElement(Status, { tone: "danger" }, "Failed");
+        case JobStatus.Cancelled: return React.createElement("span", { className: "status muted" }, "Cancelled");
+        default: return React.createElement("span", { className: "muted" }, "Unknown");
+    }
+}
+// ---- Setting editors -------------------------------------------------------------------------------------------
+var MODES = [
+    { value: Mode.Inherit, name: 'Inherit' },
+    { value: Mode.Default, name: 'Default' },
+    { value: Mode.Locked, name: 'Locked' },
+];
+/** Inherit / Default / Locked as one segmented control. aria-pressed carries the state, not colour alone. */
+function ModeSwitch(_a) {
+    var label = _a.label, mode = _a.mode, onChange = _a.onChange, disabled = _a.disabled;
+    return (React.createElement("div", { role: "group", "aria-label": "Mode for ".concat(label), className: "mode-switch" }, MODES.map(function (m) { return (React.createElement("button", { key: m.value, type: "button", "aria-pressed": mode === m.value, disabled: disabled, onClick: function () { return onChange(m.value); } },
+        m.value === Mode.Locked && React.createElement(LockClosedRegular, { className: "icon12" }),
+        m.name)); })));
+}
+/** Editor for one profile value, by setting kind. */
+function ValueEditor(_a) {
+    var _b, _c, _d, _e, _f, _g;
+    var def = _a.def, value = _a.value, onChange = _a.onChange, displayName = _a.displayName;
+    var mount = useMount();
+    var label = "Value for ".concat(def.label);
+    switch (def.kind) {
+        case 'Boolean':
+            return React.createElement(Switch, { "aria-label": label, checked: value === true, label: value === true ? 'Yes' : 'No', onChange: function (_, d) { return onChange(d.checked); } });
+        case 'Choice': {
+            var selected_1 = value === null || value === undefined ? undefined : String(value);
+            var text = (_d = (_c = (_b = def.options) === null || _b === void 0 ? void 0 : _b.find(function (o) { return String(o.value) === selected_1; })) === null || _c === void 0 ? void 0 : _c.label) !== null && _d !== void 0 ? _d : '';
+            return (React.createElement(Dropdown, { "aria-label": label, appearance: "filled-darker", style: { minWidth: 0, width: '100%' }, value: text, selectedOptions: selected_1 ? [selected_1] : [], mountNode: mount, placeholder: "Select a value", onOptionSelect: function (_, d) { return onChange(d.optionValue === undefined ? null : Number(d.optionValue)); } }, ((_e = def.options) !== null && _e !== void 0 ? _e : []).map(function (o) { return React.createElement(Option, { key: o.value, value: String(o.value) }, o.label); })));
+        }
+        case 'Integer':
+            return (React.createElement(Input, { "aria-label": label, appearance: "filled-darker", type: "number", style: { width: '100%' }, value: value === null || value === undefined ? '' : String(value), min: (_f = def.min) !== null && _f !== void 0 ? _f : undefined, max: (_g = def.max) !== null && _g !== void 0 ? _g : undefined, onChange: function (_, d) { return onChange(d.value === '' ? null : Number(d.value)); } }));
+        case 'Lookup':
+        case 'LookupText':
+        case 'GuidText': {
+            var text = value === null || value === undefined ? '' : String(value);
+            var invalid = text !== '' && !isGuid(text);
+            return (React.createElement("div", { style: { display: 'flex', flexDirection: 'column', gap: 2, width: '100%' } },
+                React.createElement(Input, { "aria-label": label, "aria-invalid": invalid, appearance: "filled-darker", style: { width: '100%' }, value: text, placeholder: "Record id (GUID)", onChange: function (_, d) { return onChange(d.value.trim() === '' ? null : d.value.trim()); } }),
+                invalid ? React.createElement("span", { className: "small status danger" }, "Enter a GUID") : displayName ? React.createElement("span", { className: "small muted" }, displayName) : null));
+        }
+        default:
+            return React.createElement(Input, { "aria-label": label, appearance: "filled-darker", style: { width: '100%' }, value: value === null || value === undefined ? '' : String(value), maxLength: def.maxLength, onChange: function (_, d) { return onChange(d.value); } });
+    }
+}
+/** Search-as-you-type picker for a team, business unit or user. */
+function EntityPicker(_a) {
+    var _b;
+    var label = _a.label, search = _a.search, value = _a.value, onChange = _a.onChange, placeholder = _a.placeholder;
+    var mount = useMount();
+    var _c = React.useState((_b = value === null || value === void 0 ? void 0 : value.name) !== null && _b !== void 0 ? _b : ''), text = _c[0], setText = _c[1];
+    var _d = React.useState([]), options = _d[0], setOptions = _d[1];
+    React.useEffect(function () { var _a; setText((_a = value === null || value === void 0 ? void 0 : value.name) !== null && _a !== void 0 ? _a : ''); }, [value === null || value === void 0 ? void 0 : value.id, value === null || value === void 0 ? void 0 : value.name]);
+    React.useEffect(function () {
+        var cancelled = false;
+        var t = setTimeout(function () { search(text).then(function (r) { if (!cancelled)
+            setOptions(r); }).catch(function () { if (!cancelled)
+            setOptions([]); }); }, 250);
+        return function () { cancelled = true; clearTimeout(t); };
+    }, [text, search]);
+    return (React.createElement(Combobox, { "aria-label": label, appearance: "filled-darker", placeholder: placeholder !== null && placeholder !== void 0 ? placeholder : 'Search', value: text, style: { minWidth: 0, width: '100%' }, mountNode: mount, selectedOptions: value ? [value.id] : [], onInput: function (e) { setText(e.target.value); if (value)
+            onChange(undefined); }, onOptionSelect: function (_, d) {
+            var _a;
+            var picked = options.find(function (o) { return o.id === d.optionValue; });
+            onChange(picked);
+            setText((_a = picked === null || picked === void 0 ? void 0 : picked.name) !== null && _a !== void 0 ? _a : '');
+        } }, options.length === 0 ? React.createElement(Option, { disabled: true, value: "", text: "No matches" }, "No matches") : options.map(function (o) { return React.createElement(Option, { key: o.id, value: o.id, text: o.name }, o.name); })));
+}
+// ---- Dialogs ---------------------------------------------------------------------------------------------------
+/** "Roll out now": jhrb_ApplyDefaults with Scope=All. Queues a job; the job is processed in chunks. */
+function RolloutDialog(_a) {
+    var _this = this;
+    var open = _a.open, onClose = _a.onClose, onQueued = _a.onQueued;
+    var mount = useMount();
+    var _b = React.useState('Auto'), mode = _b[0], setMode = _b[1];
+    var _c = React.useState(true), dryRun = _c[0], setDryRun = _c[1];
+    var _d = React.useState(false), busy = _d[0], setBusy = _d[1];
+    var _e = React.useState(), error = _e[0], setError = _e[1];
+    var run = function () { return __awaiter(_this, void 0, void 0, function () {
+        var r, e_1;
+        return __generator(this, function (_a) {
+            switch (_a.label) {
+                case 0:
+                    setBusy(true);
+                    setError(undefined);
+                    _a.label = 1;
+                case 1:
+                    _a.trys.push([1, 3, , 4]);
+                    return [4 /*yield*/, applyDefaults({ scope: 'All', applyMode: mode, dryRun: dryRun })];
+                case 2:
+                    r = _a.sent();
+                    setBusy(false);
+                    onQueued(r, dryRun);
+                    onClose();
+                    return [3 /*break*/, 4];
+                case 3:
+                    e_1 = _a.sent();
+                    setBusy(false);
+                    setError(errorText(e_1));
+                    return [3 /*break*/, 4];
+                case 4: return [2 /*return*/];
+            }
+        });
+    }); };
+    return (React.createElement(Dialog, { open: open, onOpenChange: function (_, d) { if (!d.open)
+            onClose(); } },
+        React.createElement(DialogSurface, { mountNode: mount },
+            React.createElement(DialogBody, null,
+                React.createElement(DialogTitle, null, "Roll out now"),
+                React.createElement(DialogContent, { style: { display: 'flex', flexDirection: 'column', gap: 12 } },
+                    React.createElement("span", null, "Applies the effective settings to every user in scope. Only values that differ are written, and each write is logged."),
+                    React.createElement(Field, { label: "What to apply" },
+                        React.createElement(RadioGroup, { value: mode, onChange: function (_, d) { return setMode(d.value); } },
+                            React.createElement(Radio, { value: "Auto", label: "Auto: full for users whose layers changed or who are new, locks only for the rest" }),
+                            React.createElement(Radio, { value: "Full", label: "Full: Default and Locked values for everyone (overwrites users' own Default choices)" }),
+                            React.createElement(Radio, { value: "LockedOnly", label: "Locked only: enforce locks, leave Default settings alone" }))),
+                    React.createElement(Checkbox, { checked: dryRun, onChange: function (_, d) { return setDryRun(d.checked === true); }, label: "Dry run: count what would change, write nothing" }),
+                    error && React.createElement("span", { className: "status danger" }, error)),
+                React.createElement(DialogActions, null,
+                    React.createElement(Button, { onClick: onClose }, "Cancel"),
+                    React.createElement(Button, { appearance: "primary", disabled: busy, icon: busy ? React.createElement(Spinner, { size: "tiny" }) : undefined, onClick: run }, dryRun ? 'Start dry run' : 'Roll out'))))));
+}
+/** Generic confirmation dialog. */
+function ConfirmDialog(_a) {
+    var _this = this;
+    var open = _a.open, title = _a.title, text = _a.text, confirmLabel = _a.confirmLabel, onConfirm = _a.onConfirm, onClose = _a.onClose, danger = _a.danger;
+    var mount = useMount();
+    var _b = React.useState(false), busy = _b[0], setBusy = _b[1];
+    var _c = React.useState(), error = _c[0], setError = _c[1];
+    var run = function () { return __awaiter(_this, void 0, void 0, function () {
+        var e_2;
+        return __generator(this, function (_a) {
+            switch (_a.label) {
+                case 0:
+                    setBusy(true);
+                    setError(undefined);
+                    _a.label = 1;
+                case 1:
+                    _a.trys.push([1, 3, , 4]);
+                    return [4 /*yield*/, onConfirm()];
+                case 2:
+                    _a.sent();
+                    setBusy(false);
+                    onClose();
+                    return [3 /*break*/, 4];
+                case 3:
+                    e_2 = _a.sent();
+                    setBusy(false);
+                    setError(errorText(e_2));
+                    return [3 /*break*/, 4];
+                case 4: return [2 /*return*/];
+            }
+        });
+    }); };
+    return (React.createElement(Dialog, { open: open, onOpenChange: function (_, d) { if (!d.open)
+            onClose(); } },
+        React.createElement(DialogSurface, { mountNode: mount },
+            React.createElement(DialogBody, null,
+                React.createElement(DialogTitle, null, title),
+                React.createElement(DialogContent, { style: { display: 'flex', flexDirection: 'column', gap: 12 } },
+                    React.createElement("span", null, text),
+                    error && React.createElement("span", { className: "status danger" }, error)),
+                React.createElement(DialogActions, null,
+                    React.createElement(Button, { onClick: onClose }, "Cancel"),
+                    React.createElement(Button, { appearance: "primary", disabled: busy, onClick: run, style: danger ? { background: 'var(--colorPaletteRedBackground3)' } : undefined }, confirmLabel))))));
+}
+// ---- pages/log.tsx
+// Page "Activity log": every rollout write, revert and captured admin edit (jhrb_settingslog, kept 90 days).
+var SOURCES = [{ value: 0, label: 'All sources' }].concat(Object.keys(LOG_SOURCE_NAMES).map(function (v) { return ({ value: Number(v), label: LOG_SOURCE_NAMES[Number(v)] }); }));
+function LogPage() {
+    var _this = this;
+    var _a;
+    var mount = useMount();
+    var _b = React.useState(), rows = _b[0], setRows = _b[1];
+    var _c = React.useState(0), source = _c[0], setSource = _c[1];
+    var _d = React.useState(), notice = _d[0], setNotice = _d[1];
+    var fail = function (e) { return setNotice({ intent: 'error', text: errorText(e) }); };
+    var load = React.useCallback(function (fresh) { return __awaiter(_this, void 0, void 0, function () {
+        var _a, e_3;
+        return __generator(this, function (_b) {
+            switch (_b.label) {
+                case 0:
+                    if (fresh)
+                        forget("log:".concat(source));
+                    setRows(undefined);
+                    _b.label = 1;
+                case 1:
+                    _b.trys.push([1, 3, , 4]);
+                    _a = setRows;
+                    return [4 /*yield*/, shared("log:".concat(source), function () { return loadLog({ top: 200, source: source || undefined }); })];
+                case 2:
+                    _a.apply(void 0, [_b.sent()]);
+                    return [3 /*break*/, 4];
+                case 3:
+                    e_3 = _b.sent();
+                    setNotice({ intent: 'error', title: 'Could not load the log.', text: errorText(e_3) });
+                    return [3 /*break*/, 4];
+                case 4: return [2 /*return*/];
+            }
+        });
+    }); }, [source]);
+    React.useEffect(function () { load(); }, [load]);
+    return (React.createElement(React.Fragment, null,
+        React.createElement(Card, { className: "commandbar", label: "Log commands" },
+            React.createElement(Toolbar, { "aria-label": "Log commands", style: { flexWrap: 'wrap', padding: 0, width: '100%' } },
+                React.createElement(ToolbarButton, { icon: React.createElement(ArrowClockwiseRegular, null), onClick: function () { return load(true); } }, "Refresh"),
+                React.createElement("span", { className: "grow" }),
+                React.createElement(Dropdown, { "aria-label": "Source", appearance: "filled-darker", mountNode: mount, value: (_a = SOURCES.find(function (s) { return s.value === source; })) === null || _a === void 0 ? void 0 : _a.label, selectedOptions: [String(source)], onOptionSelect: function (_, d) { return setSource(Number(d.optionValue)); }, style: { minWidth: 160 } }, SOURCES.map(function (s) { return React.createElement(Option, { key: s.value, value: String(s.value) }, s.label); })))),
+        React.createElement(NoticeBar, { notice: notice, onDismiss: function () { return setNotice(undefined); } }),
+        React.createElement("div", { className: "row-flex", style: { alignItems: 'baseline' } },
+            React.createElement("h1", { className: "page-title" }, "Activity log"),
+            React.createElement("span", { className: "muted" }, "Every rollout write, revert and captured admin edit. Rows are kept for 90 days.")),
+        React.createElement(Card, { label: "Activity log" },
+            !rows ? React.createElement(Loading, null) : rows.length === 0 ? React.createElement(Empty, null, "Nothing logged") : (React.createElement("div", { className: "scroll-x" },
+                React.createElement("table", { className: "grid-table", style: { minWidth: 900 } },
+                    React.createElement("thead", null,
+                        React.createElement("tr", null,
+                            React.createElement("th", { scope: "col" }, "When"),
+                            React.createElement("th", { scope: "col" }, "User"),
+                            React.createElement("th", { scope: "col" }, "Source"),
+                            React.createElement("th", { scope: "col" }, "Setting"),
+                            React.createElement("th", { scope: "col" }, "Old"),
+                            React.createElement("th", { scope: "col" }, "Attempted"),
+                            React.createElement("th", { scope: "col" }, "Applied"),
+                            React.createElement("th", { scope: "col" }, "Profile"))),
+                    React.createElement("tbody", null, rows.map(function (r) {
+                        var _a, _b, _c, _d;
+                        return (React.createElement("tr", { key: r.id },
+                            React.createElement("td", null, formatDate(r.createdOn)),
+                            React.createElement("td", { className: "primary" }, r.userId ? React.createElement(Link, { onClick: function () { var _a; openPage('users', { userId: (_a = r.userId) !== null && _a !== void 0 ? _a : '' }).catch(fail); } }, (_a = r.userName) !== null && _a !== void 0 ? _a : 'User') : ''),
+                            React.createElement("td", null, (_c = LOG_SOURCE_NAMES[(_b = r.source) !== null && _b !== void 0 ? _b : 0]) !== null && _c !== void 0 ? _c : ''),
+                            React.createElement("td", null, settingLabel(r.setting)),
+                            React.createElement("td", null, r.oldValue),
+                            React.createElement("td", null, r.attempted),
+                            React.createElement("td", null, r.applied),
+                            React.createElement("td", null, r.profileId ? React.createElement(Link, { onClick: function () { var _a; openPage('profiles', { profileId: (_a = r.profileId) !== null && _a !== void 0 ? _a : '' }).catch(fail); } }, (_d = r.profileName) !== null && _d !== void 0 ? _d : 'Profile') : '')));
+                    }))))),
+            rows && React.createElement("div", { className: "grid-footer" },
+                React.createElement("span", null,
+                    "Rows: ",
+                    rows.length,
+                    rows.length === 200 ? ' (latest 200)' : '')))));
+}
+export default function Page(props) {
+    return (React.createElement(PageRoot, { dataApi: props.dataApi, label: "Default user settings: activity log" },
+        React.createElement(LogPage, null)));
+}
+

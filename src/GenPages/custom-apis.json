@@ -1,0 +1,18 @@
+{
+  "jhrb_ApplyDefaults": {
+    "displayName": "Apply default user settings",
+    "parameterKinds": { "Scope": "String", "UserId": "Guid", "Setting": "String", "DryRun": "Boolean", "ApplyMode": "String", "IgnorePilot": "Boolean", "BatchSize": "Integer", "ChunkSeconds": "Integer" }
+  },
+  "jhrb_ReconcileSettings": {
+    "displayName": "Reconcile user settings",
+    "parameterKinds": {}
+  },
+  "jhrb_ResolveEffectiveSettings": {
+    "displayName": "Resolve effective settings",
+    "parameterKinds": { "UserId": "Guid" }
+  },
+  "jhrb_LoadCurrentSettings": {
+    "displayName": "Load current settings into a profile",
+    "parameterKinds": { "ProfileId": "Guid", "UserId": "Guid", "SourceUserId": "Guid", "OverwriteManaged": "Boolean" }
+  }
+}

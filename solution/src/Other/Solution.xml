@@ -121,6 +121,12 @@
     </RootComponents>
     <MissingDependencies>
       <MissingDependency>
+        <Required type="60" displayName="New Form" parentDisplayName="Team" solution="OmnichannelBase (1.10.0.168)" id="{a9012f85-915a-4349-b3b4-62ff2040e87c}">
+          <package appName="UnifiedRoutingPrime" version="1.5.26101.281">UnifiedRoutingPrimeAnchor (1.5.26101.281)</package>
+        </Required>
+        <Dependent type="80" schemaName="jhrb_DefaultUserSettings" displayName="Default User Settings" />
+      </MissingDependency>
+      <MissingDependency>
         <Required type="61" schemaName="msdyn_/Images/AppModule_Default_Icon.png" displayName="msdyn_/Images/AppModule_Default_Icon.png" solution="AppModuleWebResources (2.5)">
           <package appName="AppModule Web Resources Package" version="2.5">AppModuleWebResources (2.5)</package>
         </Required>

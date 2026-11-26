@@ -266,5 +266,5 @@ The `mus_` prefix in this plan was a placeholder. The solution uses the owner's 
 - Admin edits of another user's settings are captured into that user's override row (decision 20).
 - Pilot team and kill switch on the Global row (decision 8).
 - UI: a generated model-driven app. PCF is still optional (plan section 7).
-- UI decision gate (section 7): a **code app** (`src/CodeApp`), standalone and embedded in the User form; the generated model-driven app remains (decision 33).
+- UI decision gate (section 7): a **code app** (`src/CodeApp`), standalone; the generated model-driven app remains (decision 33). Inside the model-driven app the same screens are **generative pages** (`src/GenPages`, "Settings manager" in the sitemap), because a code app can only be embedded in an iframe that its CSP blocks (decisions 37, 38).
 - **Load current values** (section 12, per-user editing) = Custom API `jhrb_LoadCurrentSettings` plus a form command. It fills only Inherit settings and never changes modes (decision 32).

@@ -102,7 +102,20 @@ Send-Dv Patch "systemforms($($jf.formid))" @{ formxml = $jobForm } | Out-Null
 
 "app"
 $entities = 'jhrb_settingsprofile', 'jhrb_profilescope', 'jhrb_rolloutjob', 'jhrb_settingslog', 'jhrb_userstate'
-$sitemapXml = "<SiteMap IntroducedVersion=`"7.0.0.0`"><Area Id=`"area_dus`" ShowGroups=`"true`"><Titles><Title LCID=`"1033`" Title=`"Default User Settings`" /></Titles>" +
+# Generative pages (src/GenPages, deployed by Deploy-GenPages.ps1) get their own group at the top, if they exist.
+$genSubAreas = ''
+$genManifest = "$Root\src\GenPages\pages.json"
+if (Test-Path $genManifest) {
+  foreach ($p in (Get-Content $genManifest -Raw | ConvertFrom-Json).pages) {
+    $gid = @(Get-Dv "uxagentprojects?`$select=uxagentprojectid&`$filter=name eq '$($p.name -replace "'", "''")'")[0].uxagentprojectid
+    if ($gid) {
+      $genSubAreas += "<SubArea Id=`"sub_gen_$($p.key)`" VectorIcon=`"/_imgs/TableIconsFluentV9/document_one_page_sparkle.svg`" Client=`"All,Outlook,OutlookLaptopClient,OutlookWorkstationClient,Web`" " +
+        "AvailableOffline=`"true`" PassParams=`"false`" Sku=`"All,OnPremise,Live,SPLA`" GenPageId=`"$gid`"><Titles><Title LCID=`"1033`" Title=`"$(X $p.title)`" /></Titles></SubArea>"
+    }
+  }
+}
+$genGroup = if ($genSubAreas) { "<Group Id=`"grp_manage`"><Titles><Title LCID=`"1033`" Title=`"Settings manager`" /></Titles>$genSubAreas</Group>" } else { '' }
+$sitemapXml = "<SiteMap IntroducedVersion=`"7.0.0.0`"><Area Id=`"area_dus`" ShowGroups=`"true`"><Titles><Title LCID=`"1033`" Title=`"Default User Settings`" /></Titles>" + $genGroup +
   "<Group Id=`"grp_config`"><Titles><Title LCID=`"1033`" Title=`"Configuration`" /></Titles>" +
   "<SubArea Id=`"sub_profiles`" Entity=`"jhrb_settingsprofile`" /><SubArea Id=`"sub_scopes`" Entity=`"jhrb_profilescope`" /></Group>" +
   "<Group Id=`"grp_ops`"><Titles><Title LCID=`"1033`" Title=`"Operations`" /></Titles>" +

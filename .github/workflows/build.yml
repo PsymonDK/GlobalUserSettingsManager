@@ -67,3 +67,25 @@ jobs:
       - run: npm ci
       - run: npm run lint
       - run: npm run build
+
+  genpages:
+    # Generative pages: type-check the sources, bundle each page into one .tsx, type-check the bundles.
+    runs-on: ubuntu-latest
+    defaults:
+      run:
+        working-directory: src/GenPages
+    steps:
+      - uses: actions/checkout@v7
+
+      - uses: actions/setup-node@v7
+        with:
+          node-version: 22
+          cache: npm
+          cache-dependency-path: src/GenPages/package-lock.json
+
+      - run: npm ci
+      - run: npm run check
+      - uses: actions/upload-artifact@v7
+        with:
+          name: generative-pages
+          path: src/GenPages/dist/

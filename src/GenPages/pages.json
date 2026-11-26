@@ -1,0 +1,25 @@
+{
+  "_comment": "One generative page per entry. name = the page record name (also how pages find each other at runtime), title = the sitemap entry. dataSources = tables the page reads or writes through dataApi; actions = Custom APIs it calls (from custom-apis.json).",
+  "pages": [
+    {
+      "key": "profiles", "file": "pages/profiles.tsx", "name": "Default User Settings - Profiles", "title": "Profiles",
+      "dataSources": ["jhrb_settingsprofile", "jhrb_profilescope", "jhrb_rolloutjob", "jhrb_settingslog", "systemuser", "team", "businessunit"],
+      "actions": ["jhrb_ApplyDefaults", "jhrb_ReconcileSettings", "jhrb_LoadCurrentSettings"]
+    },
+    {
+      "key": "users", "file": "pages/users.tsx", "name": "Default User Settings - Users", "title": "Users",
+      "dataSources": ["jhrb_settingsprofile", "jhrb_settingslog", "systemuser", "usersettings"],
+      "actions": ["jhrb_ApplyDefaults", "jhrb_ResolveEffectiveSettings", "jhrb_LoadCurrentSettings"]
+    },
+    {
+      "key": "rollouts", "file": "pages/rollouts.tsx", "name": "Default User Settings - Rollouts", "title": "Rollouts",
+      "dataSources": ["jhrb_rolloutjob"],
+      "actions": ["jhrb_ApplyDefaults", "jhrb_ReconcileSettings"]
+    },
+    {
+      "key": "log", "file": "pages/log.tsx", "name": "Default User Settings - Activity log", "title": "Activity log",
+      "dataSources": ["jhrb_settingslog"],
+      "actions": []
+    }
+  ]
+}
