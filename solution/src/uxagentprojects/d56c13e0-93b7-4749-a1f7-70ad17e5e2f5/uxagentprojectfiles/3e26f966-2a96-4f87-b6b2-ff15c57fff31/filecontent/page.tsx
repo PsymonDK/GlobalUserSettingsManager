@@ -747,7 +747,8 @@ const PAGE_CSS = `
 .dus .layer { display: inline-flex; flex-direction: column; padding: 6px 12px; border-radius: 4px; border: 1px solid var(--colorNeutralStroke2); color: var(--colorNeutralForeground1); background: transparent; font: inherit; text-align: left; }
 .dus button.layer { cursor: pointer; }
 .dus button.layer:hover { background: var(--colorNeutralBackground1Hover); }
-.dus .footer-bar { position: sticky; bottom: 0; margin: 0 -24px -32px; padding: 10px 24px; display: flex; flex-wrap: wrap; align-items: center; gap: 8px; background: var(--colorNeutralBackground1); border-top: 1px solid var(--colorNeutralStroke2); z-index: 1; }
+.dus .footer-bar { position: sticky; bottom: 0; margin: 0 -24px -32px; padding: 10px 24px; display: flex; flex-wrap: wrap; align-items: center; gap: 8px; background: var(--colorNeutralBackground1); border-top: 1px solid var(--colorNeutralStroke2); }
+/* No z-index on the footer: dialogs portal into .dus after it and must paint above it. */
 .dus .empty { padding: 32px 16px; text-align: center; color: var(--colorNeutralForeground3); }
 .dus .dl { margin: 0; display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 8px 16px; font-size: 12px; }
 .dus .dl dt { color: var(--colorNeutralForeground3); }
