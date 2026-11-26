@@ -38,6 +38,9 @@ function Ensure-Role($name, $description, $privilegeNames) {
 
 $adminPrivs = foreach ($t in $tables) { foreach ($p in 'Create', 'Read', 'Write', 'Delete', 'Append', 'AppendTo', 'Assign', 'Share') { "prv$p$t" } }
 $adminPrivs += 'prvReadUser', 'prvReadTeam', 'prvReadBusinessUnit', 'prvReadTransactionCurrency', 'prvReadSolution'
+# AppendTo on the lookup targets: scopes (team, BU), the pilot team, user overrides (any user) and currency values.
+# Basic User has no AppendTo on team or BU and only BU depth on user (Test-RoleAccess.ps1 W3).
+$adminPrivs += 'prvAppendToTeam', 'prvAppendToBusinessUnit', 'prvAppendToUser', 'prvAppendToTransactionCurrency'
 $readerPrivs = 'prvReadjhrb_SettingsProfile', 'prvReadjhrb_ProfileScope'
 
 $adminId = Ensure-Role 'Default User Settings Admin' 'Manage default user settings: profiles, scopes, rollout jobs, logs. Additive to a base role.' $adminPrivs

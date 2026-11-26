@@ -59,6 +59,7 @@ pwsh scripts/Deploy-Schema.ps1; pwsh scripts/Register-Plugins.ps1; pwsh scripts/
 pwsh scripts/Seed-GlobalProfile.ps1 -PilotMembers <userid>; pwsh scripts/Setup-Heartbeat.ps1
 pwsh scripts/Test-Integration.ps1     # Phase 1, own user only
 pwsh scripts/Test-Rollout.ps1         # Phases 2-4, own user only (must be the only pilot member)
+pwsh scripts/Test-RoleAccess.ps1 -AsUser <userid>   # pages' calls as a non-admin (impersonation); give that user Basic User + Admin first
 pwsh scripts/Export-Solution.ps1      # unmanaged + managed zips, unpacked source in solution/
 cd src/GenPages; npm ci; npm run check; cd ../..; pwsh scripts/Deploy-GenPages.ps1   # generative pages (then runs Deploy-App.ps1)
 cd src/CodeApp; npm ci; npm run build; npx --no-install pa app push -s <solution id>   # code app (needs `pa app init` once)

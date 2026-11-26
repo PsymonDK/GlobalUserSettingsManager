@@ -43,4 +43,4 @@ G16 failed at first: clicking Delete in the confirm dialog did nothing. The stic
 
 Seen once, not reproduced: a mouse click on the "Business unit" option in the scope type dropdown did not select it; the keyboard (ArrowDown, Enter) did.
 
-Not tested: Go live (would affect all users), Apply now, Cancel job, Reconcile from the pages, dark theme (the app theme is light), narrow widths, and users without System Administrator (the Admin role may need read access to `uxagentproject` for page-to-page navigation).
+Not tested: Go live (would affect all users), Apply now, Cancel job, Reconcile from the pages, dark theme (the app theme is light), and narrow widths. Data access without System Administrator is covered by [test-results-roles.md](test-results-roles.md), through impersonation; rendering as such a user is not.
