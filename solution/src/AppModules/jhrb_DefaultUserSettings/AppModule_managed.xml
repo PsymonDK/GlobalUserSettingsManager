@@ -15,6 +15,20 @@
     <AppModuleComponent type="1" schemaName="entity" />
     <AppModuleComponent type="1" schemaName="entity" />
     <AppModuleComponent type="1" schemaName="entity" />
+    <AppModuleComponent type="26" id="{00000000-0000-0000-00aa-000010001018}" />
+    <AppModuleComponent type="26" id="{00000000-0000-0000-00aa-000010001019}" />
+    <AppModuleComponent type="26" id="{00000000-0000-0000-00aa-000010001024}" />
+    <AppModuleComponent type="26" id="{2fec6aaa-0e8a-406d-9970-0d210dc65f20}" />
+    <AppModuleComponent type="26" id="{6b1516ac-7c94-4caa-8098-53156088b64e}" />
+    <AppModuleComponent type="26" id="{81a52011-4969-4390-b3be-84e7bc7ee12d}" />
+    <AppModuleComponent type="26" id="{d01ea65b-4434-4423-855e-8a37c67f61a7}" />
+    <AppModuleComponent type="60" id="{c2cd9e55-d4b4-4b55-9951-16ead79643e5}" />
+    <AppModuleComponent type="60" id="{4236262d-5f6d-46ed-8151-228d991b3101}" />
+    <AppModuleComponent type="60" id="{a9012f85-915a-4349-b3b4-62ff2040e87c}" />
+    <AppModuleComponent type="60" id="{ca8dfced-338c-43b2-b212-83745e257c28}" />
+    <AppModuleComponent type="60" id="{c8adf12f-46f8-4a69-bb49-89e45035985e}" />
+    <AppModuleComponent type="60" id="{3198e362-3300-42de-9459-ac5121c184a6}" />
+    <AppModuleComponent type="60" id="{7128553c-b8fd-477f-85c9-de7873eadd71}" />
     <AppModuleComponent type="62" schemaName="jhrb_DefaultUserSettings" />
   </AppModuleComponents>
   <AppModuleRoleMaps>

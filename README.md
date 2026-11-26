@@ -22,7 +22,8 @@ Everything runs as C# plugins and Custom APIs, with no Power Automate.
 | 3 | New users (async + wait for the `usersettings` row, reconcile fallback) | Built. Not tested on a real new user (shared dev environment) |
 | 4 | Team/BU membership triggers, per-user overrides, capture of admin edits | Built. Membership tested; the admin-edit capture needs a second user to test |
 | 5 | Model-driven app, security roles, managed solution export | Built (see [Install](#install)) |
-| 5b | Admin code app (React + Fluent UI), standalone and embedded in the User form | Built, tested in dev on the owner's own user (see [Admin app](#admin-app-code-app)) |
+| 5b | Admin code app (React + Fluent UI), standalone | Built, tested in dev on the owner's own user (see [Admin app](#admin-app-code-app)) |
+| 5c | Generative pages in the model-driven app (Profiles, Users, Rollouts, Activity log) | Built, tested in dev on the owner's own user (see [Admin pages](#admin-pages-generative-pages), [test results](docs/test-results-genpages.md)) |
 
 ## How it works
 
@@ -121,9 +122,22 @@ To install into another environment, import the managed solution, then run `Seed
 
 The rollout APIs need `prvCreatejhrb_RolloutJob` and `jhrb_LoadCurrentSettings` needs `prvWritejhrb_SettingsProfile`; both come with the Admin role.
 
+## Admin pages (generative pages)
+
+The model-driven app has a **Settings manager** group with four generative pages, which run inside the app with its look and theme: **Profiles** (overview and profile editor), **Users**, **Rollouts** and **Activity log**. The screens are the same as in the code app below. They use the signed-in admin's own permissions.
+
+Source: `src/GenPages`. A generative page is a single `.tsx` file, so `build.mjs` bundles each page in `pages/` with the modules it uses from `shared/` into `dist/<page>.tsx`, and inlines `schema/settings.json` (the pages never list settings themselves). `pages.json` gives each page its name, sitemap title and tables, and `custom-apis.json` lists the Custom APIs with their parameter types.
+
+```powershell
+cd src/GenPages; npm ci; npm run check; cd ../..   # type-check, bundle, type-check the bundles
+pwsh scripts/Deploy-GenPages.ps1   # uploads the pages (pac model genpage upload), adds them to the solution, then runs Deploy-App.ps1
+```
+
+Pages find each other by name at runtime, so page ids are not stored anywhere. Deploy-App.ps1 puts the pages in the sitemap when they exist. Custom APIs are called through `dataApi.executeAction`; when the page runtime has not enabled bindings (`not_bound`, seen in the dev environment), they fall back to `Xrm.WebApi.online.execute` with the same parameters.
+
 ## Admin app (code app)
 
-`src/CodeApp` is a Power Apps code app (React, Vite, Fluent UI v9) that looks like a model-driven app. It uses only the tables and Custom APIs above, through the generated Dataverse services, so it runs with the signed-in admin's own permissions.
+`src/CodeApp` is a Power Apps code app (React, Vite, Fluent UI v9) that looks like a model-driven app and runs on its own (apps.powerapps.com). It uses only the tables and Custom APIs above, through the generated Dataverse services, so it runs with the signed-in admin's own permissions.
 
 | Screen | What it does |
 |---|---|
@@ -147,7 +161,7 @@ npx --no-install pa app push -s <DefaultUserSettings solution id>   # always pas
 
 The first push creates the app, and its schema name takes the prefix of the solution it lands in. Without `-s` it lands in the default solution with the wrong prefix, and the name cannot be changed afterwards.
 
-**Embed it in the User form:** add an IFRAME (or a web resource that hosts one) to a tab on the `systemuser` main form with the app's play URL plus `?embed=1`, and tick "Pass record object-type code and unique identifier as parameters". The form appends `id` and `typename=systemuser`, and the app then shows only that user's effective settings and recent changes, without its own top bar and navigation. `?embed=1&user=<systemuserid>` works too.
+**Embedding:** a code app can only be embedded in an iframe, and code apps send the Content Security Policy `frame-ancestors 'self' https://*.powerapps.com`, so a model-driven form or page shows it blank until an environment admin adds the org URL to the code app CSP (admin center > environment > Settings > Privacy + Security > Content security policy > App). Inside the model-driven app, use the generative pages instead. If the CSP allows it, the app's play URL plus `?embed=1&user=<systemuserid>` (or `?id=<id>&typename=systemuser`) shows only that user's effective settings and recent changes.
 
 ## Adding a setting
 

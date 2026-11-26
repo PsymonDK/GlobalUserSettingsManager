@@ -10,6 +10,31 @@
       <Titles>
         <Title LCID="1033" Title="Default User Settings" />
       </Titles>
+      <Group Id="grp_manage">
+        <Titles>
+          <Title LCID="1033" Title="Settings manager" />
+        </Titles>
+        <SubArea Id="sub_gen_profiles" VectorIcon="/_imgs/TableIconsFluentV9/document_one_page_sparkle.svg" Client="All,Outlook,OutlookLaptopClient,OutlookWorkstationClient,Web" AvailableOffline="true" PassParams="false" Sku="All,OnPremise,Live,SPLA" GenPageId="36e2d5d2-e8bb-4592-a9a2-b8e9ab5d11eb">
+          <Titles>
+            <Title LCID="1033" Title="Profiles" />
+          </Titles>
+        </SubArea>
+        <SubArea Id="sub_gen_users" VectorIcon="/_imgs/TableIconsFluentV9/document_one_page_sparkle.svg" Client="All,Outlook,OutlookLaptopClient,OutlookWorkstationClient,Web" AvailableOffline="true" PassParams="false" Sku="All,OnPremise,Live,SPLA" GenPageId="d56c13e0-93b7-4749-a1f7-70ad17e5e2f5">
+          <Titles>
+            <Title LCID="1033" Title="Users" />
+          </Titles>
+        </SubArea>
+        <SubArea Id="sub_gen_rollouts" VectorIcon="/_imgs/TableIconsFluentV9/document_one_page_sparkle.svg" Client="All,Outlook,OutlookLaptopClient,OutlookWorkstationClient,Web" AvailableOffline="true" PassParams="false" Sku="All,OnPremise,Live,SPLA" GenPageId="c2d36c9e-626a-4d63-a0c9-ccb0111c3079">
+          <Titles>
+            <Title LCID="1033" Title="Rollouts" />
+          </Titles>
+        </SubArea>
+        <SubArea Id="sub_gen_log" VectorIcon="/_imgs/TableIconsFluentV9/document_one_page_sparkle.svg" Client="All,Outlook,OutlookLaptopClient,OutlookWorkstationClient,Web" AvailableOffline="true" PassParams="false" Sku="All,OnPremise,Live,SPLA" GenPageId="d98566a8-4700-46d2-834c-0735a4eda884">
+          <Titles>
+            <Title LCID="1033" Title="Activity log" />
+          </Titles>
+        </SubArea>
+      </Group>
       <Group Id="grp_config">
         <Titles>
           <Title LCID="1033" Title="Configuration" />

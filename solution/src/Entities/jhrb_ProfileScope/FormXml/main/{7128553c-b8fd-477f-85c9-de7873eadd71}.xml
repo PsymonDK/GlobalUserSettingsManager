@@ -7,20 +7,20 @@
     <FormActivationState>1</FormActivationState>
     <form>
       <tabs>
-        <tab name="tab_general" id="{F38CB68D-362C-41A9-8CA5-4BBA976E40F9}" expanded="true" showlabel="true">
+        <tab name="tab_general" id="{B1B2EA9C-E2CA-491D-965F-0325697F7445}" expanded="true" showlabel="true">
           <labels>
             <label description="General" languagecode="1033" />
           </labels>
           <columns>
             <column width="100%">
               <sections>
-                <section name="sec_scope" showlabel="true" showbar="false" id="{68D81C74-DF4E-4B9E-A33C-82F1C27A0384}" columns="1">
+                <section name="sec_scope" showlabel="true" showbar="false" id="{BCB62986-847F-4627-BB97-FA5A0D9D5A2E}" columns="1">
                   <labels>
                     <label description="Scope" languagecode="1033" />
                   </labels>
                   <rows>
                     <row>
-                      <cell id="{0CA57CA4-9832-4443-AF81-A0C0246925C5}">
+                      <cell id="{AEA3B840-809B-4A04-8EC6-4CBB76792420}">
                         <labels>
                           <label description="Name" languagecode="1033" />
                         </labels>
@@ -28,7 +28,7 @@
                       </cell>
                     </row>
                     <row>
-                      <cell id="{0BD82F9C-98E9-4C0C-82F4-C6FD5C4BC5C1}">
+                      <cell id="{02EBF5DA-2C31-4C55-A737-60F1D747D94B}">
                         <labels>
                           <label description="Profile" languagecode="1033" />
                         </labels>
@@ -36,7 +36,7 @@
                       </cell>
                     </row>
                     <row>
-                      <cell id="{9F834709-AF01-4A2C-B500-AA941DC0CDD0}">
+                      <cell id="{1903BEA7-770B-463F-A1A6-571B52A80C9A}">
                         <labels>
                           <label description="Scope Type" languagecode="1033" />
                         </labels>
@@ -44,7 +44,7 @@
                       </cell>
                     </row>
                     <row>
-                      <cell id="{6885B7B0-6D51-444F-AE63-2444640168AB}">
+                      <cell id="{BD2AF6F0-7C32-44DE-BADC-9EA99965FDF0}">
                         <labels>
                           <label description="Include Child Business Units" languagecode="1033" />
                         </labels>
@@ -52,7 +52,7 @@
                       </cell>
                     </row>
                     <row>
-                      <cell id="{D06FF94D-9D65-463C-B1AD-F89094508744}">
+                      <cell id="{5427BCD4-4DED-49A4-8427-5A39D0C1568F}">
                         <labels>
                           <label description="Team" languagecode="1033" />
                         </labels>
@@ -60,7 +60,7 @@
                       </cell>
                     </row>
                     <row>
-                      <cell id="{C39CC6A5-0043-4CA2-A979-B4897F272B96}">
+                      <cell id="{1741ED09-1266-45D2-BE69-74E9480A1AB9}">
                         <labels>
                           <label description="Business Unit" languagecode="1033" />
                         </labels>

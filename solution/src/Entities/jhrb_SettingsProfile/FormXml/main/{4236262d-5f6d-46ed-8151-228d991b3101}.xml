@@ -7,20 +7,20 @@
     <FormActivationState>1</FormActivationState>
     <form>
       <tabs>
-        <tab name="tab_general" id="{23CE21BF-B29C-495E-BBFF-3667B1EBA541}" expanded="true" showlabel="true">
+        <tab name="tab_general" id="{7B8E7663-F47F-404E-806D-C184A8B254D3}" expanded="true" showlabel="true">
           <labels>
             <label description="General" languagecode="1033" />
           </labels>
           <columns>
             <column width="100%">
               <sections>
-                <section name="sec_profile" showlabel="true" showbar="false" id="{DE5E4ABE-1B11-4703-A796-4E6950750135}" columns="1">
+                <section name="sec_profile" showlabel="true" showbar="false" id="{100498CE-71FC-4688-941E-ECC1288A3D01}" columns="1">
                   <labels>
                     <label description="Profile" languagecode="1033" />
                   </labels>
                   <rows>
                     <row>
-                      <cell id="{644CFA5F-A4FE-44F1-A3E4-B30A3D400BA7}">
+                      <cell id="{0500DD90-1A0B-4A12-8784-83E2B548C98A}">
                         <labels>
                           <label description="Name" languagecode="1033" />
                         </labels>
@@ -28,7 +28,7 @@
                       </cell>
                     </row>
                     <row>
-                      <cell id="{DA1550C1-3C7F-4EA3-AAE0-16452CE56F08}">
+                      <cell id="{754A7DBE-ABF7-4E0B-B8E3-20A702DC35F0}">
                         <labels>
                           <label description="Type" languagecode="1033" />
                         </labels>
@@ -36,7 +36,7 @@
                       </cell>
                     </row>
                     <row>
-                      <cell id="{26A134CE-1FFE-46F8-88A1-E809F93FCC3B}">
+                      <cell id="{588DD333-DC9D-4826-A43F-AF10CE96291C}">
                         <labels>
                           <label description="Active" languagecode="1033" />
                         </labels>
@@ -44,7 +44,7 @@
                       </cell>
                     </row>
                     <row>
-                      <cell id="{CDE4C228-4225-43A7-B8A3-EB4CADAF6776}">
+                      <cell id="{6D2A6272-A014-486E-9B70-8D6128AEAC06}">
                         <labels>
                           <label description="Priority (Group)" languagecode="1033" />
                         </labels>
@@ -52,7 +52,7 @@
                       </cell>
                     </row>
                     <row>
-                      <cell id="{CF588A09-EE03-49AD-BF19-3D7FD8EAE586}">
+                      <cell id="{E63281CD-BE15-4EA2-BB3E-5E1EE989AA79}">
                         <labels>
                           <label description="User (User override)" languagecode="1033" />
                         </labels>
@@ -60,7 +60,7 @@
                       </cell>
                     </row>
                     <row>
-                      <cell id="{492E1EC8-08EB-4F9F-8DC2-69FF2C9EDAC4}">
+                      <cell id="{75905FCD-F56E-44BE-9C0B-71439DDE8534}">
                         <labels>
                           <label description="Pilot Team (Global)" languagecode="1033" />
                         </labels>
@@ -69,13 +69,13 @@
                     </row>
                   </rows>
                 </section>
-                <section name="sec_scopes" showlabel="true" showbar="false" id="{BAA72A0F-04CD-4BDD-8D9D-BEEB0CC8C3CE}" columns="1">
+                <section name="sec_scopes" showlabel="true" showbar="false" id="{46AB125A-08C1-4A38-A085-E3F69B3B4510}" columns="1">
                   <labels>
                     <label description="Scopes (Group profiles: applies to members of any of these teams / business units)" languagecode="1033" />
                   </labels>
                   <rows>
                     <row>
-                      <cell id="{29927D0B-DA28-4F3A-B6A4-AC687F141A34}" colspan="2" rowspan="8">
+                      <cell id="{1A212648-D537-4735-80AE-AC85B7E89993}" colspan="2" rowspan="8">
                         <labels>
                           <label description="Scopes" languagecode="1033" />
                         </labels>
@@ -103,13 +103,13 @@
                     <row />
                   </rows>
                 </section>
-                <section name="sec_log" showlabel="true" showbar="false" id="{DD36DAB5-EE61-4680-A555-0A276AC0D4C5}" columns="1">
+                <section name="sec_log" showlabel="true" showbar="false" id="{8EC29E3E-FBFB-46CA-98BC-9FDCDA290961}" columns="1">
                   <labels>
                     <label description="Recent changes caused by this profile" languagecode="1033" />
                   </labels>
                   <rows>
                     <row>
-                      <cell id="{8B1274B8-7699-4EE4-AD9E-F0461046D419}" colspan="2" rowspan="8">
+                      <cell id="{77AADCC8-B4B6-4D70-B7B3-848466F3F3AC}" colspan="2" rowspan="8">
                         <labels>
                           <label description="Log" languagecode="1033" />
                         </labels>
@@ -141,20 +141,20 @@
             </column>
           </columns>
         </tab>
-        <tab name="tab_regional" id="{5A763379-3C67-41CE-ACE4-3728AFE293D7}" expanded="true" showlabel="true">
+        <tab name="tab_regional" id="{8FE41109-10D2-47DB-8352-E4789234F764}" expanded="true" showlabel="true">
           <labels>
             <label description="Regional" languagecode="1033" />
           </labels>
           <columns>
             <column width="100%">
               <sections>
-                <section name="sec_regional" showlabel="true" showbar="false" id="{5CCE6DC4-C78E-4572-BEF0-18B9DAD345C7}" columns="1">
+                <section name="sec_regional" showlabel="true" showbar="false" id="{93CFDDA5-F4DF-457F-849A-771E929B4EF2}" columns="1">
                   <labels>
                     <label description="Regional (value | Inherit / Default / Locked)" languagecode="1033" />
                   </labels>
                   <rows>
                     <row>
-                      <cell id="{FFFBA3F0-1444-42A3-9B53-309C544B4738}">
+                      <cell id="{C65083CC-BE5B-4592-8FDA-5A528C74D395}">
                         <labels>
                           <label description="Time Zone" languagecode="1033" />
                         </labels>
@@ -162,7 +162,7 @@
                       </cell>
                     </row>
                     <row>
-                      <cell id="{4FCF2D4A-CAC7-4B78-A92F-E78A1F1D77EE}">
+                      <cell id="{41EC4EBE-E43B-4789-9B64-7B2E800C5D95}">
                         <labels>
                           <label description="Time Zone: mode" languagecode="1033" />
                         </labels>
@@ -170,7 +170,7 @@
                       </cell>
                     </row>
                     <row>
-                      <cell id="{BE074FDA-876B-4877-883E-D9D3039B7748}">
+                      <cell id="{779FB3AA-5B05-4715-8E22-CB1065834190}">
                         <labels>
                           <label description="Locale (Format)" languagecode="1033" />
                         </labels>
@@ -178,7 +178,7 @@
                       </cell>
                     </row>
                     <row>
-                      <cell id="{312C12DE-7103-4D93-982D-0D1C9161A888}">
+                      <cell id="{E6F19416-CA92-4BD6-8C6E-6445B8948D7D}">
                         <labels>
                           <label description="Locale (Format): mode" languagecode="1033" />
                         </labels>
@@ -186,7 +186,7 @@
                       </cell>
                     </row>
                     <row>
-                      <cell id="{D3B19FE7-0EC2-45A1-B9E5-A8DD7185C7C9}">
+                      <cell id="{C2319828-1D86-413F-98DD-38A460F3F90B}">
                         <labels>
                           <label description="User Interface Language" languagecode="1033" />
                         </labels>
@@ -194,7 +194,7 @@
                       </cell>
                     </row>
                     <row>
-                      <cell id="{26831833-E0B0-439B-927E-4D8A6B26F15F}">
+                      <cell id="{311FB239-87C9-4C8B-A5BB-88F40B0F307D}">
                         <labels>
                           <label description="User Interface Language: mode" languagecode="1033" />
                         </labels>
@@ -202,7 +202,7 @@
                       </cell>
                     </row>
                     <row>
-                      <cell id="{7ECA9CBA-5393-4E3B-AB68-691102D3BA5E}">
+                      <cell id="{BE3482CD-0F01-4ED1-852C-E19EA9C82834}">
                         <labels>
                           <label description="Help Language" languagecode="1033" />
                         </labels>
@@ -210,7 +210,7 @@
                       </cell>
                     </row>
                     <row>
-                      <cell id="{4C766656-9F33-4B1C-9A5D-775C8078C2F3}">
+                      <cell id="{E9C95AC6-A957-439C-9B71-B93667190FAB}">
                         <labels>
                           <label description="Help Language: mode" languagecode="1033" />
                         </labels>
@@ -218,7 +218,7 @@
                       </cell>
                     </row>
                     <row>
-                      <cell id="{B4513C4B-0CE7-4FC8-9540-A303CA070982}">
+                      <cell id="{2A4F7F2A-8FD8-49F8-BB92-F8F2CB73BAE2}">
                         <labels>
                           <label description="Default Country Code" languagecode="1033" />
                         </labels>
@@ -226,7 +226,7 @@
                       </cell>
                     </row>
                     <row>
-                      <cell id="{3F0EEB74-F793-4CF5-8F96-25D0D07D740C}">
+                      <cell id="{7008FB2F-A819-424F-B815-476FEE468C4D}">
                         <labels>
                           <label description="Default Country Code: mode" languagecode="1033" />
                         </labels>
@@ -234,7 +234,7 @@
                       </cell>
                     </row>
                     <row>
-                      <cell id="{E33B0D9C-718A-4600-A1DE-4AC9DFEE963D}">
+                      <cell id="{8ED1C5AF-CACE-431F-A5F1-CBB643D0796C}">
                         <labels>
                           <label description="Enable Default Country Code" languagecode="1033" />
                         </labels>
@@ -242,7 +242,7 @@
                       </cell>
                     </row>
                     <row>
-                      <cell id="{86FC760B-EE35-4885-819B-E6D07597635B}">
+                      <cell id="{6FED8C67-5ABB-4AB4-A240-BF06BDDDB582}">
                         <labels>
                           <label description="Enable Default Country Code: mode" languagecode="1033" />
                         </labels>
@@ -255,20 +255,20 @@
             </column>
           </columns>
         </tab>
-        <tab name="tab_formats" id="{CEDC8728-56A3-425E-8D32-CF35E3529100}" expanded="true" showlabel="true">
+        <tab name="tab_formats" id="{2DF0E108-6211-4810-8032-25E52CD0649F}" expanded="true" showlabel="true">
           <labels>
             <label description="Formats" languagecode="1033" />
           </labels>
           <columns>
             <column width="100%">
               <sections>
-                <section name="sec_formats" showlabel="true" showbar="false" id="{246E7F9C-0A3E-4AF9-8FF4-54B9A642F2EE}" columns="1">
+                <section name="sec_formats" showlabel="true" showbar="false" id="{19E3103C-5EA6-4D4A-A7E0-D308098D9428}" columns="1">
                   <labels>
                     <label description="Formats (value | Inherit / Default / Locked)" languagecode="1033" />
                   </labels>
                   <rows>
                     <row>
-                      <cell id="{88D22E9B-3FFA-4664-B413-8A88C77DFA20}">
+                      <cell id="{41B9D3EE-2762-4A61-8DC2-119C7C706DE2}">
                         <labels>
                           <label description="Calendar Type" languagecode="1033" />
                         </labels>
@@ -276,7 +276,7 @@
                       </cell>
                     </row>
                     <row>
-                      <cell id="{C0B04D9E-76CF-4CF2-A3FD-B7E0B5BCB3DE}">
+                      <cell id="{799948EB-E19E-42B0-AB09-DE1FD498936F}">
                         <labels>
                           <label description="Calendar Type: mode" languagecode="1033" />
                         </labels>
@@ -284,7 +284,7 @@
                       </cell>
                     </row>
                     <row>
-                      <cell id="{AD003936-BB44-4564-B311-E6563797EBA9}">
+                      <cell id="{317665A2-F7F8-40DA-898F-42FC8177856A}">
                         <labels>
                           <label description="Date Format Code" languagecode="1033" />
                         </labels>
@@ -292,7 +292,7 @@
                       </cell>
                     </row>
                     <row>
-                      <cell id="{12AC9B6A-A5FE-4EF4-AC52-2C0F338515AA}">
+                      <cell id="{C6600062-7F06-46DA-9388-968875238387}">
                         <labels>
                           <label description="Date Format Code: mode" languagecode="1033" />
                         </labels>
@@ -300,7 +300,7 @@
                       </cell>
                     </row>
                     <row>
-                      <cell id="{FF03C3E3-A42F-4F5D-8B5F-397A1B96D4D7}">
+                      <cell id="{ADCC1114-5109-4AEF-8B49-591EC0C2C4B0}">
                         <labels>
                           <label description="Date Format" languagecode="1033" />
                         </labels>
@@ -308,7 +308,7 @@
                       </cell>
                     </row>
                     <row>
-                      <cell id="{EC1B373A-FD7D-49AF-825D-05E46298CC42}">
+                      <cell id="{A1DE270E-27A9-4B86-BA60-DAF3B746B01E}">
                         <labels>
                           <label description="Date Format: mode" languagecode="1033" />
                         </labels>
@@ -316,7 +316,7 @@
                       </cell>
                     </row>
                     <row>
-                      <cell id="{62C0B8A0-5596-4E8E-97B2-00025154BB21}">
+                      <cell id="{1F649CBD-B97D-4312-9821-497C67F7CD59}">
                         <labels>
                           <label description="Long Date Format Code" languagecode="1033" />
                         </labels>
@@ -324,7 +324,7 @@
                       </cell>
                     </row>
                     <row>
-                      <cell id="{1CE02FE8-35D8-45FC-AE3F-F472D6C1809F}">
+                      <cell id="{5BED8718-2B5E-48E2-8600-ED40197BFC5E}">
                         <labels>
                           <label description="Long Date Format Code: mode" languagecode="1033" />
                         </labels>
@@ -332,7 +332,7 @@
                       </cell>
                     </row>
                     <row>
-                      <cell id="{C7230ACB-3D37-4E80-95B2-4F70F5CD4713}">
+                      <cell id="{2353E6D6-CDDB-4796-986F-6D6043C22B31}">
                         <labels>
                           <label description="Date Separator" languagecode="1033" />
                         </labels>
@@ -340,7 +340,7 @@
                       </cell>
                     </row>
                     <row>
-                      <cell id="{50A8908B-30CC-4C6E-84F4-1D0D8B1D9321}">
+                      <cell id="{269051A5-12F6-43C3-AC97-E338607E31F5}">
                         <labels>
                           <label description="Date Separator: mode" languagecode="1033" />
                         </labels>
@@ -348,7 +348,7 @@
                       </cell>
                     </row>
                     <row>
-                      <cell id="{EF6E5043-10C7-4147-A201-841B9B216A2D}">
+                      <cell id="{5CD7805C-B4A2-432F-8DF4-6A44365592C9}">
                         <labels>
                           <label description="Time Format Code" languagecode="1033" />
                         </labels>
@@ -356,7 +356,7 @@
                       </cell>
                     </row>
                     <row>
-                      <cell id="{F7F73E09-1B3F-48D7-9AD6-E9DB294B12D6}">
+                      <cell id="{63EB6DA3-F40A-45CD-85C4-21618D305B3E}">
                         <labels>
                           <label description="Time Format Code: mode" languagecode="1033" />
                         </labels>
@@ -364,7 +364,7 @@
                       </cell>
                     </row>
                     <row>
-                      <cell id="{443D8DDD-F2AB-475F-9DF1-3A020CF5B015}">
+                      <cell id="{3CDCE7F0-D168-45BE-905D-BDCD5930E8FD}">
                         <labels>
                           <label description="Time Format" languagecode="1033" />
                         </labels>
@@ -372,7 +372,7 @@
                       </cell>
                     </row>
                     <row>
-                      <cell id="{F8635741-29D6-47FD-A6BF-1E9D774B33D8}">
+                      <cell id="{8C418A59-CE94-48DA-B4BB-7687FCAA3910}">
                         <labels>
                           <label description="Time Format: mode" languagecode="1033" />
                         </labels>
@@ -380,7 +380,7 @@
                       </cell>
                     </row>
                     <row>
-                      <cell id="{C8CA1422-784D-4B8E-B6C4-F05EF1B14AAF}">
+                      <cell id="{3A91C888-8A83-403D-BE44-0D0ECE4FA6FC}">
                         <labels>
                           <label description="Time Separator" languagecode="1033" />
                         </labels>
@@ -388,7 +388,7 @@
                       </cell>
                     </row>
                     <row>
-                      <cell id="{C1FE5375-79A1-44A0-BDF7-19D8D5ABDE93}">
+                      <cell id="{7E26153E-1FD6-4A74-A9E7-F262706C22A3}">
                         <labels>
                           <label description="Time Separator: mode" languagecode="1033" />
                         </labels>
@@ -396,7 +396,7 @@
                       </cell>
                     </row>
                     <row>
-                      <cell id="{FE062D80-FFCB-4771-A3B9-76D76603A272}">
+                      <cell id="{FF0C7C78-39BD-409C-B0D0-EE716F905C49}">
                         <labels>
                           <label description="AM Designator" languagecode="1033" />
                         </labels>
@@ -404,7 +404,7 @@
                       </cell>
                     </row>
                     <row>
-                      <cell id="{C173C001-F227-4D42-A81A-BE347D4377C2}">
+                      <cell id="{02C693F3-ABF6-4626-872A-515EDDA6C1BE}">
                         <labels>
                           <label description="AM Designator: mode" languagecode="1033" />
                         </labels>
@@ -412,7 +412,7 @@
                       </cell>
                     </row>
                     <row>
-                      <cell id="{20E0769D-8739-4EE7-9A11-10B35E4DBD87}">
+                      <cell id="{EBF7414D-7F6A-42B0-ACA1-3FA6418B0521}">
                         <labels>
                           <label description="PM Designator" languagecode="1033" />
                         </labels>
@@ -420,7 +420,7 @@
                       </cell>
                     </row>
                     <row>
-                      <cell id="{288137A5-04EB-4449-9CFD-209E840522C6}">
+                      <cell id="{AF2819B6-85AA-416C-ADC1-6CE6A8AF39FF}">
                         <labels>
                           <label description="PM Designator: mode" languagecode="1033" />
                         </labels>
@@ -428,7 +428,7 @@
                       </cell>
                     </row>
                     <row>
-                      <cell id="{C546AE69-2B26-41D4-9263-97DF7F5403AB}">
+                      <cell id="{DA1BE019-CA34-4C60-9DFB-B52A66335595}">
                         <labels>
                           <label description="Show Week Numbers" languagecode="1033" />
                         </labels>
@@ -436,7 +436,7 @@
                       </cell>
                     </row>
                     <row>
-                      <cell id="{37BAB4A2-424F-416B-849C-7F69E2614FF1}">
+                      <cell id="{6FFC8AF8-704E-4A39-ADC0-6CC21767FC01}">
                         <labels>
                           <label description="Show Week Numbers: mode" languagecode="1033" />
                         </labels>
@@ -444,7 +444,7 @@
                       </cell>
                     </row>
                     <row>
-                      <cell id="{ED2917A6-66E1-40BE-915A-CED898B74943}">
+                      <cell id="{C098E348-E442-4E3B-BAEC-F4D634E1455C}">
                         <labels>
                           <label description="Decimal Symbol" languagecode="1033" />
                         </labels>
@@ -452,7 +452,7 @@
                       </cell>
                     </row>
                     <row>
-                      <cell id="{E5C45AE3-ABFF-4D7A-9B76-C9237761AB4D}">
+                      <cell id="{AA7ABED4-8215-48DE-9ED3-E4A895976B33}">
                         <labels>
                           <label description="Decimal Symbol: mode" languagecode="1033" />
                         </labels>
@@ -460,7 +460,7 @@
                       </cell>
                     </row>
                     <row>
-                      <cell id="{5150C9CF-B8C2-49C6-8279-6E215516FFEA}">
+                      <cell id="{A7C59212-7F26-494A-A8BB-3F807493DD00}">
                         <labels>
                           <label description="Digit Grouping Symbol" languagecode="1033" />
                         </labels>
@@ -468,7 +468,7 @@
                       </cell>
                     </row>
                     <row>
-                      <cell id="{0414ADB3-B28B-4379-95BD-D0C9D1F3EBCE}">
+                      <cell id="{D34D543C-CF02-4F52-8860-CAC169CA25EE}">
                         <labels>
                           <label description="Digit Grouping Symbol: mode" languagecode="1033" />
                         </labels>
@@ -476,7 +476,7 @@
                       </cell>
                     </row>
                     <row>
-                      <cell id="{697BB133-6427-4922-8157-86C11511B4CA}">
+                      <cell id="{EE14654B-E9AD-48E2-AE8D-97A6E5DE2062}">
                         <labels>
                           <label description="Digit Grouping" languagecode="1033" />
                         </labels>
@@ -484,7 +484,7 @@
                       </cell>
                     </row>
                     <row>
-                      <cell id="{5396C34C-88FC-4A70-8673-8D3E303A8572}">
+                      <cell id="{0C46B113-67BB-4A70-981A-4997704B2DBD}">
                         <labels>
                           <label description="Digit Grouping: mode" languagecode="1033" />
                         </labels>
@@ -492,7 +492,7 @@
                       </cell>
                     </row>
                     <row>
-                      <cell id="{3FB270CE-53EC-402A-8701-9CBB3B8E75A6}">
+                      <cell id="{00296980-1DEE-455B-8CA5-371E4181260F}">
                         <labels>
                           <label description="Negative Number Format" languagecode="1033" />
                         </labels>
@@ -500,7 +500,7 @@
                       </cell>
                     </row>
                     <row>
-                      <cell id="{CE7F2D98-EF2E-41E1-93F5-52FA3903F4BB}">
+                      <cell id="{F538723A-D77E-4307-BBBC-2A7326FC0BD1}">
                         <labels>
                           <label description="Negative Number Format: mode" languagecode="1033" />
                         </labels>
@@ -508,7 +508,7 @@
                       </cell>
                     </row>
                     <row>
-                      <cell id="{FC879D82-B9B4-4375-A035-41F4B49865EB}">
+                      <cell id="{D0D83EF4-3DF4-4DEB-903F-15B7A27E1C21}">
                         <labels>
                           <label description="Currency Format" languagecode="1033" />
                         </labels>
@@ -516,7 +516,7 @@
                       </cell>
                     </row>
                     <row>
-                      <cell id="{CEDCC860-B3CB-4EE0-9162-2417F2464475}">
+                      <cell id="{A472FB65-9FC3-4791-B846-8C7AB4F4BB09}">
                         <labels>
                           <label description="Currency Format: mode" languagecode="1033" />
                         </labels>
@@ -524,7 +524,7 @@
                       </cell>
                     </row>
                     <row>
-                      <cell id="{1FA98995-B0C5-45FD-B9AD-F3DBB4ACEAC2}">
+                      <cell id="{181B1DC8-2E67-4B4D-BB62-766F729092B1}">
                         <labels>
                           <label description="Currency Symbol" languagecode="1033" />
                         </labels>
@@ -532,7 +532,7 @@
                       </cell>
                     </row>
                     <row>
-                      <cell id="{4AC16676-BF54-4E00-B869-F9D2B16D53A8}">
+                      <cell id="{8F3B623F-CC0E-4DEB-8FAF-41D2954AF2AD}">
                         <labels>
                           <label description="Currency Symbol: mode" languagecode="1033" />
                         </labels>
@@ -540,7 +540,7 @@
                       </cell>
                     </row>
                     <row>
-                      <cell id="{2061F30F-D349-452B-840F-D9EB50E3C2E0}">
+                      <cell id="{76255D6C-4B96-455C-AAEF-959A7247FFF0}">
                         <labels>
                           <label description="Currency Decimal Precision" languagecode="1033" />
                         </labels>
@@ -548,7 +548,7 @@
                       </cell>
                     </row>
                     <row>
-                      <cell id="{80E37995-FA05-4D11-95A9-32D0AEBFC271}">
+                      <cell id="{853F28C0-1F80-47CF-946F-5E8A16E14CCC}">
                         <labels>
                           <label description="Currency Decimal Precision: mode" languagecode="1033" />
                         </labels>
@@ -556,7 +556,7 @@
                       </cell>
                     </row>
                     <row>
-                      <cell id="{C76EBCEF-422F-425F-93C2-50D8E0A8FAEF}">
+                      <cell id="{1BAA06AA-1C45-46FE-B2E6-C38963237BC6}">
                         <labels>
                           <label description="Negative Currency Format" languagecode="1033" />
                         </labels>
@@ -564,7 +564,7 @@
                       </cell>
                     </row>
                     <row>
-                      <cell id="{5DDB38CB-4D6C-44C6-8DFF-918CC9E705D9}">
+                      <cell id="{0ADFC1D7-F423-4000-A712-57B4DCDF0FB5}">
                         <labels>
                           <label description="Negative Currency Format: mode" languagecode="1033" />
                         </labels>
@@ -572,7 +572,7 @@
                       </cell>
                     </row>
                     <row>
-                      <cell id="{5388CC9C-DA3D-4B54-BDFF-3AAF9D5DC392}">
+                      <cell id="{5B8EEC1F-754B-4960-A00B-1285AF2A9A30}">
                         <labels>
                           <label description="Pricing Decimal Precision" languagecode="1033" />
                         </labels>
@@ -580,7 +580,7 @@
                       </cell>
                     </row>
                     <row>
-                      <cell id="{06A8BF57-1DED-4BB1-A1F1-FC9EF599AE67}">
+                      <cell id="{AE40C560-5972-4B57-86A3-6874C4BCDA7C}">
                         <labels>
                           <label description="Pricing Decimal Precision: mode" languagecode="1033" />
                         </labels>
@@ -588,7 +588,7 @@
                       </cell>
                     </row>
                     <row>
-                      <cell id="{3821DFB7-2AEC-4A94-8E4D-70A5B4B5770D}">
+                      <cell id="{E3D13F4A-4390-4869-B435-24D24DAF4387}">
                         <labels>
                           <label description="Full Name Format" languagecode="1033" />
                         </labels>
@@ -596,7 +596,7 @@
                       </cell>
                     </row>
                     <row>
-                      <cell id="{0646D23F-F11C-4EF2-BD74-EBF41753C16D}">
+                      <cell id="{D88F3F94-7604-4DB9-80B1-62D9BA014AC5}">
                         <labels>
                           <label description="Full Name Format: mode" languagecode="1033" />
                         </labels>
@@ -604,7 +604,7 @@
                       </cell>
                     </row>
                     <row>
-                      <cell id="{BA765113-FCCD-4BF8-BF7D-A79EEADD3A0F}">
+                      <cell id="{DD2EE4BA-B5FD-448F-8D51-714DF0F1E78A}">
                         <labels>
                           <label description="Default Currency" languagecode="1033" />
                         </labels>
@@ -612,7 +612,7 @@
                       </cell>
                     </row>
                     <row>
-                      <cell id="{28C0D426-175A-4DA1-BC2A-8AC4A1FB8096}">
+                      <cell id="{66E9D0DC-1ECF-4421-B8F8-3145B0180E68}">
                         <labels>
                           <label description="Default Currency: mode" languagecode="1033" />
                         </labels>
@@ -625,20 +625,20 @@
             </column>
           </columns>
         </tab>
-        <tab name="tab_calendar" id="{426AE5C8-24B2-478F-B7F5-54E2259E0309}" expanded="true" showlabel="true">
+        <tab name="tab_calendar" id="{649DDAB8-ADF8-4FAE-AAE8-0EFD227D5E20}" expanded="true" showlabel="true">
           <labels>
             <label description="Calendar" languagecode="1033" />
           </labels>
           <columns>
             <column width="100%">
               <sections>
-                <section name="sec_calendar" showlabel="true" showbar="false" id="{97C1546D-AAD1-441B-B62B-E3A3DB86CB84}" columns="1">
+                <section name="sec_calendar" showlabel="true" showbar="false" id="{0DDA8A5B-CAAD-494C-8FC0-841FE28DC078}" columns="1">
                   <labels>
                     <label description="Calendar (value | Inherit / Default / Locked)" languagecode="1033" />
                   </labels>
                   <rows>
                     <row>
-                      <cell id="{FF1D208D-1848-4BE4-8A6C-D19A80137276}">
+                      <cell id="{312950B9-DBAA-4BA2-ACCC-520673C7CD74}">
                         <labels>
                           <label description="Work Day Start Time" languagecode="1033" />
                         </labels>
@@ -646,7 +646,7 @@
                       </cell>
                     </row>
                     <row>
-                      <cell id="{A9CE362C-F12A-4B55-802A-FE3B750E5854}">
+                      <cell id="{EF72FC16-1DE5-4721-BFA7-F26717982DC0}">
                         <labels>
                           <label description="Work Day Start Time: mode" languagecode="1033" />
                         </labels>
@@ -654,7 +654,7 @@
                       </cell>
                     </row>
                     <row>
-                      <cell id="{D94F3062-C80B-4370-A6BF-7445586D71B7}">
+                      <cell id="{A08F66B7-FC35-4B9E-9E3F-B7FBE6F42E48}">
                         <labels>
                           <label description="Work Day End Time" languagecode="1033" />
                         </labels>
@@ -662,7 +662,7 @@
                       </cell>
                     </row>
                     <row>
-                      <cell id="{A0B174A0-18F3-41D1-9B32-CEB4544656EB}">
+                      <cell id="{77BB9A86-4D2C-4BFD-850F-61D1CE6A65F1}">
                         <labels>
                           <label description="Work Day End Time: mode" languagecode="1033" />
                         </labels>
@@ -670,7 +670,7 @@
                       </cell>
                     </row>
                     <row>
-                      <cell id="{9BFB309D-6A55-435C-9085-9B98667C3D5E}">
+                      <cell id="{940C9E90-9AE7-4352-83D4-5F45006ABC76}">
                         <labels>
                           <label description="Default Calendar View" languagecode="1033" />
                         </labels>
@@ -678,7 +678,7 @@
                       </cell>
                     </row>
                     <row>
-                      <cell id="{432278B6-4999-4349-B8BA-31DEE8505522}">
+                      <cell id="{34114257-47F8-44B1-AE55-E52D031B4D57}">
                         <labels>
                           <label description="Default Calendar View: mode" languagecode="1033" />
                         </labels>
@@ -691,20 +691,20 @@
             </column>
           </columns>
         </tab>
-        <tab name="tab_general" id="{66A0127C-5DE7-4AFB-96EB-FC6AB1F99794}" expanded="true" showlabel="true">
+        <tab name="tab_general" id="{23E6050D-0CC7-4D6A-96E1-4CECC0D40DD6}" expanded="true" showlabel="true">
           <labels>
             <label description="General" languagecode="1033" />
           </labels>
           <columns>
             <column width="100%">
               <sections>
-                <section name="sec_general" showlabel="true" showbar="false" id="{4669339D-54C6-4AB0-AF0A-F221962E0395}" columns="1">
+                <section name="sec_general" showlabel="true" showbar="false" id="{56996448-772D-4C49-81E7-BD44190DC4A5}" columns="1">
                   <labels>
                     <label description="General (value | Inherit / Default / Locked)" languagecode="1033" />
                   </labels>
                   <rows>
                     <row>
-                      <cell id="{2D0E44C4-A657-47DB-ABBC-07327A1ABA8E}">
+                      <cell id="{91BDF52D-6805-4E08-8EF8-CBA2BC0F4D82}">
                         <labels>
                           <label description="Records Per Page" languagecode="1033" />
                         </labels>
@@ -712,7 +712,7 @@
                       </cell>
                     </row>
                     <row>
-                      <cell id="{2F70F529-2A03-4CA5-A276-FD4F17E92A16}">
+                      <cell id="{FABC86C2-8B00-406D-AA3E-E000C8CD6F20}">
                         <labels>
                           <label description="Records Per Page: mode" languagecode="1033" />
                         </labels>
@@ -720,7 +720,7 @@
                       </cell>
                     </row>
                     <row>
-                      <cell id="{C6D6D94D-F32A-4EAB-B9C9-9BAE6197849A}">
+                      <cell id="{D84FF714-C03D-40D0-A293-0CEA14F4DEB1}">
                         <labels>
                           <label description="Default Dashboard" languagecode="1033" />
                         </labels>
@@ -728,7 +728,7 @@
                       </cell>
                     </row>
                     <row>
-                      <cell id="{86FEDBA8-7CB5-4EAF-BA32-ED3C75850A34}">
+                      <cell id="{5DF92497-0CDB-4520-83AE-7EC238BA4048}">
                         <labels>
                           <label description="Default Dashboard: mode" languagecode="1033" />
                         </labels>
@@ -736,7 +736,7 @@
                       </cell>
                     </row>
                     <row>
-                      <cell id="{6FE582BC-596A-4E13-976C-A3716A18E003}">
+                      <cell id="{6E15333B-0E25-4B40-9660-D078AF5D29F8}">
                         <labels>
                           <label description="Default Search Experience" languagecode="1033" />
                         </labels>
@@ -744,7 +744,7 @@
                       </cell>
                     </row>
                     <row>
-                      <cell id="{65BBA6AF-A3C8-45E6-BE1B-096A3BDC4061}">
+                      <cell id="{A0341D99-7223-4D25-A7B0-7F2D98E1011E}">
                         <labels>
                           <label description="Default Search Experience: mode" languagecode="1033" />
                         </labels>
@@ -752,7 +752,7 @@
                       </cell>
                     </row>
                     <row>
-                      <cell id="{FBE38ADD-464E-4924-84B6-70D9C3735DB2}">
+                      <cell id="{498E1C1A-A761-4E54-A44F-9BB74D2B1785}">
                         <labels>
                           <label description="Form Mode" languagecode="1033" />
                         </labels>
@@ -760,7 +760,7 @@
                       </cell>
                     </row>
                     <row>
-                      <cell id="{51E605AC-8A10-4D12-A43E-807186FB05C4}">
+                      <cell id="{153681F2-A6AC-4B7B-9804-6DEB13079F5F}">
                         <labels>
                           <label description="Form Mode: mode" languagecode="1033" />
                         </labels>
@@ -768,7 +768,7 @@
                       </cell>
                     </row>
                     <row>
-                      <cell id="{F912715D-ED0B-4E2F-AA16-21B825B7B0E4}">
+                      <cell id="{A142B735-5D7F-4948-B042-471FC399FACF}">
                         <labels>
                           <label description="Display Density" languagecode="1033" />
                         </labels>
@@ -776,7 +776,7 @@
                       </cell>
                     </row>
                     <row>
-                      <cell id="{11F5C8E3-D84C-4F76-844B-5798FC8176B5}">
+                      <cell id="{C9F7E521-9FBB-41D1-8292-5DF639E0D11F}">
                         <labels>
                           <label description="Display Density: mode" languagecode="1033" />
                         </labels>
@@ -784,7 +784,7 @@
                       </cell>
                     </row>
                     <row>
-                      <cell id="{20CEAD1B-93EA-4A87-8258-CDF0263F0C8F}">
+                      <cell id="{EAE27B8A-6975-4FD0-9593-727609FAE20B}">
                         <labels>
                           <label description="Default Pane" languagecode="1033" />
                         </labels>
@@ -792,7 +792,7 @@
                       </cell>
                     </row>
                     <row>
-                      <cell id="{A276F367-364A-4C37-B327-807C62F460D8}">
+                      <cell id="{40BC7B40-2951-4E99-A1C3-47017B247A46}">
                         <labels>
                           <label description="Default Pane: mode" languagecode="1033" />
                         </labels>
@@ -800,7 +800,7 @@
                       </cell>
                     </row>
                     <row>
-                      <cell id="{3D20B076-08FA-4318-81E5-C13B7CF0C850}">
+                      <cell id="{07FE5FEA-8276-4BCE-932D-FAFFE534DF74}">
                         <labels>
                           <label description="Default Tab" languagecode="1033" />
                         </labels>
@@ -808,7 +808,7 @@
                       </cell>
                     </row>
                     <row>
-                      <cell id="{D15A6FEF-7B5A-46E7-8056-67FCA61EC7ED}">
+                      <cell id="{053A8CD2-386C-4C1F-802C-B05424049102}">
                         <labels>
                           <label description="Default Tab: mode" languagecode="1033" />
                         </labels>
@@ -816,7 +816,7 @@
                       </cell>
                     </row>
                     <row>
-                      <cell id="{91E56DF7-B2E7-4241-94B3-09877D7EFA25}">
+                      <cell id="{6F184FD2-EBA2-410C-8582-47871E8AC635}">
                         <labels>
                           <label description="Home Page Layout" languagecode="1033" />
                         </labels>
@@ -824,7 +824,7 @@
                       </cell>
                     </row>
                     <row>
-                      <cell id="{E60F51AA-2938-4C58-AA87-779C7F24C786}">
+                      <cell id="{FC5C2AB8-A984-4A04-9BBC-4A14D8375451}">
                         <labels>
                           <label description="Home Page Layout: mode" languagecode="1033" />
                         </labels>
@@ -832,7 +832,7 @@
                       </cell>
                     </row>
                     <row>
-                      <cell id="{2E0C4DA4-5F18-47B3-82CD-FADC396427FD}">
+                      <cell id="{FB6213F8-F87C-4403-A9BA-6B314A58F6F9}">
                         <labels>
                           <label description="Advanced Find Mode" languagecode="1033" />
                         </labels>
@@ -840,7 +840,7 @@
                       </cell>
                     </row>
                     <row>
-                      <cell id="{67B6D90F-B7AB-4EB9-889F-783CE215A3F8}">
+                      <cell id="{BC1C9C4B-9FFE-423E-8FDE-A0BA08273E5C}">
                         <labels>
                           <label description="Advanced Find Mode: mode" languagecode="1033" />
                         </labels>
@@ -848,7 +848,7 @@
                       </cell>
                     </row>
                     <row>
-                      <cell id="{8ACA27E1-B961-4151-9905-69B8350D3C29}">
+                      <cell id="{2E5D5C7F-980F-4D2E-9107-85911B36F32A}">
                         <labels>
                           <label description="Visualization Pane Layout" languagecode="1033" />
                         </labels>
@@ -856,7 +856,7 @@
                       </cell>
                     </row>
                     <row>
-                      <cell id="{24273B20-59C8-424E-89E4-D8487FC09D57}">
+                      <cell id="{905160E5-7B9F-4884-8F9A-2CFF6D022B9E}">
                         <labels>
                           <label description="Visualization Pane Layout: mode" languagecode="1033" />
                         </labels>
@@ -864,7 +864,7 @@
                       </cell>
                     </row>
                     <row>
-                      <cell id="{3C0ADA9C-44D5-4971-95F4-CF9B520E5D8A}">
+                      <cell id="{610FA4B0-03CB-4D1A-8EBD-DA9957A7755F}">
                         <labels>
                           <label description="Guided Help" languagecode="1033" />
                         </labels>
@@ -872,7 +872,7 @@
                       </cell>
                     </row>
                     <row>
-                      <cell id="{1E24ECCF-F926-4430-8435-C6A769E5F971}">
+                      <cell id="{6F30C225-BF19-4667-9E89-2E9620FCFB77}">
                         <labels>
                           <label description="Guided Help: mode" languagecode="1033" />
                         </labels>
@@ -880,7 +880,7 @@
                       </cell>
                     </row>
                     <row>
-                      <cell id="{7B5CC8D4-1DFB-46BB-BDD2-C6990A859838}">
+                      <cell id="{F031D677-5A4D-4829-94D6-CBDEF34A281C}">
                         <labels>
                           <label description="Report Script Errors" languagecode="1033" />
                         </labels>
@@ -888,7 +888,7 @@
                       </cell>
                     </row>
                     <row>
-                      <cell id="{8A1A3E74-877F-46E2-B6EF-C0444BF835D7}">
+                      <cell id="{7C4DC6F3-70F2-4800-A7B7-6B4CFD4C96EE}">
                         <labels>
                           <label description="Report Script Errors: mode" languagecode="1033" />
                         </labels>
@@ -896,7 +896,7 @@
                       </cell>
                     </row>
                     <row>
-                      <cell id="{DCC4D83D-7799-44BD-9258-A72AC1FEAC9A}">
+                      <cell id="{37545E52-F6D0-41D8-8EF2-53EBD6566E79}">
                         <labels>
                           <label description="Excel Export Data Validation" languagecode="1033" />
                         </labels>
@@ -904,7 +904,7 @@
                       </cell>
                     </row>
                     <row>
-                      <cell id="{4542EE5F-C946-46BC-B499-E82E37B52485}">
+                      <cell id="{62CA0DE4-6915-4134-99BE-067B94566416}">
                         <labels>
                           <label description="Excel Export Data Validation: mode" languagecode="1033" />
                         </labels>
@@ -912,7 +912,7 @@
                       </cell>
                     </row>
                     <row>
-                      <cell id="{E9AAFD0E-A64B-4E5A-8DA9-10A8FDFD5045}">
+                      <cell id="{F3F61D02-442E-42CB-9E90-C22048CF6383}">
                         <labels>
                           <label description="Model App Release Channel" languagecode="1033" />
                         </labels>
@@ -920,7 +920,7 @@
                       </cell>
                     </row>
                     <row>
-                      <cell id="{4049C1C2-C8EC-403D-9FA0-ABCB8BFDED77}">
+                      <cell id="{9674E84F-A643-4586-987C-127B2A0A2C01}">
                         <labels>
                           <label description="Model App Release Channel: mode" languagecode="1033" />
                         </labels>
@@ -928,7 +928,7 @@
                       </cell>
                     </row>
                     <row>
-                      <cell id="{9AE452AF-2810-49D3-8F14-75BA64DCFDA0}">
+                      <cell id="{D72DA38D-3E71-4C2B-98AC-DE9239A804CE}">
                         <labels>
                           <label description="Preferred Solution" languagecode="1033" />
                         </labels>
@@ -936,7 +936,7 @@
                       </cell>
                     </row>
                     <row>
-                      <cell id="{CA11B321-95F6-423C-82E5-09B7C04DE9D2}">
+                      <cell id="{F5A3F786-4864-49AE-B06C-ABBD9229A6EA}">
                         <labels>
                           <label description="Preferred Solution: mode" languagecode="1033" />
                         </labels>
@@ -949,20 +949,20 @@
             </column>
           </columns>
         </tab>
-        <tab name="tab_email" id="{198E7C02-7F24-4EBC-A628-B190B3846F61}" expanded="true" showlabel="true">
+        <tab name="tab_email" id="{27255836-831E-43BC-806F-D22B80398902}" expanded="true" showlabel="true">
           <labels>
             <label description="Email" languagecode="1033" />
           </labels>
           <columns>
             <column width="100%">
               <sections>
-                <section name="sec_email" showlabel="true" showbar="false" id="{40D321BC-2A8F-4445-8C42-9BC9C04D1E01}" columns="1">
+                <section name="sec_email" showlabel="true" showbar="false" id="{C458BA7F-9642-45CA-93F6-C504706F10D9}" columns="1">
                   <labels>
                     <label description="Email (value | Inherit / Default / Locked)" languagecode="1033" />
                   </labels>
                   <rows>
                     <row>
-                      <cell id="{30BF2EB2-A4BE-4BD2-A56B-2840DE87131B}">
+                      <cell id="{6493D898-F874-41C6-922F-9CFC34E5402F}">
                         <labels>
                           <label description="Incoming Email Filtering" languagecode="1033" />
                         </labels>
@@ -970,7 +970,7 @@
                       </cell>
                     </row>
                     <row>
-                      <cell id="{B81592BB-BDE4-4983-B45D-C38155052553}">
+                      <cell id="{E8B3835D-7C7A-482B-B109-351516A6A903}">
                         <labels>
                           <label description="Incoming Email Filtering: mode" languagecode="1033" />
                         </labels>
@@ -978,7 +978,7 @@
                       </cell>
                     </row>
                     <row>
-                      <cell id="{E9347876-DE11-4664-AD53-73970EE51E86}">
+                      <cell id="{289CE3D6-3ACA-4AB3-AC32-4794C8322992}">
                         <labels>
                           <label description="Ignore Unsolicited Email" languagecode="1033" />
                         </labels>
@@ -986,7 +986,7 @@
                       </cell>
                     </row>
                     <row>
-                      <cell id="{EF0983E2-20D4-4BB2-B50F-101D724B9FAC}">
+                      <cell id="{4295727E-C23F-4B04-9024-7370C86BBF78}">
                         <labels>
                           <label description="Ignore Unsolicited Email: mode" languagecode="1033" />
                         </labels>
@@ -994,7 +994,7 @@
                       </cell>
                     </row>
                     <row>
-                      <cell id="{2D38ABDB-982A-4EBD-8B5B-BC1953121AE7}">
+                      <cell id="{76DE5749-3F49-443F-94AB-13157283284B}">
                         <labels>
                           <label description="Email Conversation View" languagecode="1033" />
                         </labels>
@@ -1002,7 +1002,7 @@
                       </cell>
                     </row>
                     <row>
-                      <cell id="{BCEA80B2-ACD6-4ADF-AD57-A9870E58AC52}">
+                      <cell id="{03FE2CFB-67E2-4203-98B9-8A3F92C1FB7D}">
                         <labels>
                           <label description="Email Conversation View: mode" languagecode="1033" />
                         </labels>
@@ -1010,7 +1010,7 @@
                       </cell>
                     </row>
                     <row>
-                      <cell id="{C2223ADB-2D18-4053-80CE-3DBFDF8E79F0}">
+                      <cell id="{ACACA70B-254C-4D45-8FF1-2213CD5E5650}">
                         <labels>
                           <label description="Allow Others to Send on My Behalf" languagecode="1033" />
                         </labels>
@@ -1018,7 +1018,7 @@
                       </cell>
                     </row>
                     <row>
-                      <cell id="{F1540B4D-7324-4EDD-8CC5-F10CF8B32DFA}">
+                      <cell id="{5CFA895F-2035-4651-AC30-9B6FDCC9DAA0}">
                         <labels>
                           <label description="Allow Others to Send on My Behalf: mode" languagecode="1033" />
                         </labels>
@@ -1026,7 +1026,7 @@
                       </cell>
                     </row>
                     <row>
-                      <cell id="{3548DC16-2F7E-40F6-85E2-CC1F338DAB1B}">
+                      <cell id="{AF7B33A6-A859-46C8-A941-0506921BF485}">
                         <labels>
                           <label description="Auto-create Contact on Promote" languagecode="1033" />
                         </labels>
@@ -1034,7 +1034,7 @@
                       </cell>
                     </row>
                     <row>
-                      <cell id="{5D2E47CF-E602-45F9-82CB-C5F27A77A6EF}">
+                      <cell id="{59052E76-5EED-4089-83B7-97156B2BC67B}">
                         <labels>
                           <label description="Auto-create Contact on Promote: mode" languagecode="1033" />
                         </labels>
@@ -1042,7 +1042,7 @@
                       </cell>
                     </row>
                     <row>
-                      <cell id="{6F465978-C77A-4107-BF0C-8473494F8DC2}">
+                      <cell id="{C0A19100-5CA0-4EB7-BA1D-C0D40533889D}">
                         <labels>
                           <label description="Auto Data Capture" languagecode="1033" />
                         </labels>
@@ -1050,7 +1050,7 @@
                       </cell>
                     </row>
                     <row>
-                      <cell id="{E472DBFA-B67D-415C-8EC5-EA395761498A}">
+                      <cell id="{F6E2E434-5AF1-441B-B8EE-975946D2437F}">
                         <labels>
                           <label description="Auto Data Capture: mode" languagecode="1033" />
                         </labels>
@@ -1063,20 +1063,20 @@
             </column>
           </columns>
         </tab>
-        <tab name="tab_sync" id="{F74824E2-88D8-4489-B473-92BC5FE3AD77}" expanded="true" showlabel="true">
+        <tab name="tab_sync" id="{17407D48-73C9-418F-BAFD-BB3D8087EDCB}" expanded="true" showlabel="true">
           <labels>
             <label description="Sync" languagecode="1033" />
           </labels>
           <columns>
             <column width="100%">
               <sections>
-                <section name="sec_sync" showlabel="true" showbar="false" id="{DCC4BE61-A208-4584-AA4F-D01D890A023E}" columns="1">
+                <section name="sec_sync" showlabel="true" showbar="false" id="{463D2A9D-F0E3-4D36-8023-B4F50DB4B01E}" columns="1">
                   <labels>
                     <label description="Sync (value | Inherit / Default / Locked)" languagecode="1033" />
                   </labels>
                   <rows>
                     <row>
-                      <cell id="{D7E6EB57-E9DF-441A-B7AC-92A93DBD3405}">
+                      <cell id="{FFD19D9B-EDEB-488C-A99D-392D9E62DAF6}">
                         <labels>
                           <label description="Use Dynamics Form for Appointment" languagecode="1033" />
                         </labels>
@@ -1084,7 +1084,7 @@
                       </cell>
                     </row>
                     <row>
-                      <cell id="{C1E3E41F-6E6C-4CFD-82FF-266945B82899}">
+                      <cell id="{BECB8B4B-10E4-46C8-92AC-CBEC383DEB9C}">
                         <labels>
                           <label description="Use Dynamics Form for Appointment: mode" languagecode="1033" />
                         </labels>
@@ -1092,7 +1092,7 @@
                       </cell>
                     </row>
                     <row>
-                      <cell id="{CA3B8AA4-4CD6-4350-8D2A-D02AD7882458}">
+                      <cell id="{1B48ABA6-CEB3-4BA4-9F2A-BDCCBA94165A}">
                         <labels>
                           <label description="Use Dynamics Form for Contact" languagecode="1033" />
                         </labels>
@@ -1100,7 +1100,7 @@
                       </cell>
                     </row>
                     <row>
-                      <cell id="{8DD23048-A174-49F3-A0A4-09650223983F}">
+                      <cell id="{A515D450-3AB8-400C-95DC-0DB8127094A0}">
                         <labels>
                           <label description="Use Dynamics Form for Contact: mode" languagecode="1033" />
                         </labels>
@@ -1108,7 +1108,7 @@
                       </cell>
                     </row>
                     <row>
-                      <cell id="{C4AB0817-35B7-4BAC-869A-ECE5454F3AC4}">
+                      <cell id="{2C2CEBB0-5CF4-49A7-AB03-74117FB85F01}">
                         <labels>
                           <label description="Use Dynamics Form for Email" languagecode="1033" />
                         </labels>
@@ -1116,7 +1116,7 @@
                       </cell>
                     </row>
                     <row>
-                      <cell id="{1B1B7049-CDCD-4A40-BD73-E086D00C7890}">
+                      <cell id="{2BA57474-5B85-4E33-9A6C-19E4C2DA76A6}">
                         <labels>
                           <label description="Use Dynamics Form for Email: mode" languagecode="1033" />
                         </labels>
@@ -1124,7 +1124,7 @@
                       </cell>
                     </row>
                     <row>
-                      <cell id="{C5E890D0-0C5B-4925-8B69-626EB854485F}">
+                      <cell id="{4D66BE60-826B-4FE3-B380-6F78BA7AE018}">
                         <labels>
                           <label description="Use Dynamics Form for Task" languagecode="1033" />
                         </labels>
@@ -1132,7 +1132,7 @@
                       </cell>
                     </row>
                     <row>
-                      <cell id="{B3D040A3-BEF4-4E82-964A-450E6AB630E8}">
+                      <cell id="{2B7DD785-DC34-4D2A-AAAA-9CD3E2E8D9EF}">
                         <labels>
                           <label description="Use Dynamics Form for Task: mode" languagecode="1033" />
                         </labels>
@@ -1140,7 +1140,7 @@
                       </cell>
                     </row>
                     <row>
-                      <cell id="{3430AA1E-047D-4B25-83DC-97361754FC16}">
+                      <cell id="{33BCF3C3-102F-4E6D-BFD9-CD8BDCEA755A}">
                         <labels>
                           <label description="Sync Contact Company" languagecode="1033" />
                         </labels>
@@ -1148,7 +1148,7 @@
                       </cell>
                     </row>
                     <row>
-                      <cell id="{1FD05DD4-9B88-4A28-854C-4F481F1848FD}">
+                      <cell id="{7A2C8D04-4071-4365-A2A2-C0F7C52DC1A6}">
                         <labels>
                           <label description="Sync Contact Company: mode" languagecode="1033" />
                         </labels>
@@ -1156,7 +1156,7 @@
                       </cell>
                     </row>
                     <row>
-                      <cell id="{F9075CDB-3D45-4F0C-B2E1-B580C279E81B}">
+                      <cell id="{5E2D1514-253C-4952-BCFB-05122F23EBAB}">
                         <labels>
                           <label description="Outlook Sync Interval" languagecode="1033" />
                         </labels>
@@ -1164,7 +1164,7 @@
                       </cell>
                     </row>
                     <row>
-                      <cell id="{34F6FBE6-1603-4AD4-A418-D149988E1B7C}">
+                      <cell id="{22A9679A-D19F-4271-AD35-4B2E9B391EF8}">
                         <labels>
                           <label description="Outlook Sync Interval: mode" languagecode="1033" />
                         </labels>
@@ -1172,7 +1172,7 @@
                       </cell>
                     </row>
                     <row>
-                      <cell id="{B1FEABE9-8615-455C-9909-2CACA7AD98B1}">
+                      <cell id="{3154A566-40F1-4CFC-A2C2-ED9E242EF36C}">
                         <labels>
                           <label description="Offline Sync Interval" languagecode="1033" />
                         </labels>
@@ -1180,7 +1180,7 @@
                       </cell>
                     </row>
                     <row>
-                      <cell id="{D81F66F7-50BA-4B99-9592-895051BEEC19}">
+                      <cell id="{4B4BD7B0-490A-4BA7-B0E2-AEA012B66F64}">
                         <labels>
                           <label description="Offline Sync Interval: mode" languagecode="1033" />
                         </labels>
@@ -1188,7 +1188,7 @@
                       </cell>
                     </row>
                     <row>
-                      <cell id="{2B035C00-DA9D-40AD-9658-535B8EAB1293}">
+                      <cell id="{F66894EF-7D31-405D-83C3-5744E4D35B99}">
                         <labels>
                           <label description="Address Book Sync Interval" languagecode="1033" />
                         </labels>
@@ -1196,7 +1196,7 @@
                       </cell>
                     </row>
                     <row>
-                      <cell id="{03661ABD-4168-48EA-8898-07FA00BE84DB}">
+                      <cell id="{FA73B8A0-DE7C-49F3-9C80-7846E8FA225F}">
                         <labels>
                           <label description="Address Book Sync Interval: mode" languagecode="1033" />
                         </labels>
@@ -1204,7 +1204,7 @@
                       </cell>
                     </row>
                     <row>
-                      <cell id="{A01BDC1F-3858-482E-A3B6-427C1C290355}">
+                      <cell id="{591C89A9-59A3-4888-A587-4597A9DB4181}">
                         <labels>
                           <label description="Resource Booking Exchange Sync" languagecode="1033" />
                         </labels>
@@ -1212,7 +1212,7 @@
                       </cell>
                     </row>
                     <row>
-                      <cell id="{845761DB-442F-4260-B90D-63AC687C338C}">
+                      <cell id="{5247F4C4-DC6E-4DE2-9136-E0D30C423E3F}">
                         <labels>
                           <label description="Resource Booking Exchange Sync: mode" languagecode="1033" />
                         </labels>

@@ -1,0 +1,21 @@
+{
+  "name": "default-user-settings-genpages",
+  "private": true,
+  "version": "0.1.0",
+  "description": "Generative pages for the Default User Settings model-driven app. Each page is bundled into one .tsx by build.mjs and uploaded with pac model genpage upload.",
+  "type": "module",
+  "scripts": {
+    "typecheck": "tsc -p tsconfig.json",
+    "build": "node build.mjs",
+    "check": "npm run typecheck && npm run build && tsc -p tsconfig.dist.json"
+  },
+  "devDependencies": {
+    "@fluentui/react-components": "~9.54.0",
+    "@fluentui/react-icons": "2.0.326",
+    "@types/react": "^17.0.80",
+    "@types/react-dom": "^17.0.25",
+    "react": "17.0.2",
+    "react-dom": "17.0.2",
+    "typescript": "~5.6.3"
+  }
+}
